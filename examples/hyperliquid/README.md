@@ -14,6 +14,8 @@ Hyperliquid (HYPE)  ·  🟡 CONDITIONAL  ·  grade B  ·  66.0/100 (range 41–
   🚩 RF16 [minor] Volume implausible versus depth — fired
 ```
 
+![Verdict](../../docs/img/hyperliquid-verdict.png)
+
 [One-page memo](report/memo.md) · [Full report](report/report.md) · [Radar](report/radar.svg)
 
 ## How this compares with what Binance did
@@ -30,6 +32,8 @@ step would make it a C. That is why the report leads with the range (41–81),
 not the point.
 
 ## What drives the result
+
+![Pillar scores](../../docs/img/hyperliquid-pillars.png)
 
 The radar shape is the story. The business is strong. Control, security and
 legal standing are weak.

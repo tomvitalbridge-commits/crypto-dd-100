@@ -8,31 +8,34 @@ pipeline. A Claude **skill** does the research and makes cited judgments; a
 deterministic **harness** verifies every judgment against its evidence,
 computes the score, applies red-flag gates and writes the committee memo.
 
+![Hyperliquid listing review: conditional listing](docs/img/hyperliquid-verdict.png)
+
 ## Real case: Hyperliquid (HYPE)
 
-```
-$ dd100 run examples/hyperliquid/manifest.yaml
+Binance listed HYPE spot on 24 Sep 2026 with a **Seed Tag**, its conditional
+tier. DD-100 used only 61 public sources and reached the same answer: list,
+but only once specific checks are closed.
 
-Hyperliquid (HYPE)  ·  🟡 CONDITIONAL  ·  grade B  ·  66.0/100 (range 41–81)  ·  coverage 82%
-  ❔ RF02 [critical] Sanctions / illicit-finance exposure — unchecked
-  → grade B meets the listing bar on score; listing is blocked until:
-  → critical gates not yet checkable: RF02
-  → human-only checks outstanding: T02, M05, L07
-```
+![Timeline: Binance's decisions vs the DD-100 read](docs/img/hyperliquid-timeline.png)
 
-<img src="docs/img/hyperliquid-radar.png" width="560" alt="Hyperliquid pillar radar">
+**The business is strong and the control is weak.** The project earns $907M in
+annualised fees, spends nothing on usage incentives, and sends all revenue to
+holders. But Foundation validators hold about 49% of stake, the L1 is closed
+source with no public audit, and it holds no licence anywhere.
 
-Binance listed HYPE spot on 24 Sep 2026 with a **Seed Tag**, which is a
-conditional listing in all but name. Working only from 61 public sources,
-DD-100 reaches the same place. The business is strong: $907M in annualised
-fees, zero incentives, and all revenue goes to holders. Control, security
-coverage and licensing are weak: Foundation validators hold about 49% of stake,
-the L1 is closed source with no public audit, and there is a UK FCA warning.
+![Pillar scores](docs/img/hyperliquid-pillars.png)
 
-The case study also shows the verification layer working on real data. On the
-first run, a major gate fired on a misread source. A fact-check against the
-contract code overturned it, and the verdict changed. The full write-up, memo
-and 100-dimension report are in **[examples/hyperliquid](examples/hyperliquid)**.
+**No red flag fired that blocks a listing.** Five checks remain open because
+the data isn't public. An exchange can close them internally, for example by
+running sanctions screening and labelling top holders.
+
+![Red-flag checks](docs/img/hyperliquid-gates.png)
+
+**The verification layer changed the answer.** On the first run, a major red
+flag fired because a source had been misread. An independent fact-check went
+back to the contract code and overturned it, and the verdict moved from
+watchlist to conditional. The write-up, one-page memo and full 100-dimension
+report are in **[examples/hyperliquid](examples/hyperliquid)**.
 
 > Two **fictional** projects, Halcyon and Moonvault, ship alongside the real
 > case. They exist to exercise every path through the harness: one clean
@@ -108,15 +111,31 @@ an L1 puts 14% on Product & Technology.
 
 ## Skill + harness
 
-```
- JUDGMENT LAYER                         HARNESS (deterministic)
- ─────────────                          ───────────────────────
- Claude skill  ──► evidence pack ──┐    contradiction check + derived metrics
- (research,        sources·metrics │    rule scoring (37 dims)
-  cited scores)    ·claims         ├──► validator: citations · tiers · method
- Analyst ──────► human checks ─────┘    pillar aggregation · coverage · range
- collectors ───► public data            16 gates (fired / clear / unchecked)
-                                        grade + verdict ──► memo · report · radar · json
+```mermaid
+flowchart LR
+    subgraph J["Judgment layer"]
+      SK["Claude skill<br/>research + cited scores"]
+      AN["Analyst<br/>private checks"]
+      CO["Collectors<br/>public data"]
+    end
+    EP[("Evidence pack<br/>sources · metrics · claims")]
+    subgraph H["Harness · deterministic"]
+      V["Validator<br/>citations · tiers · who may score"]
+      R["37 rule scores"]
+      A["Pillars · coverage · range"]
+      G["16 red-flag gates"]
+      VD["Verdict"]
+    end
+    OUT["Memo · report · charts · JSON"]
+    SK --> EP
+    CO --> EP
+    SK --> V
+    AN --> V
+    EP --> R
+    EP --> V
+    R --> A
+    V --> A
+    A --> G --> VD --> OUT
 ```
 
 The skill ([`skills/crypto-dd/SKILL.md`](skills/crypto-dd/SKILL.md)) tells

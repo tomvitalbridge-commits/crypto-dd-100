@@ -29,6 +29,8 @@ dd100 run examples/hyperliquid/manifest.yaml # 真实项目：有条件通过，
 pytest -q
 ```
 
+![Hyperliquid 上币评审结论](docs/img/hyperliquid-verdict.png)
+
 仓库里有三个示例。
 
 [Hyperliquid（HYPE）](examples/hyperliquid) 是真实项目。币安 2026 年 9 月 24 日上了它的现货，带种子标签。我们只用 61 个公开来源，按框架跑了一遍尽调，结论是"有条件通过"，B 级，66 分（区间 41–81），和币安"带种子标签上币"的处理基本吻合。

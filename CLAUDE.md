@@ -19,6 +19,7 @@ python -m dd100 template projects/<slug>
 python -m dd100 collect projects/<slug>/manifest.yaml
 python -m dd100 run projects/<slug>/manifest.yaml
 python -m pytest -q
+python scripts/make_figures.py examples/<slug> --out docs/img   # README charts
 ```
 
 ## Rules when working on a review
