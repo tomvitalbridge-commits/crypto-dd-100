@@ -8,23 +8,7 @@ pipeline. A Claude **skill** does the research and makes cited judgments; a
 deterministic **harness** verifies every judgment against its evidence,
 computes the score, applies red-flag gates and writes the committee memo.
 
-```
-$ dd100 run examples/halcyon/manifest.yaml
-
-Halcyon Finance (HLCN)  ·  🟡 CONDITIONAL  ·  grade B  ·  77.7/100 (range 61–90)  ·  coverage 97%
-  dimensions: na=2, pending_human=1, scored=93, unscored=4
-  ❔ RF13 [major] Undisclosed market-maker terms — unchecked
-  → grade B meets the listing bar on score; listing is blocked until:
-  → human-only checks outstanding: M05 Market-maker arrangements
-  reports: examples/halcyon/report/report.md, memo.md, radar.svg, scorecard.json
-```
-
-> Three examples ship with the repo: **[Hyperliquid (HYPE)](examples/hyperliquid)** — a
-> real project Binance listed on 24 Sep 2026, reviewed from public sources only —
-> plus two **fictional** projects, Halcyon and Moonvault, built to exercise every
-> path through the harness.
-
-### Real case: Hyperliquid (HYPE)
+## Real case: Hyperliquid (HYPE)
 
 ```
 $ dd100 run examples/hyperliquid/manifest.yaml
@@ -36,17 +20,23 @@ Hyperliquid (HYPE)  ·  🟡 CONDITIONAL  ·  grade B  ·  66.0/100 (range 41–
   → human-only checks outstanding: T02, M05, L07
 ```
 
-Binance listed HYPE spot with a **Seed Tag**, a conditional listing in all but
-name. Working only from 61 public sources, DD-100 lands in the same place.
-Strong business: $907M annualised fees, zero incentives, all revenue to
-holders. Weak control, security coverage and licensing: Foundation validators
-hold about 49% of stake, the L1 is closed source with no public audit, and there
-is a UK FCA warning.
+<img src="examples/hyperliquid/report/radar.svg" width="560" alt="Hyperliquid pillar radar">
 
-The case study also shows the verification layer working on real data. The
-first run fired a major gate on a misread source. A fact-check against the
-contract code overturned it, and the verdict changed. See
-**[examples/hyperliquid](examples/hyperliquid)**.
+Binance listed HYPE spot on 24 Sep 2026 with a **Seed Tag**, which is a
+conditional listing in all but name. Working only from 61 public sources,
+DD-100 reaches the same place. The business is strong: $907M in annualised
+fees, zero incentives, and all revenue goes to holders. Control, security
+coverage and licensing are weak: Foundation validators hold about 49% of stake,
+the L1 is closed source with no public audit, and there is a UK FCA warning.
+
+The case study also shows the verification layer working on real data. On the
+first run, a major gate fired on a misread source. A fact-check against the
+contract code overturned it, and the verdict changed. The full write-up, memo
+and 100-dimension report are in **[examples/hyperliquid](examples/hyperliquid)**.
+
+> Two **fictional** projects, Halcyon and Moonvault, ship alongside the real
+> case. They exist to exercise every path through the harness: one clean
+> conditional, and one hard reject.
 
 ---
 
@@ -215,7 +205,7 @@ DD-100 is decision support for a committee, not investment advice.
 
 ## Author
 
-Built by Tom — investment director at Fenbushi Capital (2017–2020), founding
+Built by **Tom Huang** ([@tomvitalbridge-commits](https://github.com/tomvitalbridge-commits)): investment director at Fenbushi Capital (2017–2020), founding
 partner of BKFUND (since 2018), COO on the founding team of CNHC, an
 offshore-RMB stablecoin (2020–2024), and head of a crypto fund at Vitalbridge
 (2023–2024). The framework encodes the questions I've learned to ask the hard way.
