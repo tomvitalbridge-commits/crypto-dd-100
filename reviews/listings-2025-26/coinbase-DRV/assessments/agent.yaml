@@ -1,0 +1,83 @@
+# Derive (DRV) — judgment scores from public sources, as of 2026-05-28 (Coinbase listing).
+# Only sources published on or before 2026-05-28 are cited. Every score cites
+# evidence ids in evidence/*.json; where public sources were not enough the
+# dimension is `pending` with what is missing. T02, M05, L07 are human-only.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, score: 3, confidence: medium, evidence: [DRV-19, DRV-18, DRV-14], assessor: "agent:claude", rationale: "Founders come from equity options and market making and have run Lyra/Derive since 2021 through two product generations; Derive now earns ~$4.1M annualised revenue, a modest scale."}
+- {id: T03, status: pending, rationale: "missing: team size and roles. Public repos show only 2 committers in the 90 days to listing (DRV-23) and the team was reshaped after the failed Synthetix merger (DRV-07); headcount not disclosed."}
+- {id: T04, score: 3, confidence: medium, evidence: [DRV-23, DRV-21], assessor: "agent:claude", rationale: "In-house design of a portfolio-margin risk engine with public design docs (PMRM, SRM) and repeated Sigma Prime engagements; little public research beyond that."}
+- {id: T05, score: 2, confidence: medium, evidence: [DRV-07, DRV-25, DRV-17], assessor: "agent:claude", rationale: "No misconduct found in reviewed press, but the team reversed its 'no new tokens' pledge with a 50% mint that critics called a betrayal; regulator and court records were not searched."}
+- {id: T07, score: 2, confidence: medium, evidence: [DRV-08, DRV-09, DRV-10], assessor: "agent:claude", rationale: "stDRV holders vote on Snapshot (off-chain); execution sits with Foundation and BVI multisigs (3-of-5) whose board can be replaced by token-holder resolution under Cayman law; the 50% mint was proposed by a co-founder and executed by the Foundation."}
+- {id: T08, status: pending, rationale: "missing: Foundation/DAO treasury addresses, holdings and spending reports; the proposer could not give a 2025–2029 supply table for the strategic allocation (DRV-08)."}
+- {id: T09, score: 2, confidence: medium, evidence: [DRV-14, DRV-16, DRV-07], assessor: "agent:claude", rationale: "Small early rounds ($3.3M seed 2021, $3M strategic 2022) with backers not identified here; Variant bought in Feb 2026 on undisclosed terms; the team cut ties with investors who backed the Synthetix deal."}
+
+# --- P Product & Technology
+- {id: P01, score: 3, confidence: medium, evidence: [DRV-14, DRV-15], assessor: "agent:claude", rationale: "Self-custodial options and perps with paying users: revenue doubled to $1.03M in Feb–Apr 2026 and OI passed $1B in March 2026, though the OI figure is self-reported."}
+- {id: P02, score: 4, confidence: high, evidence: [DRV-21, DRV-18, DRV-20], assessor: "agent:claude", rationale: "Options protocol live since 2021; the V2 exchange was audited from 2023 to Mar 2025 and was in production well over 12 months before listing."}
+- {id: P03, score: 3, confidence: medium, evidence: [DRV-23, DRV-21], assessor: "agent:claude", rationale: "Original sub-account and portfolio-margin risk engine with its own matching contracts, not a fork; no published academic-style research."}
+- {id: P04, score: 3, confidence: medium, evidence: [DRV-19, DRV-20, DRV-21], assessor: "agent:claude", rationale: "Off-chain matching with on-chain settlement on an OP Stack appchain is a proven pattern; it relies on a semi-permissioned rollup, and audits found 5 critical issues in the liquidation logic, 4 fixed and 1 acknowledged."}
+- {id: P05, score: 1, confidence: medium, evidence: [DRV-23, DRV-20, DRV-08], assessor: "agent:claude", rationale: "Prices come from the team's own signed feeds (2 required signers in the mainnet config), the chain runs on a semi-permissioned OP Stack sequencer, collateral arrives over bridges from four chains, and DRV supply spans chains via LayerZero."}
+- {id: P08, score: 3, confidence: medium, evidence: [DRV-26, DRV-12, DRV-24, DRV-21], assessor: "agent:claude", rationale: "Shipped V2, vaults, atomic matching and HYPE markets; the DRV token was promised for Q3/Q4 2024 and launched 15 Jan 2025."}
+- {id: P09, score: 2, confidence: high, evidence: [DRV-23], assessor: "agent:claude", rationale: "Settlement and risk contracts are open source with a deployment map; the off-chain matching engine is closed and no reproducible-build check exists."}
+- {id: P10, score: 3, confidence: medium, evidence: [DRV-23, DRV-10], assessor: "agent:claude", rationale: "Repo design docs explain managers, sub-accounts and assets, and user docs cover token and staking; no public threat model was found."}
+
+# --- S Security
+- {id: S02, score: 2, confidence: high, evidence: [DRV-21], assessor: "agent:claude", rationale: "All 4 criticals and 2 highs in the Sep 2024 review were resolved, but round-2 critical DRV2-01 (liquidation-bid blocking) was acknowledged and not fixed; no bytecode match to audited commits was published."}
+- {id: S05, score: 2, confidence: low, evidence: [DRV-08, DRV-23], assessor: "agent:claude", rationale: "Contracts are owner-controlled (84 onlyOwner functions, upgradeable PMRM_2) and Foundation multisigs are 3-of-5, but signer identities and the owner address of the deployed contracts were not established."}
+- {id: S06, score: 1, confidence: medium, evidence: [DRV-08, DRV-07, DRV-11], assessor: "agent:claude", rationale: "Despite a 'fixed supply, no new tokens' policy, supply was raised 50% by deploying a new OFT on HyperEVM and linking it through LayerZero; nothing technical stops the Foundation from repeating this after an off-chain vote."}
+- {id: S08, score: 3, confidence: medium, evidence: [DRV-20, DRV-16], assessor: "agent:claude", rationale: "No exploit found from 2021 to May 2026, and independent press describes a clean track record; absence of incidents is not proof of security."}
+- {id: S09, score: 2, confidence: medium, evidence: [DRV-23, DRV-21], assessor: "agent:claude", rationale: "Feeds require 2 whitelisted signatures and a heartbeat but are run by the team, with no independent fallback found; the audit noted that oracles using perp prices can be manipulated."}
+- {id: S10, score: 2, confidence: medium, evidence: [DRV-20, DRV-08, DRV-24], assessor: "agent:claude", rationale: "All collateral is bridged into Derive Chain from Ethereum, Optimism, Arbitrum or Base, HYPE collateral goes through a HyperEVM bridge vault, and DRV supply is cross-chain via LayerZero OFT."}
+
+# --- K Tokenomics
+- {id: K01, score: 3, confidence: medium, evidence: [DRV-14, DRV-03, DRV-10], assessor: "agent:claude", rationale: "35% of revenue funds weekly DRV buybacks, visible as $303k holders revenue in Feb–Apr 2026; staking gives governance only, and bought-back tokens' final use (burn vs treasury) is not stated."}
+- {id: K09, score: 1, confidence: medium, evidence: [DRV-08, DRV-05], assessor: "agent:claude", rationale: "The 500M mint vests by Foundation policy inside its own Safe, not in public vesting contracts; no supply table was provided, and data providers count the whole 500M as non-circulating."}
+- {id: K10, score: 1, confidence: medium, evidence: [DRV-12, DRV-05], assessor: "agent:claude", rationale: "67M DRV airdropped from points with no vesting at the 15 Jan 2025 launch; price fell from the launch-day ATH of $0.228 to $0.0124 by Apr 2025, and no retention data is published."}
+
+# --- O On-chain Traction
+- {id: O06, status: pending, rationale: "missing: active-trader counts, funding-source clustering and activity outside reward windows; DefiLlama gives fees and TVL only."}
+- {id: O09, status: pending, rationale: "missing: independent evidence of third-party builders; the '20+ teams building' figure is self-reported (DRV-16)."}
+
+# --- M Market Structure
+- {id: M03, score: 3, confidence: low, evidence: [DRV-04, DRV-05, DRV-06], assessor: "agent:claude", rationale: "Reported 24h volume was $0.67–1.4M on a ~$83–117M cap (about 1% turnover), not the profile of fabricated volume; order-book depth was not observed."}
+- {id: M06, status: pending, rationale: "missing: list of CEX venues and pairs trading DRV before 27 May 2026; only Derive's own spot market and Aerodrome incentives are documented (DRV-12, DRV-13)."}
+- {id: M07, status: pending, rationale: "missing: DRV perp OI and funding history before listing."}
+- {id: M09, status: pending, rationale: "missing: DEX pool ownership (Aerodrome/Uniswap LP holders, any protocol-owned liquidity)."}
+- {id: M10, score: 3, confidence: medium, evidence: [DRV-15, DRV-20, DRV-19], assessor: "agent:claude", rationale: "On-chain derivatives are in favour and Derive leads on-chain options, but on-chain options remain a niche next to Deribit (Derive ~8% of Deribit daily volume, 0.8% of BTC options OI)."}
+
+# --- B Business Model
+- {id: B02, score: 2, confidence: medium, evidence: [DRV-14, DRV-15], assessor: "agent:claude", rationale: "Revenue is organic trading fees but small and volatile ($133k–$479k a month over Nov 2025–Apr 2026), with growth driven by a few large options flows."}
+- {id: B03, score: 3, confidence: medium, evidence: [DRV-14, DRV-03, DRV-10], assessor: "agent:claude", rationale: "Buybacks are live and tracked by DefiLlama ($303k of $1.03M revenue in Feb–Apr 2026, ~30%); the rest stays with the protocol."}
+- {id: B09, score: 2, confidence: low, evidence: [DRV-15, DRV-16], assessor: "agent:claude", rationale: "Volume leans on a few market makers (FalconX named) and on large block trades such as a single $130M+ structure; no counterparty breakdown was published."}
+- {id: B10, score: 2, confidence: medium, evidence: [DRV-14, DRV-07, DRV-08], assessor: "agent:claude", rationale: "There is a real fee business (~$4.1M annualised revenue), but the team needed a 500M-token mint to pay contributors and partners, so revenue alone does not fund operations."}
+
+# --- C Competition & Moat
+- {id: C01, score: 3, confidence: medium, evidence: [DRV-15, DRV-20], assessor: "agent:claude", rationale: "Crypto options are large (~$63B BTC options OI) and growing, but the on-chain slice Derive serves is still small."}
+- {id: C03, score: 3, confidence: medium, evidence: [DRV-14, DRV-15], assessor: "agent:claude", rationale: "Revenue doubled quarter on quarter and options volume set records in Feb–Mar 2026 against Deribit; share among on-chain venues was not measured independently."}
+- {id: C04, score: 2, confidence: medium, evidence: [DRV-15, DRV-19], assessor: "agent:claude", rationale: "Moat rests on market-maker relationships (FalconX, 10+ makers) and portfolio margin, and has not yet been tested by a well-funded on-chain challenger."}
+- {id: C05, score: 2, confidence: medium, evidence: [DRV-23, DRV-15], assessor: "agent:claude", rationale: "Contracts are open source and forkable; the matching engine and market-maker liquidity are harder to copy."}
+- {id: C06, score: 2, confidence: medium, evidence: [DRV-20, DRV-19], assessor: "agent:claude", rationale: "Versus Deribit the case is self-custody with portfolio margin; versus on-chain peers the edge is liquidity, which they could match."}
+- {id: C07, status: pending, rationale: "missing: FDV/fees of named peers (on-chain options and perp venues) at May 2026."}
+- {id: C08, score: 1, confidence: medium, evidence: [DRV-07, DRV-20], assessor: "agent:claude", rationale: "The listing venue owns Deribit, the 87%-share options incumbent Derive explicitly targets, and on-chain perp venues are adding options."}
+- {id: C09, score: 2, confidence: low, evidence: [DRV-15, DRV-24, DRV-07], assessor: "agent:claude", rationale: "FalconX quoting and HYPE markets are live; the 'major partnership' cited to justify the mint was never named."}
+- {id: C10, score: 3, confidence: medium, evidence: [DRV-01, DRV-07, DRV-20], assessor: "agent:claude", rationale: "Gives Coinbase users exposure to on-chain options, a sector Coinbase invested in by buying Deribit; DRV is an ERC-20 on Base, Coinbase's own chain."}
+
+# --- D Community
+- {id: D01, status: pending, rationale: "missing: social analytics (audience size, engagement quality)."}
+- {id: D02, status: pending, rationale: "missing: bot/paid-engagement analysis."}
+- {id: D04, status: pending, rationale: "missing: user geography."}
+- {id: D05, status: pending, rationale: "missing: disclosed KOL or paid campaigns around the listing."}
+- {id: D06, status: pending, rationale: "missing: grants and external developer activity."}
+- {id: D08, score: 2, confidence: medium, evidence: [DRV-08, DRV-07], assessor: "agent:claude", rationale: "The mint was debated publicly on the forum and the proposer answered questions, but it reversed a written 'no new tokens' policy and no supply table was provided."}
+- {id: D09, score: 2, confidence: medium, evidence: [DRV-25, DRV-17, DRV-19], assessor: "agent:claude", rationale: "Informed views are mixed: analysts see an undervalued leader, while holders objected to both the Synthetix terms and the 50% dilution."}
+- {id: D10, score: 3, confidence: medium, evidence: [DRV-16, DRV-15, DRV-21], assessor: "agent:claude", rationale: "Variant bought in, FalconX makes markets and Sigma Prime has audited it repeatedly."}
+
+# --- L Legal
+- {id: L01, score: 2, confidence: medium, evidence: [DRV-08], assessor: "agent:claude", rationale: "A Cayman foundation with a BVI subsidiary; operating substance and staff location were not established."}
+- {id: L02, score: 1, confidence: medium, evidence: [DRV-10, DRV-08, DRV-07], assessor: "agent:claude", rationale: "Token value is tied to revenue-funded buybacks while the Foundation controls supply and treasury and issued 500M tokens to fund growth."}
+- {id: L04, status: pending, rationale: "missing: licensing position for offering options and perps, and restricted jurisdictions in the terms of use."}
+- {id: L05, status: pending, rationale: "missing: court and regulator records search (SEC, CFTC, FCA, MAS, SFC); none was done for this review."}
+- {id: L06, score: 4, confidence: medium, evidence: [DRV-23, DRV-20], assessor: "agent:claude", rationale: "A transparent derivatives venue on a public rollup with no privacy or mixing features."}
+- {id: L10, status: pending, rationale: "missing: geofencing of front end, airdrops and API."}

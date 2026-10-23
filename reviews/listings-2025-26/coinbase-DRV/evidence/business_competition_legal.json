@@ -1,0 +1,101 @@
+{
+  "project": "Derive (DRV)",
+  "as_of": "2026-05-28",
+  "sources": [
+    {
+      "id": "DRV-14",
+      "type": "api",
+      "tier": 2,
+      "title": "DefiLlama — Derive protocol page: monthly fees, revenue, holders revenue, TVL (only values dated on or before 30 Apr 2026 used)",
+      "url": "https://defillama.com/protocol/derive",
+      "retrieved": "2026-10-23",
+      "excerpt": "Monthly revenue (fees net of maker rebates): Nov-25 $133,203; Dec-25 $134,235; Jan-26 $236,884; Feb-26 $152,228; Mar-26 $479,121; Apr-26 $395,482. Fees Feb–Apr 2026: $247,270 / $708,611 / $550,570. Holders revenue (DRV buybacks) Feb–Apr 2026: $74,794 / $150,124 / $78,096. TVL month-end: 31 Jan $66.77M, 28 Feb $69.02M, 31 Mar $99.82M, 30 Apr $121.79M. Funding listed: $3.3M seed (2021), $3M strategic (2022), Variant round (Feb 2026). No audits listed on the page."
+    },
+    {
+      "id": "DRV-15",
+      "type": "research",
+      "tier": 3,
+      "title": "Derive insights (reproducing FalconX post) — Exploring Derive's record options surge (13 Mar 2026)",
+      "url": "https://insights.derive.xyz/exploring-derives-record-options-surge/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Record $294M options volume in week to 7 Mar 2026; Feb 2026 volume >$1B notional; total OI >$1B on 10 Mar (61% options); largest-ever trade a $130M+ BTC options structure; daily options volume ~8.0% of Deribit's; Derive 0.8% of BTC options OI across venues (~$63B, Coin Metrics). FalconX among onboarded market makers; RFQ blocks up to 1,000 BTC; off-exchange custody added in 2026."
+    },
+    {
+      "id": "DRV-16",
+      "type": "doc",
+      "tier": 3,
+      "title": "Derive insights — Variant invests in Derive (2 Feb 2026)",
+      "url": "https://insights.derive.xyz/variant-invests-in-derive-to-build-the-volatility-layer-onchain/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Variant holds a significant DRV position via open-market purchases and a Foundation transaction; amount and price undisclosed. Claims: >$20B trading volume, >$7M revenue, five years live with zero security or insolvency incidents, 20+ teams building on Derive, majority of on-chain options OI, FalconX market-making since 2024."
+    },
+    {
+      "id": "DRV-17",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Synthetix and Derive call off $27 million merger proposal (26 May 2025)",
+      "url": "https://www.theblock.co/post/355678/synthetix-derive-call-off-merger",
+      "retrieved": "2026-10-23",
+      "excerpt": "Proposed 27 DRV : 1 SNX swap valued Derive at $27M; withdrawn after Derive holders argued it undervalued a protocol whose recent revenue exceeded Synthetix's."
+    },
+    {
+      "id": "DRV-18",
+      "type": "news",
+      "tier": 2,
+      "title": "Cointelegraph — Synthetix cans $27M Derive deal after community concerns (22 May 2025)",
+      "url": "https://cointelegraph.com/news/synthetix-cans-27m-derive-deal-after-community-concerns",
+      "retrieved": "2026-10-23",
+      "excerpt": "Lyra started in 2021 inside the Synthetix ecosystem as a decentralised options protocol, later rebranded to Derive and became independent of sUSD and Synthetix liquidity."
+    },
+    {
+      "id": "DRV-19",
+      "type": "research",
+      "tier": 2,
+      "title": "Alea Research — Derive thesis (25 Jun 2025, public teaser)",
+      "url": "https://alearesearch.io/reports/theses/derive",
+      "retrieved": "2026-10-23",
+      "excerpt": "FDV under $30M; annualised fees ~$3M; 25% of fees to DRV buybacks. OP Stack rollup with off-chain millisecond matching, portfolio margin, multi-collateral; 10+ active market makers. Founders' background in equity options and market making; in crypto since 2021. Risks: complex products, sticky CEX liquidity, failed SNX merger."
+    },
+    {
+      "id": "DRV-20",
+      "type": "research",
+      "tier": 2,
+      "title": "Bankless — Your options for options (24 Jun 2025)",
+      "url": "https://www.bankless.com/read/your-options-for-options",
+      "retrieved": "2026-10-23",
+      "excerpt": "Deribit holds 87% of $46.8B crypto-native BTC+ETH options OI; Coinbase acquired Deribit for $2.9B. Derive: BTC/ETH options with daily to quarterly expiries, up to 60% lower margin on defined-risk spreads, 'impeccable three-year track record'; users must bridge from Ethereum, Optimism, Arbitrum or Base to Derive Chain, a 'semi-permissioned OP Stack rollup'; on-chain friction keeps it far behind Deribit."
+    },
+    {
+      "id": "DRV-25",
+      "type": "news",
+      "tier": 2,
+      "title": "Unchained — Derive co-founder proposes 50% increase in DRV token supply (15 Sep 2025)",
+      "url": "https://unchainedcrypto.com/derive-co-founder-proposes-50-increase-in-drv-token-supply/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Community divided: supporters accept dilution for growth; critics call the mint a betrayal of holders and fear loss of investor confidence. Forster called the proposal 'aggressive'."
+    }
+  ],
+  "metrics": {
+    "tvl_usd": {
+      "value": 121790000,
+      "source": "DRV-14",
+      "note": "30 Apr 2026 month-end; Invezz reports >$123M on 20 May 2026 (DRV-04)"
+    },
+    "annualized_fees_usd": {
+      "value": 6025804,
+      "source": "DRV-14",
+      "note": "Feb–Apr 2026 fees $1,506,451 x 4 (last three full months before listing)"
+    },
+    "annualized_revenue_usd": {
+      "value": 4107324,
+      "source": "DRV-14",
+      "note": "Feb–Apr 2026 revenue (fees net of maker rebates) $1,026,831 x 4. Of this, holders revenue (buybacks) was $303,014, i.e. ~$1.21M annualised."
+    },
+    "revenue_qoq_growth_pct": {
+      "value": 103.6,
+      "source": "DRV-14",
+      "note": "Feb–Apr 2026 ($1,026,831) vs Nov 2025–Jan 2026 ($504,322); May 2026 excluded because the month runs past as_of"
+    }
+  },
+  "claims": []
+}

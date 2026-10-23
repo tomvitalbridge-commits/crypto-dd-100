@@ -1,0 +1,78 @@
+{
+  "project": "Derive (DRV)",
+  "as_of": "2026-05-28",
+  "sources": [
+    {
+      "id": "DRV-21",
+      "type": "audit",
+      "tier": 1,
+      "title": "Sigma Prime — Derive (formerly Lyra) security reviews, sigp/public-audits/reports/derive (5 reports, Sep 2024 – Mar 2025)",
+      "url": "https://github.com/sigp/public-audits/tree/master/reports/derive",
+      "retrieved": "2026-10-23",
+      "excerpt": "V2 core review (Sep 2024): 25 issues, 4 critical and 2 high, all six marked Resolved. Round 2 (Jan 2025, v2-core 63fff03): 10 issues; critical DRV2-01 (liquidation bids can be blocked by depositing wrapped tokens to the liquidator) 'Closed' as acknowledged, not fixed, with team workaround; high DRV2-02 resolved. v2-matching and PPTSA vault reviews (Sep 2024). Atomic matching & basis vault (Mar 2025): 5 issues, highest medium, resolved. Informational DRV-24 'Oracles using perp market prices can be manipulated' closed. A previous Sigma Prime assessment in Q3 2023 is referenced. No bytecode-to-commit match is stated."
+    },
+    {
+      "id": "DRV-22",
+      "type": "doc",
+      "tier": 2,
+      "title": "Immunefi — Derive bug bounty programme",
+      "url": "https://immunefi.com/bug-bounty/derive/information/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Live since 23 Aug 2021; last updated 12 Jan 2026. Critical smart-contract rewards 10% of affected funds, min $5,000, max $50,000. No KYC. 39 assets in scope. Lists the Sigma Prime Lyra review round 2 as an audit."
+    },
+    {
+      "id": "DRV-23",
+      "type": "github",
+      "tier": 1,
+      "title": "GitHub — derivexyz/v2-core, v2-matching, cockpit, governance (cloned; history read up to 27 May 2026)",
+      "url": "https://github.com/derivexyz/v2-core",
+      "retrieved": "2026-10-23",
+      "excerpt": "V2 core and matching contracts are public with a deployment map for Derive Chain (chain 957) and design docs (PMRM, SRM, sub-accounts). PMRM_2 risk manager is upgradeable (Ownable2StepUpgradeable); 84 onlyOwner-gated functions; no timelock contract in src. Price feeds are EIP-712 data signed by whitelisted signers; mainnet config lists 2 feed signers with requiredSigners = 2; owner can add signers and change heartbeat. Off-chain matching engine is not in the public repos. Commits 27 Feb – 27 May 2026: v2-core 3 (1 author, CI fixes), cockpit 9 (1 author, RFQ client), v2-matching 0, governance 0 — 12 commits, 2 contributors."
+    },
+    {
+      "id": "DRV-24",
+      "type": "doc",
+      "tier": 3,
+      "title": "Derive insights — HYPE on Derive (20 Nov 2025)",
+      "url": "https://insights.derive.xyz/hype-on-derive/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Derive connected to Hyperliquid via a Bridge Vault on HyperEVM escrowing wHYPE; HYPE collateral, HYPE perps (market makers quoting at launch) and RFQ HYPE options. Cites $20B+ cumulative trading volume."
+    }
+  ],
+  "metrics": {
+    "mint_authority": {
+      "value": "multisig",
+      "source": "DRV-08",
+      "note": "Ethereum DRV contract is non-upgradable, but in Oct 2025 supply was raised 50% by deploying a new DRV OFT on HyperEVM, minted to a BVI-subsidiary Safe (Foundation multisigs 3-of-5) and connected through LayerZero. The same route stays open to the Foundation after an off-chain Snapshot vote (DRV-09, DRV-07). Not verified on-chain (explorers unreachable from the review environment)."
+    },
+    "contracts_verified": {
+      "value": true,
+      "source": "DRV-23",
+      "note": "core V2 contract source is public on GitHub with a mainnet deployment map, and audit commits reference that repo (DRV-21). Explorer verification of each deployed address and of the DRV token contracts was NOT checked (explorers unreachable from the review environment): analyst to confirm on the Derive Chain explorer and Etherscan."
+    },
+    "audits_reputable_count": {
+      "value": 1,
+      "source": "DRV-21",
+      "note": "one reputable firm (Sigma Prime), five public reports covering V2 core, matching, vaults and atomic matching, latest Mar 2025. Later code (2025–26 changes, HyperEVM bridge vault, the HyperEVM DRV OFT) not covered by any public audit found."
+    },
+    "unreimbursed_exploit_usd": {
+      "value": 0,
+      "source": "DRV-20",
+      "note": "no exploit of Lyra/Derive found in reviewed press 2021–May 2026; Bankless (Jun 2025) calls the track record impeccable; project claims five years with no security or insolvency incident (DRV-16, self-reported)"
+    },
+    "bug_bounty_max_usd": {
+      "value": 50000,
+      "source": "DRV-22"
+    },
+    "github_commits_90d": {
+      "value": 12,
+      "source": "DRV-23",
+      "note": "public repos only, window 27 Feb – 27 May 2026; v2-core commits are CI housekeeping. Matching engine and newer development are not public."
+    },
+    "github_active_contributors_90d": {
+      "value": 2,
+      "source": "DRV-23"
+    }
+  },
+  "claims": []
+}

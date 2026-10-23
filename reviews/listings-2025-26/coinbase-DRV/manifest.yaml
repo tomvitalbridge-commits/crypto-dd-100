@@ -1,0 +1,35 @@
+# REAL project, PUBLIC sources only. Coinbase listed DRV spot (DRV-USD) on
+# 2026-05-27/28. Point-in-time review: only information published on or before
+# 2026-05-28 is used. No `collect:` block on purpose — the collectors pull
+# current data, which would leak post-listing information.
+# Human-only checks (KYC, market-maker terms, legal opinion) are left open.
+project: Derive (DRV)
+profile: defi          # on-chain options + perps exchange on its own OP Stack appchain
+as_of: 2026-05-28
+
+evidence:
+  - evidence/market_tokenomics.json
+  - evidence/protocol_security.json
+  - evidence/business_competition_legal.json
+
+assessments:
+  - assessments/agent.yaml
+
+# Metrics deliberately NOT set. Each becomes a note in the report.
+notes:
+  L05: "active_enforcement_action not established: the web-search budget ran out before regulator and court records (SEC, CFTC, FCA, MAS, SFC) were searched. None of the 25 dated sources mentions an enforcement action, but that is not a search. RF05 stays unchecked until an analyst runs it."
+  L03: "sanctions_exposure needs the venue's own Chainalysis/TRM screening of Foundation, BVI-subsidiary Safe, deployer and top-holder addresses."
+  S04: "upgrade_timelock_hours not established. PMRM_2 is upgradeable and 84 functions are onlyOwner (DRV-23); no timelock contract is in the repo, and the owner address and delay of the deployed contracts could not be read (explorers unreachable). Ask: who owns the core contracts, and what delay applies to upgrades?"
+  K03: "Top-holder concentration not established (no explorer access). Foundation/BVI Safes holding the 500M strategic mint must be labelled and excluded."
+  K06: "No priced round in the public record: early rounds ($3.3M seed 2021, $3M 2022) and Variant's Feb 2026 Foundation transaction (DRV-16) have undisclosed prices."
+  M01: "No pre-listing order-book depth or spread snapshot found; volume_to_depth_ratio cannot be derived."
+  M02: "Venue split of DRV volume before listing not found."
+  O01: "Daily active addresses, fee-paying users and retention not available from dated pre-listing sources."
+  O05: "Share of TVL in incentivised pools not established; weekly stDRV reward pools exist (DRV-10) but their size at May 2026 is undated."
+  B05: "Incentive spend vs revenue not established: reward-pool sizes on the docs page are undated, and emissions were halved in Jul 2025 (DRV-19)."
+  B06: "Foundation/DAO treasury balance and burn rate are not published; runway unknown."
+  B07: "Treasury composition not published for dates before listing."
+  C02: "Category share not set: Derive claims a majority of on-chain options OI (DRV-16, self-reported), while independent data puts it at 0.8% of all BTC options OI (DRV-15, Coin Metrics). Neither is a clean category share."
+  D03: "Holder count needs an indexer query across Ethereum, Base, Derive Chain and HyperEVM deployments."
+  D07: "Snapshot tally of the strategic-mint vote (23 Sep – 3 Oct 2025) not retrieved (DRV-09)."
+  K07: "market_cap_usd and fdv_usd are derived from the last dated pre-listing price ($0.083, 20 May 2026) and CoinGecko circulating supply (999.88M, 21 Mar 2026). No snapshot dated 21–28 May was found, and the price rose after the 26 May listing announcement, so listing-day values were probably higher."

@@ -1,0 +1,193 @@
+{
+  "project": "Derive (DRV)",
+  "as_of": "2026-05-28",
+  "sources": [
+    {
+      "id": "DRV-01",
+      "type": "news",
+      "tier": 2,
+      "title": "OneKey blog — Coinbase adds MetaDAO (META) and Derive (DRV) to its asset listing roadmap (20 May 2026)",
+      "url": "https://onekey.so/blog/ecosystem/coinbase-adds-metadao-meta-and-derive-drv-to-its-asset-listing-roadmap-20260520104914/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Coinbase added DRV to its listing roadmap on 20 May 2026 as an ERC-20 on the Base network; trading not yet live at that date. Describes Derive as an on-chain options and perpetuals venue with self-custody."
+    },
+    {
+      "id": "DRV-02",
+      "type": "news",
+      "tier": 2,
+      "title": "KuCoin News flash — Coinbase to list MetaDAO (META) and Derive (DRV) on May 27 (26 May 2026)",
+      "url": "https://www.kucoin.com/news/flash/coinbase-to-list-metadao-meta-and-derive-drv-on-may-27",
+      "retrieved": "2026-10-23",
+      "excerpt": "Coinbase DRV-USD spot trading to open on 27 May 2026 at or after 9:00 AM PT, subject to liquidity conditions. No price, supply or contract data given."
+    },
+    {
+      "id": "DRV-03",
+      "type": "news",
+      "tier": 2,
+      "title": "Crypto Briefing via Pluang — Coinbase lists Derive (DRV) for trading (28 May 2026)",
+      "url": "https://pluang.com/en/news-feed/coinbase-daftarkan-token-derive-drv-untuk-perdagangan",
+      "retrieved": "2026-10-23",
+      "excerpt": "DRV-USD now tradable on Coinbase, described as the protocol's largest centralised-exchange listing. DRV is a governance and staking token; a buyback programme is funded by 35% of protocol fees. No price or volume figures."
+    },
+    {
+      "id": "DRV-04",
+      "type": "news",
+      "tier": 2,
+      "title": "Invezz (syndicated on cryptonews.net) — DRV rises over 6% after Coinbase roadmap listing (20 May 2026, 14:08 UTC)",
+      "url": "https://cryptonews.net/news/analytics/32890995/",
+      "retrieved": "2026-10-23",
+      "excerpt": "DRV near $0.083, +6% in 24h; 24h volume above $1.4M; Derive ecosystem TVL above $123M. ATH $0.2283 (Jan 2025), ATL $0.01244 (Apr 2025); about 63% below ATH. No market cap, FDV or supply given."
+    },
+    {
+      "id": "DRV-05",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News — DRV price analysis citing CoinGecko data (22 Mar 2026, data as of 21 Mar)",
+      "url": "https://www.mexc.com/it-IT/news/972097",
+      "retrieved": "2026-10-23",
+      "excerpt": "Price $0.115; market cap ~$115M; FDV $172.6M; circulating 999.88M of 1.5B max (500M, 33.3%, not circulating); 24h volume $671,407 (~0.58% of market cap). ATH $0.228 (15 Jan 2025, launch), ATL $0.0124 (Apr 2025)."
+    },
+    {
+      "id": "DRV-06",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News — DRV jumps 34% (16 Mar 2026)",
+      "url": "https://www.mexc.com/news/941401",
+      "retrieved": "2026-10-23",
+      "excerpt": "Price $0.117; market cap $116.7M (rank #251); 24h volume $885,713; about 1B circulating of 1.5B max; FDV $175M; notes possible dilution as the remaining 500M enter circulation."
+    },
+    {
+      "id": "DRV-07",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Derive co-founder proposes 50% DRV token supply increase, diluting holders by 33% (13 Sep 2025)",
+      "url": "https://www.theblock.co/post/370527/derive-co-founder-proposes-50-drv-token-supply-increase-diluting-holders-by-33",
+      "retrieved": "2026-10-23",
+      "excerpt": "Co-founder Nick Forster proposed minting 500M DRV (+50% on 1B) to the Foundation; 46% to core contributors vesting 4 years, sellable only if market cap stays above $150M. Reverses the earlier pledge that no new tokens would be minted. DRV market cap $28.5M at the time (CoinGecko). Rationale: compete with Deribit (bought by Coinbase for $2.9B). Derive cut ties with team members and investors who backed the failed Synthetix merger."
+    },
+    {
+      "id": "DRV-08",
+      "type": "governance",
+      "tier": 3,
+      "title": "Derive forum — DIP: Strategic Mint for Institutional Expansion (12–15 Sep 2025)",
+      "url": "https://forums.derive.xyz/t/dip-strategic-mint-for-institutional-expansion/303",
+      "retrieved": "2026-10-23",
+      "excerpt": "500M new DRV deployed as a new token on HyperEVM, minted to a Safe owned by the BVI subsidiary and joined to the existing supply via LayerZero OFT, because the Ethereum DRV contract is non-upgradable. 230M to core contributors (4-year vest, some from 1 Jul 2025; non-transferable unless 30-day TWAP market cap >= $150M); remainder (~270M) strategic allocation for partnerships and market-maker incentives: 25% vests on passing, 75% quarterly over 12 months. Foundation and BVI multisigs set to 3-of-5. Foundation is sole director of the BVI subsidiary; token holders can add/remove Foundation directors under Cayman law. Proposer could not provide a 2025–2029 supply table. Most earlier team vesting had expired in H1 2025."
+    },
+    {
+      "id": "DRV-09",
+      "type": "governance",
+      "tier": 2,
+      "title": "Alea Research governance tracker — Derive Snapshot: [Fixed] DIP: Strategic Mint for Institutional Expansion",
+      "url": "https://governance.alearesearch.io/item/d226af71-5b31-4539-a4a8-32e543d656f3",
+      "retrieved": "2026-10-23",
+      "excerpt": "Snapshot proposal created and voting opened 23 Sep 2025, ended 3 Oct 2025, status closed. Tally not shown on the tracker. Supply of 1.5B reported by data providers from March 2026 (DRV-05) implies the mint was executed."
+    },
+    {
+      "id": "DRV-10",
+      "type": "doc",
+      "tier": 3,
+      "title": "Derive docs — DRV token page (undated; retrieved after listing, used only for policy statements corroborated pre-listing)",
+      "url": "https://docs.derive.xyz/docs/drv",
+      "retrieved": "2026-10-23",
+      "excerpt": "Total supply 1.5B described as 'fixed'; 'No new tokens will be minted'. On Ethereum and Derive L2; 1:1 migration from LYRA. 35% of protocol revenue funds weekly DRV buybacks (corroborated by DRV-03, 28 May 2026). Staking DRV gives non-transferable stDRV for governance; weekly trading and staking reward pools funded by DAO, unused rewards return to treasury."
+    },
+    {
+      "id": "DRV-11",
+      "type": "doc",
+      "tier": 3,
+      "title": "Derive help centre — DRV article ('updated over a year ago' at retrieval, i.e. before Oct 2025)",
+      "url": "https://help.derive.xyz/en/articles/10381892-drv",
+      "retrieved": "2026-10-23",
+      "excerpt": "States total supply of 1,000,000,000 DRV, described as fixed, and 'No new tokens will be minted'. stDRV 28-day unlock or instant with 20% penalty; staking emissions to fall 6 months after TGE and shift to buyback funding."
+    },
+    {
+      "id": "DRV-12",
+      "type": "doc",
+      "tier": 3,
+      "title": "Derive insights — $DRV Has Arrived: The Post-Launch Guide (21 Jan 2025)",
+      "url": "https://insights.derive.xyz/drv/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Airdrop 67,168,869 DRV (points/levels 56.1M, liquidity partners 8.9M, bonuses 2.1M) claimable from 15 Jan 2025 without vesting; LYRA migration 553.8M; 25% of protocol revenue to buybacks on Derive's DRV-USDC market; 28-day stDRV unstake. No team/investor/foundation allocation or vesting disclosed."
+    },
+    {
+      "id": "DRV-13",
+      "type": "doc",
+      "tier": 3,
+      "title": "Derive docs — DRV Token Launch (contract addresses)",
+      "url": "https://docs.derive.xyz/docs/drv-token-launch",
+      "retrieved": "2026-10-23",
+      "excerpt": "DRV contracts: Ethereum 0xB1D1eae60EEA9525032a6DCb4c1CE336a1dE71BE; Base 0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083; Derive Chain 0x2EE0fd70756EDC663AcC9676658A1497C247693A. Airdrop ran 8 May 2024 – 13 Jan 2025; Aerodrome LP incentives 2M DRV."
+    },
+    {
+      "id": "DRV-26",
+      "type": "doc",
+      "tier": 3,
+      "title": "Derive insights — LDX/DRV farming programme (19 Apr 2024, modified 17 Sep 2024)",
+      "url": "https://insights.derive.xyz/ldx-farming-program/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Holder-points farming for LYRA stakers ran 19 Apr – 8 May 2024; DRV said to be claimable in Q4 2024 (another passage says Q3 2024). Token actually launched 15 Jan 2025 (DRV-05, DRV-12)."
+    }
+  ],
+  "metrics": {
+    "market_cap_usd": {
+      "value": 82990000,
+      "source": "DRV-04",
+      "note": "derived: last pre-listing price found, $0.083 on 20 May 2026 (DRV-04), x 999.88M circulating (DRV-05, 21 Mar 2026). No market-cap snapshot dated 21–28 May 2026 was found; DRV rose after the 26 May listing announcement (DRV-03 mentions gains, no figure), so listing-day cap was likely higher."
+    },
+    "fdv_usd": {
+      "value": 124500000,
+      "source": "DRV-04",
+      "note": "derived: $0.083 (DRV-04) x 1.5B total supply (DRV-05)"
+    },
+    "volume_24h_usd": {
+      "value": 1400000,
+      "source": "DRV-04",
+      "note": "20 May 2026, the day of the Coinbase roadmap news; March 2026 values were $0.67–0.89M (DRV-05, DRV-06)"
+    },
+    "circulating_supply": {
+      "value": 999880000,
+      "source": "DRV-05",
+      "note": "CoinGecko figure as of 21 Mar 2026; it excludes the whole 500M strategic mint even though part of it had vested to the Foundation by then"
+    },
+    "total_supply": {
+      "value": 1500000000,
+      "source": "DRV-05",
+      "note": "1B original (LYRA migration + airdrop) + 500M strategic mint executed after the Sep–Oct 2025 vote (DRV-08, DRV-09)"
+    },
+    "team_vesting_months": {
+      "value": 48,
+      "source": "DRV-08",
+      "note": "applies to the 230M contributor allocation from the strategic mint, partly backdated to 1 Jul 2025 and transfer-locked below a $150M market cap. Earlier LYRA-era team vesting had mostly ended in H1 2025."
+    },
+    "insider_allocation_pct": {
+      "value": 33.3,
+      "source": "DRV-08",
+      "note": "LOWER BOUND: strategic mint only, i.e. 230M contributors + ~270M Foundation strategic allocation = 500M of 1.5B. Original LYRA-era team, investor and foundation allocations were not established from pre-listing sources."
+    },
+    "unlock_12m_pct_of_circ": {
+      "value": 32.8,
+      "source": "DRV-08",
+      "note": "estimate from the proposal terms (final '[Fixed]' version not read): strategic 270M = 67.5M at passing (Oct 2025) + 4 quarterly tranches of 50.6M (~Jan, Apr, Jul, Oct 2026); contributors 230M over 48 months (~57.5M/yr). Counted as able to reach the market within 12 months: strategic tokens already vested to the Foundation but not in CoinGecko circulating (168.75M) + Jul/Oct 2026 tranches (101.25M) + 12 months of contributor vesting (57.5M) = 327.5M / 999.88M. Treated as sellable because vesting sits with the Foundation's own Safe, not a public vesting contract, and the allocation is meant for market-maker incentives. Contractual new vesting alone would be 15.9%."
+    },
+    "unlock_90d_pct_of_circ": {
+      "value": 23.4,
+      "source": "DRV-08",
+      "note": "same method: 168.75M vested-not-circulating + Jul 2026 strategic tranche 50.6M + ~14.4M contributor vesting = 233.8M / 999.88M. New vesting alone would be 6.5%."
+    },
+    "annual_inflation_pct": {
+      "value": 0,
+      "source": "DRV-10",
+      "note": "no protocol emission of new supply: reward pools are paid from DAO treasury and total supply is now fixed at 1.5B. The 500M strategic mint (+50% supply in Oct 2025, against a 'no new tokens' pledge) is released over time and counted in K04; the mint precedent is scored under S06 and recorded as a contradicted claim."
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "Help centre: total supply is fixed at 1,000,000,000 DRV and 'no new tokens will be minted'",
+      "metric": "total_supply",
+      "claimed_value": 1000000000,
+      "source": "DRV-11"
+    }
+  ]
+}
