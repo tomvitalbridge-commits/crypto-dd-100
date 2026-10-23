@@ -1,0 +1,164 @@
+{
+  "project": "MegaETH (MEGA)",
+  "as_of": "2026-04-30",
+  "sources": [
+    {
+      "id": "MEGA-01",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-04-30",
+      "title": "The Block: MegaETH token goes live as major exchanges open MEGA trading (30 Apr 2026, 11:25 UTC)",
+      "url": "https://www.theblock.co/post/399563/megaeth-token-goes-live-as-major-exchanges-open-mega-trading",
+      "retrieved": "2026-10-23",
+      "excerpt": "TGE on 30 Apr 2026 after a 7-day countdown triggered by the first KPI on 23 Apr. Binance spot opens 11:00 UTC with a Seed Tag; KuCoin and Bitget at the same time. Fixed supply 10B MEGA; 53.3% tied to KPI-based staking rewards rather than time vesting. USDM supply ~$62.9M the prior week, since grown to over $300M against a $500M KPI. Foundation says USDM revenue will be used to accumulate MEGA."
+    },
+    {
+      "id": "MEGA-02",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-04-23",
+      "title": "The Block: MegaETH hits first KPI with 10 apps live, starts seven-day MEGA token countdown",
+      "url": "https://www.theblock.co/post/398651/megaeth-first-kpi-10-apps-live-seven-day-tge-countdown",
+      "retrieved": "2026-10-23",
+      "excerpt": "First KPI met: 10 Mega Mafia apps each with >100,000 transactions over 30 days. Allocation: 53.3% KPI staking, 5% public auction, 7.5% ecosystem/foundation reserve, 9.5% team and advisors, 14.7% VCs. USDM ~$62.9M (13% of $500M KPI). Backers include Anagram, GSR, Kraken Ventures, Maven11, Robot Ventures, Wintermute; angels Kain Warwick and Vitalik Buterin. Mega Mafia incubated 30-odd apps; one incubated app (Noise) launched on a rival chain."
+    },
+    {
+      "id": "MEGA-03",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-04-24",
+      "title": "Unchained: MegaETH clears first KPI milestone, sets MEGA TGE for April 30",
+      "url": "https://unchainedcrypto.com/megaeth-clears-first-kpi-milestone-sets-mega-token-generation-event-for-april-30/",
+      "retrieved": "2026-10-23",
+      "excerpt": "TGE needed one of three conditions: 10 live Mega Mafia apps with verified contracts and >100k tx in 30 days (met); $500M USDM supply with 25% in contracts; or 3 apps earning $50k daily fees for 30 days. Live apps: Cap, Brix, Avon, Kumbaya, Ubitel, Showdown, World, Stomp, HitOne, Nectar AI. Hyperliquid pre-market perps implied $1.5B–$2B valuation, down from >$6B in October. Investors hold 14.7%."
+    },
+    {
+      "id": "MEGA-04",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-01-29",
+      "title": "The Block: MegaETH outlines four KPIs determining release schedule for 53% of MEGA supply",
+      "url": "https://www.theblock.co/post/387721/megaeth-kpis-determining-release-schedule-53-mega-token-supply",
+      "retrieved": "2026-10-23",
+      "excerpt": "Four topline KPIs: ecosystem growth (TVL, USDM supply), MegaETH decentralisation (L2 'stages'), performance, Ethereum decentralisation. KPI rewards go to holders who lock MEGA as KPIs are met; if unmet, tokens stay locked, with a possible future vote on their fate. Mainnet expected 9 Feb."
+    },
+    {
+      "id": "MEGA-05",
+      "type": "news",
+      "tier": 2,
+      "published": "2025-10-23",
+      "title": "The Block: MegaETH's MiCA whitepaper reveals tokenomics with 9.5% team allocation",
+      "url": "https://www.theblock.co/post/375871/megaeths-mica-whitepaper-tokenomics-team-allocation-sequencer-features",
+      "retrieved": "2026-10-23",
+      "excerpt": "10B MEGA. Team 9.5%, VCs ~14.7%, KPI staking 53.3%, public sale 5% via English auction. Planned: rotating single active sequencer selected by MEGA stake with slashing; 'proximity markets' where MMs lock MEGA for sequencer-adjacent placement. Sale requires KYC; OKCoin Europe named as MiCA custody provider."
+    },
+    {
+      "id": "MEGA-06",
+      "type": "doc",
+      "tier": 3,
+      "published": "2026-02-26",
+      "title": "MegaETH — MiCA Crypto-Asset White Paper, MEGA Token (notified Jan 2026, published Feb 2026)",
+      "url": "https://static.megaeth.com/MiCA%20Crypto-Asset%20White%20Paper%20-%20MEGA%20Token.pdf",
+      "retrieved": "2026-10-23",
+      "excerpt": "Issuer Superior Performance Limited (BVI), wholly owned by MegaETH Foundation (Cayman, no. 420667); MegaLabs (Cayman, no. 408416) develops. 23 team members. Supply fixed at 10B with 'no arbitrary minting functions'; F.6 says no pause mechanism, G.3 says MegaLabs multisig can adjust parameters and make emergency interventions; governance not live. Team 950M (9.5%): 1-year cliff then 3-year linear; VC 1.47B (14.7%), Echo 500M, Fluffle 250M, Sonar bonus pool 250M, foundation 750M, KPI staking 5.33B — no schedules stated for these. Seed $20M (Jun 2024, Dragonfly, with Buterin and Lubin), Echo $10M (Dec 2024). Sonar sale 27–30 Oct 2025 at $0.0999 cap, $49.95M sold, '~$450M in bids, roughly 9x oversubscribed', 14,491 wallets. Single sequencer run by MegaLabs. Audits by Spearbit and Sherlock claimed, all critical/high fixed; no reports linked. MEGA confers no revenue rights. Internal date inconsistencies (TGE Feb 2025 vs Nov 2025; testnet Oct 2024 vs Mar 2025). Discloses no legal proceedings."
+    },
+    {
+      "id": "MEGA-07",
+      "type": "research",
+      "tier": 2,
+      "published": "2026-04-30",
+      "title": "BlockEden blog: MegaETH's MEGA TGE — when KPIs, not calendars, unlock 5.33B tokens",
+      "url": "https://blockeden.xyz/blog/2026/04/30/megaeth-mega-tge-kpi-vesting-coinbase-prelisting-mega-mafia/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Echo: 20% at TGE, 1-year cliff, then 3-year linear. Fluffle: 50% at TGE, rest linear over 6 months. Initial circulating supply under 10%. Coinbase opened MEGA deposits before TGE. The 10 KPI apps were incubated by MegaETH's own programme, so they are not independent evidence of demand; thin float makes launch volatile. Polymarket TGE market traded ~$17k/day."
+    },
+    {
+      "id": "MEGA-08",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-04-30",
+      "title": "ForkLog: Layer 2 project MegaETH launches MEGA token (30 Apr 2026, 12:18 UTC)",
+      "url": "https://forklog.com/en/layer-2-project-megaeth-launches-mega-token/",
+      "retrieved": "2026-10-23",
+      "excerpt": "MEGA began trading at about $0.20 on major exchanges (Binance, KuCoin, Bitget among others). 10B supply, 53.3% conditional staking rewards. Only Sonar sale participants received their full allocation at TGE; others in the rewards programme received a portion."
+    },
+    {
+      "id": "MEGA-09",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-04-30",
+      "title": "The Defiant: MegaETH token debuts at $2 billion valuation (30 Apr 2026, 19:04 UTC)",
+      "url": "https://thedefiant.io/news/blockchains/megaeth-token-debuts-at-usd2-billion-valuation",
+      "retrieved": "2026-10-23",
+      "excerpt": "MEGA live on Binance, Coinbase and 11 other venues on listing day; headline valuation $2B (FDV basis not stated)."
+    },
+    {
+      "id": "MEGA-10",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-04-30",
+      "title": "OneKey blog relaying Binance's 30 Apr 2026 MEGA announcements (spot, futures, margin, Earn)",
+      "url": "https://onekey.so/blog/ecosystem/binance-earn-one-click-buy-convert-margin-and-futures-are-adding-megaeth-mega-20260430222132/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Binance spot MEGA/USDT, MEGA/USDC, MEGA/TRY from 11:00 UTC 30 Apr with Seed Tag; withdrawals from 1 May. MEGAUSDT moves from pre-market to a standard USDS-M perpetual at the same time, up to 50x leverage; MEGA borrowable on cross/isolated margin at listing. Page shows 'updated 13 May 2026'; only the 30 Apr announcement content is used."
+    },
+    {
+      "id": "MEGA-16",
+      "type": "research",
+      "tier": 2,
+      "published": "2026-01-07",
+      "title": "Kanon Research: Pre-TGE token valuation — MEGA (Part 1)",
+      "url": "https://kanonresearch.substack.com/p/pre-tge-token-valuation-mega-1",
+      "retrieved": "2026-10-23",
+      "excerpt": "Five rounds totalling $93.5M. Sonar 'Conviction Round' drew $1.39B of community commitments, ~28x oversubscribed (Monad's sale: $269M). Consensus valuation $2B–$2.3B. Mini-blocks every 10ms, EVM blocks every 1s; sequencer needs 100+ cores and 1–4TB RAM. Among the top-14 chains by DeFi TVL only Hyperliquid and Aptos have sub-0.2s blocks. USDm collateral >90% in BlackRock BUIDL; RedStone Bolt price feeds. Mega Mafia: 28 projects in two cohorts; first 13 teams raised >$40M. Memento Research: >84% of 118 tokens launched in 2025 trade below TGE price."
+    }
+  ],
+  "metrics": {
+    "fdv_usd": {
+      "value": 2000000000,
+      "source": "MEGA-08",
+      "note": "opening print ~$0.20 x 10B fixed supply at the 11:00 UTC listing; consistent with the $1.5B–$2B pre-market range (MEGA-03) and the $2B listing-day headline (MEGA-09)"
+    },
+    "total_supply": {
+      "value": 10000000000,
+      "source": "MEGA-01",
+      "note": "fixed supply; KPI staking (5.33B) is part of the 10B, not new issuance"
+    },
+    "team_vesting_months": {
+      "value": 48,
+      "source": "MEGA-06",
+      "note": "team and advisors: 1-year cliff then 3-year linear. Only the team schedule is in the white paper; VC (14.7%) and foundation (7.5%) schedules were not published in any dated source found"
+    },
+    "insider_allocation_pct": {
+      "value": 36.7,
+      "source": "MEGA-06",
+      "note": "team 9.5 + VC 14.7 + Echo private community round 5.0 + foundation/ecosystem reserve 7.5. Excludes the 53.3% KPI staking pool (goes to lockers, release discretionary on KPIs), Sonar public sale and Fluffle NFT sale"
+    },
+    "price_to_last_round_multiple": {
+      "value": 2.0,
+      "source": "MEGA-08",
+      "note": "opening ~$0.20 vs the last priced round, the Oct-2025 Sonar public sale at $0.0999 (MEGA-06). VC round prices undisclosed; Echo round price was not found in a dated source"
+    },
+    "sale_commitments_usd": {
+      "value": 1390000000,
+      "source": "MEGA-16",
+      "note": "community commitments to the Oct-2025 Sonar sale as reported publicly; the MiCA white paper states ~$450M of bids (claim C2). May reflect a definitional difference (all commitments vs bids at or above clearing), but the project has not reconciled them"
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "MiCA white paper: total supply fixed at 10,000,000,000 MEGA",
+      "metric": "total_supply",
+      "claimed_value": 10000000000,
+      "source": "MEGA-06"
+    },
+    {
+      "id": "C2",
+      "statement": "MiCA white paper: Sonar sale received about $450M in bids, roughly 9x oversubscribed",
+      "metric": "sale_commitments_usd",
+      "claimed_value": 450000000,
+      "source": "MEGA-06"
+    }
+  ]
+}

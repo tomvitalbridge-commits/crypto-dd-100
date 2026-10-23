@@ -1,0 +1,82 @@
+# MegaETH (MEGA) — judgment scores from public sources dated on or before 2026-04-30.
+# Every score cites evidence ids in evidence/*.json. Where dated public sources
+# were not enough, the dimension is left `pending` with what is missing.
+# T02, M05 and L07 are human-only and are deliberately not filled.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, status: pending, rationale: "missing: a dated source on the founders' prior ventures and their outcomes; dated sources name only Namik Muduroglu as a founding contributor and give a 23-person team"}
+- {id: T03, score: 2, confidence: medium, evidence: [MEGA-06, MEGA-18], assessor: "agent:claude", rationale: "23 team members per the white paper; 12 named contributors committed to the public client repos in the 90 days to 30 Apr, so engineering has some redundancy; no disclosed succession or security/ops leadership."}
+- {id: T04, score: 3, confidence: high, evidence: [MEGA-17, MEGA-18, MEGA-16], assessor: "agent:claude", rationale: "In-house team built MegaEVM, the SALT state trie and a stateless validator, open-sourced and externally tested by BlockSec; 10ms mini-block design documented. No public consensus/sequencer spec."}
+- {id: T05, score: 3, confidence: medium, evidence: [MEGA-06, MEGA-11, MEGA-12], assessor: "agent:claude", rationale: "No enforcement action or misconduct allegation found; the one public failure (Nov-2025 pre-deposit multisig error) was operational, admitted as 'sloppy', with a full refund announced. Registries and court records not searched, so not 4."}
+- {id: T07, score: 1, confidence: medium, evidence: [MEGA-06, MEGA-04, MEGA-05], assessor: "agent:claude", rationale: "Governance is not live; MegaLabs runs the single sequencer and can adjust parameters through multisig; decentralisation is a KPI with no date, and unmet KPI tokens may later go to an undefined vote."}
+- {id: T08, status: pending, rationale: "missing: published treasury/foundation addresses and any treasury report; none found in dated sources. Foundation's 7.5% reserve and VC 14.7% custody not disclosed"}
+- {id: T09, score: 3, confidence: high, evidence: [MEGA-06, MEGA-02, MEGA-16], assessor: "agent:claude", rationale: "Seed led by Dragonfly with Vitalik Buterin and Joseph Lubin; later backers include Anagram, Kraken Ventures, Maven11, Robot Ventures. GSR and Wintermute are both investors and market makers, which the MM-terms review (M05) must check."}
+
+# --- P Product & Technology
+- {id: P01, score: 2, confidence: medium, evidence: [MEGA-02, MEGA-07, MEGA-01], assessor: "agent:claude", rationale: "Real-time EVM execution is a real need for trading and gaming apps, but demand at TGE was shaped by the token KPIs: the 10 qualifying apps were self-incubated and USDM jumped from ~$62.9M to >$300M in the countdown week."}
+- {id: P02, score: 2, confidence: high, evidence: [MEGA-13, MEGA-14, MEGA-15], assessor: "agent:claude", rationale: "Public mainnet since 9 Feb 2026 — under 3 months of production at listing; sequencer decentralisation, staking and proximity markets are still roadmap."}
+- {id: P03, score: 3, confidence: high, evidence: [MEGA-17, MEGA-19, MEGA-16], assessor: "agent:claude", rationale: "Execution layer is original (MegaEVM with a dual gas model, SALT in-memory trie, stateless validation, 10ms mini-blocks); settlement and bridging reuse OP Stack contracts."}
+- {id: P04, score: 2, confidence: medium, evidence: [MEGA-17, MEGA-06, MEGA-16], assessor: "agent:claude", rationale: "One high-spec sequencer (100+ cores, TB-scale RAM) run by MegaLabs; BlockSec found DoS paths at the 10B gas limit, mitigated by a 200M compute-gas cap rather than fixed. Liveness limits are acknowledged in the white paper."}
+- {id: P05, score: 1, confidence: medium, evidence: [MEGA-06, MEGA-11, MEGA-16, MEGA-01], assessor: "agent:claude", rationale: "Single MegaLabs sequencer with no described failover; the economic model rests on Ethena's USDM (BUIDL-backed) yield; a third-party bridge provider outage disrupted the Nov-2025 pre-deposit."}
+- {id: P08, score: 2, confidence: medium, evidence: [MEGA-04, MEGA-13, MEGA-11, MEGA-06], assessor: "agent:claude", rationale: "Mainnet shipped on the announced 9 Feb date, but the USDm pre-deposit campaign was aborted and refunded, and the white paper gives conflicting dates for testnet and TGE."}
+- {id: P09, score: 2, confidence: high, evidence: [MEGA-18, MEGA-17], assessor: "agent:claude", rationale: "MegaEVM, SALT and the stateless validator are public (Apache/MIT) with 155 commits in the 90 days to 30 Apr; the sequencer node and token/staking contracts were not found as public repos."}
+- {id: P10, score: 2, confidence: medium, evidence: [MEGA-19, MEGA-06], assessor: "agent:claude", rationale: "Developer docs list contract addresses and bridge usage; no published threat model, sequencer spec or admin-key documentation."}
+
+# --- S Security
+- {id: S02, score: 2, confidence: high, evidence: [MEGA-17], assessor: "agent:claude", rationale: "BlockSec's 4 High MegaEVM findings: 1 Fixed, 3 Confirmed and mitigated by a compute-gas cap rather than code fixes; SALT Medium fixed. Spearbit/Sherlock remediation is claimed but unpublished."}
+- {id: S05, score: 2, confidence: medium, evidence: [MEGA-11, MEGA-06], assessor: "agent:claude", rationale: "Admin powers sit in MegaLabs multisigs with undisclosed signers and thresholds; the one observed (pre-deposit) was a 4-signer team Safe whose cap-raise was mis-set to 4-of-4 and executed early by an outsider."}
+- {id: S06, score: 3, confidence: low, evidence: [MEGA-06], assessor: "agent:claude", rationale: "White paper states fixed 10B supply with no minting function and no pause, but also describes emergency multisig admin functions; not verified on-chain."}
+- {id: S08, score: 3, confidence: medium, evidence: [MEGA-11, MEGA-12, MEGA-20], assessor: "agent:claude", rationale: "No exploit found; the Nov-2025 pre-deposit incident (>$400M deposited, no reported loss) was disclosed within two days with a full refund announced, the refund contract going through audit first."}
+- {id: S09, status: pending, rationale: "missing: oracle design of the main apps (RedStone Bolt is named in MEGA-16) and USDM/Aave-style collateral parameters; chain itself uses no price oracle"}
+- {id: S10, score: 2, confidence: low, evidence: [MEGA-19, MEGA-11], assessor: "agent:claude", rationale: "Assets enter via the canonical OP Stack bridge (proxy contracts) and Ethena-issued USDM; upgrade admin and delay of the bridge were not established from dated sources."}
+
+# --- K Tokenomics
+- {id: K01, score: 2, confidence: medium, evidence: [MEGA-06, MEGA-05, MEGA-01], assessor: "agent:claude", rationale: "At listing MEGA's live use is locking for KPI rewards; gas, sequencer staking and proximity markets are planned; the USDM-funded buyback is announced, not shown on-chain, and MEGA confers no revenue rights."}
+- {id: K09, score: 1, confidence: medium, evidence: [MEGA-06, MEGA-07, MEGA-04], assessor: "agent:claude", rationale: "Only the team schedule is in the white paper; Echo/Fluffle terms come from third parties; VC (14.7%) and foundation schedules and all vesting-contract addresses were unpublished, and 53.3% releases on discretionary KPIs."}
+- {id: K10, status: pending, rationale: "missing: post-claim retention of Sonar/Echo/Fluffle recipients and the Terminal campaign design; cannot be observed before listing"}
+
+# --- O On-chain Traction
+- {id: O06, score: 1, confidence: low, evidence: [MEGA-02, MEGA-01, MEGA-07], assessor: "agent:claude", rationale: "The TGE KPI (100k tx per app over 30 days) is easy to farm and was met by self-incubated apps; USDM rose ~5x in the countdown week. No address-clustering data to show an organic base."}
+- {id: O09, score: 2, confidence: medium, evidence: [MEGA-16, MEGA-02, MEGA-07], assessor: "agent:claude", rationale: "Mega Mafia incubated ~30 apps whose first 13 teams raised >$40M, but builders are mostly programme-funded and one incubated app moved to a rival chain."}
+
+# --- M Market Structure
+- {id: M03, status: pending, rationale: "missing: listing-day volume, order-book depth and trade-size data across venues"}
+- {id: M06, score: 3, confidence: medium, evidence: [MEGA-09, MEGA-01, MEGA-07], assessor: "agent:claude", rationale: "Lists simultaneously on Binance, Coinbase (deposits opened pre-TGE), KuCoin, Bitget and ~9 others; tier-1 diligence, but no spot trading history before this listing."}
+- {id: M07, status: pending, rationale: "missing: pre-market perp OI and funding on Hyperliquid and Binance; Binance converts its pre-market MEGAUSDT to a standard perp with up to 50x leverage at listing (MEGA-10)"}
+- {id: M09, status: pending, rationale: "missing: on-chain MEGA liquidity pools and LP ownership at TGE"}
+- {id: M10, score: 2, confidence: medium, evidence: [MEGA-03, MEGA-16, MEGA-07], assessor: "agent:claude", rationale: "MegaETH ran the largest community token sale ($1.39B committed vs Monad's $269M), but pre-market valuation fell from >$6B (Oct) to $1.5–2B, and >84% of 2025 launches trade below TGE price."}
+
+# --- B Business Model
+- {id: B02, score: 1, confidence: low, evidence: [MEGA-01, MEGA-16, MEGA-06], assessor: "agent:claude", rationale: "The planned revenue engine is USDM reserve yield from tokenised T-bills via Ethena — one rate-sensitive source; no fee or revenue figures were published before listing."}
+- {id: B03, score: 2, confidence: medium, evidence: [MEGA-01, MEGA-13, MEGA-02], assessor: "agent:claude", rationale: "Foundation has said USDM revenue will be used to accumulate MEGA; no buyback address or executed purchases were shown before listing."}
+- {id: B10, score: 1, confidence: low, evidence: [MEGA-01, MEGA-04, MEGA-15], assessor: "agent:claude", rationale: "Planned economics lean on USDM yield; 53.3% of supply is reserved to reward KPI growth, and TVL was ~$66M in February — the business has not yet run without incentives."}
+
+# --- C Competition & Moat
+- {id: C01, score: 2, confidence: low, evidence: [MEGA-16], assessor: "agent:claude", rationale: "General-purpose EVM execution is large but ~95% of TVL sits in 5 chains and 15 new L2s launched in 2025; real-time execution is a growing niche."}
+- {id: C03, status: pending, rationale: "missing: two quarters of share data; mainnet is under 3 months old"}
+- {id: C04, score: 2, confidence: medium, evidence: [MEGA-16, MEGA-01, MEGA-02], assessor: "agent:claude", rationale: "Moat is early: latency lead plus the Ethena/USDM partnership and an incubated app set; no retention test against a competitor campaign yet."}
+- {id: C05, score: 2, confidence: medium, evidence: [MEGA-18, MEGA-16], assessor: "agent:claude", rationale: "Execution client is open source and forkable; sequencer hardware/know-how and USDM liquidity are the sticky parts."}
+- {id: C06, score: 3, confidence: low, evidence: [MEGA-16, MEGA-14], assessor: "agent:claude", rationale: "Versus Arbitrum/Base: 10ms blocks; versus Solana/Hyperliquid: full EVM equivalence on Ethereum. Monad and other fast EVMs compete on the same axis."}
+- {id: C07, status: pending, rationale: "missing: dated peer FDV/TVL/fee comparables for Arbitrum, Optimism, Base-adjacent tokens and Monad at 30 Apr 2026"}
+- {id: C08, status: pending, rationale: "missing: dated evidence on incumbents' latency roadmaps (e.g. Base, Ethereum L1 block-time work)"}
+- {id: C09, score: 2, confidence: medium, evidence: [MEGA-01, MEGA-02, MEGA-03], assessor: "agent:claude", rationale: "Ethena-co-developed USDM is live (> $300M) and 10 apps are live; investor ties (Kraken Ventures, GSR, Wintermute) are investments, not integrations."}
+- {id: C10, score: 2, confidence: medium, evidence: [MEGA-16, MEGA-05], assessor: "agent:claude", rationale: "Adds another Ethereum L2 token to a venue that already lists several; the differentiator is the real-time niche and a large KYC'd retail sale base."}
+
+# --- D Community & Distribution
+- {id: D01, status: pending, rationale: "missing: social analytics (engagement rate, bot share) for X/Discord"}
+- {id: D02, status: pending, rationale: "missing: engagement-authenticity analysis"}
+- {id: D04, status: pending, rationale: "missing: geographic split of users and sale participants; white paper names only EEA host states"}
+- {id: D05, status: pending, rationale: "missing: disclosed KOL/paid campaigns and the Terminal mainnet campaign design"}
+- {id: D06, score: 3, confidence: medium, evidence: [MEGA-16, MEGA-02], assessor: "agent:claude", rationale: "Mega Mafia accelerator: 28–30 projects in two cohorts, first 13 teams raised >$40M, 10 shipped to mainnet."}
+- {id: D08, score: 3, confidence: medium, evidence: [MEGA-11, MEGA-12, MEGA-06], assessor: "agent:claude", rationale: "Pre-deposit failure explained within two days with a full refund announced; but the regulatory white paper has unreconciled dates and a sale-demand figure ($450M bids) far below the $1.39B publicised."}
+- {id: D09, score: 2, confidence: medium, evidence: [MEGA-03, MEGA-07], assessor: "agent:claude", rationale: "Strong backing, but informed criticism: KPIs met by self-incubated apps, thin float, and pre-market valuation down from >$6B (Oct) to $1.5–2B."}
+- {id: D10, score: 3, confidence: medium, evidence: [MEGA-01, MEGA-06, MEGA-17], assessor: "agent:claude", rationale: "Ethena co-developed USDM; Dragonfly-led with Buterin as angel; BlockSec and Zellic engaged. Endorsement is strong, integrations still few."}
+
+# --- L Legal & Compliance
+- {id: L01, score: 2, confidence: medium, evidence: [MEGA-06, MEGA-05], assessor: "agent:claude", rationale: "Issuer is a BVI subsidiary of a Cayman foundation; MegaLabs (Cayman) develops; BVI law and courts govern. No named natural-person directors."}
+- {id: L02, score: 2, confidence: medium, evidence: [MEGA-06, MEGA-01, MEGA-04], assessor: "agent:claude", rationale: "No revenue rights and a MiCA white paper are mitigants; foundation buybacks from USDM revenue, KPI staking rewards and team-run sequencer point the other way."}
+- {id: L04, score: 3, confidence: low, evidence: [MEGA-06, MEGA-05], assessor: "agent:claude", rationale: "MegaETH does not itself issue the stablecoin (Ethena does) or custody user funds beyond the rollup; the sale ran with KYC and a MiCA-licensed custodian for EU buyers."}
+- {id: L05, score: 3, confidence: medium, evidence: [MEGA-06, MEGA-11, MEGA-01], assessor: "agent:claude", rationale: "No litigation or regulator action found in dated press or the white paper; court and regulator databases were not searched directly."}
+- {id: L06, score: 4, confidence: medium, evidence: [MEGA-06, MEGA-17], assessor: "agent:claude", rationale: "Standard transparent EVM rollup; no privacy or mixing features in the protocol."}
+- {id: L10, status: pending, rationale: "missing: restricted-jurisdiction list for the sale and KPI staking (white paper mentions restrictions only generally)"}

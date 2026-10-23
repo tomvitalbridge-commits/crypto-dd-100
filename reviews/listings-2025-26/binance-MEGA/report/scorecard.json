@@ -1,0 +1,1526 @@
+{
+  "project": "MegaETH (MEGA)",
+  "profile": "l1_l2",
+  "as_of": "2026-04-30",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: a dated source on the founders' prior ventures and their outcomes; dated sources name only Namik Muduroglu as a founding contributor and give a 23-person team"
+      ]
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-18"
+      ],
+      "rationale": "23 team members per the white paper; 12 named contributors committed to the public client repos in the 90 days to 30 Apr, so engineering has some redundancy; no disclosed succession or security/ops leadership.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "MEGA-17",
+        "MEGA-18",
+        "MEGA-16"
+      ],
+      "rationale": "In-house team built MegaEVM, the SALT state trie and a stateless validator, open-sourced and externally tested by BlockSec; 10ms mini-block design documented. No public consensus/sequencer spec.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-11",
+        "MEGA-12"
+      ],
+      "rationale": "No enforcement action or misconduct allegation found; the one public failure (Nov-2025 pre-deposit multisig error) was operational, admitted as 'sloppy', with a full refund announced. Registries and court records not searched, so not 4.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-06"
+      ],
+      "rationale": "team_vesting_months = 48  (bands 4:≥48, 3:≥36, 2:≥24, 1:≥12)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-04",
+        "MEGA-05"
+      ],
+      "rationale": "Governance is not live; MegaLabs runs the single sequencer and can adjust parameters through multisig; decentralisation is a KPI with no date, and unmet KPI tokens may later go to an undefined vote.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: published treasury/foundation addresses and any treasury report; none found in dated sources. Foundation's 7.5% reserve and VC 14.7% custody not disclosed"
+      ]
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-02",
+        "MEGA-16"
+      ],
+      "rationale": "Seed led by Dragonfly with Vitalik Buterin and Joseph Lubin; later backers include Anagram, Kraken Ventures, Maven11, Robot Ventures. GSR and Wintermute are both investors and market makers, which the MM-terms review (M05) must check.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "contradiction_count = 1  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
+      "assessor": "rule",
+      "notes": [
+        "Two claims cross-checked. Supply (10B) matches. Sale demand does not: the MiCA white paper says ~$450M of bids (9x), while the project-promoted and widely reported figure was $1.39B of commitments (~28x). Could be a definitional difference; ask the team to reconcile."
+      ]
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-02",
+        "MEGA-07",
+        "MEGA-01"
+      ],
+      "rationale": "Real-time EVM execution is a real need for trading and gaming apps, but demand at TGE was shaped by the token KPIs: the 10 qualifying apps were self-incubated and USDM jumped from ~$62.9M to >$300M in the countdown week.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "MEGA-13",
+        "MEGA-14",
+        "MEGA-15"
+      ],
+      "rationale": "Public mainnet since 9 Feb 2026 — under 3 months of production at listing; sequencer decentralisation, staking and proximity markets are still roadmap.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "MEGA-17",
+        "MEGA-19",
+        "MEGA-16"
+      ],
+      "rationale": "Execution layer is original (MegaEVM with a dual gas model, SALT in-memory trie, stateless validation, 10ms mini-blocks); settlement and bridging reuse OP Stack contracts.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-17",
+        "MEGA-06",
+        "MEGA-16"
+      ],
+      "rationale": "One high-spec sequencer (100+ cores, TB-scale RAM) run by MegaLabs; BlockSec found DoS paths at the 10B gas limit, mitigated by a 200M compute-gas cap rather than fixed. Liveness limits are acknowledged in the white paper.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-11",
+        "MEGA-16",
+        "MEGA-01"
+      ],
+      "rationale": "Single MegaLabs sequencer with no described failover; the economic model rests on Ethena's USDM (BUIDL-backed) yield; a third-party bridge provider outage disrupted the Nov-2025 pre-deposit.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "MEGA-18"
+      ],
+      "rationale": "github_commits_90d = 155  (bands 4:≥300, 3:≥150, 2:≥60, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "MEGA-18"
+      ],
+      "rationale": "github_active_contributors_90d = 12  (bands 4:≥25, 3:≥12, 2:≥6, 1:≥3)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-04",
+        "MEGA-13",
+        "MEGA-11",
+        "MEGA-06"
+      ],
+      "rationale": "Mainnet shipped on the announced 9 Feb date, but the USDm pre-deposit campaign was aborted and refunded, and the white paper gives conflicting dates for testnet and TGE.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "MEGA-18",
+        "MEGA-17"
+      ],
+      "rationale": "MegaEVM, SALT and the stateless validator are public (Apache/MIT) with 155 commits in the 90 days to 30 Apr; the sequencer node and token/staking contracts were not found as public repos.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-19",
+        "MEGA-06"
+      ],
+      "rationale": "Developer docs list contract addresses and bridge usage; no published threat model, sequencer spec or admin-key documentation.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "MEGA-17"
+      ],
+      "rationale": "audits_reputable_count = 1  (bands 4:≥3, 3:≥2, 2:≥1, 1:≥0.5)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "MEGA-17"
+      ],
+      "rationale": "BlockSec's 4 High MegaEVM findings: 1 Fixed, 3 Confirmed and mitigated by a compute-gas cap rather than code fixes; SALT Medium fixed. Spearbit/Sherlock remediation is claimed but unpublished.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'contracts_verified' not in evidence pack",
+        "contracts_verified not established: the MEGA token (MegaETH 0x28B7E77f82B25B95953825F1E3eA0E36c1c29861) and KPI-staking contracts could not be checked on the MegaETH explorer from this review, and no dated source states their verification status. RF03 stays unchecked. Ask: verified source links for MEGA, staking and buyback contracts."
+      ]
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'upgrade_timelock_hours' not in evidence pack",
+        "upgrade_timelock_hours not set: the white paper says multisig changes are 'subject to time delays' but gives no figure; no dated third-party source gives the L1 proxy admin or delay. A live L2BEAT page was consulted but excluded because it cannot be pinned to 30 Apr."
+      ]
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-11",
+        "MEGA-06"
+      ],
+      "rationale": "Admin powers sit in MegaLabs multisigs with undisclosed signers and thresholds; the one observed (pre-deposit) was a 4-signer team Safe whose cap-raise was mis-set to 4-of-4 and executed early by an outsider.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-06"
+      ],
+      "rationale": "White paper states fixed 10B supply with no minting function and no pause, but also describes emergency multisig admin functions; not verified on-chain.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'bug_bounty_max_usd' not in evidence pack",
+        "No bug bounty amount found; mega-evm SECURITY.md gives a private disclosure channel only."
+      ]
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-11",
+        "MEGA-12",
+        "MEGA-20"
+      ],
+      "rationale": "No exploit found; the Nov-2025 pre-deposit incident (>$400M deposited, no reported loss) was disclosed within two days with a full refund announced, the refund contract going through audit first.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: oracle design of the main apps (RedStone Bolt is named in MEGA-16) and USDM/Aave-style collateral parameters; chain itself uses no price oracle"
+      ]
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-19",
+        "MEGA-11"
+      ],
+      "rationale": "Assets enter via the canonical OP Stack bridge (proxy contracts) and Ethena-issued USDM; upgrade admin and delay of the bridge were not established from dated sources.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-05",
+        "MEGA-01"
+      ],
+      "rationale": "At listing MEGA's live use is locking for KPI rewards; gas, sequencer staking and proximity markets are planned; the USDM-funded buyback is announced, not shown on-chain, and MEGA confers no revenue rights.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'circulating_supply_pct' not in evidence pack",
+        "circulating_supply and market_cap_usd not set: no source dated on or before 30 Apr states the TGE circulating amount. Dated sources give only 'under 10%' (MEGA-07); the documented TGE unlocks (Sonar 500M + Echo 20% of 500M + Fluffle 50% of 250M = 725M, 7.25%) are a lower bound that omits any foundation/liquidity release. Ask: exact TGE circulating supply and its breakdown."
+      ]
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top10_holder_pct_ex_contracts' not in evidence pack"
+      ]
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'unlock_12m_pct_of_circ' not in evidence pack",
+        "unlock_12m / unlock_90d not computable without circulating supply and the VC (14.7%) and foundation (7.5%) schedules, which were not published in dated sources. Known: Fluffle remainder (125M) vests over 6 months; Echo and team have 1-year cliffs; the 53.3% KPI pool releases on discretionary KPI events, one of which (TGE) was already triggered. Ask for the full unlock calendar."
+      ]
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-06"
+      ],
+      "rationale": "insider_allocation_pct = 36.7  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-08"
+      ],
+      "rationale": "price_to_last_round_multiple = 2  (bands 4:≤3, 3:≤10, 2:≤30, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fdv_to_mcap' not in evidence pack"
+      ]
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annual_inflation_pct' not in evidence pack"
+      ]
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-07",
+        "MEGA-04"
+      ],
+      "rationale": "Only the team schedule is in the white paper; Echo/Fluffle terms come from third parties; VC (14.7%) and foundation schedules and all vesting-contract addresses were unpublished, and 53.3% releases on discretionary KPIs.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: post-claim retention of Sonar/Echo/Fluffle recipients and the Terminal campaign design; cannot be observed before listing"
+      ]
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_30d_avg' not in evidence pack",
+        "Daily active addresses, retention and fee payers: no dated indexer data; live dashboards were not used to avoid post-listing data."
+      ]
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_90d_change_pct' not in evidence pack"
+      ]
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'retention_30d_pct' not in evidence pack"
+      ]
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-15"
+      ],
+      "rationale": "tvl_usd = 66,480,000  (bands 4:≥1e+09, 3:≥2e+08, 2:≥5e+07, 1:≥1e+07)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'l1_l2'"
+      ]
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-02",
+        "MEGA-01",
+        "MEGA-07"
+      ],
+      "rationale": "The TGE KPI (100k tx per app over 30 days) is easy to farm and was met by self-incubated apps; USDM rose ~5x in the countdown week. No address-clustering data to show an organic base.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack"
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-03"
+      ],
+      "rationale": "live_integrations_count = 10  (bands 4:≥50, 3:≥20, 2:≥8, 1:≥3)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-16",
+        "MEGA-02",
+        "MEGA-07"
+      ],
+      "rationale": "Mega Mafia incubated ~30 apps whose first 13 teams raised >$40M, but builders are mostly programme-funded and one incubated app moved to a rival chain.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack"
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'depth_2pct_usd' not in evidence pack",
+        "Depth, spread, 24h volume and venue share at listing were not captured; spot trading began 11:00 UTC on 30 Apr."
+      ]
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top_venue_volume_share_pct' not in evidence pack"
+      ]
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: listing-day volume, order-book depth and trade-size data across venues"
+      ]
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'spread_bps' not in evidence pack"
+      ]
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-09",
+        "MEGA-01",
+        "MEGA-07"
+      ],
+      "rationale": "Lists simultaneously on Binance, Coinbase (deposits opened pre-TGE), KuCoin, Bitget and ~9 others; tier-1 diligence, but no spot trading history before this listing.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: pre-market perp OI and funding on Hyperliquid and Binance; Binance converts its pre-market MEGAUSDT to a standard perp with up to 50x leverage at listing (MEGA-10)"
+      ]
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'realized_vol_30d_pct' not in evidence pack"
+      ]
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: on-chain MEGA liquidity pools and LP ownership at TGE"
+      ]
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-03",
+        "MEGA-16",
+        "MEGA-07"
+      ],
+      "rationale": "MegaETH ran the largest community token sale ($1.39B committed vs Monad's $269M), but pre-market valuation fell from >$6B (Oct) to $1.5–2B, and >84% of 2025 launches trade below TGE price.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annualized_revenue_usd' not in evidence pack",
+        "No protocol fee or revenue figures published before listing; revenue model (USDM reserve yield) is not yet measurable. B04 (FDV/fees) therefore unscored."
+      ]
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-01",
+        "MEGA-16",
+        "MEGA-06"
+      ],
+      "rationale": "The planned revenue engine is USDM reserve yield from tokenised T-bills via Ethena — one rate-sensitive source; no fee or revenue figures were published before listing.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-01",
+        "MEGA-13",
+        "MEGA-02"
+      ],
+      "rationale": "Foundation has said USDM revenue will be used to accumulate MEGA; no buyback address or executed purchases were shown before listing.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fdv_to_annual_fees' not in evidence pack"
+      ]
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentives_to_revenue' not in evidence pack"
+      ]
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack"
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack"
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'revenue_qoq_growth_pct' not in evidence pack"
+      ]
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'l1_l2'"
+      ]
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-01",
+        "MEGA-04",
+        "MEGA-15"
+      ],
+      "rationale": "Planned economics lean on USDM yield; 53.3% of supply is reserved to reward KPI growth, and TVL was ~$66M in February — the business has not yet run without incentives.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-16"
+      ],
+      "rationale": "General-purpose EVM execution is large but ~95% of TVL sits in 5 chains and 15 new L2s launched in 2025; real-time execution is a growing niche.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'category_share_pct' not in evidence pack"
+      ]
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: two quarters of share data; mainnet is under 3 months old"
+      ]
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-16",
+        "MEGA-01",
+        "MEGA-02"
+      ],
+      "rationale": "Moat is early: latency lead plus the Ethena/USDM partnership and an incubated app set; no retention test against a competitor campaign yet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-18",
+        "MEGA-16"
+      ],
+      "rationale": "Execution client is open source and forkable; sequencer hardware/know-how and USDM liquidity are the sticky parts.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-16",
+        "MEGA-14"
+      ],
+      "rationale": "Versus Arbitrum/Base: 10ms blocks; versus Solana/Hyperliquid: full EVM equivalence on Ethereum. Monad and other fast EVMs compete on the same axis.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: dated peer FDV/TVL/fee comparables for Arbitrum, Optimism, Base-adjacent tokens and Monad at 30 Apr 2026"
+      ]
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: dated evidence on incumbents' latency roadmaps (e.g. Base, Ethereum L1 block-time work)"
+      ]
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-01",
+        "MEGA-02",
+        "MEGA-03"
+      ],
+      "rationale": "Ethena-co-developed USDM is live (> $300M) and 10 apps are live; investor ties (Kraken Ventures, GSR, Wintermute) are investments, not integrations.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-16",
+        "MEGA-05"
+      ],
+      "rationale": "Adds another Ethereum L2 token to a venue that already lists several; the differentiator is the real-time niche and a large KYC'd retail sale base.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: social analytics (engagement rate, bot share) for X/Discord"
+      ]
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: engagement-authenticity analysis"
+      ]
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'holders_count' not in evidence pack",
+        "Holder count at TGE not available from a dated source."
+      ]
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: geographic split of users and sale participants; white paper names only EEA host states"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: disclosed KOL/paid campaigns and the Terminal mainnet campaign design"
+      ]
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-16",
+        "MEGA-02"
+      ],
+      "rationale": "Mega Mafia accelerator: 28–30 projects in two cohorts, first 13 teams raised >$40M, 10 shipped to mainnet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack",
+        "No token-holder governance is live (MiCA white paper G.3); participation is not measurable. Scored under T07."
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-11",
+        "MEGA-12",
+        "MEGA-06"
+      ],
+      "rationale": "Pre-deposit failure explained within two days with a full refund announced; but the regulatory white paper has unreconciled dates and a sale-demand figure ($450M bids) far below the $1.39B publicised.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-03",
+        "MEGA-07"
+      ],
+      "rationale": "Strong backing, but informed criticism: KPIs met by self-incubated apps, thin float, and pre-market valuation down from >$6B (Oct) to $1.5–2B.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-01",
+        "MEGA-06",
+        "MEGA-17"
+      ],
+      "rationale": "Ethena co-developed USDM; Dragonfly-led with Buterin as angel; BlockSec and Zellic engaged. Endorsement is strong, integrations still few.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-05"
+      ],
+      "rationale": "Issuer is a BVI subsidiary of a Cayman foundation; MegaLabs (Cayman) develops; BVI law and courts govern. No named natural-person directors.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-01",
+        "MEGA-04"
+      ],
+      "rationale": "No revenue rights and a MiCA white paper are mitigants; foundation buybacks from USDM revenue, KPI staking rewards and team-run sequencer point the other way.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack",
+        "sanctions_exposure needs the venue's own Chainalysis/TRM screening of foundation, MegaLabs, deployer and top-holder addresses; none are published."
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-05"
+      ],
+      "rationale": "MegaETH does not itself issue the stablecoin (Ethena does) or custody user funds beyond the rollup; the sale ran with KYC and a MiCA-licensed custodian for EU buyers.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-11",
+        "MEGA-01"
+      ],
+      "rationale": "No litigation or regulator action found in dated press or the white paper; court and regulator databases were not searched directly.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "MEGA-06",
+        "MEGA-17"
+      ],
+      "rationale": "Standard transparent EVM rollup; no privacy or mixing features in the protocol.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'l1_l2'"
+      ]
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'l1_l2'"
+      ]
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: restricted-jurisdiction list for the sale and KPI staking (white paper mentions restrictions only generally)"
+      ]
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 2.5625,
+      "coverage": 0.6666666666666666,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 14,
+      "score": 2.1578947368421053,
+      "coverage": 1.0,
+      "sufficient": true,
+      "scored": 10,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 12,
+      "score": 2.3529411764705883,
+      "coverage": 0.68,
+      "sufficient": true,
+      "scored": 6,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 14,
+      "score": 2.375,
+      "coverage": 0.38095238095238093,
+      "sufficient": false,
+      "scored": 4,
+      "applicable": 10
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 12,
+      "score": 1.5714285714285714,
+      "coverage": 0.4666666666666667,
+      "sufficient": false,
+      "scored": 4,
+      "applicable": 9
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 8,
+      "score": 2.5,
+      "coverage": 0.11764705882352941,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 6,
+      "score": 1.3333333333333333,
+      "coverage": 0.35294117647058826,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 9
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 10,
+      "score": 2.1818181818181817,
+      "coverage": 0.6111111111111112,
+      "sufficient": true,
+      "scored": 6,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 6,
+      "score": 2.75,
+      "coverage": 0.3076923076923077,
+      "sufficient": false,
+      "scored": 4,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 6,
+      "score": 2.6363636363636362,
+      "coverage": 0.6875,
+      "sufficient": true,
+      "scored": 5,
+      "applicable": 8
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "clear"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "clear"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "clear"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "clear"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "clear"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "clear"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "clear"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "clear"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "n/a"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "unchecked"
+    }
+  ],
+  "contradictions": [
+    {
+      "claim": {
+        "id": "C2",
+        "statement": "MiCA white paper: Sonar sale received about $450M in bids, roughly 9x oversubscribed",
+        "metric": "sale_commitments_usd",
+        "claimed_value": 450000000,
+        "source": "MEGA-06"
+      },
+      "observed": 1390000000,
+      "observed_source": "MEGA-16",
+      "deviation": 0.6762589928057554
+    }
+  ],
+  "point_score": 55.9,
+  "score_low": 20.9,
+  "score_high": 85.2,
+  "coverage": 0.562,
+  "grade": "C",
+  "verdict": "INSUFFICIENT_DATA",
+  "verdict_reasons": [
+    "evidence coverage 56% below the 70% needed for a verdict"
+  ]
+}

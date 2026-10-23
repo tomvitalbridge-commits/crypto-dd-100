@@ -1,0 +1,134 @@
+{
+  "project": "MegaETH (MEGA)",
+  "as_of": "2026-04-30",
+  "sources": [
+    {
+      "id": "MEGA-11",
+      "type": "news",
+      "tier": 2,
+      "published": "2025-11-27",
+      "title": "The Block: MegaETH to return all funds from pre-deposit bridge, citing 'sloppy' execution",
+      "url": "https://www.theblock.co/post/380735/megaeth-refund-pre-deposit-funds",
+      "retrieved": "2026-10-23",
+      "excerpt": "25 Nov 2025 USDC pre-deposit: a third-party bridge provider failed at launch (~1h outage); the $250M cap filled in under 3 minutes; the cap-raise to $1B was configured as 4-of-4 instead of the intended 3-of-4 multisig and was executed early by an outside party, reopening deposits ahead of schedule. Deposits passed $400M; cap reset to $400M then $500M. No funds reported lost; MegaETH will return all pre-deposit capital once the refund contract's audit completes."
+    },
+    {
+      "id": "MEGA-12",
+      "type": "news",
+      "tier": 2,
+      "published": "2025-11-28",
+      "title": "The Defiant: MegaETH to refund USDm pre-deposits after multisig chaos",
+      "url": "https://thedefiant.io/news/defi/megaeth-refunds-usdm-predeposit-bridge-campaign",
+      "retrieved": "2026-10-23",
+      "excerpt": "Team publicly called the execution 'sloppy' and announced a full refund of the USDm pre-deposit campaign, about a month after the sold-out ICO."
+    },
+    {
+      "id": "MEGA-13",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-02-09",
+      "title": "ForkLog: MegaETH team launches public mainnet",
+      "url": "https://forklog.com/en/megaeth-team-launches-public-mainnet/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Public mainnet launched 9 Feb 2026; targets 100,000 TPS; >50 applications operational at launch (project figure). Testnet since Mar 2025. Foundation plans to use all USDm revenue to buy back MEGA. Recalls the Nov 2025 pre-deposit raising $500M instead of $250M after loss of control over contract management."
+    },
+    {
+      "id": "MEGA-14",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-02-11",
+      "title": "Datawallet Daily #734: MegaETH launches mainnet with extreme throughput",
+      "url": "https://datawallet.beehiiv.com/p/megaeth-launches-mainnet-with-extreme-throughput",
+      "retrieved": "2026-10-23",
+      "excerpt": "Mainnet 9 Feb 2026, 10ms blocks, >50 apps at launch; SALT in-memory state separates execution from settlement; USDm yield to fund buybacks; MEGA unlocks only after one of three performance milestones."
+    },
+    {
+      "id": "MEGA-15",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-02-16",
+      "title": "The Defiant: MegaETH TVL rises 65% in a week, but TGE conditions remain unmet",
+      "url": "https://thedefiant.io/news/blockchains/megaeth-tvl-rises-65-percent-week-after-mainnet-but-still-no-tge",
+      "retrieved": "2026-10-23",
+      "excerpt": "DefiLlama TVL ~$66.48M on 16 Feb 2026, up from ~$40.3M right after the 9 Feb launch; traction still below the TGE KPIs."
+    },
+    {
+      "id": "MEGA-17",
+      "type": "audit",
+      "tier": 1,
+      "published": "2025-12-15",
+      "title": "BlockSec — Security testing report for MegaETH: MegaEVM, Stateless Validator & SALT v1.0 (signed 16 Dec 2025)",
+      "url": "https://github.com/megaeth-labs/mega-evm/blob/main/audits/2025-12-15-blocksec-megaeth.pdf",
+      "retrieved": "2026-10-23",
+      "excerpt": "Read from the repo at commit 33670913 (28 Apr 2026). Six-week differential testing and fuzzing (11 Oct–28 Nov 2025) of MegaEVM (built on revm/op-revm), SALT state trie and the stateless validator. MegaEVM fuzzing: 4 High findings — DoS via unbounded tstore (Confirmed), DoS via cheap KZG (Confirmed), EVM crash from KZG gas cost (Fixed), DoS via high-cost opcode loops (Confirmed; project mitigated by capping per-tx compute gas at 200M). SALT: 1 Medium (Fixed). Differential testing: 9 notes. Scope excludes the sequencer node (Mega-Reth) and L1 contracts."
+    },
+    {
+      "id": "MEGA-18",
+      "type": "onchain",
+      "tier": 1,
+      "published": "2026-04-30",
+      "title": "GitHub commit history, megaeth-labs/mega-evm, stateless-validator, salt — own query, window 30 Jan–30 Apr 2026",
+      "url": "https://github.com/megaeth-labs",
+      "retrieved": "2026-10-23",
+      "excerpt": "git log on main, commits dated 2026-01-30..2026-04-30, bots (dependabot, github-actions) excluded: mega-evm 94, stateless-validator 56, salt 5 = 155 commits. 13 distinct author names (12 excluding an author labelled 'Troublor Agent'). Last mega-evm commit before cut-off 28 Apr 2026. Repos are Apache/MIT licensed; SECURITY.md lists a private disclosure channel but no bounty amount. The sequencer node (mega-reth) and token/staking contracts were not found as public repos."
+    },
+    {
+      "id": "MEGA-19",
+      "type": "doc",
+      "tier": 3,
+      "published": "undated",
+      "title": "MegaETH developer docs — Overview and Contracts & Tokens pages",
+      "url": "https://docs.megaeth.com/developer-docs/overview-1/contracts",
+      "retrieved": "2026-10-23",
+      "excerpt": "MEGA on MegaETH mainnet at 0x28B7E77f82B25B95953825F1E3eA0E36c1c29861 (chain id 4326); USDM 0xFAfD…79E7. Canonical bridge is OP Stack Standard Bridge from op-contracts v3.0.0 with small parameter patches; L1 contracts are proxies (OptimismPortal, DisputeGameFactory, SystemConfig). MegaEVM is open source. Page is undated; used only for addresses and architecture, not for state at a date."
+    },
+    {
+      "id": "MEGA-20",
+      "type": "news",
+      "tier": 2,
+      "published": "2026-03-11",
+      "title": "LBank Q&A: audits securing MegaETH and stablecoin issues",
+      "url": "https://www.lbank.com/questions/ark7701773239168-audits-secure-megaeth-stablecoin-issues",
+      "retrieved": "2026-10-23",
+      "excerpt": "Zellic reviewed the USDC pre-deposit vault (14–17 Nov 2025); BlockSec tested MegaEVM, SALT and the stateless validator (Oct–Nov 2025). No findings detail; mentions a refund of over $400M. Low-quality exchange content; used only to corroborate audit scope."
+    }
+  ],
+  "metrics": {
+    "mint_authority": {
+      "value": "none_fixed_supply",
+      "source": "MEGA-06",
+      "note": "MiCA white paper: supply fixed at 10B, 'no arbitrary minting functions available to any party'; new emissions would need a new contract and migration. Tier-3 statement in a regulated filing; NOT verified on-chain (explorer for 0x28B7…9861 was not reachable from this review)"
+    },
+    "unreimbursed_exploit_usd": {
+      "value": 0,
+      "source": "MEGA-11",
+      "note": "no exploit of MegaETH contracts found up to 30 Apr 2026. The Nov-2025 pre-deposit incident was an operational/multisig error with no reported loss and a full refund announced"
+    },
+    "audits_reputable_count": {
+      "value": 1,
+      "source": "MEGA-17",
+      "note": "BlockSec (signed report, read). Zellic reviewed only the now-refunded pre-deposit vault (MEGA-20). Spearbit and Sherlock audits are claimed in the MiCA white paper (MEGA-06) but no report was found, so they are not counted. No audit of the MEGA token, KPI staking or the L1 rollup contracts was found"
+    },
+    "github_commits_90d": {
+      "value": 155,
+      "source": "MEGA-18",
+      "note": "public repos only (mega-evm 94, stateless-validator 56, salt 5), bots excluded; sequencer node not public"
+    },
+    "github_active_contributors_90d": {
+      "value": 12,
+      "source": "MEGA-18",
+      "note": "distinct human-named authors across the three repos"
+    },
+    "tvl_usd": {
+      "value": 66480000,
+      "source": "MEGA-15",
+      "note": "latest dated TVL found: 16 Feb 2026 (DefiLlama via The Defiant). Stale by ~10 weeks; USDM supply grew from ~$63M to >$300M in the final week before TGE (MEGA-01), so TVL on 30 Apr was likely higher"
+    },
+    "live_integrations_count": {
+      "value": 10,
+      "source": "MEGA-03",
+      "note": "Mega Mafia apps verified live for the KPI (>100k tx/30 days each); all incubated by MegaETH's own programme (MEGA-07). Project claims >50 apps at mainnet (MEGA-13) — not verified"
+    }
+  },
+  "claims": []
+}

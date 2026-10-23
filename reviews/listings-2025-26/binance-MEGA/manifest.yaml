@@ -1,0 +1,33 @@
+# REAL project, PUBLIC sources dated on or before 2026-04-30 only (blind
+# point-in-time review). MegaETH (MEGA) listed for spot trading on Binance
+# (Seed Tag) and Coinbase on 2026-04-30. Human-only checks (KYC, market-maker
+# terms, legal opinion) are left open: they need a private channel.
+project: MegaETH (MEGA)
+profile: l1_l2          # Ethereum L2 rollup
+as_of: 2026-04-30
+
+evidence:
+  - evidence/market_tokenomics.json
+  - evidence/protocol_security.json
+  - evidence/legal_community_competition.json
+
+assessments:
+  - assessments/agent.yaml
+
+# No `collect:` block on purpose: the collectors pull CURRENT market, TVL and
+# GitHub data, which would leak post-listing information into a 2026-04-30 review.
+
+# Metrics deliberately NOT set. Each becomes a note in the report.
+notes:
+  S03: "contracts_verified not established: the MEGA token (MegaETH 0x28B7E77f82B25B95953825F1E3eA0E36c1c29861) and KPI-staking contracts could not be checked on the MegaETH explorer from this review, and no dated source states their verification status. RF03 stays unchecked. Ask: verified source links for MEGA, staking and buyback contracts."
+  L03: "sanctions_exposure needs the venue's own Chainalysis/TRM screening of foundation, MegaLabs, deployer and top-holder addresses; none are published."
+  K02: "circulating_supply and market_cap_usd not set: no source dated on or before 30 Apr states the TGE circulating amount. Dated sources give only 'under 10%' (MEGA-07); the documented TGE unlocks (Sonar 500M + Echo 20% of 500M + Fluffle 50% of 250M = 725M, 7.25%) are a lower bound that omits any foundation/liquidity release. Ask: exact TGE circulating supply and its breakdown."
+  K04: "unlock_12m / unlock_90d not computable without circulating supply and the VC (14.7%) and foundation (7.5%) schedules, which were not published in dated sources. Known: Fluffle remainder (125M) vests over 6 months; Echo and team have 1-year cliffs; the 53.3% KPI pool releases on discretionary KPI events, one of which (TGE) was already triggered. Ask for the full unlock calendar."
+  S04: "upgrade_timelock_hours not set: the white paper says multisig changes are 'subject to time delays' but gives no figure; no dated third-party source gives the L1 proxy admin or delay. A live L2BEAT page was consulted but excluded because it cannot be pinned to 30 Apr."
+  S07: "No bug bounty amount found; mega-evm SECURITY.md gives a private disclosure channel only."
+  O01: "Daily active addresses, retention and fee payers: no dated indexer data; live dashboards were not used to avoid post-listing data."
+  B01: "No protocol fee or revenue figures published before listing; revenue model (USDM reserve yield) is not yet measurable. B04 (FDV/fees) therefore unscored."
+  M01: "Depth, spread, 24h volume and venue share at listing were not captured; spot trading began 11:00 UTC on 30 Apr."
+  D07: "No token-holder governance is live (MiCA white paper G.3); participation is not measurable. Scored under T07."
+  D03: "Holder count at TGE not available from a dated source."
+  T10: "Two claims cross-checked. Supply (10B) matches. Sale demand does not: the MiCA white paper says ~$450M of bids (9x), while the project-promoted and widely reported figure was $1.39B of commitments (~28x). Could be a definitional difference; ask the team to reconcile."

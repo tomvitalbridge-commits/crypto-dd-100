@@ -1,0 +1,13 @@
+{
+  "project": "MegaETH (MEGA)",
+  "as_of": "2026-04-30",
+  "sources": [],
+  "metrics": {
+    "active_enforcement_action": {
+      "value": false,
+      "source": "MEGA-06",
+      "note": "MiCA white paper (filed Jan/Feb 2026, BVI governing law) discloses no legal proceedings, and none of the dated press reviewed (MEGA-01..05, MEGA-11..16) reports a lawsuit, enforcement action or regulator warning against MegaETH, MegaLabs or the founders. Regulator databases (SEC, CFTC, FCA, MAS, SFC) and court records were not queried directly"
+    }
+  },
+  "claims": []
+}
