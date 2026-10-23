@@ -1,0 +1,112 @@
+{
+  "project": "Zama (ZAMA)",
+  "as_of": "2026-02-02",
+  "sources": [
+    {
+      "id": "ZAMA-14",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News — Zama launches mainnet with first confidential USDT transfer on Ethereum (31 Dec 2025)",
+      "url": "https://www.mexc.com/news/380573",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 31 Dec 2025. Mainnet launched late December 2025 on Ethereum with the first confidential cUSDT transfer. 13 independent genesis operators ran the distributed key generation ceremony, on AWS infrastructure. Public token auction planned for early 2026. No usage metrics given."
+    },
+    {
+      "id": "ZAMA-17",
+      "type": "doc",
+      "tier": 3,
+      "title": "Plushcap — summaries of Zama blog posts, January 2026",
+      "url": "https://www.plushcap.com/companies/zama/blog/summaries/2026/01",
+      "retrieved": "2026-10-23",
+      "excerpt": "Index of Zama's January 2026 posts: 5 Jan OG NFT claim portal (5,500 OG NFTs; 5% auction bonus; $374,000 paid via Creator and Developer Programs); 16 Jan first confidential payroll on Ethereum mainnet with Bron using cUSDT / ERC-7984; 19 Jan staking live on mainnet (18 operators, 5% emission, 7-day unbonding); 22 Jan 'The ticker is $ZAMA'; 26 Jan auction results."
+    },
+    {
+      "id": "ZAMA-18",
+      "type": "code",
+      "tier": 1,
+      "title": "GitHub zama-ai/fhevm — protocol-contracts/token/contracts/ZamaERC20.sol at c6cdefd^ (22 Jan 2026)",
+      "url": "https://github.com/zama-ai/fhevm/blob/c6cdefd%5E/protocol-contracts/token/contracts/ZamaERC20.sol",
+      "retrieved": "2026-10-23",
+      "excerpt": "Read from the repository at the last commit before the protocol contracts were removed (23 Jan 2026). Non-upgradeable OpenZeppelin ERC20 + Permit + ERC1363 + Burnable + AccessControl + Pausable. Constructor mints the genesis supply to a list of receivers and grants DEFAULT_ADMIN_ROLE to initialAdmin. mint(to, amount) is callable by MINTER_ROLE with no cap; MINTING_PAUSER_ROLE can pause minting, only the admin can unpause. Admin can recover ETH/ERC20/ERC721 held by the token contract. No transfer pause, freeze or blacklist function."
+    },
+    {
+      "id": "ZAMA-19",
+      "type": "code",
+      "tier": 1,
+      "title": "GitHub zama-ai/fhevm — protocol-contracts/token/ADD_BNB_OFT.md and deployment CLI at c6cdefd^ (Jan 2026)",
+      "url": "https://github.com/zama-ai/fhevm/blob/c6cdefd%5E/protocol-contracts/token/ADD_BNB_OFT.md",
+      "retrieved": "2026-10-23",
+      "excerpt": "Runbook (added 21 Jan 2026): ZamaERC20 and ZamaOFTAdapter are deployed on Ethereum mainnet and ZamaOFT on Gateway mainnet; the ZamaOFTAdapter's owner and delegate 'are already setup to be an Aragon DAO contract'; BNB Chain OFT to be wired via the DAO. Deployment CLI step 1 deploys an Aragon DAO with the native multisig plugin; step 4 mints the token supply to the DAO address. LayerZero OFT bridging: lock on Ethereum, mint on BSC/Gateway."
+    },
+    {
+      "id": "ZAMA-20",
+      "type": "governance",
+      "tier": 3,
+      "title": "Zama community forum — SETUP-18 Update operator governance addresses (proposal created 20 Jan 2026)",
+      "url": "https://community.zama.org/t/setup-18-update-operator-governance-addresses/4589",
+      "retrieved": "2026-10-23",
+      "excerpt": "Mainnet proposal created at block 24277394 (20 Jan 2026), tx 0xb854…fc5a. Actions call addAddresses/removeAddresses on GOV_MULTISIG 0xE43c73aAb2b6aBBad6d0461997ce1cfea5ABe66f via plugin SETUP_MULTISIG 0xBc860b6a4C860C5424B84A056E53ACFb2C99a38F, an Aragon OSx Multisig, 3/5. Signers not named. No delay or timelock mentioned."
+    },
+    {
+      "id": "ZAMA-21",
+      "type": "governance",
+      "tier": 3,
+      "title": "Zama community forum — SETUP-24 Update governance address (proposal created 30 Jan 2026)",
+      "url": "https://community.zama.org/t/setup-24-update-governance-address/4595",
+      "retrieved": "2026-10-23",
+      "excerpt": "Mainnet proposal created at block 24347751 (30 Jan 2026). Same 3/5 Aragon OSx SETUP_MULTISIG changes membership of GOV_MULTISIG. Motivation in a private-looking repo (zama-protocol/protocol-ops #36). Signers not named."
+    },
+    {
+      "id": "ZAMA-22",
+      "type": "github",
+      "tier": 1,
+      "title": "GitHub — my git-log count over zama-ai/fhevm, zama-ai/tfhe-rs, zama-ai/kms, 4 Nov 2025 – 2 Feb 2026",
+      "url": "https://github.com/zama-ai",
+      "retrieved": "2026-10-23",
+      "excerpt": "Default-branch first-parent commits in the 90 days to 2 Feb 2026, excluding bot authors: fhevm 266, tfhe-rs 298, kms 103 = 667 (mostly squash-merged PRs). Distinct non-bot authors across the three repos: 48 (fhevm 26, tfhe-rs 16, kms 11). Last pre-listing commits: fhevm 2 Feb, tfhe-rs 2 Feb, kms 2 Feb."
+    },
+    {
+      "id": "ZAMA-23",
+      "type": "doc",
+      "tier": 3,
+      "title": "GitHub zama-ai/fhevm — docs/protocol/architecture (kms.md, coprocessor.md, gateway.md) at 62b9d5e (2 Feb 2026)",
+      "url": "https://github.com/zama-ai/fhevm/tree/62b9d5e89eb3e7fd04b9ce42b6da3630ccfe75c5/docs/protocol/architecture",
+      "retrieved": "2026-10-23",
+      "excerpt": "KMS: 13 MPC nodes run by different organisations; threshold decryption (e.g. 9 of 13); secure if at most 1/3 malicious; each node runs by default in an AWS Nitro Enclave; outputs signed and verifiable on-chain. Coprocessors: majority-honest assumption (>50% honest), Gateway accepts outputs on majority consensus; slashing described as 'eventual'. Gateway implemented as an Arbitrum rollup. ERC-7984 tutorial describes selective disclosure for compliance via ACL grants."
+    },
+    {
+      "id": "ZAMA-24",
+      "type": "code",
+      "tier": 1,
+      "title": "GitHub zama-ai/fhevm — host-contracts/contracts/ACL.sol at 62b9d5e (2 Feb 2026)",
+      "url": "https://github.com/zama-ai/fhevm/blob/62b9d5e89eb3e7fd04b9ce42b6da3630ccfe75c5/host-contracts/contracts/ACL.sol",
+      "retrieved": "2026-10-23",
+      "excerpt": "Host contracts (ACL, FHEVMExecutor, KMSVerifier, InputVerifier) are UUPS-upgradeable; _authorizeUpgrade is onlyOwner (Ownable2Step) with no delay in code. Gateway contracts follow the same UUPS pattern. A PauserSet contract can pause. The mainnet owner address and whether it sits behind a timelock were not verified."
+    },
+    {
+      "id": "ZAMA-25",
+      "type": "legal",
+      "tier": 1,
+      "title": "GitHub zama-ai/fhevm — LICENSE and README licence section at 62b9d5e",
+      "url": "https://github.com/zama-ai/fhevm/blob/62b9d5e89eb3e7fd04b9ce42b6da3630ccfe75c5/LICENSE",
+      "retrieved": "2026-10-23",
+      "excerpt": "BSD-3-Clause-Clear; no patent rights granted beyond a free non-commercial licence for evaluation, research, prototyping and experimentation. README: commercial use of Zama's open-source code requires Zama's commercial patent licence; 'all Zama's technologies are patented'. External PRs require signing a CLA."
+    },
+    {
+      "id": "ZAMA-26",
+      "type": "github",
+      "tier": 1,
+      "title": "GitHub zama-ai/fhevm — commit c6cdefd 'chore(common): remove protocol contracts (#1816)' (23 Jan 2026)",
+      "url": "https://github.com/zama-ai/fhevm/commit/c6cdefd",
+      "retrieved": "2026-10-23",
+      "excerpt": "On 23 Jan 2026 the token, OFT, staking, governance, fees-burner, Safe admin-module and confidential-wrapper contracts were removed from the public monorepo (they had been public since Oct 2025). At listing date the public repo held the host/gateway contracts, coprocessor, KMS connector and SDK, but not the token/staking/governance sources."
+    }
+  ],
+  "metrics": {
+    "mint_authority": {"value": "multisig", "source": "ZAMA-18", "note": "Uncapped mint() behind MINTER_ROLE; DEFAULT_ADMIN_ROLE grants minters. Per ZAMA-19 the token infrastructure is owned by an Aragon DAO, and ZAMA-20/21 show that DAO acting through a 3/5 Aragon OSx multisig with unnamed signers and no stated delay. Role holders were not read on-chain (Etherscan unreachable for this review)"},
+    "github_commits_90d": {"value": 667, "source": "ZAMA-22", "note": "fhevm + tfhe-rs + kms, non-bot, 4 Nov 2025 – 2 Feb 2026"},
+    "github_active_contributors_90d": {"value": 48, "source": "ZAMA-22", "note": "distinct non-bot authors across the three repos; nearly all appear to be Zama staff"},
+    "unreimbursed_exploit_usd": {"value": 0, "source": "ZAMA-04", "note": "No exploit or loss reported in pre-listing coverage (ZAMA-04 research note 30 Jan; ZAMA-03 states no downtime during the auction). Mainnet is only ~5 weeks old and no rekt-style incident database was checked, so this is weak evidence"}
+  },
+  "claims": []
+}

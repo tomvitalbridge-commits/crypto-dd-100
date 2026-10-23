@@ -1,0 +1,34 @@
+# REAL project, PUBLIC sources only, POINT-IN-TIME as of the listing morning.
+# Binance (Seed Tag) and Coinbase opened ZAMA spot trading on 2026-02-02.
+# Only information published on or before 2026-02-02 is used. Retrieval dates
+# are the day this review was run; publication dates are in each excerpt.
+# Human-only checks (KYC, market-maker terms, legal opinion) are left open.
+project: Zama (ZAMA)
+profile: infra         # FHE confidentiality layer / middleware across L1s and L2s
+as_of: 2026-02-02
+
+evidence:
+  - evidence/market_tokenomics.json
+  - evidence/protocol_security.json
+  - evidence/team_competition.json
+
+assessments:
+  - assessments/agent.yaml
+
+# Why some metrics are deliberately NOT set. Each becomes a note in the report.
+notes:
+  S03: "contracts_verified NOT set. The token source was public on GitHub until 23 Jan 2026 (ZAMA-18, ZAMA-26), but Etherscan verification of 0xa12c…f4f3 and the BSC/Solana deployments could not be checked from this environment. Check the explorers before listing; RF03 stays unchecked."
+  L03: "sanctions_exposure NOT set. No wallet screening available. Needs the venue's Chainalysis/TRM screening of the deployer, Aragon DAO/treasury, the 3/5 setup multisig signers and the auction-proceeds wallets."
+  L05: "active_enforcement_action NOT set. Regulator and court-record searches (AMF, SEC, FCA, etc.) for Zama SAS, Rand Hindi and Pascal Paillier could not be run in this review (search budget exhausted, regulator pages not reachable). No enforcement was mentioned in any pre-listing source read, but that is not a search. RF05 stays unchecked."
+  S01: "audits_reputable_count NOT set. No pre-listing public audit report for the token, staking, governance, host or gateway contracts, or the KMS, was found in the sources read. OpenZeppelin audit write-ups for Zama confidential contracts exist but were published 18 Mar 2026 (after listing) and are excluded. Ask Zama for audit reports covering the deployed mainnet code; RF09 would fire if there are none."
+  S04: "upgrade_timelock_hours NOT set. Host and gateway contracts are UUPS-upgradeable by an owner with no delay in code (ZAMA-24), and governance acts through a 3/5 Aragon multisig with no stated delay (ZAMA-20). The mainnet owner of the host contracts was not read on-chain. If it is the DAO multisig without a timelock, the value is 0 and RF06 fires."
+  S07: "bug_bounty_max_usd NOT set. fhevm SECURITY.md asks for disclosure via GitHub advisories with no reward stated; the 'Zama Bounty Program' linked from the KMS README rewards contributions, not vulnerabilities. No paid security bounty found."
+  K03: "Holder concentration at TGE not observable before claims opened on 2 Feb. Genesis supply was minted to the Aragon DAO (ZAMA-19); auction buyers hold 8%; 80% sits with Zama treasury/growth, team and investors under cliffs."
+  K06: "No priced token round is public; investors bought equity (ZAMA-04). Auction FDV $550M vs >$1B last equity valuation."
+  M01: "No order book existed before 13:00 UTC on 2 Feb. Depth, spread, 24h volume, venue share and realised volatility at listing are left out on purpose (later values would leak outcomes). Only pre-listing price signals: auction clearing $0.05 (26 Jan) and a pre-market contract ~ $0.043 (29 Jan, ZAMA-12)."
+  O01: "No independent on-chain activity data for the ~5-week-old mainnet (daily active addresses, fee payers, retention, confidential-token TVL) was found pre-listing. The $121.3M 'total value shielded' was auction collateral, not protocol usage."
+  B01: "No fee or revenue data. Fees are burned, so protocol revenue is the burn; volume one month after mainnet is unknown."
+  B06: "Zama SAS raised $130M+ in equity and ~$44M (auction) + ~$11M (pre-TGE sale) + community sale; burn rate and treasury composition are not public."
+  C02: "No category-share data for FHE / confidential-compute protocols."
+  D03: "Holder count not observable before claims opened. 11,103 unique auction bidders (ZAMA-02) is the closest pre-listing proxy."
+  D07: "No token-holder voting at listing; governance is an Aragon DAO run by a 3/5 setup multisig, moving to operator votes (ZAMA-06, ZAMA-20)."

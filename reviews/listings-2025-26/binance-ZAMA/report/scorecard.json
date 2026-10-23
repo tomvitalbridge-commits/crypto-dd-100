@@ -1,0 +1,1507 @@
+{
+  "project": "Zama (ZAMA)",
+  "profile": "infra",
+  "as_of": "2026-02-02",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-04",
+        "ZAMA-15"
+      ],
+      "rationale": "CEO Rand Hindi founded Snips, which was acquired; CTO Pascal Paillier co-invented the Paillier scheme. Zama itself has shipped FHE libraries since 2020, but no crypto product at scale yet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-08",
+        "ZAMA-22"
+      ],
+      "rationale": "Team of >100 with ~40 PhDs (project figure via press); 48 distinct non-bot committers across fhevm, tfhe-rs and kms in the 90 days to listing.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "ZAMA-04",
+        "ZAMA-22",
+        "ZAMA-25"
+      ],
+      "rationale": "CTO is a recognised cryptographer; the in-house team maintains the TFHE-rs library and the fhEVM stack with published specs and a patent portfolio.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: court-record, regulator (AMF/SEC/FCA) and sanctions-list searches for Zama SAS, Rand Hindi and Pascal Paillier; none could be run in this review"
+      ]
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-04"
+      ],
+      "rationale": "team_vesting_months = 48  (bands 4:≥48, 3:≥36, 2:≥24, 1:≥12)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-20",
+        "ZAMA-21",
+        "ZAMA-06",
+        "ZAMA-19"
+      ],
+      "rationale": "At listing an Aragon DAO acting through a 3/5 multisig with unnamed signers holds the token and bridge admin roles; operator-majority governance is announced, and token holders have no vote. No dated decentralisation milestones were found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: treasury and growth wallet addresses, and any treasury report reconciling the ~$55M of sale proceeds and the 30% Treasury/Growth allocation"
+      ]
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-04",
+        "ZAMA-01",
+        "ZAMA-08"
+      ],
+      "rationale": "Series A led by Multicoin and Protocol Labs, Series B by Blockchange and Pantera at a >$1B valuation; 29 institutional backers reported.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "contradiction_count = 0  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-02",
+        "ZAMA-17",
+        "ZAMA-14"
+      ],
+      "rationale": "On-chain confidentiality is a real gap, but at listing the usage evidence was a confidential USDT transfer, one payroll pilot (Bron) and a token auction. That shows demand for the token, not for paid protocol usage.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "ZAMA-14",
+        "ZAMA-03",
+        "ZAMA-17"
+      ],
+      "rationale": "Ethereum mainnet went live in late Dec 2025, about 5 weeks before listing, and staking on 19 Jan 2026; other EVM chains and Solana were still on the roadmap.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "ZAMA-25",
+        "ZAMA-22",
+        "ZAMA-23"
+      ],
+      "rationale": "Original FHE stack (TFHE-rs, coprocessors, threshold-MPC KMS) developed in-house and patented, not a fork.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-23",
+        "ZAMA-15"
+      ],
+      "rationale": "Documented trust model: 13-node KMS tolerating up to 1/3 malicious nodes, majority-honest coprocessors. Throughput is ~20 TPS per chain and slashing is still 'eventual'; there is no production stress history yet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-23",
+        "ZAMA-14",
+        "ZAMA-19"
+      ],
+      "rationale": "Every KMS node runs by default in AWS Nitro Enclaves on AWS infrastructure; the Gateway is an Arbitrum rollup; token bridging relies on LayerZero.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "ZAMA-22"
+      ],
+      "rationale": "github_commits_90d = 667  (bands 4:≥300, 3:≥150, 2:≥60, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "ZAMA-22"
+      ],
+      "rationale": "github_active_contributors_90d = 48  (bands 4:≥25, 3:≥12, 2:≥6, 1:≥3)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-15",
+        "ZAMA-14",
+        "ZAMA-17"
+      ],
+      "rationale": "The Q4 2025 Ethereum mainnet target was met (late Dec 2025) and staking and the auction shipped in January; multi-chain items were not yet due.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "ZAMA-22",
+        "ZAMA-25",
+        "ZAMA-26"
+      ],
+      "rationale": "fhevm, tfhe-rs and kms are public. The token, staking and governance contracts were pulled from the public repo on 23 Jan 2026, and commercial use needs a patent licence.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-23",
+        "ZAMA-15"
+      ],
+      "rationale": "Architecture docs state trust assumptions for the KMS, coprocessors and Gateway, with integration guides; no formal threat model or consensus spec was found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'audits_reputable_count' not in evidence pack",
+        "audits_reputable_count NOT set. No pre-listing public audit report for the token, staking, governance, host or gateway contracts, or the KMS, was found in the sources read. OpenZeppelin audit write-ups for Zama confidential contracts exist but were published 18 Mar 2026 (after listing) and are excluded. Ask Zama for audit reports covering the deployed mainnet code; RF09 would fire if there are none."
+      ]
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: any pre-listing audit report (scope, commit, findings) for the deployed token, staking, governance, host/gateway contracts and KMS"
+      ]
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'contracts_verified' not in evidence pack",
+        "contracts_verified NOT set. The token source was public on GitHub until 23 Jan 2026 (ZAMA-18, ZAMA-26), but Etherscan verification of 0xa12c…f4f3 and the BSC/Solana deployments could not be checked from this environment. Check the explorers before listing; RF03 stays unchecked."
+      ]
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'upgrade_timelock_hours' not in evidence pack",
+        "upgrade_timelock_hours NOT set. Host and gateway contracts are UUPS-upgradeable by an owner with no delay in code (ZAMA-24), and governance acts through a 3/5 Aragon multisig with no stated delay (ZAMA-20). The mainnet owner of the host contracts was not read on-chain. If it is the DAO multisig without a timelock, the value is 0 and RF06 fires."
+      ]
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-19",
+        "ZAMA-20",
+        "ZAMA-21"
+      ],
+      "rationale": "Admin powers sit with an Aragon DAO operated by a 3/5 multisig whose signers are not disclosed; membership was still being changed during the setup phase (20 and 30 Jan).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "ZAMA-18",
+        "ZAMA-06"
+      ],
+      "rationale": "mint() has no cap and is gated only by a role the DAO admin grants; emissions of 5% of supply a year are by design. There is no transfer freeze or blacklist.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'bug_bounty_max_usd' not in evidence pack",
+        "bug_bounty_max_usd NOT set. fhevm SECURITY.md asks for disclosure via GitHub advisories with no reward stated; the 'Zama Bounty Program' linked from the KMS README rewards contributions, not vulnerabilities. No paid security bounty found."
+      ]
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: incident-database search; with ~5 weeks of mainnet, the absence of reported incidents is not yet evidence"
+      ]
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: how the USD-to-ZAMA fee oracle is sourced and guarded"
+      ]
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-19",
+        "ZAMA-07",
+        "ZAMA-09"
+      ],
+      "rationale": "ZAMA lives on Ethereum, BSC, the Gateway rollup and Solana. Non-Ethereum supply is bridged via LayerZero OFT (lock on Ethereum, mint elsewhere), with the adapter owned by the DAO.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-05",
+        "ZAMA-07",
+        "ZAMA-06"
+      ],
+      "rationale": "Protocol fees are paid in ZAMA and burned, and operators must stake ZAMA. The burn mechanism is live, but fee volume at listing is unknown and probably small next to 5% emissions.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "circulating_supply_pct = 20.5  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top10_holder_pct_ex_contracts' not in evidence pack",
+        "Holder concentration at TGE not observable before claims opened on 2 Feb. Genesis supply was minted to the Aragon DAO (ZAMA-19); auction buyers hold 8%; 80% sits with Zama treasury/growth, team and investors under cliffs."
+      ]
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-04"
+      ],
+      "rationale": "unlock_12m_pct_of_circ = 36.7  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-04"
+      ],
+      "rationale": "insider_allocation_pct = 50  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [
+        "ZAMA-04"
+      ],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "n/a for this project: Investors bought equity (Series A $73M, Series B $57M at >$1B post-money), not a priced token round; no per-token cost basis is public. For scale: the $550M auction FDV is ~0.55× the last equity valuation",
+        "No priced token round is public; investors bought equity (ZAMA-04). Auction FDV $550M vs >$1B last equity valuation."
+      ]
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_mcap = 4.89  (bands 4:≤1.5, 3:≤2.5, 2:≤4, 1:≤7)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "scored",
+      "score": 0,
+      "confidence": "low",
+      "evidence": [
+        "ZAMA-06"
+      ],
+      "rationale": "annual_inflation_pct = 24.4  (bands 4:≤2, 3:≤5, 2:≤10, 1:≤20)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: vesting-contract addresses for the Team, VC, Angel, Treasury and Growth allocations; genesis supply was minted to the DAO (ZAMA-19), so whether vesting is enforced on-chain is unknown"
+      ]
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-02",
+        "ZAMA-01",
+        "ZAMA-09"
+      ],
+      "rationale": "Distribution was a paid sealed-bid auction (11,103 bidders, fully unlocked) plus a 6% TGE-campaign bucket including 55M ZAMA for Binance campaigns; no retention evidence exists yet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_30d_avg' not in evidence pack",
+        "No independent on-chain activity data for the ~5-week-old mainnet (daily active addresses, fee payers, retention, confidential-token TVL) was found pre-listing. The $121.3M 'total value shielded' was auction collateral, not protocol usage."
+      ]
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_90d_change_pct' not in evidence pack"
+      ]
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'retention_30d_pct' not in evidence pack"
+      ]
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'infra'"
+      ]
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'infra'"
+      ]
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: any independent on-chain activity data for the mainnet (funding-source clustering, activity outside the auction window)"
+      ]
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack"
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'live_integrations_count' not in evidence pack"
+      ]
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-17",
+        "ZAMA-23",
+        "ZAMA-15"
+      ],
+      "rationale": "Early third-party work exists: OpenZeppelin's ERC-7984 confidential-token library, Bron's payroll pilot and the Zaiffer joint venture. Most builders are Zama itself or partners it funds.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack"
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'depth_2pct_usd' not in evidence pack",
+        "No order book existed before 13:00 UTC on 2 Feb. Depth, spread, 24h volume, venue share and realised volatility at listing are left out on purpose (later values would leak outcomes). Only pre-listing price signals: auction clearing $0.05 (26 Jan) and a pre-market contract ~ $0.043 (29 Jan, ZAMA-12)."
+      ]
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top_venue_volume_share_pct' not in evidence pack"
+      ]
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: no trading history existed before listing"
+      ]
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'spread_bps' not in evidence pack"
+      ]
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "ZAMA-09",
+        "ZAMA-10",
+        "ZAMA-11"
+      ],
+      "rationale": "Trading opened the same day on Binance, Coinbase, OKX, Bybit, Kraken, KuCoin and others, each with its own listing process.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: pre-market perp open interest and funding; only a pre-market price (~$0.043) is known"
+      ]
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'realized_vol_30d_pct' not in evidence pack"
+      ]
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: ownership of the 2% liquidity allocation and of the Solana/DEX pools at launch"
+      ]
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-15",
+        "ZAMA-04"
+      ],
+      "rationale": "Confidential computation is a well-funded narrative, and Zama is its best-funded FHE player (>$1B valuation); sector demand for privacy tokens was not measured.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annualized_revenue_usd' not in evidence pack",
+        "No fee or revenue data. Fees are burned, so protocol revenue is the burn; volume one month after mainnet is unknown."
+      ]
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: fee volume by payer since mainnet"
+      ]
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-05",
+        "ZAMA-07",
+        "ZAMA-26"
+      ],
+      "rationale": "The fee-burn mechanism is announced as live, and a ProtocolFeesBurner contract existed in the repo; burned amounts were not observed on-chain.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fdv_to_annual_fees' not in evidence pack"
+      ]
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentives_to_revenue' not in evidence pack"
+      ]
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack",
+        "Zama SAS raised $130M+ in equity and ~$44M (auction) + ~$11M (pre-TGE sale) + community sale; burn rate and treasury composition are not public."
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack"
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'revenue_qoq_growth_pct' not in evidence pack"
+      ]
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: distribution of fee-paying applications"
+      ]
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: any revenue figure; the operator budget is currently paid by 5% emissions"
+      ]
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'category_share_pct' not in evidence pack",
+        "No category-share data for FHE / confidential-compute protocols."
+      ]
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-25",
+        "ZAMA-04",
+        "ZAMA-23"
+      ],
+      "rationale": "The moat is technical and legal (patents, an FHE research team, the ERC-7984 standard with OpenZeppelin); it has not yet been tested by users choosing between rivals.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-25"
+      ],
+      "rationale": "Code is source-available, but commercial use requires Zama's patent licence, which makes a commercial fork legally impractical.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-15",
+        "ZAMA-23"
+      ],
+      "rationale": "FHE adds composable encrypted state to existing chains without a new L1, unlike TEE chains (Secret, Oasis) or ZK L2s (Aztec); performance is the trade-off (~20 TPS).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "ZAMA-04"
+      ],
+      "rationale": "$550M auction FDV is ~4.4× the closest listed FHE peer (Mind Network, ~$125M), with no usage metrics to justify the premium beyond funding and team.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-17",
+        "ZAMA-04",
+        "ZAMA-23"
+      ],
+      "rationale": "Bron payroll and the OpenZeppelin library are observable; other named partners (Conduit, the Zaiffer JV) are infrastructure or affiliates, and no on-chain flow volumes were found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "ZAMA-09",
+        "ZAMA-04"
+      ],
+      "rationale": "Adds FHE confidential-compute infrastructure, which major venues barely cover; an FHE peer (Mind Network) already exists in the market.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: social engagement analytics"
+      ]
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: bot-likelihood analysis"
+      ]
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'holders_count' not in evidence pack",
+        "Holder count not observable before claims opened. 11,103 unique auction bidders (ZAMA-02) is the closest pre-listing proxy."
+      ]
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: bidder/user geography from the auction"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-17",
+        "ZAMA-02"
+      ],
+      "rationale": "Disclosed paid Creator and Developer programs ($374k) and OG NFT bonuses ran alongside a 218%-oversubscribed auction.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-15",
+        "ZAMA-17",
+        "ZAMA-22"
+      ],
+      "rationale": "Developer programs and a claimed >5,000 library users, but contributors to the core repos are almost entirely Zama staff (CLA required for PRs).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack",
+        "No token-holder voting at listing; governance is an Aragon DAO run by a 3/5 setup multisig, moving to operator votes (ZAMA-06, ZAMA-20)."
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "ZAMA-02",
+        "ZAMA-17",
+        "ZAMA-21"
+      ],
+      "rationale": "Detailed auction results, including refund ratio, came out within two days, and governance proposals are posted publicly; there is no incident history yet to test disclosure.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: survey of informed sentiment (e.g. criticism of the 50% insider allocation or the auction design)"
+      ]
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-04",
+        "ZAMA-10",
+        "ZAMA-23"
+      ],
+      "rationale": "OpenZeppelin co-builds the confidential-token standard, top-tier funds back it, and Binance and Coinbase listed it on day one.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-03",
+        "ZAMA-04"
+      ],
+      "rationale": "Paris-based operating company with >$130M in equity funding and a large staff; the token-issuing entity and the DAO's legal wrapper were not identified.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-01",
+        "ZAMA-02",
+        "ZAMA-04",
+        "ZAMA-20"
+      ],
+      "rationale": "Utility (fee payment, staking) is live, but the issuer sold tokens publicly for ~$55M with 50% insider allocation, and parameters are controlled by a 3/5 multisig.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack",
+        "sanctions_exposure NOT set. No wallet screening available. Needs the venue's Chainalysis/TRM screening of the deployer, Aragon DAO/treasury, the 3/5 setup multisig signers and the auction-proceeds wallets."
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: whether a MiCA crypto-asset white paper was filed for the EU public offer; KuCoin's sale excluded France and the Netherlands (ZAMA-16)"
+      ]
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: court and regulator record search",
+        "active_enforcement_action NOT set. Regulator and court-record searches (AMF, SEC, FCA, etc.) for Zama SAS, Rand Hindi and Pascal Paillier could not be run in this review (search budget exhausted, regulator pages not reachable). No enforcement was mentioned in any pre-listing source read, but that is not a search. RF05 stays unchecked."
+      ]
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "ZAMA-23",
+        "ZAMA-17"
+      ],
+      "rationale": "Confidentiality is opt-in per token (wrapped ERC-7984), and the ACL supports selective disclosure to auditors; balances in confidential tokens are hidden by default.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'infra'"
+      ]
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'infra'"
+      ]
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: Zama's own auction-app geofencing; only KuCoin's and Binance's venue restrictions are known"
+      ]
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 3.3125,
+      "coverage": 0.6666666666666666,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 14,
+      "score": 2.736842105263158,
+      "coverage": 1.0,
+      "sufficient": true,
+      "scored": 10,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 14,
+      "score": 1.625,
+      "coverage": 0.32,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 14,
+      "score": 1.5333333333333334,
+      "coverage": 0.7894736842105263,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 9
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 8,
+      "score": 2.0,
+      "coverage": 0.07692307692307693,
+      "sufficient": false,
+      "scored": 1,
+      "applicable": 8
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 8,
+      "score": 3.5,
+      "coverage": 0.11764705882352941,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 10,
+      "score": 3.0,
+      "coverage": 0.1111111111111111,
+      "sufficient": false,
+      "scored": 1,
+      "applicable": 10
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 10,
+      "score": 2.6363636363636362,
+      "coverage": 0.6111111111111112,
+      "sufficient": true,
+      "scored": 6,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 4,
+      "score": 2.4,
+      "coverage": 0.38461538461538464,
+      "sufficient": false,
+      "scored": 4,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 6,
+      "score": 2.5,
+      "coverage": 0.375,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 8
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "clear"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "clear"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "clear"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "clear"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "clear"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "clear"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "clear"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "n/a"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "unchecked"
+    }
+  ],
+  "contradictions": [],
+  "point_score": 61.8,
+  "score_low": 22.9,
+  "score_high": 87.6,
+  "coverage": 0.501,
+  "grade": "C",
+  "verdict": "INSUFFICIENT_DATA",
+  "verdict_reasons": [
+    "evidence coverage 50% below the 70% needed for a verdict"
+  ]
+}

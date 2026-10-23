@@ -1,0 +1,147 @@
+{
+  "project": "Zama (ZAMA)",
+  "as_of": "2026-02-02",
+  "sources": [
+    {
+      "id": "ZAMA-01",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Zama token sale via CoinList and its own auction app (13 Jan 2026)",
+      "url": "https://www.theblock.co/post/385409/zama-token-sale-coinlist-own-auction-app",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 13 Jan 2026. 11B ZAMA total supply; 12% sold: 2% community sale to OG NFT holders, 8% sealed-bid Dutch auction on Ethereum 21–24 Jan (CoinList as distribution partner), 2% post-auction sale at clearing price 27 Jan–2 Feb. Floor $0.005 ($55M FDV), no upper bound. Claiming 2 Feb 2026; sale tokens fully unlocked. Zama has raised >$150M (Multicoin, Pantera, Protocol Labs); last equity round valued it >$1B. Hindi calls the sale a distribution mechanism, not a capital raise."
+    },
+    {
+      "id": "ZAMA-02",
+      "type": "doc",
+      "tier": 3,
+      "title": "Zama blog — The Zama Public Auction: $118M committed for the first encrypted ICO on Ethereum (26 Jan 2026)",
+      "url": "https://www.zama.org/post/118m-committed-for-the-first-encrypted-ico-on-ethereum",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 26 Jan 2026. $118.5M committed (incl. $2.2M via KuCoin, $4.2M via CoinList); 11,103 unique bidders, 24,697 bids; clearing price $0.05; winning bids paid $44.0M; 2,805,849,657 tokens demanded vs 880,000,000 sold; 218% oversubscribed; refund ratio 62.89%. Tokens fully unlocked; claiming opens 2 Feb."
+    },
+    {
+      "id": "ZAMA-03",
+      "type": "news",
+      "tier": 3,
+      "title": "Decrypt (Chainwire press release) — Zama's public auction attracts $118M (27 Jan 2026)",
+      "url": "https://decrypt.co/356036/zamas-public-auction-attracts-118m-for-ethereums-first-encrypted-ico?amp=1",
+      "retrieved": "2026-10-23",
+      "excerpt": "Chainwire release, Paris dateline, 27 Jan 2026. Repeats auction figures ($118.5M committed, $121.3M total value shielded in the auction app, clearing $0.05, 880M sold, 218% oversubscribed). States the protocol had no downtime during the auction. Mainnet launched with the first confidential USDT transfer on Ethereum."
+    },
+    {
+      "id": "ZAMA-04",
+      "type": "research",
+      "tier": 2,
+      "title": "Bitget research — In-depth analysis and market cap of Zama (ZAMA) (30 Jan 2026)",
+      "url": "https://www.bitget.com/amp/news/detail/12560605175620",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 30 Jan 2026. Total supply 11B. Allocation: public auction 8%, community sale 2%, pre-TGE sale 2% (all unlocked at TGE 2 Feb 2026); Treasury 20% (part at TGE, rest vests, fully unlocked by month 48–50); Team 20% (12-month cliff then linear, fully unlocked by month 48–50); VCs 20% and Angels 10% (12-month cliff then linear, largely unlocked by month 24); Growth 10% (part at TGE, linear to month 48); TGE campaigns 6%; liquidity 2% mentioned separately. TGE circulating ~2.25B (~20%). Funding $130M: Series A $73M (7 Mar 2024, Multicoin & Protocol Labs), Series B $57M (25 Jun 2025, Blockchange & Pantera, >$1B post-money). Auction clearing $0.05 implies ~$550M FDV. Founders: Rand Hindi (CEO, founded Snips, acquired), Pascal Paillier (CTO, co-inventor of the Paillier scheme). FHE peer Mind Network FDV ~$125M. Partners named: OpenZeppelin, Conduit. No exploit or incident mentioned."
+    },
+    {
+      "id": "ZAMA-05",
+      "type": "doc",
+      "tier": 3,
+      "title": "Zama blog — Announcing the Zama Public Auction (1 Dec 2025)",
+      "url": "https://www.zama.org/post/announcing-the-zama-public-auction",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 1 Dec 2025. Floor $55M FDV 'based on a total supply of 11B tokens'. Sale split 2% OG-NFT holders at floor (40,000 tokens per NFT), 8% sealed-bid Dutch auction, 2% post-auction at clearing price ($10k cap). All protocol fees are burned; operator and staker rewards are minted on a yearly emission schedule. Utility: pay for encryption/decryption, stake/delegate to operators."
+    },
+    {
+      "id": "ZAMA-06",
+      "type": "doc",
+      "tier": 3,
+      "title": "Zama blog — Stake $ZAMA (2 Feb 2026)",
+      "url": "https://www.zama.org/post/stake-zama-token",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2 Feb 2026. Delegated proof-of-stake; inflation starts at 5% of total ZAMA supply per year. 18 active operators: 13 KMS nodes and 5 FHE coprocessors; new operators must stake ≥0.5% of circulating ZAMA; epochs ~3 months. 60% of rewards to KMS operators/delegators, 40% to coprocessors; rewards scale with sqrt(stake); commission capped 20%; 7-day unbonding. Protocol updates require majority operator approval, managed through Aragon. No slashing described."
+    },
+    {
+      "id": "ZAMA-07",
+      "type": "doc",
+      "tier": 3,
+      "title": "Zama blog — $ZAMA token launch (2 Feb 2026)",
+      "url": "https://www.zama.org/post/zama-token-launch",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2 Feb 2026. Claims open 12:00 UTC, trading on major exchanges 13:00 UTC. Contracts: Ethereum 0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3, BSC 0x6907a5986c4950bdaf2f81828ec0737ce787519f, Solana 4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh. 'All fees are burned, while rewards are minted according to a yearly emission schedule.' Bridge at bridge.zama.org; staking at staking.zama.org."
+    },
+    {
+      "id": "ZAMA-08",
+      "type": "news",
+      "tier": 2,
+      "title": "NFT Evening — Binance lists Zama (ZAMA) for spot trading with Seed Tag (2 Feb 2026)",
+      "url": "https://nftevening.com/binance-list-zama/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2 Feb 2026, 09:20 UTC (before trading). Binance spot 2 Feb 13:00 UTC, withdrawals 3 Feb; Seed Tag; pairs ZAMA/USDT, ZAMA/USDC, ZAMA/TRY; 55M ZAMA set aside for campaigns. Total supply 11,000,000,000; circulating 2,250,000,000. ERC-20 and BEP-20 contracts as above. Background: >$176M raised, >$1B valuation after Series B, team >100 people with ~40 PhDs, 29 institutional backers."
+    },
+    {
+      "id": "ZAMA-09",
+      "type": "news",
+      "tier": 2,
+      "title": "AiCoin — relay of Binance listing notice for Zama (ZAMA) (2 Feb 2026)",
+      "url": "https://www.aicoin.com/en/news-flash/2736702",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2 Feb 2026 04:31. Binance lists ZAMA with Seed Tag: spot 2 Feb 13:00 UTC, pairs USDT/USDC/TRY, listing fee 0 BNB, withdrawals 3 Feb 13:00 UTC. 55,000,000 ZAMA for future marketing campaigns. Previously on Binance Alpha. Restricted jurisdictions include US, Canada, Netherlands. Describes Zama as a cross-chain confidentiality layer using FHE."
+    },
+    {
+      "id": "ZAMA-10",
+      "type": "news",
+      "tier": 2,
+      "title": "TechFlow newsletter — Coinbase Markets to launch ZAMA-USD spot trading (2 Feb 2026)",
+      "url": "https://www.techflowpost.com/en-US/newsletter/113188",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2 Feb 2026 15:06. Coinbase Markets announced spot trading for Zama (ZAMA), ZAMA-USD pair, launching 2 Feb 2026 subject to liquidity conditions; retail via Coinbase.com/app/Advanced, institutional via Coinbase Exchange."
+    },
+    {
+      "id": "ZAMA-11",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinGabbar — Zama listing date 2 Feb: Binance and other exchanges (2 Feb 2026)",
+      "url": "https://www.coingabbar.com/en/crypto-currency-news/zama-listing-date-feb2-zama-protocol-price-binance-airdrop",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2 Feb 2026. Venues opening ZAMA trading on 2 Feb: Binance (Seed Tag), Kraken, KuCoin, OKX, Bybit, Bitget, Gate, MEXC, LBank, XT, BitMart, Blynex; Solana launch with HumidiFi providing liquidity. Total supply 11B, ~20% (~2.2B) circulating at TGE. Only pre-launch price cited is the $0.05 auction clearing price."
+    },
+    {
+      "id": "ZAMA-12",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News — Binance Alpha pre-TGE sale for ZAMA (29 Jan 2026)",
+      "url": "https://www.mexc.com/news/591560",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 29 Jan 2026. Binance Alpha pre-TGE sale: ≥220 Alpha points, cap 3 BNB per user. Pre-market contract price about $0.043 on 29 Jan, ~14% below the $0.05 auction price. Fees burned, staking rewards minted. (Article states 318% oversubscription; the project's own figure is 218%.)"
+    },
+    {
+      "id": "ZAMA-13",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News — Zama pre-TGE campaign on Binance Wallet (c. 29 Jan 2026)",
+      "url": "https://www.mexc.com/news/591782",
+      "retrieved": "2026-10-23",
+      "excerpt": "Undated; describes the Binance Wallet campaign starting 29 Jan 2026 and the 2 Feb distribution as upcoming. Total supply 11B; circulating at TGE 2.2B; public distribution 12% (2% community, 8% auction, 2% pre-TGE). Pre-TGE: 220M tokens at $0.05 (~$11M), fully unlocked. Staking rewards start at 5% annual inflation, adjustable by governance."
+    },
+    {
+      "id": "ZAMA-16",
+      "type": "news",
+      "tier": 2,
+      "title": "KuCoin — Introducing Zama (ZAMA) on KuCoin Spotlight (19 Jan 2026)",
+      "url": "https://www.kucoin.com/announcement/es-introducing-zama-zama-on-kucoin-spotlight-bid-in-the-auction",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 19 Jan 2026. Total supply 11,000,000,000 ZAMA; 880,000,000 offered in the sealed-bid Dutch auction 21–24 Jan; price range $0.005–$5.00. Excluded jurisdictions include US, UK, Canada, France, Netherlands, Singapore. Series B $57M (Blockchange, Pantera); total funding >$150M; valuation >$1B. No audits mentioned."
+    }
+  ],
+  "metrics": {
+    "total_supply": {"value": 11000000000, "source": "ZAMA-04", "note": "also ZAMA-08, ZAMA-16; genesis supply. Not a hard cap: ZamaERC20 has an uncapped mint (ZAMA-18) used for staking emissions"},
+    "circulating_supply": {"value": 2250000000, "source": "ZAMA-04", "note": "TGE circulating; ZAMA-08 gives 2.25B, ZAMA-11/ZAMA-13 round to 2.2B"},
+    "market_cap_usd": {"value": 112500000, "source": "ZAMA-04", "note": "2.25B circulating × $0.05 auction clearing price, the last price set before listing. No exchange price existed on the morning of 2 Feb; a pre-market contract traded near $0.043 on 29 Jan (ZAMA-12)"},
+    "fdv_usd": {"value": 550000000, "source": "ZAMA-04", "note": "11B × $0.05 auction clearing price"},
+    "insider_allocation_pct": {"value": 50, "source": "ZAMA-04", "note": "Team 20% + VCs 20% + Angels 10%. Treasury (20%) and Growth (10%) are Zama-controlled but not counted; with them, Zama and its investors control 80% of genesis supply"},
+    "team_vesting_months": {"value": 48, "source": "ZAMA-04", "note": "12-month cliff, then linear; fully unlocked by month 48–50"},
+    "unlock_12m_pct_of_circ": {"value": 36.7, "source": "ZAMA-04", "note": "ESTIMATE. Team/VC/Angel cliffs end at month 12, so their unlocks begin just outside the window. Inside it: Treasury remainder (~2.2B less its TGE part) and Growth (~1.1B) vesting linearly to ~month 48 → ~0.825B over 12 months ÷ 2.25B circulating. Exact TGE portions and monthly amounts were not published in a pre-listing source I could read; if Treasury vests over 24 months the figure rises to ~61%. Excludes the 5% staking emission (see annual_inflation_pct). Then ~5.5B of insider tokens (2.4× TGE float) start unlocking from Feb 2027"},
+    "unlock_90d_pct_of_circ": {"value": 9.2, "source": "ZAMA-04", "note": "ESTIMATE: one quarter of the 12-month Treasury + Growth figure (~0.206B ÷ 2.25B). No insider cliff falls in the first 90 days"},
+    "annual_inflation_pct": {"value": 24.4, "source": "ZAMA-06", "note": "Emission is 5% of TOTAL supply per year = ~550M ZAMA/yr; as a share of the 2.25B TGE float that is 24.4%. Fee burns offset an unknown, likely small, amount at launch. Governance can change the rate (ZAMA-13)"},
+    "price_to_last_round_multiple": {"value": null, "source": "ZAMA-04", "note": "Investors bought equity (Series A $73M, Series B $57M at >$1B post-money), not a priced token round; no per-token cost basis is public. For scale: the $550M auction FDV is ~0.55× the last equity valuation"}
+  },
+  "claims": [
+    {"id": "C1", "statement": "Zama: the $55M floor FDV is based on a total supply of 11B tokens", "metric": "total_supply", "claimed_value": 11000000000, "source": "ZAMA-05"}
+  ]
+}

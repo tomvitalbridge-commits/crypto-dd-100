@@ -1,0 +1,17 @@
+{
+  "project": "Zama (ZAMA)",
+  "as_of": "2026-02-02",
+  "sources": [
+    {
+      "id": "ZAMA-15",
+      "type": "research",
+      "tier": 2,
+      "title": "MEXC Blog — Zama's public token auction approaches: from 'privacy coins' to confidential computation (3 Dec 2025)",
+      "url": "https://blog.mexc.com/news/zamas-public-token-auction-approaches-the-shift-from-privacy-coins-to-confidential-computation-infrastructure/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 3 Dec 2025 (page shows a later modification date, 21 Apr 2026; only content consistent with a Dec 2025 view is used). Founded 2020 by Pascal Paillier (inventor of the Paillier scheme) and Rand Hindi. Unicorn after $57M Series B (Jun 2025); total funding >$150M. Roadmap: Ethereum mainnet Q4 2025, other EVM chains H1 2026, Solana H2 2026. >5,000 developers use Zama's FHE libraries (project figure); 20+ TPS per chain now, 100+ planned with GPUs; KMS uses 13 MPC nodes. Fees priced in USD, paid in ZAMA, $0.01–$1.30 per example operation. Zaiffer joint venture (€2M) for confidential tokens. Competitors named: Secret Network, Aztec, Oasis; ZK systems StarkNet, zkSync. Its allocation table was an estimate pending official disclosure and is not used."
+    }
+  ],
+  "metrics": {},
+  "claims": []
+}
