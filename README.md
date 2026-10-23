@@ -20,7 +20,7 @@ Hyperliquid (HYPE)  ·  🟡 CONDITIONAL  ·  grade B  ·  66.0/100 (range 41–
   → human-only checks outstanding: T02, M05, L07
 ```
 
-<img src="examples/hyperliquid/report/radar.svg" width="560" alt="Hyperliquid pillar radar">
+<img src="docs/img/hyperliquid-radar.png" width="560" alt="Hyperliquid pillar radar">
 
 Binance listed HYPE spot on 24 Sep 2026 with a **Seed Tag**, which is a
 conditional listing in all but name. Working only from 61 public sources,
