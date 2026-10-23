@@ -1,0 +1,133 @@
+{
+  "project": "Aerodrome (AERO)",
+  "as_of": "2026-07-17",
+  "sources": [
+    {
+      "id": "AERO-01",
+      "type": "github",
+      "tier": 1,
+      "title": "Own git-history query of public Aerodrome/Velodrome repositories (commits 2026-04-18 to 2026-07-17)",
+      "url": "https://github.com/aerodrome-finance/contracts",
+      "retrieved": "2026-10-23",
+      "excerpt": "Cloned aerodrome-finance/contracts, /slipstream, /relay and velodrome-finance/contracts, /sugar, /superchain-contracts, /superchain-slipstream, /universal-router; counted non-merge commits dated in the 90 days before listing. Aerodrome repos: 0 (last: slipstream 2026-04-10 'gauge unstake', 2026-04-07 'deploy dynamic fee adjustment'; contracts 2025-12-18). Velodrome repos: 4 (sugar 1, superchain-slipstream 3) by 3 distinct authors. Aero-specific repositories, if any, were not public or not found."
+    },
+    {
+      "id": "AERO-02",
+      "type": "doc",
+      "tier": 3,
+      "title": "aerodrome-finance/contracts — source, README, PERMISSIONS.md, SPECIFICATION.md (main branch, last commit 2025-12-18)",
+      "url": "https://github.com/aerodrome-finance/contracts",
+      "retrieved": "2026-10-23",
+      "excerpt": "Aero.sol: mint() callable only by `minter`; setMinter only by current minter (set once to Minter 0xeB01…3FE5). No pause, blacklist or freeze function. Minter.sol: 10M/week start, +3%/wk growth, -1%/wk decay, tail from 8,969,150/wk; EpochGovernor can nudge tail rate by 1 bp/epoch within 1-100 bps of supply per week; team rate capped at 5%. No proxy pattern in core contracts (only the cosmetic VeArtProxy). Admin roles (PERMISSIONS.md): Protocol Team multisig 0xE6A4…2075 holds Pauser (pause swaps on v1 pools), FeeManager, FactoryRegistry owner (approve new pool/gauge/reward factories), Minter team, Vetoer ('will be renounced at a later date'); EmergencyCouncil multisig 0x9924…013D can kill gauges. README links each deployed address to Basescan '#code'. Spec says code is 'inspired by Solidly'; token header credits velodrome.finance. Deployed-bytecode match not verified by the reviewer (explorer access blocked)."
+    },
+    {
+      "id": "AERO-03",
+      "type": "doc",
+      "tier": 3,
+      "title": "aerodrome-finance/slipstream — README, fee modules, audits folder",
+      "url": "https://github.com/aerodrome-finance/slipstream",
+      "retrieved": "2026-10-23",
+      "excerpt": "Concentrated-liquidity pools 'adapted from UniswapV3' core/periphery (GPL-2.0); gauge contracts under BUSL-1.1. The audits/ folder holds only the 2021 ABDK and Trail of Bits reports for Uniswap V3, not Slipstream-specific reviews. CLFactory lets the swapFeeManager / unstakedFeeManager replace fee modules; module caps: custom swap fee 3%, dynamic fee cap 5%, unstaked fee 50%. README: 'Velodrome has a live bug bounty hosted on Immunefi'. Base deployment addresses listed."
+    },
+    {
+      "id": "AERO-04",
+      "type": "doc",
+      "tier": 2,
+      "title": "Immunefi — Velodrome Finance bug bounty (last updated 5 Jul 2026)",
+      "url": "https://immunefi.com/bug-bounty/velodromefinance/information",
+      "retrieved": "2026-10-23",
+      "excerpt": "Max payout $100,000; programme live since 29 Jun 2023; last updated 05 Jul 2026; KYC required for payout. Lists a Spearbit audit completed 16 Jun 2023 (report published 17 Jul 2023) and a Spearbit Slipstream audit completed 5 Dec 2023 (published 22 Jan 2024). The information page does not say whether Aerodrome's Base deployments are in scope."
+    },
+    {
+      "id": "AERO-05",
+      "type": "audit",
+      "tier": 2,
+      "title": "ChainSecurity — Velodrome Slipstream Dynamic Fee audit (completed 13 Jan 2025)",
+      "url": "https://www.chainsecurity.com/security-audit/velodrome-slipstream-dynamic-fee",
+      "retrieved": "2026-10-23",
+      "excerpt": "Audit of the Slipstream dynamic-fee module for Velodrome Finance, completed 2025-01-13; summary says 'high level of security'. Scope commit and finding counts are in the PDF, not read. The same module family was deployed on Aerodrome in Apr 2026 (AERO-01 commit 'deploy dynamic fee adjustment')."
+    },
+    {
+      "id": "AERO-15",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockaid — How Blockaid's network contained the Aerodrome DNS attack (24 Nov 2025)",
+      "url": "https://www.blockaid.io/blog/how-blockaids-customer-data-network-contained-the-aerodrome-dns-attack",
+      "retrieved": "2026-10-23",
+      "excerpt": "21 Nov 2025 20:11-22:40 UTC: attacker changed DNS records for aerodrome.finance and velodrome.finance to a cloned front end with drainer code. ~$700K stolen into nine attacker addresses; ~$3.5M blocked. 'The underlying smart contracts and protocol logic were not exploited.' Reimbursement not mentioned."
+    },
+    {
+      "id": "AERO-16",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News (PANews) — Aerodrome/Velodrome preliminary post-mortem (24 Nov 2025)",
+      "url": "https://www.mexc.com/news/186121",
+      "retrieved": "2026-10-23",
+      "excerpt": "Root cause: internal compromise at registrar NameSilo; attacker bypassed 3DNS multisig control and removed DNSSEC. Remediated in under four hours. ~$700K user losses from signing malicious transactions; dApp contracts unaffected. Aero and Velo Foundations developing a grant programme for affected users; no amounts or eligibility given."
+    },
+    {
+      "id": "AERO-17",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News (PANews) — Aerodrome domain migration complete (6 Dec 2025)",
+      "url": "https://www.mexc.com/en-NG/news/233422",
+      "retrieved": "2026-10-23",
+      "excerpt": "Domain migration complete with 'enhanced security protocols'. Losses ~$700K. Foundations developing compensation in proportion to losses; no payout amounts or timeline."
+    },
+    {
+      "id": "AERO-18",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Aerodrome, Velodrome hit with front-end compromise (22 Nov 2025)",
+      "url": "https://www.theblock.co/post/380037/top-dexs-aerodrome-velodrome-hit-with-front-end-compromise-urge-users-to-avoid-main-domains",
+      "retrieved": "2026-10-23",
+      "excerpt": "DNS hijack of both DEXs' centralised domains; projects said contracts remained secure and pointed users to decentralised mirrors. A Velodrome post asking its domain provider for help was later deleted. A similar front-end attack hit both on 29 Nov 2023; ZachXBT estimated >$100K lost then."
+    },
+    {
+      "id": "AERO-19",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Velodrome, Aerodrome hit by attack on front-end websites (29 Nov 2023)",
+      "url": "https://www.theblock.co/post/265104/velodrome-aerodrome-hit-by-attack-on-front-end-websites",
+      "retrieved": "2026-10-23",
+      "excerpt": "DNS attack redirected official sites to a phishing contract; ZachXBT detected >$40K moved to two addresses at time of writing. No reimbursement statement."
+    }
+  ],
+  "metrics": {
+    "mint_authority": {
+      "value": "governance",
+      "source": "AERO-02",
+      "note": "AERO can only be minted by the immutable Minter contract on a coded schedule; the only lever is veAERO EpochGovernor voting the tail rate up or down 1 bp/week within 1-100 bps of supply per week, plus the team-rate (max 5%) set by the team multisig. No EOA or multisig can mint at will. Emission schedule corroborated by AERO-06 and AERO-07."
+    },
+    "upgrade_timelock_hours": {
+      "value": 9999,
+      "source": "AERO-02",
+      "note": "core v1 and Slipstream contracts have no proxy (Slipstream pools are clones). Untimelocked team powers remain: pause v1 swaps, swap fee modules (capped 3-5%, AERO-03), approve new factories — scored under S05."
+    },
+    "audits_reputable_count": {
+      "value": 2,
+      "source": "AERO-04",
+      "note": "two reputable firms: Spearbit (Velodrome V2 core, Jun 2023, which Aerodrome forked; Slipstream, Dec 2023) and ChainSecurity (Slipstream dynamic fee, Jan 2025, AERO-05). Reports were read only as summaries; Aerodrome-specific scope and bytecode match not verified (S02 pending)."
+    },
+    "bug_bounty_max_usd": {
+      "value": 100000,
+      "source": "AERO-04",
+      "note": "Velodrome Immunefi programme; Aerodrome's own Slipstream README points researchers to it (AERO-03), but Aerodrome scope is not confirmed on the page read"
+    },
+    "github_commits_90d": {
+      "value": 4,
+      "source": "AERO-01",
+      "note": "public repos only, 2026-04-18 to 2026-07-17; 0 in Aerodrome repos, 4 in shared Velodrome repos. Aero merger work is not visible in public repos."
+    },
+    "github_active_contributors_90d": {
+      "value": 3,
+      "source": "AERO-01"
+    },
+    "unreimbursed_exploit_usd": {
+      "value": 0,
+      "source": "AERO-15",
+      "note": "no exploit of Aerodrome smart contracts found 2023-26. Users lost ~$700K (Nov 2025) and >$40-100K (Nov 2023) through DNS hijacks of the official front end; foundations announced proportional grants (AERO-16, AERO-17) but no payout was confirmed in sources found. Treated as a front-end security incident under S08, not as a contract exploit — see manifest notes; analyst should confirm the grants were paid."
+    }
+  },
+  "claims": []
+}

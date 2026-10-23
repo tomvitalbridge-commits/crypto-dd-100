@@ -1,0 +1,1521 @@
+{
+  "project": "Aerodrome (AERO)",
+  "profile": "defi",
+  "as_of": "2026-07-17",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-20",
+        "AERO-13",
+        "AERO-06"
+      ],
+      "rationale": "The same team built Velodrome, the largest DEX on Optimism, and Aerodrome, the largest DEX on Base, both still running. Outcomes are verifiable; individual founders' earlier careers are not documented in sources found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-11",
+        "AERO-13",
+        "AERO-01"
+      ],
+      "rationale": "Named CEO (Cutler), CFO (Wick) and foundation executive director, plus several engineers visible in git history; no documented succession, and public code activity rests on 3 contributors over 90 days.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-03",
+        "AERO-11"
+      ],
+      "rationale": "In-house team wrote and maintains the ve(3,3) v2 design (managed veNFTs, Aero Fed emissions), Slipstream and dynamic-fee modules, with public specs; most core math is adapted from Solidly and Uniswap V3.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-13",
+        "AERO-06",
+        "AERO-08"
+      ],
+      "rationale": "No enforcement, lawsuit or misconduct allegation found in press coverage; court records and team wallet histories were not checked, so not a 4.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'team_vesting_months' not in evidence pack",
+        "team_vesting_months NOT set. One source says the team cliff is Feb 2028 (AERO-08), another that the 8.61% foundation+team allocation vests 'over time' (AERO-07); the lock was not verified on-chain, and the team also receives up to 5% of weekly emissions."
+      ]
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-08"
+      ],
+      "rationale": "veAERO holders vote weekly and bindingly on emissions allocation and the tail rate, but the team multisig still holds pauser, fee-manager, factory-registry and vetoer roles; the vetoer renunciation is promised without a date.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: foundation/team treasury addresses and any periodic treasury or buyback report to reconcile against on-chain balances"
+      ]
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "AERO-08"
+      ],
+      "rationale": "No private sale or VC allocation at genesis; one source names Coinbase Ventures (via the Base Ecosystem Fund) as an investor, with terms undisclosed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "contradiction_count = 0  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08",
+        "AERO-09"
+      ],
+      "rationale": "Traders pay real fees (~$57M annualised in July 2026, >$17B 30d volume), but the liquidity side is paid for with AERO emissions.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "AERO-20",
+        "AERO-06",
+        "AERO-07"
+      ],
+      "rationale": "Mainnet since August 2023 (~35 months) with Slipstream concentrated liquidity live since April 2024.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "AERO-02",
+        "AERO-03",
+        "AERO-20"
+      ],
+      "rationale": "Fork of Velodrome V2 (Solidly lineage) and adapted Uniswap V3 pools, with meaningful additions: managed veNFTs, gauge-integrated CL pools, dynamic fee modules.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-15",
+        "AERO-06"
+      ],
+      "rationale": "Uses battle-tested constant-product and concentrated-liquidity designs; no contract exploit in ~3 years of production.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-18",
+        "AERO-15",
+        "AERO-20"
+      ],
+      "rationale": "Single-chain dependence on Base and its sequencer for the core business, and a centralised web domain that was hijacked twice (2023, 2025).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "AERO-01"
+      ],
+      "rationale": "github_commits_90d = 4  (bands 4:≥300, 3:≥150, 2:≥60, 1:≥15)",
+      "assessor": "rule",
+      "notes": [
+        "github_commits_90d counts only public repos reachable here; Aero merger work appears to be private, so the low count understates engineering activity."
+      ]
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "AERO-01"
+      ],
+      "rationale": "github_active_contributors_90d = 3  (bands 4:≥25, 3:≥12, 2:≥6, 1:≥3)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08",
+        "AERO-10",
+        "AERO-09",
+        "AERO-01"
+      ],
+      "rationale": "Slipstream and dynamic fees shipped, but the flagship Aero merger targeted for Q2 2026 was not live by 1 July 2026, and Predictive Allocation was still 'scheduled'.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-03"
+      ],
+      "rationale": "Contracts are public (GPL/Apache, gauges BUSL); the reviewer could not confirm deployed bytecode matches a tagged commit.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-03"
+      ],
+      "rationale": "Repos ship a specification, an exhaustive admin-permissions list and a voting-escrow spec; no threat model found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-04"
+      ],
+      "rationale": "audits_reputable_count = 2  (bands 4:≥3, 3:≥2, 2:≥1, 1:≥0.5)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: finding-by-finding remediation status in the Spearbit (2023) and ChainSecurity (2025) reports, and confirmation that Base deployments match the audited commits"
+      ]
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'contracts_verified' not in evidence pack",
+        "contracts_verified NOT set. The project README links every core address to Basescan '#code' (AERO-02), but that is the project's own claim; Basescan, Blockscout and Sourcify were blocked here, so verification was not independently confirmed. Two-minute analyst check: open the Basescan links for AERO 0x9401…8631, Minter, Voter, VotingEscrow, PoolFactory and the Slipstream CLFactory."
+      ]
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "scored",
+      "score": 4,
+      "confidence": "low",
+      "evidence": [
+        "AERO-02"
+      ],
+      "rationale": "upgrade_timelock_hours = 9,999  (bands 4:≥72, 3:≥48, 2:≥24, 1:≥6)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-03",
+        "AERO-08"
+      ],
+      "rationale": "Admin powers sit with a team multisig and an Emergency Council multisig, not an EOA; threshold and signer independence unknown; powers include pausing v1 swaps and swapping fee modules with no timelock.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-06",
+        "AERO-07"
+      ],
+      "rationale": "Only the Minter contract can mint, on a coded schedule that veAERO voters can nudge by 1 bp of supply per week; no freeze or blacklist function. Supply is uncapped.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-04"
+      ],
+      "rationale": "bug_bounty_max_usd = 100,000  (bands 4:≥1e+06, 3:≥250,000, 2:≥50,000, 1:≥10,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-15",
+        "AERO-16",
+        "AERO-17",
+        "AERO-18",
+        "AERO-19"
+      ],
+      "rationale": "Contracts never exploited, but users lost ~$700K (Nov 2025) and >$40K (Nov 2023) to two DNS hijacks of the official front end; compensation grants were announced but no payout found.",
+      "assessor": "agent:claude",
+      "notes": [
+        "unreimbursed_exploit_usd is set to 0 because no smart-contract exploit was found. Users lost ~$700K (Nov 2025) and >$40-100K (Nov 2023) through DNS hijacks of the official front end; the foundations promised proportional grants (AERO-16/17) and no payout was found before 17 Jul 2026. If the venue counts official-front-end phishing losses as 'users owed money', RF04 would fire. Ask the team for proof the grants were paid."
+      ]
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-03"
+      ],
+      "rationale": "Swaps do not depend on an external price oracle; risk sits with third parties that read Aerodrome pool prices, not with the DEX's own solvency.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-10"
+      ],
+      "rationale": "AERO is minted natively on Base; the planned Aero expansion to Ethereum and Arc would add cross-chain exposure that is not yet live.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "AERO-07",
+        "AERO-08"
+      ],
+      "rationale": "Locked AERO (veAERO) receives 100% of trading fees plus bribes from the pools it votes for, live since 2023.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "circulating_supply_pct = 51.2  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top10_holder_pct_ex_contracts' not in evidence pack",
+        "top10_holder_pct_ex_contracts NOT set: most supply sits in the VotingEscrow contract as veNFTs, so concentration needs veNFT-owner-level data; explorers were not reachable."
+      ]
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-11"
+      ],
+      "rationale": "unlock_12m_pct_of_circ = 11.4  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-07"
+      ],
+      "rationale": "insider_allocation_pct = 8.61  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'price_to_last_round_multiple' not in evidence pack",
+        "price_to_last_round_multiple NOT set: no priced private round disclosed (Coinbase Ventures/Base Ecosystem Fund terms unknown)."
+      ]
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_mcap = 1.96  (bands 4:≤1.5, 3:≤2.5, 2:≤4, 1:≤7)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08"
+      ],
+      "rationale": "annual_inflation_pct = 11  (bands 4:≤2, 3:≤5, 2:≤10, 1:≤20)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08",
+        "AERO-02"
+      ],
+      "rationale": "Minting is on-chain and formulaic, but providers disagree on circulating supply (~958M vs ~1.25B) and the team lock was not verified on-chain.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-07"
+      ],
+      "rationale": "The 10% airdrop went out as locked veAERO (AirdropDistributor creates locked NFTs), so recipients could not dump on day one; post-unlock retention not measured.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08"
+      ],
+      "rationale": "daa_30d_avg = 24,000  (bands 4:≥50,000, 3:≥10,000, 2:≥2,000, 1:≥300)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_90d_change_pct' not in evidence pack",
+        "daa_90d_change_pct NOT set: the only figure is Q1-2026 vs Q4-2025 (-34%), which is stale; May fees +40% vs March suggest activity recovered."
+      ]
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'retention_30d_pct' not in evidence pack",
+        "retention_30d_pct NOT set: needs own cohort query."
+      ]
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-09"
+      ],
+      "rationale": "tvl_usd = 310,000,000  (bands 4:≥1e+09, 3:≥2e+08, 2:≥5e+07, 1:≥1e+07)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentivised_tvl_share_pct' not in evidence pack",
+        "incentivised_tvl_share_pct NOT set. Structurally, staked LPs give up fees for AERO emissions, so most TVL is likely in emission-receiving gauges; RF15 (mercenary TVL) may well apply. Needs a gauge-staked TVL / total TVL query."
+      ]
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: address clustering / funding-source analysis of Aerodrome traders and LPs"
+      ]
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack",
+        "fee_paying_users_30d NOT set."
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'live_integrations_count' not in evidence pack",
+        "live_integrations_count NOT set: no dated list of live integrations found."
+      ]
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-07",
+        "AERO-08"
+      ],
+      "rationale": "Third-party protocols pay bribes to veAERO voters to direct liquidity (~22% of Q1-2026 value flow) and 180+ tokens are listed; activity depends on that incentive market.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack",
+        "net_inflow_90d_usd NOT set."
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'depth_2pct_usd' not in evidence pack",
+        "depth_2pct_usd, spread_bps, volume_24h_usd and top_venue_volume_share_pct NOT set: only current venue data is available, which would leak post-listing information."
+      ]
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top_venue_volume_share_pct' not in evidence pack",
+        "top_venue_volume_share_pct NOT set (see M01)."
+      ]
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: point-in-time CEX order-book depth and volume by venue for mid-July 2026"
+      ]
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'spread_bps' not in evidence pack",
+        "spread_bps NOT set (see M01)."
+      ]
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-06",
+        "AERO-09"
+      ],
+      "rationale": "Pre-listing venues evidenced: Coinone (since 2024), KuCoin and Aerodrome itself; other tier-1 venues not confirmed from pre-listing sources.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: AERO perp open interest and funding history before 17 July 2026"
+      ]
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'realized_vol_30d_pct' not in evidence pack",
+        "realized_vol_30d_pct NOT set: no pre-listing daily price series retrievable (CoinGecko API blocked)."
+      ]
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: ownership of AERO/USDC and AERO/WETH LP positions on Aerodrome (POL vs gauge-staked third parties)"
+      ]
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08",
+        "AERO-09",
+        "AERO-12"
+      ],
+      "rationale": "Leader of Base DEX trading, but Base DEX volume was ~50% below its Oct 2025 peak and AERO ~87% below its high; the merger is a pending catalyst.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08"
+      ],
+      "rationale": "annualized_revenue_usd = 57,000,000  (bands 4:≥5e+07, 3:≥1e+07, 2:≥2e+06, 1:≥250,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08",
+        "AERO-07"
+      ],
+      "rationale": "Revenue comes from swaps across many pools but is cyclical (Q1-2026 fees -37% q/q, May +40% vs March), and ~22% is bribes paid by protocols.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "AERO-07",
+        "AERO-08"
+      ],
+      "rationale": "All fees and bribes are distributed weekly on-chain to veAERO voters; cumulative >$295M by Jan 2026.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_annual_fees = 16.1  (bands 4:≤20, 3:≤50, 2:≤150, 1:≤500)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentives_to_revenue' not in evidence pack",
+        "incentives_to_revenue NOT set. Rough range only: ~11-18% annual inflation on ~1.87B supply at ~$0.45 is ~$90-150M/yr of emissions against ~$57-89M annualised revenue, i.e. ~1-2.5x. Too derived to enter as a metric."
+      ]
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack",
+        "runway_months NOT set: foundation/Dromos treasury not published."
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack",
+        "treasury_non_native_pct NOT set (see B06)."
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'revenue_qoq_growth_pct' not in evidence pack",
+        "revenue_qoq_growth_pct NOT set: Q1-2026 was -37% q/q; Q2-2026 total not retrievable."
+      ]
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: fee share by pool and by top LP/trader addresses"
+      ]
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-07",
+        "AERO-08"
+      ],
+      "rationale": "Staked LPs give their fees to voters and are paid in emissions, so liquidity would thin if emissions stopped; a fee-paying swap business would remain.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-11",
+        "AERO-08"
+      ],
+      "rationale": "Spot DEX trading is a large segment ($613B in Oct 2025), but Base DEX volume had fallen ~50% from its Oct 2025 peak.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08"
+      ],
+      "rationale": "category_share_pct = 43  (bands 4:≥30, 3:≥15, 2:≥5, 1:≥1)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "AERO-08",
+        "AERO-09"
+      ],
+      "rationale": "Base DEX share fell from 72% (Q4-2024) to a ~39% trough before recovering to 43-53% in May 2026; the sources disagree on the latest level.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08",
+        "AERO-07"
+      ],
+      "rationale": "Bribe/emission marketplace and Base-native liquidity give a moat, but Uniswap took share to ~32% while Aerodrome fell from 72% to ~43%.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-03",
+        "AERO-20"
+      ],
+      "rationale": "Code is forkable (Aerodrome is itself a fork; gauges are BUSL-licensed), but liquidity depth and the bribe market are sticky; no fork that took share was found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-07",
+        "AERO-13"
+      ],
+      "rationale": "Versus Uniswap, projects can buy liquidity through bribes rather than seed it themselves; one axis, and other ve(3,3) DEXs can copy it.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08"
+      ],
+      "rationale": "Q1-2026 price/sales ~2.2x circulating vs Uniswap 2.3x; on FDV 4.6x vs 3.3x — roughly in line.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-08",
+        "AERO-14"
+      ],
+      "rationale": "Base was 'exploring' a native token (Sep 2025) and Uniswap competes on the same chain; no competing native DEX from Coinbase/Base found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: list of announced partnerships to test against on-chain flows"
+      ]
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-13",
+        "AERO-20"
+      ],
+      "rationale": "Adds the leading Base DEX token, but the venue already covers DEX tokens; Base is a rival exchange's chain.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: social engagement analytics (X, Discord, Telegram) for H1 2026"
+      ]
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: bot-likelihood / engagement-quality analysis"
+      ]
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'holders_count' not in evidence pack",
+        "holders_count NOT set: no pre-listing indexer snapshot retrievable."
+      ]
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: user geography"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: disclosed or detected paid-promotion campaigns"
+      ]
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: grant programme and external contributor data"
+      ]
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack",
+        "governance_participation_pct NOT set: weekly gauge voting is near-universal among veAERO holders, but ProtocolGovernor/EpochGovernor participation data was not retrievable."
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-16",
+        "AERO-17",
+        "AERO-18",
+        "AERO-21"
+      ],
+      "rationale": "Both DNS incidents were flagged publicly within hours with a preliminary root cause in days; a Velodrome post was deleted and the compensation programme had no public follow-up in sources found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "AERO-12",
+        "AERO-08"
+      ],
+      "rationale": "AERO fell 19% on the merger announcement and sat ~87% below its high; informed opinion appears mixed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-20",
+        "AERO-21",
+        "AERO-08"
+      ],
+      "rationale": "Largest DEX on Base, integrated with major wallets' security tooling and reportedly backed via Coinbase's Base Ecosystem Fund.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-06",
+        "AERO-13"
+      ],
+      "rationale": "Aerodrome Foundation and Dromos Labs are named with executives, but an exchange disclosure lists the foundation's jurisdiction and legal form as unknown.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "AERO-07",
+        "AERO-08",
+        "AERO-02"
+      ],
+      "rationale": "Lockers receive 100% of fees, a profit-like feature, and the team keeps admin roles; but there was no token sale, and emissions governance is on-chain.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack",
+        "sanctions_exposure NOT set: needs the venue's own Chainalysis/TRM screening of the team multisig (0xE6A4…2075), Emergency Council (0x9924…013D), foundation and top-holder addresses."
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-13"
+      ],
+      "rationale": "Non-custodial AMM with no custody or issuance; Aero plans permissioned tiers for regulated institutions, which may raise licensing questions.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-13",
+        "AERO-06",
+        "AERO-08"
+      ],
+      "rationale": "No litigation or regulator action found in press or exchange disclosures; court and regulator databases were not searched directly.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "AERO-02",
+        "AERO-06"
+      ],
+      "rationale": "Plain ERC-20 and AMM contracts with no privacy or obfuscation features.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'defi'"
+      ]
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'defi'"
+      ]
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: front-end geofencing and terms-of-use restrictions"
+      ]
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 2.9411764705882355,
+      "coverage": 0.7083333333333334,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 10,
+      "score": 2.3684210526315788,
+      "coverage": 1.0,
+      "sufficient": true,
+      "scored": 10,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 14,
+      "score": 2.65,
+      "coverage": 0.8,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 14,
+      "score": 3.0,
+      "coverage": 0.7619047619047619,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 10,
+      "score": 3.0,
+      "coverage": 0.29411764705882354,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 10
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 8,
+      "score": 2.0,
+      "coverage": 0.11764705882352941,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 10,
+      "score": 3.272727272727273,
+      "coverage": 0.6111111111111112,
+      "sufficient": true,
+      "scored": 5,
+      "applicable": 10
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 8,
+      "score": 2.3529411764705883,
+      "coverage": 0.9444444444444444,
+      "sufficient": true,
+      "scored": 9,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 5,
+      "score": 2.6666666666666665,
+      "coverage": 0.23076923076923078,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 9,
+      "score": 2.4545454545454546,
+      "coverage": 0.6875,
+      "sufficient": true,
+      "scored": 5,
+      "applicable": 8
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "clear"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "clear"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "clear"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "clear"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "clear"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "clear"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "clear"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "clear"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "clear"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "clear"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "unchecked"
+    }
+  ],
+  "contradictions": [],
+  "point_score": 67.8,
+  "score_low": 32.6,
+  "score_high": 88.7,
+  "coverage": 0.653,
+  "grade": "B",
+  "verdict": "INSUFFICIENT_DATA",
+  "verdict_reasons": [
+    "evidence coverage 65% below the 70% needed for a verdict"
+  ]
+}

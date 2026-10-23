@@ -1,0 +1,83 @@
+# Aerodrome (AERO) — judgment scores from public sources, point-in-time as of 2026-07-17
+# (Binance spot listing day). Every score cites evidence ids in evidence/*.json.
+# Where public sources were not enough, the dimension is left `pending` with what is missing.
+# T02, M05 and L07 are human-only and deliberately not filled.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, score: 3, confidence: medium, evidence: [AERO-20, AERO-13, AERO-06], assessor: "agent:claude", rationale: "The same team built Velodrome, the largest DEX on Optimism, and Aerodrome, the largest DEX on Base, both still running. Outcomes are verifiable; individual founders' earlier careers are not documented in sources found."}
+- {id: T03, score: 2, confidence: medium, evidence: [AERO-11, AERO-13, AERO-01], assessor: "agent:claude", rationale: "Named CEO (Cutler), CFO (Wick) and foundation executive director, plus several engineers visible in git history; no documented succession, and public code activity rests on 3 contributors over 90 days."}
+- {id: T04, score: 3, confidence: medium, evidence: [AERO-02, AERO-03, AERO-11], assessor: "agent:claude", rationale: "In-house team wrote and maintains the ve(3,3) v2 design (managed veNFTs, Aero Fed emissions), Slipstream and dynamic-fee modules, with public specs; most core math is adapted from Solidly and Uniswap V3."}
+- {id: T05, score: 3, confidence: medium, evidence: [AERO-13, AERO-06, AERO-08], assessor: "agent:claude", rationale: "No enforcement, lawsuit or misconduct allegation found in press coverage; court records and team wallet histories were not checked, so not a 4."}
+- {id: T07, score: 2, confidence: medium, evidence: [AERO-02, AERO-08], assessor: "agent:claude", rationale: "veAERO holders vote weekly and bindingly on emissions allocation and the tail rate, but the team multisig still holds pauser, fee-manager, factory-registry and vetoer roles; the vetoer renunciation is promised without a date."}
+- {id: T08, status: pending, rationale: "missing: foundation/team treasury addresses and any periodic treasury or buyback report to reconcile against on-chain balances"}
+- {id: T09, score: 3, confidence: low, evidence: [AERO-08], assessor: "agent:claude", rationale: "No private sale or VC allocation at genesis; one source names Coinbase Ventures (via the Base Ecosystem Fund) as an investor, with terms undisclosed."}
+
+# --- P Product & Technology
+- {id: P01, score: 3, confidence: medium, evidence: [AERO-08, AERO-09], assessor: "agent:claude", rationale: "Traders pay real fees (~$57M annualised in July 2026, >$17B 30d volume), but the liquidity side is paid for with AERO emissions."}
+- {id: P02, score: 4, confidence: high, evidence: [AERO-20, AERO-06, AERO-07], assessor: "agent:claude", rationale: "Mainnet since August 2023 (~35 months) with Slipstream concentrated liquidity live since April 2024."}
+- {id: P03, score: 2, confidence: high, evidence: [AERO-02, AERO-03, AERO-20], assessor: "agent:claude", rationale: "Fork of Velodrome V2 (Solidly lineage) and adapted Uniswap V3 pools, with meaningful additions: managed veNFTs, gauge-integrated CL pools, dynamic fee modules."}
+- {id: P04, score: 3, confidence: medium, evidence: [AERO-02, AERO-15, AERO-06], assessor: "agent:claude", rationale: "Uses battle-tested constant-product and concentrated-liquidity designs; no contract exploit in ~3 years of production."}
+- {id: P05, score: 2, confidence: medium, evidence: [AERO-18, AERO-15, AERO-20], assessor: "agent:claude", rationale: "Single-chain dependence on Base and its sequencer for the core business, and a centralised web domain that was hijacked twice (2023, 2025)."}
+- {id: P08, score: 2, confidence: medium, evidence: [AERO-08, AERO-10, AERO-09, AERO-01], assessor: "agent:claude", rationale: "Slipstream and dynamic fees shipped, but the flagship Aero merger targeted for Q2 2026 was not live by 1 July 2026, and Predictive Allocation was still 'scheduled'."}
+- {id: P09, score: 2, confidence: medium, evidence: [AERO-02, AERO-03], assessor: "agent:claude", rationale: "Contracts are public (GPL/Apache, gauges BUSL); the reviewer could not confirm deployed bytecode matches a tagged commit."}
+- {id: P10, score: 3, confidence: medium, evidence: [AERO-02, AERO-03], assessor: "agent:claude", rationale: "Repos ship a specification, an exhaustive admin-permissions list and a voting-escrow spec; no threat model found."}
+
+# --- S Security
+- {id: S02, status: pending, rationale: "missing: finding-by-finding remediation status in the Spearbit (2023) and ChainSecurity (2025) reports, and confirmation that Base deployments match the audited commits"}
+- {id: S05, score: 2, confidence: medium, evidence: [AERO-02, AERO-03, AERO-08], assessor: "agent:claude", rationale: "Admin powers sit with a team multisig and an Emergency Council multisig, not an EOA; threshold and signer independence unknown; powers include pausing v1 swaps and swapping fee modules with no timelock."}
+- {id: S06, score: 3, confidence: medium, evidence: [AERO-02, AERO-06, AERO-07], assessor: "agent:claude", rationale: "Only the Minter contract can mint, on a coded schedule that veAERO voters can nudge by 1 bp of supply per week; no freeze or blacklist function. Supply is uncapped."}
+- {id: S08, score: 1, confidence: medium, evidence: [AERO-15, AERO-16, AERO-17, AERO-18, AERO-19], assessor: "agent:claude", rationale: "Contracts never exploited, but users lost ~$700K (Nov 2025) and >$40K (Nov 2023) to two DNS hijacks of the official front end; compensation grants were announced but no payout found."}
+- {id: S09, score: 3, confidence: medium, evidence: [AERO-02, AERO-03], assessor: "agent:claude", rationale: "Swaps do not depend on an external price oracle; risk sits with third parties that read Aerodrome pool prices, not with the DEX's own solvency."}
+- {id: S10, score: 3, confidence: medium, evidence: [AERO-02, AERO-10], assessor: "agent:claude", rationale: "AERO is minted natively on Base; the planned Aero expansion to Ethereum and Arc would add cross-chain exposure that is not yet live."}
+
+# --- K Tokenomics
+- {id: K01, score: 4, confidence: high, evidence: [AERO-07, AERO-08], assessor: "agent:claude", rationale: "Locked AERO (veAERO) receives 100% of trading fees plus bribes from the pools it votes for, live since 2023."}
+- {id: K09, score: 2, confidence: medium, evidence: [AERO-08, AERO-02], assessor: "agent:claude", rationale: "Minting is on-chain and formulaic, but providers disagree on circulating supply (~958M vs ~1.25B) and the team lock was not verified on-chain."}
+- {id: K10, score: 3, confidence: medium, evidence: [AERO-02, AERO-07], assessor: "agent:claude", rationale: "The 10% airdrop went out as locked veAERO (AirdropDistributor creates locked NFTs), so recipients could not dump on day one; post-unlock retention not measured."}
+
+# --- O On-chain Traction
+- {id: O06, status: pending, rationale: "missing: address clustering / funding-source analysis of Aerodrome traders and LPs"}
+- {id: O09, score: 3, confidence: medium, evidence: [AERO-07, AERO-08], assessor: "agent:claude", rationale: "Third-party protocols pay bribes to veAERO voters to direct liquidity (~22% of Q1-2026 value flow) and 180+ tokens are listed; activity depends on that incentive market."}
+
+# --- M Market Structure
+- {id: M03, status: pending, rationale: "missing: point-in-time CEX order-book depth and volume by venue for mid-July 2026"}
+- {id: M06, score: 2, confidence: medium, evidence: [AERO-06, AERO-09], assessor: "agent:claude", rationale: "Pre-listing venues evidenced: Coinone (since 2024), KuCoin and Aerodrome itself; other tier-1 venues not confirmed from pre-listing sources."}
+- {id: M07, status: pending, rationale: "missing: AERO perp open interest and funding history before 17 July 2026"}
+- {id: M09, status: pending, rationale: "missing: ownership of AERO/USDC and AERO/WETH LP positions on Aerodrome (POL vs gauge-staked third parties)"}
+- {id: M10, score: 2, confidence: medium, evidence: [AERO-08, AERO-09, AERO-12], assessor: "agent:claude", rationale: "Leader of Base DEX trading, but Base DEX volume was ~50% below its Oct 2025 peak and AERO ~87% below its high; the merger is a pending catalyst."}
+
+# --- B Business Model
+- {id: B02, score: 2, confidence: medium, evidence: [AERO-08, AERO-07], assessor: "agent:claude", rationale: "Revenue comes from swaps across many pools but is cyclical (Q1-2026 fees -37% q/q, May +40% vs March), and ~22% is bribes paid by protocols."}
+- {id: B03, score: 4, confidence: high, evidence: [AERO-07, AERO-08], assessor: "agent:claude", rationale: "All fees and bribes are distributed weekly on-chain to veAERO voters; cumulative >$295M by Jan 2026."}
+- {id: B09, status: pending, rationale: "missing: fee share by pool and by top LP/trader addresses"}
+- {id: B10, score: 2, confidence: medium, evidence: [AERO-07, AERO-08], assessor: "agent:claude", rationale: "Staked LPs give their fees to voters and are paid in emissions, so liquidity would thin if emissions stopped; a fee-paying swap business would remain."}
+
+# --- C Competition & Moat
+- {id: C01, score: 3, confidence: medium, evidence: [AERO-11, AERO-08], assessor: "agent:claude", rationale: "Spot DEX trading is a large segment ($613B in Oct 2025), but Base DEX volume had fallen ~50% from its Oct 2025 peak."}
+- {id: C03, score: 2, confidence: low, evidence: [AERO-08, AERO-09], assessor: "agent:claude", rationale: "Base DEX share fell from 72% (Q4-2024) to a ~39% trough before recovering to 43-53% in May 2026; the sources disagree on the latest level."}
+- {id: C04, score: 2, confidence: medium, evidence: [AERO-08, AERO-07], assessor: "agent:claude", rationale: "Bribe/emission marketplace and Base-native liquidity give a moat, but Uniswap took share to ~32% while Aerodrome fell from 72% to ~43%."}
+- {id: C05, score: 2, confidence: medium, evidence: [AERO-03, AERO-20], assessor: "agent:claude", rationale: "Code is forkable (Aerodrome is itself a fork; gauges are BUSL-licensed), but liquidity depth and the bribe market are sticky; no fork that took share was found."}
+- {id: C06, score: 2, confidence: medium, evidence: [AERO-07, AERO-13], assessor: "agent:claude", rationale: "Versus Uniswap, projects can buy liquidity through bribes rather than seed it themselves; one axis, and other ve(3,3) DEXs can copy it."}
+- {id: C07, score: 2, confidence: medium, evidence: [AERO-08], assessor: "agent:claude", rationale: "Q1-2026 price/sales ~2.2x circulating vs Uniswap 2.3x; on FDV 4.6x vs 3.3x — roughly in line."}
+- {id: C08, score: 2, confidence: medium, evidence: [AERO-08, AERO-14], assessor: "agent:claude", rationale: "Base was 'exploring' a native token (Sep 2025) and Uniswap competes on the same chain; no competing native DEX from Coinbase/Base found."}
+- {id: C09, status: pending, rationale: "missing: list of announced partnerships to test against on-chain flows"}
+- {id: C10, score: 2, confidence: medium, evidence: [AERO-13, AERO-20], assessor: "agent:claude", rationale: "Adds the leading Base DEX token, but the venue already covers DEX tokens; Base is a rival exchange's chain."}
+
+# --- D Community
+- {id: D01, status: pending, rationale: "missing: social engagement analytics (X, Discord, Telegram) for H1 2026"}
+- {id: D02, status: pending, rationale: "missing: bot-likelihood / engagement-quality analysis"}
+- {id: D04, status: pending, rationale: "missing: user geography"}
+- {id: D05, status: pending, rationale: "missing: disclosed or detected paid-promotion campaigns"}
+- {id: D06, status: pending, rationale: "missing: grant programme and external contributor data"}
+- {id: D08, score: 3, confidence: medium, evidence: [AERO-16, AERO-17, AERO-18, AERO-21], assessor: "agent:claude", rationale: "Both DNS incidents were flagged publicly within hours with a preliminary root cause in days; a Velodrome post was deleted and the compensation programme had no public follow-up in sources found."}
+- {id: D09, score: 2, confidence: low, evidence: [AERO-12, AERO-08], assessor: "agent:claude", rationale: "AERO fell 19% on the merger announcement and sat ~87% below its high; informed opinion appears mixed."}
+- {id: D10, score: 3, confidence: medium, evidence: [AERO-20, AERO-21, AERO-08], assessor: "agent:claude", rationale: "Largest DEX on Base, integrated with major wallets' security tooling and reportedly backed via Coinbase's Base Ecosystem Fund."}
+
+# --- L Legal
+- {id: L01, score: 1, confidence: medium, evidence: [AERO-06, AERO-13], assessor: "agent:claude", rationale: "Aerodrome Foundation and Dromos Labs are named with executives, but an exchange disclosure lists the foundation's jurisdiction and legal form as unknown."}
+- {id: L02, score: 2, confidence: low, evidence: [AERO-07, AERO-08, AERO-02], assessor: "agent:claude", rationale: "Lockers receive 100% of fees, a profit-like feature, and the team keeps admin roles; but there was no token sale, and emissions governance is on-chain."}
+- {id: L04, score: 3, confidence: medium, evidence: [AERO-02, AERO-13], assessor: "agent:claude", rationale: "Non-custodial AMM with no custody or issuance; Aero plans permissioned tiers for regulated institutions, which may raise licensing questions."}
+- {id: L05, score: 3, confidence: medium, evidence: [AERO-13, AERO-06, AERO-08], assessor: "agent:claude", rationale: "No litigation or regulator action found in press or exchange disclosures; court and regulator databases were not searched directly."}
+- {id: L06, score: 4, confidence: medium, evidence: [AERO-02, AERO-06], assessor: "agent:claude", rationale: "Plain ERC-20 and AMM contracts with no privacy or obfuscation features."}
+- {id: L10, status: pending, rationale: "missing: front-end geofencing and terms-of-use restrictions"}

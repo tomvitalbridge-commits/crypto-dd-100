@@ -1,0 +1,43 @@
+# REAL project, PUBLIC sources only. Binance listed AERO spot on 2026-07-17.
+# Point-in-time review: only information published on or before 2026-07-17 is used.
+# No `collect:` block on purpose — the collectors fetch CURRENT data, which would
+# leak post-listing prices into a point-in-time review.
+# Environment limits: CoinGecko, DefiLlama APIs, Basescan and Base RPCs were blocked
+# by the egress policy, so no on-chain query beyond public GitHub history was possible.
+project: Aerodrome (AERO)
+profile: defi          # spot ve(3,3) DEX on Base
+as_of: 2026-07-17
+
+evidence:
+  - evidence/market_tokenomics.json
+  - evidence/protocol_security.json
+  - evidence/legal_community_competition.json
+
+assessments:
+  - assessments/agent.yaml
+
+# Why some metrics are deliberately NOT set. Each becomes a note in the report.
+notes:
+  S03: "contracts_verified NOT set. The project README links every core address to Basescan '#code' (AERO-02), but that is the project's own claim; Basescan, Blockscout and Sourcify were blocked here, so verification was not independently confirmed. Two-minute analyst check: open the Basescan links for AERO 0x9401…8631, Minter, Voter, VotingEscrow, PoolFactory and the Slipstream CLFactory."
+  L03: "sanctions_exposure NOT set: needs the venue's own Chainalysis/TRM screening of the team multisig (0xE6A4…2075), Emergency Council (0x9924…013D), foundation and top-holder addresses."
+  S08: "unreimbursed_exploit_usd is set to 0 because no smart-contract exploit was found. Users lost ~$700K (Nov 2025) and >$40-100K (Nov 2023) through DNS hijacks of the official front end; the foundations promised proportional grants (AERO-16/17) and no payout was found before 17 Jul 2026. If the venue counts official-front-end phishing losses as 'users owed money', RF04 would fire. Ask the team for proof the grants were paid."
+  K03: "top10_holder_pct_ex_contracts NOT set: most supply sits in the VotingEscrow contract as veNFTs, so concentration needs veNFT-owner-level data; explorers were not reachable."
+  D03: "holders_count NOT set: no pre-listing indexer snapshot retrievable."
+  M01: "depth_2pct_usd, spread_bps, volume_24h_usd and top_venue_volume_share_pct NOT set: only current venue data is available, which would leak post-listing information."
+  M04: "spread_bps NOT set (see M01)."
+  M02: "top_venue_volume_share_pct NOT set (see M01)."
+  M08: "realized_vol_30d_pct NOT set: no pre-listing daily price series retrievable (CoinGecko API blocked)."
+  O02: "daa_90d_change_pct NOT set: the only figure is Q1-2026 vs Q4-2025 (-34%), which is stale; May fees +40% vs March suggest activity recovered."
+  O03: "retention_30d_pct NOT set: needs own cohort query."
+  O05: "incentivised_tvl_share_pct NOT set. Structurally, staked LPs give up fees for AERO emissions, so most TVL is likely in emission-receiving gauges; RF15 (mercenary TVL) may well apply. Needs a gauge-staked TVL / total TVL query."
+  O07: "fee_paying_users_30d NOT set."
+  O08: "live_integrations_count NOT set: no dated list of live integrations found."
+  O10: "net_inflow_90d_usd NOT set."
+  B05: "incentives_to_revenue NOT set. Rough range only: ~11-18% annual inflation on ~1.87B supply at ~$0.45 is ~$90-150M/yr of emissions against ~$57-89M annualised revenue, i.e. ~1-2.5x. Too derived to enter as a metric."
+  B06: "runway_months NOT set: foundation/Dromos treasury not published."
+  B07: "treasury_non_native_pct NOT set (see B06)."
+  B08: "revenue_qoq_growth_pct NOT set: Q1-2026 was -37% q/q; Q2-2026 total not retrievable."
+  T06: "team_vesting_months NOT set. One source says the team cliff is Feb 2028 (AERO-08), another that the 8.61% foundation+team allocation vests 'over time' (AERO-07); the lock was not verified on-chain, and the team also receives up to 5% of weekly emissions."
+  K06: "price_to_last_round_multiple NOT set: no priced private round disclosed (Coinbase Ventures/Base Ecosystem Fund terms unknown)."
+  D07: "governance_participation_pct NOT set: weekly gauge voting is near-universal among veAERO holders, but ProtocolGovernor/EpochGovernor participation data was not retrievable."
+  P06: "github_commits_90d counts only public repos reachable here; Aero merger work appears to be private, so the low count understates engineering activity."

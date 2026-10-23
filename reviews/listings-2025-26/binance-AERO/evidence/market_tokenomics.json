@@ -1,0 +1,143 @@
+{
+  "project": "Aerodrome (AERO)",
+  "as_of": "2026-07-17",
+  "sources": [
+    {
+      "id": "AERO-07",
+      "type": "tokenomics",
+      "tier": 2,
+      "title": "Tokenomics.com — Aerodrome tokenomics: how AERO accrues 100% of protocol fees (published 2 Feb 2026)",
+      "url": "https://tokenomics.com/articles/aerodrome-tokenomics-how-aero-captures-100-of-protocol-fees",
+      "retrieved": "2026-10-23",
+      "excerpt": "Initial supply 500M AERO, uncapped total supply. Genesis split: gauge emissions 65.44%, airdrop 10.17%, foundation + team 8.61% (vesting length not given), rebase 5.37%, ecosystem/public goods 5.34%, protocol grants 2.54%, voter incentives 2.03%, genesis POL 0.51%. Emissions began at 10M/week, +3%/week for epochs 1-14, then -1%/epoch; 'Aero Fed' from ~epoch 67 lets veAERO voters move emissions by 0.01% of supply per week. ~911M AERO circulating (Jan 2026). 100% of trading fees go to veAERO voters; protocol keeps none. Jan 2026: $6.9M monthly fees to voters, TVL >$1.3B (~70% of Base DEX liquidity), 57-63% of Base DEX volume, >$295M cumulative distributions."
+    },
+    {
+      "id": "AERO-08",
+      "type": "news",
+      "tier": 2,
+      "title": "TokenIntel — Aerodrome (AERO) research and analysis (header 'April 2026', figures 'last verified 2026-07-01')",
+      "url": "https://tokenintel.org/research/aerodrome",
+      "retrieved": "2026-10-23",
+      "excerpt": "As of 2026-07-01: price $0.49, ~958M circulating, ~$467M circulating market cap; 30d annualised fees/revenue ~$57M; 1y trailing ~$129M. Total supply ~1.87B and ~11% annual inflation (undated). 30 Apr 2026 (DefiLlama): TVL $368M, 30d annualised fees $88.7M. Q1-2026: fees $15.4M (-37% q/q), volume $33.8B, buybacks $4.8M, net dilution ~18% annualised, ~24K daily active traders (-34% q/q), fee mix Slipstream 67% / v1 11.1% / bribes 21.7%, P/S circulating 2.2x vs UNI 2.3x, FDV P/S 4.6x vs 3.3x. The DeFi Report (May 2026): Base DEX share ~43% (72% in Q4-2024), Uniswap ~32%. Elsewhere says ~53% in May from a 39% trough. Team keeps pauser, fee-manager, factory and vetoer roles. Team cliff Feb 2028. Coinbase Ventures via Base Ecosystem Fund named as investor. Nov 2025 DNS hijack ~$1M user losses. Aero merger not confirmed live as of July 2026. The page itself flags internal inconsistencies (circulating ~1.25B vs ~958M; TVL ~$1.4B vs $368M)."
+    },
+    {
+      "id": "AERO-09",
+      "type": "news",
+      "tier": 2,
+      "title": "KuCoin Blog — Aerodrome launches Predictive Allocation (published 20 Jun 2026; exchange with a commercial interest in AERO trading)",
+      "url": "https://www.kucoin.com/blog/aerodrome-predictive-allocation-defi-liquidity",
+      "retrieved": "2026-10-23",
+      "excerpt": "Predictive Allocation (forecast-based emissions voting) scheduled for July 2026, not live at publication; to become part of the Aero merger. Mid-2026 TVL about $310M (DefiLlama). 30d DEX volume above $17B (undated 'latest metrics'). Base DEX share 'often over 50-60% in peak periods' (undated)."
+    },
+    {
+      "id": "AERO-06",
+      "type": "doc",
+      "tier": 2,
+      "title": "Coinone — AERO digital asset manual (Korean exchange disclosure, dated 11 Sep 2024)",
+      "url": "https://research.coinone.co.kr/manual/AERO_digital_asset_manual_EE814724EDA1637E.pdf",
+      "retrieved": "2026-10-23",
+      "excerpt": "Issuer: Aerodrome Foundation; jurisdiction and legal form 'unknown'. Named person: Alexander Cutler (co-founder). Audit: Spearbit (undated). Emissions: 10M/week, +3%/week for 14 weeks, then -1%/week; veAERO voters set emissions from ~week 67. ~751.7M AERO emitted in the prior year, no burns. Max supply unlimited. No security incidents reported in prior 3 years; conflicts of interest 'none'."
+    },
+    {
+      "id": "AERO-11",
+      "type": "news",
+      "tier": 2,
+      "title": "ForkLog — Aerodrome and Velodrome to merge into Aero (13 Nov 2025)",
+      "url": "https://forklog.com/en/news/aerodrome-and-velodrome-to-merge-into-aero",
+      "retrieved": "2026-10-23",
+      "excerpt": "Dromos Labs will merge Aerodrome (Base) and Velodrome (Optimism) into Aero, launch expected Q2 2026, expanding to Ethereum and Circle's Arc. AERO and VELO merge into one AERO token: 94.5% to AERO holders, 5.5% to VELO holders, which the team says preserves the current revenue split. CEO Alexander Cutler; CFO Dan Wick claims the REV engine can raise revenue 40% and AER can cut costs $34M (no timeframe). Foundation executive director Luis de la Cerda. Aerodrome earned ~$14.8M in the prior 30 days (DefiLlama)."
+    },
+    {
+      "id": "AERO-12",
+      "type": "news",
+      "tier": 2,
+      "title": "Bitcoin.com News — Dromos Labs reveals Aero after merging 2 major L2 DEXs (13 Nov 2025)",
+      "url": "https://news.bitcoin.com/dromos-labs-reveals-aero-after-merging-2-major-l2-dexs/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Aerodrome about $457M TVL and $180M yearly fees; Velodrome about $56M TVL and $7M fees (undated, at announcement). Split 94.5% AERO / 5.5% VELO attributed to revenue differences. AERO fell 19% on announcement day. Aero slated for Q2 2026 with Ethereum mainnet and Arc first."
+    }
+  ],
+  "metrics": {
+    "market_cap_usd": {
+      "value": 467000000,
+      "source": "AERO-08",
+      "note": "circulating market cap at $0.49 on 2026-07-01, 16 days before listing. No independently dated 16-17 July snapshot could be retrieved (CoinGecko/DefiLlama APIs blocked in this environment)."
+    },
+    "circulating_supply": {
+      "value": 958000000,
+      "source": "AERO-08",
+      "note": "figure the source ties to the $0.49 / 2026-07-01 valuation; same page also shows ~1.25B in an undated quick-stats box. Consistent with ~911M in Jan 2026 (AERO-07) plus emissions."
+    },
+    "total_supply": {
+      "value": 1870000000,
+      "source": "AERO-08",
+      "note": "undated on the source page. Cross-check: the source's Q1-2026 FDV P/S (4.6x) vs circulating P/S (2.2x) implies FDV/mcap ~2.1, consistent with 1.87B/958M = 1.95."
+    },
+    "fdv_usd": {
+      "value": 916000000,
+      "source": "AERO-08",
+      "note": "computed: $0.49 (2026-07-01) x ~1.87B total supply"
+    },
+    "annualized_fees_usd": {
+      "value": 57000000,
+      "source": "AERO-08",
+      "note": "30-day annualised run-rate as of 2026-07-01 (not 90d). Source's fee mix includes bribes (~22% in Q1-2026)."
+    },
+    "annualized_revenue_usd": {
+      "value": 57000000,
+      "source": "AERO-08",
+      "note": "all fees go to veAERO voters (holders' revenue; AERO-07), so revenue = fees on DefiLlama's methodology; the treasury retains nothing. 30d annualised as of 2026-07-01 because no 90d window ending in July could be retrieved; 30 Apr 30d-annualised was $88.7M, so the 90d figure is probably higher. Both land in the same B01 band."
+    },
+    "annual_inflation_pct": {
+      "value": 11,
+      "source": "AERO-08",
+      "note": "~11% annualised inflation (undated). The same source gives ~18% annualised net dilution for Q1-2026; both fall in the same K08 band. Includes gauge emissions, rebases and the up-to-5% team share; partly offset by foundation buybacks ($4.8M in Q1-2026)."
+    },
+    "insider_allocation_pct": {
+      "value": 8.61,
+      "source": "AERO-07",
+      "note": "foundation + team share of the 500M genesis supply; no private-investor allocation at genesis. The team also receives up to 5% of weekly emissions (Minter MAXIMUM_TEAM_RATE = 500 bps, AERO-02)."
+    },
+    "unlock_12m_pct_of_circ": {
+      "value": 11.4,
+      "source": "AERO-11",
+      "note": "no team/investor cliff in the next 12 months (AERO-08: team cliff Feb 2028). The one discrete supply event identified is the planned Aero merger: VELO holders get 5.5% of the merged token, ~109M AERO-equivalent (5.5/94.5 x 1.87B) = 11.4% of 958M circulating. Ongoing emissions are counted under K08, not here. veAERO lock expiries could not be measured."
+    },
+    "unlock_90d_pct_of_circ": {
+      "value": 11.4,
+      "source": "AERO-11",
+      "note": "upper bound: assumes the merger (targeted Q2 2026, not live by 1 July per AERO-08) completes within 90 days of listing"
+    },
+    "tvl_usd": {
+      "value": 310000000,
+      "source": "AERO-09",
+      "note": "'mid-2026' DefiLlama figure cited 20 Jun 2026. AERO-08 gives $368M on 30 Apr 2026. Jan 2026 sources showed ~$500M (AERO-14), >$1.3B (AERO-07) — providers and dates disagree; the most recent pre-listing figure is used."
+    },
+    "daa_30d_avg": {
+      "value": 24000,
+      "source": "AERO-08",
+      "note": "Q1-2026 average daily active traders (The DeFi Report via TokenIntel). Stale by ~3.5 months; no June/July figure found."
+    },
+    "category_share_pct": {
+      "value": 43,
+      "source": "AERO-08",
+      "note": "category = DEX volume on Base, Aerodrome's home market (The DeFi Report, May 2026). Same source elsewhere says ~53% in May; AERO-09 says 'often 50-60%'. On a global spot-DEX basis the share is ~4% (Aerodrome + Velodrome $26B vs $613B total, Oct 2025, AERO-13/AERO-11)."
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "Dromos Labs: the 94.5% / 5.5% AERO/VELO split in the merged token mirrors the two protocols' relative revenue",
+      "metric": "aero_share_of_combined_revenue_pct",
+      "claimed_value": 94.5,
+      "source": "AERO-11"
+    },
+    {
+      "id": "C2",
+      "statement": "Dromos CFO: the REV engine can raise protocol revenue by 40% (no timeframe, backtest only)",
+      "metric": "rev_engine_revenue_uplift_pct",
+      "claimed_value": 40,
+      "source": "AERO-11"
+    }
+  ]
+}

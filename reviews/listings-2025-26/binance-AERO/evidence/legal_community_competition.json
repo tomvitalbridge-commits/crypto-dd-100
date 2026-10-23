@@ -1,0 +1,64 @@
+{
+  "project": "Aerodrome (AERO)",
+  "as_of": "2026-07-17",
+  "sources": [
+    {
+      "id": "AERO-10",
+      "type": "news",
+      "tier": 2,
+      "title": "The Defiant — Dromos Labs merges Aerodrome and Velodrome into new DEX Aero (12 Nov 2025)",
+      "url": "https://thedefiant.io/news/defi/dromos-labs-merges-aerodrome-and-velodrome-into-new-dex-aero",
+      "retrieved": "2026-10-23",
+      "excerpt": "Dromos Labs, developer of Aerodrome and Velodrome, will merge them into a single DEX, Aero, launching Q2 2026 and expanding to Ethereum mainnet and Circle's Arc."
+    },
+    {
+      "id": "AERO-13",
+      "type": "news",
+      "tier": 2,
+      "title": "DL News — Aerodrome devs target Uniswap with new Ethereum protocol (13 Nov 2025)",
+      "url": "https://dlnews.com/articles/defi/aerodrome-devs-target-uniswap-with-new-ethereum-protocol/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Alexander Cutler, CEO of Dromos Labs; Luis Alberto, executive director of the Aerodrome and Velodrome Foundations. Aerodrome is the largest DEX on Base, Velodrome the largest on Optimism. Oct 2025 volume: Aerodrome + Velodrome ~$26B vs Uniswap >$123B (DefiLlama). Aero to launch Q2 2026 on Ethereum first, with a bridge and a launchpad with tiers up to regulated institutions; some pools may run background checks. Foundations to fold initiatives into a 'Momentum Fund' that buys back tokens. No regulatory or legal matters reported for Aerodrome or Dromos."
+    },
+    {
+      "id": "AERO-14",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinDesk (via Yahoo Finance) — Aero DEX aims to fix liquidity fragmentation (29 Jan 2026)",
+      "url": "https://finance.yahoo.com/news/aero-dex-aims-fix-liquidity-181407013.html",
+      "retrieved": "2026-10-23",
+      "excerpt": "Aerodrome TVL nearly $500M (late Jan 2026), after topping $1B in Dec 2025 when it held ~a quarter of Base TVL. Aero targeted for Q2 2026 with Ethereum expansion to compete with Uniswap and Curve; compliance tooling built in. No Coinbase investment reported."
+    },
+    {
+      "id": "AERO-20",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Aerodrome tops $1 billion in deposits, dominating DeFi on Base (3 Oct 2024)",
+      "url": "https://www.theblock.co/post/319258/aerodrome-tops-1-billion-in-dominating-defi-on-base",
+      "retrieved": "2026-10-23",
+      "excerpt": "Aerodrome launched on Base in 2023 by the Velodrome team as a fork of Velodrome (itself a Solidly ve(3,3) fork). >$1B deposits, >50% of Base DeFi TVL; largest Base DEX by TVL, volume and fees; $9.02B monthly volume (Sep 2024)."
+    },
+    {
+      "id": "AERO-21",
+      "type": "news",
+      "tier": 2,
+      "title": "ChainCatcher — Aerodrome domain hijacking contained, ~$700K lost (24 Nov 2025)",
+      "url": "https://www.chaincatcher.com/en/article/2223307",
+      "retrieved": "2026-10-23",
+      "excerpt": "Attack contained in under four hours; ~$700K lost by users who connected and signed on the malicious site; MetaMask and Coinbase Wallet warnings within two minutes; Aero and Velo foundations drafting grants proportional to losses (no amounts)."
+    }
+  ],
+  "metrics": {
+    "active_enforcement_action": {
+      "value": false,
+      "source": "AERO-13",
+      "note": "no lawsuit or enforcement action against Aerodrome, the Aerodrome Foundation or Dromos Labs found in press coverage reviewed (AERO-13, AERO-14, AERO-06, AERO-08). Regulator litigation databases (SEC, CFTC) were not searched directly because the search budget ran out."
+    },
+    "aero_share_of_combined_revenue_pct": {
+      "value": 96.3,
+      "source": "AERO-12",
+      "note": "observed: Aerodrome $180M / (Aerodrome $180M + Velodrome $7M) yearly fees at announcement; checks claim C1"
+    }
+  },
+  "claims": []
+}
