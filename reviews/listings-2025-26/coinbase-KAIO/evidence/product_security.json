@@ -1,0 +1,148 @@
+{
+  "project": "Kaio (KAIO)",
+  "as_of": "2026-05-06",
+  "sources": [
+    {
+      "id": "KAIO-08",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Tether joins $8 million strategic funding round in RWA firm Kaio",
+      "url": "https://www.theblock.co/amp/post/398108/tether-joins-8-million-strategic-funding-round-in-rwa-firm-kaio",
+      "published": "2026-04-20",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2026-04-20. Kaio raised $8M in a strategic round with Tether and Systemic Ventures; $19M raised in total; existing backers include Further, Brevan Howard and Karatage; no valuation disclosed. AUM $108.5M according to Kaio's own website. Based in the UAE. KASH yield token waitlist opened in February."
+    },
+    {
+      "id": "KAIO-09",
+      "type": "doc",
+      "tier": 3,
+      "title": "KAIO blog — KAIO raises strategic round backed by Tether",
+      "url": "https://kaio.xyz/post/kaio-raises-strategic-round-backed-by-tether-to-bring-institutional-funds-onchain",
+      "published": "2026-04-20",
+      "retrieved": "2026-10-23",
+      "excerpt": "Dated 2026-04-20. $19M total incl. $8M round (Tether, Systemic; Further Ventures and Laser Digital re-up); other backers Brevan Howard Digital, Lyrik Ventures, Karatage, Shorooq. AUM about $100M; over $500M cumulative fund transactions. HQ ADGM, Abu Dhabi; incubated by Laser Digital (Nomura) and WebN Group. CEO Shrey Rastogi. Says it supports fund distribution under frameworks such as CIMA and MAS; no KAIO licence named. Site-wide fund TVL widget ignored (not point-in-time)."
+    },
+    {
+      "id": "KAIO-10",
+      "type": "doc",
+      "tier": 3,
+      "title": "KAIO blog — Libre Capital rebrands to KAIO",
+      "url": "https://www.kaio.xyz/post/libre-capital-rebrands-to-kaio",
+      "published": "2025-07-30",
+      "retrieved": "2026-10-23",
+      "excerpt": "Dated 2025-07-30. Libre Capital becomes KAIO; COO Olivier Dang quoted. Claims >$200M tokenised in under two years (BlackRock, Brevan Howard, Hamilton Lane, Laser Digital funds); a $100M Bitcoin yield fund run by VARA-licensed Laser Digital Middle East; a $500M tokenised Telegram Bond Fund announced Apr 2025 with TON Foundation; LayerZero integration (Apr 2025) for one supply across 120+ chains; chains incl. Polygon, Solana, NEAR, Aptos, Sui, Avalanche, TON."
+    },
+    {
+      "id": "KAIO-11",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinDesk (via Yahoo Finance) — Brevan Howard-backed tokenization firm expands funds to Sei",
+      "url": "https://finance.yahoo.com/news/brevan-howard-backed-tokenization-firm-130053983.html",
+      "published": "2025-10-08",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2025-10-08. KAIO (formerly Libre Capital), backed by Brevan Howard and Laser Digital, brings tokens for the BlackRock ICS USD Liquidity Fund and Brevan Howard Master Fund to Sei. Tokens represent feeder funds of Brevan Howard, Hamilton Lane, Laser Digital and a BlackRock fund; for institutional and accredited investors only. KAIO has issued over $200M in assets. Securitize earlier brought its $112M Apollo credit fund to Sei."
+    },
+    {
+      "id": "KAIO-13",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Libre expands omnichain tokenization with BlackRock, Nomura funds",
+      "url": "https://www.theblock.co/post/345029/omnichain-tokenization-libre-institutional-funds-blackrock-nomura-injective",
+      "published": "2025-03-06",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2025-03-06. Libre founded in 2024 by Avtar Sehra as a collaboration between WebN and Laser Digital (Nomura). Receipt tokens linked to a BlackRock money market fund and Laser Digital's Laser Carry Fund; Brevan Howard and Hamilton Lane are issuers. Live on several chains (Polygon first, then Solana; Aptos, Base, NEAR). Access for whitelisted accredited investors."
+    },
+    {
+      "id": "KAIO-14",
+      "type": "news",
+      "tier": 2,
+      "title": "Ledger Insights — Fund tokenization protocol Libre launches",
+      "url": "https://www.ledgerinsights.com/fund-tokenization-protocol-libre-launches/",
+      "published": "2024-03-19",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2024-03-19. Libre goes live with access to the Brevan Howard BH Master Fund and a USD money market fund investing in BlackRock Treasury products. JV of Laser Digital and WebN (Alan Howard's incubator). B2B protocol for asset managers, wealth advisers and accredited investors."
+    },
+    {
+      "id": "KAIO-15",
+      "type": "doc",
+      "tier": 3,
+      "title": "Arbitrum forum — LibreCapital USD Money Market A1 (LUMA) STEP application",
+      "url": "https://forum.arbitrum.foundation/t/librecapital-usd-money-market-a1-luma-step-application/23577",
+      "published": "2024-05-01 (updated 2025-03-20)",
+      "retrieved": "2026-10-23",
+      "excerpt": "Project's own application. LUMA is a sub-fund of Libre SAF VCC (Singapore VCC); Cayman SPC alternative added 2025. Investment manager Vulpes Investment Management (MAS-regulated); administrator NAV Fund Services (Singapore); units held in registered form at J.P. Morgan SE (underlying depositary J.P. Morgan SE Dublin); cash at ANZ; stablecoin custody Circle, Coinbase Prime, Komainu; auditor Ernst & Young; counsel Simmons & Simmons. Daily NAV by the administrator; audited accounts within 5 months of year-end; no proof of reserves. Applicant says investor assets are bankruptcy-remote as shareholders of a segregated sub-fund; legal opinions only confidential/non-reliance. Register kept on a permissioned sidechain; tokens minted/locked on mainnet via Libre Gateway; transfers only between allowlisted investors (investor and jurisdiction attributes); administrator keeps off-chain records to rebuild the register. Gateway contracts 'will be externally audited before launch' (no auditor named); pen test by Cybaverse (private). Insurance ~$1.27M per item for LibreCo Holdings Limited. Ongoing charge 15 bps. Issuer AUM $150M+; LTM volume ~$200M."
+    },
+    {
+      "id": "KAIO-16",
+      "type": "doc",
+      "tier": 3,
+      "title": "KAIO docs — Security: Smart Contracts",
+      "url": "https://docs.kaio.xyz/product-operations/security/smart-contracts",
+      "published": "undated living page",
+      "retrieved": "2026-10-23",
+      "excerpt": "Undated. Names a Nethermind smart-contract audit (worded 'internal smart contract audit'), findings said to be addressed; report attached as a file, not read for this review; no date or scope given. Role-based access control with a KAIO Admin at the top; permissions per function selector; dealers and fund admins onboarded manually by KAIO Admin after compliance. Says nothing on upgradeability, multisig, timelocks, pause/freeze or bug bounty. Covers the fund-platform contracts; the KAIO ERC-20 is not mentioned."
+    },
+    {
+      "id": "KAIO-17",
+      "type": "doc",
+      "tier": 3,
+      "title": "KAIO docs — FAQs",
+      "url": "https://docs.kaio.xyz/overview/faqs",
+      "published": "undated living page",
+      "retrieved": "2026-10-23",
+      "excerpt": "Undated. KAIO calls itself a full-stack AppChain platform for institutional DeFi; says it is not a licensed fund manager and holds no direct regulatory licences, relying on an unnamed regulated fund manager and administrator. Claims 'over $200 million in live assets' in one answer and 'over $100 million in assets tokenized' in the rebrand answer. $500M of agreements for a Telegram Bond Fund (TON Foundation); $100M committed to a Laser Digital Bitcoin fund. Ethereum supported; integrations Polygon, Avalanche, SEI, Solana, NEAR, Hedera, XDC."
+    },
+    {
+      "id": "KAIO-20",
+      "type": "doc",
+      "tier": 3,
+      "title": "KAIO blog index",
+      "url": "https://www.kaio.xyz/blog",
+      "published": "index; only posts dated on or before 2026-05-06 used",
+      "retrieved": "2026-10-23",
+      "excerpt": "Dated posts used: 'Dr. Pinku Surana joins KAIO as Chief Technology Officer' (20 Oct 2025); Sei launches for Laser Digital (22 Oct 2025), Hamilton Lane (15 Oct 2025), BlackRock/Brevan Howard (8 Oct 2025); 'Mubadala Capital and KAIO explore the future of digital access' (9 Dec 2025); First Abu Dhabi Bank joins Libre for collateralised lending (10 Dec 2024); MANTRA money-market access (31 Oct 2024). Undated posts on KASH waitlist, Hedera and Aave Horizon also listed. Later posts ignored."
+    }
+  ],
+  "metrics": {
+    "tvl_usd": {
+      "value": 108500000,
+      "source": "KAIO-08",
+      "note": "AUM as of Apr 2026, reported by The Block from KAIO's own website, so effectively self-reported. No independent aggregator snapshot (rwa.xyz / DefiLlama) as of 6 May 2026 could be retrieved."
+    },
+    "bug_bounty_max_usd": {
+      "value": 0,
+      "source": "KAIO-16",
+      "note": "the docs' security section lists no bug bounty; no programme on an established platform was found. Immunefi was not checked directly."
+    }
+  },
+  "claims": [
+    {
+      "id": "KC3",
+      "statement": "Docs FAQ: KAIO has facilitated over $200M in live assets across multiple chains",
+      "metric": "tvl_usd",
+      "claimed_value": 200000000,
+      "source": "KAIO-17"
+    },
+    {
+      "id": "KC4",
+      "statement": "Docs: platform smart contracts audited by Nethermind, findings resolved",
+      "metric": "audits_reputable_count",
+      "claimed_value": 1,
+      "source": "KAIO-16"
+    },
+    {
+      "id": "KC5",
+      "statement": "Agreements for $500M of assets in a tokenised Telegram Bond Fund with TON Foundation",
+      "metric": "telegram_bond_fund_usd",
+      "claimed_value": 500000000,
+      "source": "KAIO-10"
+    },
+    {
+      "id": "KC6",
+      "statement": "Over $500M cumulative fund transactions since launch",
+      "metric": "cumulative_fund_transactions_usd",
+      "claimed_value": 500000000,
+      "source": "KAIO-09"
+    }
+  ]
+}

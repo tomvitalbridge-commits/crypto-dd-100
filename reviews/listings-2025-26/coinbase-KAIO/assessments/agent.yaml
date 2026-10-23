@@ -1,0 +1,84 @@
+# Kaio (KAIO) — judgment scores from public sources, as of 2026-05-06 (Coinbase listing day, also TGE day).
+# Every score cites evidence ids in evidence/*.json. Only sources published on or
+# before 2026-05-06 are cited (undated living docs are flagged in their excerpts).
+# Where public sources were not enough, the dimension is left `pending` with what is missing.
+# KAIO is the governance token of a tokenised-fund distribution platform; L08/L09
+# assess the fund tokens the platform issues, not the KAIO token itself.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, score: 2, confidence: low, evidence: [KAIO-13, KAIO-09, KAIO-14], assessor: "agent:claude", rationale: "Founded in 2024 by Avtar Sehra as a Laser Digital/WebN venture; the CEO named in April 2026 is Shrey Rastogi. The platform itself has shipped, but the founders' earlier ventures and their outcomes are not documented in the sources."}
+- {id: T03, score: 2, confidence: low, evidence: [KAIO-09, KAIO-10, KAIO-20, KAIO-13], assessor: "agent:claude", rationale: "Three named executives (CEO Rastogi, COO Dang, CTO Surana since Oct 2025); the founding CEO is no longer named, and headcount is not disclosed."}
+- {id: T04, score: 2, confidence: low, evidence: [KAIO-20, KAIO-16], assessor: "agent:claude", rationale: "A CTO joined in Oct 2025 and the docs describe a role-based registry design, but no public specs, research or code from the technical team were found."}
+- {id: T05, score: 3, confidence: medium, evidence: [KAIO-19, KAIO-08, KAIO-11], assessor: "agent:claude", rationale: "No VARA notice and no allegations in 2024–26 press coverage; court records, other regulators and wallet history were not checked, so not a 4."}
+- {id: T07, score: 1, confidence: medium, evidence: [KAIO-01, KAIO-05, KAIO-16], assessor: "agent:claude", rationale: "The KAIO Foundation was set up in Apr 2026 and token voting is promised but not live at TGE; on the platform a KAIO Admin role sits at the top of all permissions."}
+- {id: T08, status: pending, rationale: "missing: Foundation/treasury and vesting wallet addresses; the token docs page and Etherscan were not accessible for this review"}
+- {id: T09, score: 3, confidence: high, evidence: [KAIO-08, KAIO-09, KAIO-14], assessor: "agent:claude", rationale: "Incubated by Laser Digital (Nomura) and WebN (Alan Howard); $19M raised including Tether, Brevan Howard Digital and Further. Round terms are undisclosed, and early investors hold 31% of supply."}
+
+# --- P Product & Technology
+- {id: P01, score: 2, confidence: medium, evidence: [KAIO-08, KAIO-11, KAIO-17], assessor: "agent:claude", rationale: "Real problem (on-chain access to institutional funds), but two years in, AUM is about $108.5M, against claims of more than $200M issued, so demand looks modest."}
+- {id: P02, score: 3, confidence: high, evidence: [KAIO-14, KAIO-13, KAIO-11], assessor: "agent:claude", rationale: "Fund tokens have been live since Mar 2024 on several chains; the AppChain, staking, governance and the KASH retail product are not live at TGE."}
+- {id: P03, score: 2, confidence: medium, evidence: [KAIO-15, KAIO-16], assessor: "agent:claude", rationale: "Permissioned register on a sidechain plus an allowlisted mainnet gateway: a standard tokenised-fund design with custom role registries, no published research."}
+- {id: P04, score: 2, confidence: medium, evidence: [KAIO-15], assessor: "agent:claude", rationale: "Off-chain administrator keeps the authoritative register and can rebuild it; on-chain tokens are receipts minted/locked through a gateway, which works but has manual and liveness limits."}
+- {id: P05, score: 2, confidence: medium, evidence: [KAIO-15, KAIO-10], assessor: "agent:claude", rationale: "Depends on fund administrators, underlying managers, Circle off-ramp and LayerZero for multi-chain supply; the administrator's off-chain records are the fallback."}
+- {id: P08, score: 2, confidence: low, evidence: [KAIO-10, KAIO-17, KAIO-08, KAIO-05], assessor: "agent:claude", rationale: "Chain launches shipped (Solana, Aptos, Sei), but the $500M Telegram Bond Fund (announced Apr 2025) has no visible launch, and KASH is still on a waitlist that opened Feb 2026."}
+- {id: P09, status: pending, rationale: "missing: public code repository and explorer verification of the KAIO token and gateway contracts"}
+- {id: P10, score: 2, confidence: medium, evidence: [KAIO-16, KAIO-17], assessor: "agent:claude", rationale: "Docs describe registries and access roles but say nothing on upgradeability, admin keys or the KAIO token, and give conflicting asset figures."}
+
+# --- S Security
+- {id: S02, status: pending, rationale: "missing: the Nethermind report itself (date, scope, commit, findings) and whether it covers deployed gateway and KAIO token contracts"}
+- {id: S05, status: pending, rationale: "missing: who holds KAIO Admin and token/proxy admin rights, multisig threshold and signers"}
+- {id: S06, status: pending, rationale: "missing: on-chain read of the KAIO ERC-20 (mint, pause, blacklist, owner). Fund tokens carry allowlist controls by design (KAIO-15)."}
+- {id: S08, status: pending, rationale: "missing: incident-database check; no exploit appears in 2024–26 coverage, but absence in press is not proof"}
+- {id: S09, score: 2, confidence: low, evidence: [KAIO-15, KAIO-18], assessor: "agent:claude", rationale: "Fund token value is set by an independent administrator's daily NAV rather than a market oracle; no on-chain NAV feed or fallback is documented, and KAIO assets are not Horizon collateral."}
+- {id: S10, score: 2, confidence: medium, evidence: [KAIO-10, KAIO-15], assessor: "agent:claude", rationale: "Fund tokens move across 10+ chains through a sidechain gateway and LayerZero; the KAIO token itself is a single ERC-20 on Ethereum."}
+
+# --- K Tokenomics
+- {id: K01, score: 1, confidence: medium, evidence: [KAIO-05, KAIO-01], assessor: "agent:claude", rationale: "Governance, product access and planned staking; holders have no right to protocol fees and no buyback or burn exists."}
+- {id: K09, status: pending, rationale: "missing: vesting contract addresses and an on-chain reconciliation of the 681.25M TGE circulating supply"}
+
+# --- O On-chain Traction
+- {id: O06, status: pending, rationale: "missing: on-chain activity data for fund tokens and the airdrop recipient set (claims open 8 May)"}
+- {id: O09, score: 2, confidence: medium, evidence: [KAIO-20, KAIO-18, KAIO-21], assessor: "agent:claude", rationale: "Integrations are mostly chain-foundation launches (Sei, Solana, Aptos, MANTRA) and a lending pilot; KAIO is named in Aave Horizon's network but has no collateral listed there."}
+
+# --- M Market Structure
+- {id: M03, status: pending, rationale: "missing: no trading history; TGE and first trading are on the review date"}
+- {id: M06, score: 2, confidence: medium, evidence: [KAIO-06, KAIO-07, KAIO-02], assessor: "agent:claude", rationale: "No prior market: KuCoin opens KAIO/USDT the same day as TGE and Coinbase's listing; there is no earlier venue whose diligence can be relied on."}
+- {id: M07, status: pending, rationale: "missing: no perpetual market or funding history before listing"}
+- {id: M09, status: pending, rationale: "missing: DEX pool addresses and LP ownership at launch"}
+- {id: M10, score: 2, confidence: low, evidence: [KAIO-11, KAIO-08], assessor: "agent:claude", rationale: "RWA tokenisation has momentum and attracted Tether's investment, but KAIO is a small distributor (~$108.5M AUM), not a sector leader."}
+
+# --- B Business Model
+- {id: B02, status: pending, rationale: "missing: protocol revenue; only a 15 bps fund ongoing charge (covering fund expenses) and planned basis-point platform fees are disclosed"}
+- {id: B03, score: 0, confidence: medium, evidence: [KAIO-05], assessor: "agent:claude", rationale: "Token holders have no statutory right to fees, and no buyback, burn or distribution is planned."}
+- {id: B09, status: pending, rationale: "missing: AUM split by fund as of May 2026 (the site's per-fund TVL widget is not point-in-time)"}
+- {id: B10, status: pending, rationale: "missing: revenue and burn; the company is funded by $19M of venture capital (KAIO-08)"}
+
+# --- C Competition & Moat
+- {id: C01, status: pending, rationale: "missing: dated size of the tokenised-fund segment from an independent aggregator as of May 2026"}
+- {id: C03, status: pending, rationale: "missing: KAIO's share of tokenised-fund AUM over the last two quarters"}
+- {id: C04, score: 2, confidence: medium, evidence: [KAIO-21, KAIO-12, KAIO-13], assessor: "agent:claude", rationale: "The moat is relationships via Laser Digital/WebN; the products are feeders that BlackRock and Hamilton Lane do not sponsor or run, so managers could go direct."}
+- {id: C05, score: 3, confidence: medium, evidence: [KAIO-15, KAIO-12], assessor: "agent:claude", rationale: "A code fork gets no fund structures, administrators or manager access; but these relationships are not exclusive to KAIO."}
+- {id: C06, score: 2, confidence: low, evidence: [KAIO-11, KAIO-10], assessor: "agent:claude", rationale: "Multi-manager feeder access across 10+ chains is the stated edge; Securitize already brings sponsor-backed funds to the same chains (Apollo on Sei)."}
+- {id: C07, status: pending, rationale: "missing: listing price/FDV and peer valuations as of 6 May 2026"}
+- {id: C08, score: 1, confidence: medium, evidence: [KAIO-11, KAIO-21], assessor: "agent:claude", rationale: "Sponsor-backed tokenisers (Securitize) are active on KAIO's chains, and KAIO's BlackRock exposure is unsponsored, so incumbents can absorb the use case directly."}
+- {id: C09, score: 2, confidence: medium, evidence: [KAIO-12, KAIO-18, KAIO-10, KAIO-17], assessor: "agent:claude", rationale: "Hamilton Lane confirms a live feeder; Aave Horizon lists no KAIO collateral, and the $500M Telegram Bond Fund and $100M BTC fund are unverified announcements."}
+- {id: C10, score: 2, confidence: low, evidence: [KAIO-07, KAIO-15], assessor: "agent:claude", rationale: "Adds an RWA-platform governance token to Coinbase's catalogue; Coinbase Prime is already a stablecoin custodian for the LUMA fund. Incremental, not a new segment."}
+
+# --- D Community
+- {id: D01, status: pending, rationale: "missing: social analytics for X/Telegram as of May 2026"}
+- {id: D02, status: pending, rationale: "missing: bot/engagement analysis"}
+- {id: D05, status: pending, rationale: "missing: disclosure of paid campaigns and airdrop eligibility criteria published before TGE"}
+- {id: D08, score: 2, confidence: low, evidence: [KAIO-17, KAIO-09, KAIO-10], assessor: "agent:claude", rationale: "Regular announcements, but asset figures vary across its own materials ($200M live vs ~$100M AUM) with no reconciliation."}
+- {id: D09, status: pending, rationale: "missing: informed-participant sentiment before TGE"}
+- {id: D10, score: 3, confidence: medium, evidence: [KAIO-12, KAIO-21, KAIO-08, KAIO-18], assessor: "agent:claude", rationale: "Hamilton Lane and Sei publish joint launches, and Tether invested; Aave names KAIO as a Horizon network partner without live collateral."}
+
+# --- L Legal & Compliance
+- {id: L01, score: 2, confidence: medium, evidence: [KAIO-09, KAIO-15, KAIO-01], assessor: "agent:claude", rationale: "HQ in ADGM, a Singapore VCC fund entity and LibreCo Holdings are identifiable; the issuer of the KAIO token (KAIO Foundation) has no stated jurisdiction."}
+- {id: L02, score: 2, confidence: low, evidence: [KAIO-05, KAIO-01, KAIO-16], assessor: "agent:claude", rationale: "Marketed as governance/access with no fee rights; insiders hold 45.5%, and the platform is centrally administered."}
+- {id: L04, score: 2, confidence: medium, evidence: [KAIO-17, KAIO-15, KAIO-09], assessor: "agent:claude", rationale: "KAIO holds no licences itself and relies on a MAS-regulated manager and third-party administrators; distribution is said to run under CIMA/MAS frameworks, but no ADGM licence is named."}
+- {id: L05, score: 3, confidence: medium, evidence: [KAIO-19, KAIO-08, KAIO-11], assessor: "agent:claude", rationale: "No regulator action on VARA's list and none in press coverage; FSRA, MAS and court records were not searched directly."}
+- {id: L06, score: 4, confidence: medium, evidence: [KAIO-15, KAIO-13, KAIO-11], assessor: "agent:claude", rationale: "No privacy features; fund tokens transfer only between KYC'd, allowlisted investors."}
+- {id: L08, score: 2, confidence: medium, evidence: [KAIO-15, KAIO-12, KAIO-21], assessor: "agent:claude", rationale: "For LUMA: a segregated Singapore VCC sub-fund with units at J.P. Morgan SE and an EY audit, but bankruptcy remoteness rests on non-reliance opinions. The other feeders' custody structures are not disclosed."}
+- {id: L09, score: 1, confidence: medium, evidence: [KAIO-15, KAIO-18], assessor: "agent:claude", rationale: "An independent administrator strikes a daily NAV and EY audits annually, but no published attestation or proof of reserves for the fund tokens was found."}
+- {id: L10, score: 2, confidence: low, evidence: [KAIO-15, KAIO-11], assessor: "agent:claude", rationale: "Fund tokens enforce investor and jurisdiction allowlists; no geographic restrictions were found for the KAIO token's distribution or trading."}

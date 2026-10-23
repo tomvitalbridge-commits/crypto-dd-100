@@ -1,0 +1,1522 @@
+{
+  "project": "Kaio (KAIO)",
+  "profile": "rwa",
+  "as_of": "2026-05-06",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-13",
+        "KAIO-09",
+        "KAIO-14"
+      ],
+      "rationale": "Founded in 2024 by Avtar Sehra as a Laser Digital/WebN venture; the CEO named in April 2026 is Shrey Rastogi. The platform itself has shipped, but the founders' earlier ventures and their outcomes are not documented in the sources.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-09",
+        "KAIO-10",
+        "KAIO-20",
+        "KAIO-13"
+      ],
+      "rationale": "Three named executives (CEO Rastogi, COO Dang, CTO Surana since Oct 2025); the founding CEO is no longer named, and headcount is not disclosed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-20",
+        "KAIO-16"
+      ],
+      "rationale": "A CTO joined in Oct 2025 and the docs describe a role-based registry design, but no public specs, research or code from the technical team were found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-19",
+        "KAIO-08",
+        "KAIO-11"
+      ],
+      "rationale": "No VARA notice and no allegations in 2024–26 press coverage; court records, other regulators and wallet history were not checked, so not a 4.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-03"
+      ],
+      "rationale": "team_vesting_months = 36  (bands 4:≥48, 3:≥36, 2:≥24, 1:≥12)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-01",
+        "KAIO-05",
+        "KAIO-16"
+      ],
+      "rationale": "The KAIO Foundation was set up in Apr 2026 and token voting is promised but not live at TGE; on the platform a KAIO Admin role sits at the top of all permissions.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: Foundation/treasury and vesting wallet addresses; the token docs page and Etherscan were not accessible for this review"
+      ]
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "KAIO-08",
+        "KAIO-09",
+        "KAIO-14"
+      ],
+      "rationale": "Incubated by Laser Digital (Nomura) and WebN (Alan Howard); $19M raised including Tether, Brevan Howard Digital and Further. Round terms are undisclosed, and early investors hold 31% of supply.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "contradiction_count = 1  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-08",
+        "KAIO-11",
+        "KAIO-17"
+      ],
+      "rationale": "Real problem (on-chain access to institutional funds), but two years in, AUM is about $108.5M, against claims of more than $200M issued, so demand looks modest.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "KAIO-14",
+        "KAIO-13",
+        "KAIO-11"
+      ],
+      "rationale": "Fund tokens have been live since Mar 2024 on several chains; the AppChain, staking, governance and the KASH retail product are not live at TGE.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-15",
+        "KAIO-16"
+      ],
+      "rationale": "Permissioned register on a sidechain plus an allowlisted mainnet gateway: a standard tokenised-fund design with custom role registries, no published research.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-15"
+      ],
+      "rationale": "Off-chain administrator keeps the authoritative register and can rebuild it; on-chain tokens are receipts minted/locked through a gateway, which works but has manual and liveness limits.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-15",
+        "KAIO-10"
+      ],
+      "rationale": "Depends on fund administrators, underlying managers, Circle off-ramp and LayerZero for multi-chain supply; the administrator's off-chain records are the fallback.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_commits_90d' not in evidence pack",
+        "No public KAIO GitHub organisation was identified, so the collector was not run."
+      ]
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_active_contributors_90d' not in evidence pack"
+      ]
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-10",
+        "KAIO-17",
+        "KAIO-08",
+        "KAIO-05"
+      ],
+      "rationale": "Chain launches shipped (Solana, Aptos, Sei), but the $500M Telegram Bond Fund (announced Apr 2025) has no visible launch, and KASH is still on a waitlist that opened Feb 2026.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: public code repository and explorer verification of the KAIO token and gateway contracts"
+      ]
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-16",
+        "KAIO-17"
+      ],
+      "rationale": "Docs describe registries and access roles but say nothing on upgradeability, admin keys or the KAIO token, and give conflicting asset figures.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'audits_reputable_count' not in evidence pack",
+        "audits_reputable_count not set. Docs (KAIO-16, undated) name a Nethermind audit of the platform contracts; the report was not read, and no audit of the KAIO ERC-20 was found. Recorded as a claim (KC4)."
+      ]
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: the Nethermind report itself (date, scope, commit, findings) and whether it covers deployed gateway and KAIO token contracts"
+      ]
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'contracts_verified' not in evidence pack",
+        "contracts_verified not established, for the same reason (no explorer access). The gateway and fund-registry contracts are also unverified for this review."
+      ]
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'upgrade_timelock_hours' not in evidence pack",
+        "upgrade_timelock_hours unknown: upgradeability of the token and gateway contracts is not documented (KAIO-16)."
+      ]
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: who holds KAIO Admin and token/proxy admin rights, multisig threshold and signers"
+      ]
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: on-chain read of the KAIO ERC-20 (mint, pause, blacklist, owner). Fund tokens carry allowlist controls by design (KAIO-15).",
+        "mint_authority not established. Contract 0x00bac91fd8f5b4a0dc03c8021139b76f6549ee7e (KAIO-06) could not be read: Etherscan, Blockscout and GoPlus were not reachable from this environment. A DexTools scan retrieved on 2026-10-23 reports 'mintable: no, owner renounced'. It was deliberately NOT used, because it postdates the review date. On the day, an analyst would read the verified source on Etherscan."
+      ]
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "scored",
+      "score": 0,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-16"
+      ],
+      "rationale": "bug_bounty_max_usd = 0  (bands 4:≥1e+06, 3:≥250,000, 2:≥50,000, 1:≥10,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: incident-database check; no exploit appears in 2024–26 coverage, but absence in press is not proof",
+        "unreimbursed_exploit_usd not established. No exploit appears in 2024–26 coverage (KAIO-08, -11, -13, -14), but incident databases (rekt.news, DeFiLlama hacks) could not be reached. Absence in press is not treated as evidence."
+      ]
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-15",
+        "KAIO-18"
+      ],
+      "rationale": "Fund token value is set by an independent administrator's daily NAV rather than a market oracle; no on-chain NAV feed or fallback is documented, and KAIO assets are not Horizon collateral.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-10",
+        "KAIO-15"
+      ],
+      "rationale": "Fund tokens move across 10+ chains through a sidechain gateway and LayerZero; the KAIO token itself is a single ERC-20 on Ethereum.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-05",
+        "KAIO-01"
+      ],
+      "rationale": "Governance, product access and planned staking; holders have no right to protocol fees and no buyback or burn exists.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "circulating_supply_pct = 6.8  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top10_holder_pct_ex_contracts' not in evidence pack",
+        "top10_holder_pct_ex_contracts not set: at TGE, supply sits in Foundation, community and vesting wallets, and airdrop claims open on 8 May. Needs labelled holder data on the day."
+      ]
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-03"
+      ],
+      "rationale": "unlock_12m_pct_of_circ = 84.6  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-05"
+      ],
+      "rationale": "insider_allocation_pct = 45.5  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'price_to_last_round_multiple' not in evidence pack",
+        "price_to_last_round_multiple not set: round prices (early investors 31%, pre-TGE sale 3.5%) and the listing price were not found in sources dated on or before 2026-05-06."
+      ]
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fdv_to_mcap' not in evidence pack",
+        "market_cap_usd / fdv_usd not set: trading began on listing day (KuCoin 13:00 UTC, Coinbase conditional on liquidity) and no pre-listing price or pre-market quote was found. Later values were deliberately not looked up."
+      ]
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-03"
+      ],
+      "rationale": "annual_inflation_pct = 0  (bands 4:≤2, 3:≤5, 2:≤10, 1:≤20)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: vesting contract addresses and an on-chain reconciliation of the 681.25M TGE circulating supply"
+      ]
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'rwa'"
+      ]
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_30d_avg' not in evidence pack",
+        "No independent on-chain activity, holder or fee-payer data for the fund tokens as of the review date; DeFiLlama and rwa.xyz snapshots for that date could not be retrieved."
+      ]
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_90d_change_pct' not in evidence pack"
+      ]
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'retention_30d_pct' not in evidence pack"
+      ]
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-08"
+      ],
+      "rationale": "tvl_usd = 108,500,000  (bands 4:≥1e+09, 3:≥2e+08, 2:≥5e+07, 1:≥1e+07)",
+      "assessor": "rule",
+      "notes": [
+        "tvl_usd ($108.5M) is KAIO's own website figure as relayed by The Block (KAIO-08), not an independent aggregator reading."
+      ]
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'rwa'"
+      ]
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: on-chain activity data for fund tokens and the airdrop recipient set (claims open 8 May)"
+      ]
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack"
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'live_integrations_count' not in evidence pack"
+      ]
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-20",
+        "KAIO-18",
+        "KAIO-21"
+      ],
+      "rationale": "Integrations are mostly chain-foundation launches (Sei, Solana, Aptos, MANTRA) and a lending pilot; KAIO is named in Aave Horizon's network but has no collateral listed there.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack"
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'depth_2pct_usd' not in evidence pack",
+        "Order-book depth, spread, volume, venue share and volatility are unavailable before first trade on 2026-05-06."
+      ]
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top_venue_volume_share_pct' not in evidence pack"
+      ]
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: no trading history; TGE and first trading are on the review date"
+      ]
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'spread_bps' not in evidence pack"
+      ]
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-06",
+        "KAIO-07",
+        "KAIO-02"
+      ],
+      "rationale": "No prior market: KuCoin opens KAIO/USDT the same day as TGE and Coinbase's listing; there is no earlier venue whose diligence can be relied on.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: no perpetual market or funding history before listing"
+      ]
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'realized_vol_30d_pct' not in evidence pack"
+      ]
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: DEX pool addresses and LP ownership at launch"
+      ]
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-11",
+        "KAIO-08"
+      ],
+      "rationale": "RWA tokenisation has momentum and attracted Tether's investment, but KAIO is a small distributor (~$108.5M AUM), not a sector leader.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annualized_revenue_usd' not in evidence pack",
+        "Protocol revenue is undisclosed. LUMA charges 15 bps to cover fund expenses (KAIO-15); platform fees are 'planned' (KAIO-05)."
+      ]
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: protocol revenue; only a 15 bps fund ongoing charge (covering fund expenses) and planned basis-point platform fees are disclosed"
+      ]
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "scored",
+      "score": 0,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-05"
+      ],
+      "rationale": "Token holders have no statutory right to fees, and no buyback, burn or distribution is planned.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fdv_to_annual_fees' not in evidence pack"
+      ]
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentives_to_revenue' not in evidence pack"
+      ]
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack",
+        "Treasury runway unknown: $19M raised (KAIO-08); burn and treasury holdings undisclosed."
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack"
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'revenue_qoq_growth_pct' not in evidence pack"
+      ]
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: AUM split by fund as of May 2026 (the site's per-fund TVL widget is not point-in-time)"
+      ]
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: revenue and burn; the company is funded by $19M of venture capital (KAIO-08)"
+      ]
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: dated size of the tokenised-fund segment from an independent aggregator as of May 2026"
+      ]
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'category_share_pct' not in evidence pack",
+        "No dated category-share figure for tokenised funds as of May 2026 was obtainable."
+      ]
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: KAIO's share of tokenised-fund AUM over the last two quarters"
+      ]
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-21",
+        "KAIO-12",
+        "KAIO-13"
+      ],
+      "rationale": "The moat is relationships via Laser Digital/WebN; the products are feeders that BlackRock and Hamilton Lane do not sponsor or run, so managers could go direct.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-15",
+        "KAIO-12"
+      ],
+      "rationale": "A code fork gets no fund structures, administrators or manager access; but these relationships are not exclusive to KAIO.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-11",
+        "KAIO-10"
+      ],
+      "rationale": "Multi-manager feeder access across 10+ chains is the stated edge; Securitize already brings sponsor-backed funds to the same chains (Apollo on Sei).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: listing price/FDV and peer valuations as of 6 May 2026"
+      ]
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-11",
+        "KAIO-21"
+      ],
+      "rationale": "Sponsor-backed tokenisers (Securitize) are active on KAIO's chains, and KAIO's BlackRock exposure is unsponsored, so incumbents can absorb the use case directly.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-12",
+        "KAIO-18",
+        "KAIO-10",
+        "KAIO-17"
+      ],
+      "rationale": "Hamilton Lane confirms a live feeder; Aave Horizon lists no KAIO collateral, and the $500M Telegram Bond Fund and $100M BTC fund are unverified announcements.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-07",
+        "KAIO-15"
+      ],
+      "rationale": "Adds an RWA-platform governance token to Coinbase's catalogue; Coinbase Prime is already a stablecoin custodian for the LUMA fund. Incremental, not a new segment.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: social analytics for X/Telegram as of May 2026"
+      ]
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: bot/engagement analysis"
+      ]
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'holders_count' not in evidence pack"
+      ]
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: disclosure of paid campaigns and airdrop eligibility criteria published before TGE"
+      ]
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack",
+        "No token governance vote exists at TGE (KAIO-05)."
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-17",
+        "KAIO-09",
+        "KAIO-10"
+      ],
+      "rationale": "Regular announcements, but asset figures vary across its own materials ($200M live vs ~$100M AUM) with no reconciliation.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: informed-participant sentiment before TGE"
+      ]
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-12",
+        "KAIO-21",
+        "KAIO-08",
+        "KAIO-18"
+      ],
+      "rationale": "Hamilton Lane and Sei publish joint launches, and Tether invested; Aave names KAIO as a Horizon network partner without live collateral.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-09",
+        "KAIO-15",
+        "KAIO-01"
+      ],
+      "rationale": "HQ in ADGM, a Singapore VCC fund entity and LibreCo Holdings are identifiable; the issuer of the KAIO token (KAIO Foundation) has no stated jurisdiction.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-05",
+        "KAIO-01",
+        "KAIO-16"
+      ],
+      "rationale": "Marketed as governance/access with no fee rights; insiders hold 45.5%, and the platform is centrally administered.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack",
+        "sanctions_exposure unknown: needs venue wallet screening of the deployer, Foundation, vesting and top-holder addresses."
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-17",
+        "KAIO-15",
+        "KAIO-09"
+      ],
+      "rationale": "KAIO holds no licences itself and relies on a MAS-regulated manager and third-party administrators; distribution is said to run under CIMA/MAS frameworks, but no ADGM licence is named.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-19",
+        "KAIO-08",
+        "KAIO-11"
+      ],
+      "rationale": "No regulator action on VARA's list and none in press coverage; FSRA, MAS and court records were not searched directly.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-15",
+        "KAIO-13",
+        "KAIO-11"
+      ],
+      "rationale": "No privacy features; fund tokens transfer only between KYC'd, allowlisted investors.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-15",
+        "KAIO-12",
+        "KAIO-21"
+      ],
+      "rationale": "For LUMA: a segregated Singapore VCC sub-fund with units at J.P. Morgan SE and an EY audit, but bankruptcy remoteness rests on non-reliance opinions. The other feeders' custody structures are not disclosed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KAIO-15",
+        "KAIO-18"
+      ],
+      "rationale": "An independent administrator strikes a daily NAV and EY audits annually, but no published attestation or proof of reserves for the fund tokens was found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KAIO-15",
+        "KAIO-11"
+      ],
+      "rationale": "Fund tokens enforce investor and jurisdiction allowlists; no geographic restrictions were found for the KAIO token's distribution or trading.",
+      "assessor": "agent:claude",
+      "notes": []
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 2.263157894736842,
+      "coverage": 0.7916666666666666,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 8,
+      "score": 2.2,
+      "coverage": 0.7894736842105263,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 12,
+      "score": 1.6,
+      "coverage": 0.2,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 10,
+      "score": 1.3333333333333333,
+      "coverage": 0.6,
+      "sufficient": true,
+      "scored": 5,
+      "applicable": 9
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 8,
+      "score": 2.0,
+      "coverage": 0.2,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 9
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 8,
+      "score": 2.0,
+      "coverage": 0.11764705882352941,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 12,
+      "score": 0.0,
+      "coverage": 0.1111111111111111,
+      "sufficient": false,
+      "scored": 1,
+      "applicable": 10
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 7,
+      "score": 2.1,
+      "coverage": 0.5555555555555556,
+      "sufficient": false,
+      "scored": 6,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 5,
+      "score": 2.5,
+      "coverage": 0.15384615384615385,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 18,
+      "score": 2.176470588235294,
+      "coverage": 0.8095238095238095,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "clear"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "clear"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "clear"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "clear"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "clear"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "n/a"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "unchecked"
+    }
+  ],
+  "contradictions": [
+    {
+      "claim": {
+        "id": "KC3",
+        "statement": "Docs FAQ: KAIO has facilitated over $200M in live assets across multiple chains",
+        "metric": "tvl_usd",
+        "claimed_value": 200000000,
+        "source": "KAIO-17"
+      },
+      "observed": 108500000,
+      "observed_source": "KAIO-08",
+      "deviation": 0.8433179723502304
+    }
+  ],
+  "point_score": 43.9,
+  "score_low": 13.6,
+  "score_high": 86.2,
+  "coverage": 0.473,
+  "grade": "D",
+  "verdict": "INSUFFICIENT_DATA",
+  "verdict_reasons": [
+    "evidence coverage 47% below the 70% needed for a verdict"
+  ]
+}

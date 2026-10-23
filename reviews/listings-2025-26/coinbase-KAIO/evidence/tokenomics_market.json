@@ -1,0 +1,129 @@
+{
+  "project": "Kaio (KAIO)",
+  "as_of": "2026-05-06",
+  "sources": [
+    {
+      "id": "KAIO-01",
+      "type": "news",
+      "tier": 2,
+      "title": "Odaily newsflash — KAIO announces native token and KAIO Foundation (29 Apr 2026)",
+      "url": "https://www.odaily.news/en/newsflash/478870",
+      "published": "2026-04-29",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2026-04-29 16:37 UTC, relaying KAIO's X post. KAIO launches a native token and sets up the KAIO Foundation (governance, treasury, ecosystem) alongside KAIO Labs. Claims 5 institutional funds (BlackRock, Brevan Howard, Hamilton Lane managers) and ~$100M TVL across 10+ chains. Total supply 10B; community and liquidity incentives 37.5%; Foundation 17%; team and early-investor tokens locked with zero release at TGE."
+    },
+    {
+      "id": "KAIO-02",
+      "type": "news",
+      "tier": 2,
+      "title": "Odaily newsflash — KAIO TGE today (6 May 2026)",
+      "url": "https://www.odaily.news/en/newsflash/479519",
+      "published": "2026-05-06",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2026-05-06 01:57 UTC. KAIO says its TGE takes place today. Repeats 10B total supply, 37.5% community/liquidity, 17% Foundation, team and early investors locked with phased unlocks and no TGE release."
+    },
+    {
+      "id": "KAIO-03",
+      "type": "data",
+      "tier": 2,
+      "title": "Tokenomics.com — KAIO allocation and vesting schedule",
+      "url": "https://app.tokenomics.com/tokenomics/kaio",
+      "published": "schedule as disclosed at TGE (page undated)",
+      "retrieved": "2026-10-23",
+      "excerpt": "TGE 6 May 2026; total supply 10,000,000,000. Community & Liquidity 37.5% (12.5% of pool at TGE, 6-month cliff, 60-month linear); Early Investors 31% (12-month cliff, 24-month linear); Foundation 17% (12.5% at TGE, 6-month cliff, 36-month linear); Team 11% (12-month cliff, 24-month linear); Pre-TGE Sale 3.5% (12-month cliff, 24-month linear). Initial circulating 681,250,000 (6.8%). Year 1 release 12.57% of supply, remaining 87.43% over 5 years. Only the static schedule was used; no market data from this page."
+    },
+    {
+      "id": "KAIO-04",
+      "type": "social",
+      "tier": 3,
+      "title": "KuCoin News Insight post (user 'mufettis') — KAIO TGE and tokenomics (6 May 2026)",
+      "url": "https://www.kucoin.com/news/insight/KAIO/69fb095b9514cf00076fe3eb",
+      "published": "2026-05-06",
+      "retrieved": "2026-10-23",
+      "excerpt": "Posted 2026-05-06 09:28. Relays project tokenomics: TGE 6 May, claims from 8 May via claim.kaio.xyz. Allocations 37.5% community/liquidity, 31% early investors, 17% Foundation, 11% team, 3.5% pre-TGE sale. Team and early investors 0% at TGE, 12-month cliff, 24-month vesting; 12.5% of community pool unlocked at TGE for liquidity, then 6-month cliff and 60-month linear."
+    },
+    {
+      "id": "KAIO-05",
+      "type": "news",
+      "tier": 2,
+      "title": "ChainCatcher — KAIO token launch and tokenomics (30 Apr 2026)",
+      "url": "https://www.chaincatcher.com/en/article/2261616",
+      "published": "2026-04-30",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2026-04-30. KAIO is the governance token of the KAIO RWA protocol; fixed total supply 10B. Team, investors and pre-TGE sales together 45.5%; community 37.5%; Foundation 17%. Cliffs of 6–12 months then monthly linear release up to 60 months. Utility: product access, staking for rewards, voting on protocol decisions and treasury. Protocol plans to charge basis points on tokenised assets; token holders have no statutory right to fee distribution. Backers: Laser Digital (incubator), Tether, BH Digital Assets, Further. Retail product KASH planned for Q2 2026."
+    },
+    {
+      "id": "KAIO-06",
+      "type": "exchange",
+      "tier": 2,
+      "title": "KuCoin announcement — World Premiere: KAIO (KAIO) listed on KuCoin",
+      "url": "https://www.kucoin.com/announcement/en-world-premiere-kaio-kaio-listed-on-kucoin?lang=en_US",
+      "published": "2026-05-06",
+      "retrieved": "2026-10-23",
+      "excerpt": "Dated 2026-05-06. Network Ethereum (ERC-20), contract 0x00bac91fd8f5b4a0dc03c8021139b76f6549ee7e. Call auction 12:00–13:00 UTC and spot trading from 13:00 UTC on 6 May 2026, pair KAIO/USDT; withdrawals from 7 May. Lists backers Tether, Brevan Howard Digital, Laser Digital, Further Ventures."
+    },
+    {
+      "id": "KAIO-07",
+      "type": "news",
+      "tier": 2,
+      "title": "Crypto News (via Bitcoinsistemi) — Coinbase to list KAIO",
+      "url": "https://cryptonews.net/news/market/32819089/",
+      "published": "2026-05-06",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2026-05-06 15:06 UTC. Coinbase adds a KAIO/USD spot market on Coinbase.com, the app and Advanced, to open once liquidity conditions are met; no start time, network or contract given."
+    }
+  ],
+  "metrics": {
+    "total_supply": {
+      "value": 10000000000,
+      "source": "KAIO-03",
+      "note": "fixed 10B per project (KAIO-01, KAIO-05); contract not inspected for this review"
+    },
+    "circulating_supply": {
+      "value": 681250000,
+      "source": "KAIO-03",
+      "note": "at TGE: 12.5% of Community pool (468.75M) + 12.5% of Foundation pool (212.5M). The Foundation TGE unlock may sit in a Foundation wallet rather than with the market."
+    },
+    "team_vesting_months": {
+      "value": 36,
+      "source": "KAIO-03",
+      "note": "12-month cliff + 24-month linear; same terms in KAIO-04"
+    },
+    "insider_allocation_pct": {
+      "value": 45.5,
+      "source": "KAIO-05",
+      "note": "team 11% + early investors 31% + pre-TGE sale 3.5% (KAIO-03, KAIO-04). Adding the Foundation's 17% gives 62.5%."
+    },
+    "unlock_90d_pct_of_circ": {
+      "value": 0,
+      "source": "KAIO-03",
+      "note": "first scheduled releases after TGE are the 6-month cliffs (Community, Foundation) in Nov 2026; nothing scheduled in the first 90 days"
+    },
+    "unlock_12m_pct_of_circ": {
+      "value": 84.6,
+      "source": "KAIO-03",
+      "note": "months 6–12: Community 32.8125%/60×6 = 328.1M + Foundation 14.875%/36×6 = 247.9M = 576.0M, vs 681.25M circulating at TGE. Consistent with the stated 12.57% year-1 release (6.81% TGE + 5.76%). Investor/team cliffs end at month 12; any release then would add to this."
+    },
+    "annual_inflation_pct": {
+      "value": 0,
+      "source": "KAIO-03",
+      "note": "fixed 10B supply with all tokens pre-allocated; dilution comes from unlocks (K04), not emissions. Absence of a mint function NOT verified on-chain for this review."
+    }
+  },
+  "claims": [
+    {
+      "id": "KC1",
+      "statement": "Token launch post: ~$100M TVL deployed across 10+ chains",
+      "metric": "tvl_usd",
+      "claimed_value": 100000000,
+      "source": "KAIO-01"
+    },
+    {
+      "id": "KC2",
+      "statement": "Total supply fixed at 10 billion KAIO",
+      "metric": "total_supply",
+      "claimed_value": 10000000000,
+      "source": "KAIO-05"
+    }
+  ]
+}

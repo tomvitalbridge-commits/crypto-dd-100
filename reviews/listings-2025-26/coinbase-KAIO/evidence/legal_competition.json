@@ -1,0 +1,54 @@
+{
+  "project": "Kaio (KAIO)",
+  "as_of": "2026-05-06",
+  "sources": [
+    {
+      "id": "KAIO-12",
+      "type": "news",
+      "tier": 2,
+      "title": "Hamilton Lane press release — KAIO tokenizes Hamilton Lane private credit fund on Sei",
+      "url": "https://www.hamiltonlane.com/en-us/news/kaio-tokenizes-private-credit-fund-sei-network",
+      "published": "2025-10-15",
+      "retrieved": "2026-10-23",
+      "excerpt": "Dated 2025-10-15, issued by the fund manager. Access vehicle is the HL SCOPE Private Credit Access fund, a feeder into SCOPE that is not managed or operated by Hamilton Lane. Institutional and accredited investors only. KAIO says >$200M of fund assets tokenised; offered through a regulated fund manager. Quotes Olivier Dang (KAIO COO) and Victor Jung (Hamilton Lane)."
+    },
+    {
+      "id": "KAIO-18",
+      "type": "doc",
+      "tier": 2,
+      "title": "Aave blog — Aave Horizon launches",
+      "url": "https://aave.com/blog/horizon-launch",
+      "published": "2025-08-26",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2025-08-26. KAIO (formerly Libre) is named in Horizon's institutional network. Launch collateral comes from Superstate (USTB, USCC) and Centrifuge (JTRSY, JAAA), with Circle USYC to follow; no KAIO asset is listed as collateral. NAVs via Chainlink SmartData/NAVLink."
+    },
+    {
+      "id": "KAIO-19",
+      "type": "regulator",
+      "tier": 1,
+      "title": "Dubai VARA — Regulatory, enforcement and warning notices",
+      "url": "https://www.vara.ae/en/regulations/regulatory-notices/",
+      "published": "list page; only notices dated on or before 2026-05-06 considered",
+      "retrieved": "2026-10-23",
+      "excerpt": "Enforcement notices and consumer/marketplace alerts from Nov 2022 onward. None names KAIO, Libre, LibreCo, Laser Digital or WebN. Later entries about other firms ignored."
+    },
+    {
+      "id": "KAIO-21",
+      "type": "doc",
+      "tier": 2,
+      "title": "Sei blog — BlackRock and Brevan Howard tokenized funds launch on Sei via KAIO",
+      "url": "https://blog.sei.io/blackrock-and-brevan-howard-tokenized-funds-launch-on-sei-network-via-kaios-institutional-grade-infrastructure",
+      "published": "2025-10-08",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2025-10-08 (page modified 2026-02-25). The KAIO token holds shares in the BlackRock ICS USD Liquidity Fund; these tokenised shares are issued only by KAIO and are not sponsored or approved by BlackRock. Brevan Howard Master Fund access also launches. Institutional and accredited investors only; >$200M tokenised on KAIO."
+    }
+  ],
+  "metrics": {
+    "active_enforcement_action": {
+      "value": false,
+      "source": "KAIO-19",
+      "note": "no enforcement or alert against KAIO/Libre on VARA's list up to 6 May 2026, and none reported in 2024–26 coverage (KAIO-08, KAIO-11, KAIO-13, KAIO-14). ADGM FSRA, MAS, SEC and court records were NOT checked directly."
+    }
+  },
+  "claims": []
+}

@@ -1,0 +1,36 @@
+# REAL project, PUBLIC sources only. Point-in-time review as of the Coinbase
+# spot listing day, 2026-05-06, which was also KAIO's TGE day.
+# Only sources published on or before 2026-05-06 are cited. Undated living docs
+# pages are flagged in their excerpts. No post-listing price, market or news used.
+# Human-only checks (KYC, market-maker terms, legal opinion) are left open on purpose.
+project: Kaio (KAIO)
+profile: rwa           # tokenised-fund distribution platform; custody/attestation of fund tokens matter most
+as_of: 2026-05-06
+
+evidence:
+  - evidence/tokenomics_market.json
+  - evidence/product_security.json
+  - evidence/legal_competition.json
+
+assessments:
+  - assessments/agent.yaml
+
+# Why some metrics are deliberately NOT set. Each becomes a note in the report.
+notes:
+  S06: "mint_authority not established. Contract 0x00bac91fd8f5b4a0dc03c8021139b76f6549ee7e (KAIO-06) could not be read: Etherscan, Blockscout and GoPlus were not reachable from this environment. A DexTools scan retrieved on 2026-10-23 reports 'mintable: no, owner renounced'. It was deliberately NOT used, because it postdates the review date. On the day, an analyst would read the verified source on Etherscan."
+  S03: "contracts_verified not established, for the same reason (no explorer access). The gateway and fund-registry contracts are also unverified for this review."
+  S08: "unreimbursed_exploit_usd not established. No exploit appears in 2024–26 coverage (KAIO-08, -11, -13, -14), but incident databases (rekt.news, DeFiLlama hacks) could not be reached. Absence in press is not treated as evidence."
+  L03: "sanctions_exposure unknown: needs venue wallet screening of the deployer, Foundation, vesting and top-holder addresses."
+  S01: "audits_reputable_count not set. Docs (KAIO-16, undated) name a Nethermind audit of the platform contracts; the report was not read, and no audit of the KAIO ERC-20 was found. Recorded as a claim (KC4)."
+  S04: "upgrade_timelock_hours unknown: upgradeability of the token and gateway contracts is not documented (KAIO-16)."
+  K03: "top10_holder_pct_ex_contracts not set: at TGE, supply sits in Foundation, community and vesting wallets, and airdrop claims open on 8 May. Needs labelled holder data on the day."
+  K06: "price_to_last_round_multiple not set: round prices (early investors 31%, pre-TGE sale 3.5%) and the listing price were not found in sources dated on or before 2026-05-06."
+  K07: "market_cap_usd / fdv_usd not set: trading began on listing day (KuCoin 13:00 UTC, Coinbase conditional on liquidity) and no pre-listing price or pre-market quote was found. Later values were deliberately not looked up."
+  M01: "Order-book depth, spread, volume, venue share and volatility are unavailable before first trade on 2026-05-06."
+  O01: "No independent on-chain activity, holder or fee-payer data for the fund tokens as of the review date; DeFiLlama and rwa.xyz snapshots for that date could not be retrieved."
+  O04: "tvl_usd ($108.5M) is KAIO's own website figure as relayed by The Block (KAIO-08), not an independent aggregator reading."
+  B01: "Protocol revenue is undisclosed. LUMA charges 15 bps to cover fund expenses (KAIO-15); platform fees are 'planned' (KAIO-05)."
+  B06: "Treasury runway unknown: $19M raised (KAIO-08); burn and treasury holdings undisclosed."
+  P06: "No public KAIO GitHub organisation was identified, so the collector was not run."
+  D07: "No token governance vote exists at TGE (KAIO-05)."
+  C02: "No dated category-share figure for tokenised funds as of May 2026 was obtainable."
