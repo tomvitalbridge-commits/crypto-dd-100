@@ -1,0 +1,8 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+projects/*
+!projects/README.md
+**/assessments/llm.generated.yaml
+**/evidence/auto.json

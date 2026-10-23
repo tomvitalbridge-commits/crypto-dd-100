@@ -1,0 +1,48 @@
+{
+  "project": "Moonvault",
+  "as_of": "2026-10-20",
+  "sources": [
+    {"id": "MV01", "type": "doc", "tier": 3, "title": "Moonvault litepaper & pitch deck", "url": "https://moonvault.example/deck", "retrieved": "2026-10-18",
+     "excerpt": "Play-to-own vault game. '250,000 daily players', '2M+ holders', '$5M monthly revenue'. Team pseudonymous. Token MVLT, 10B supply."},
+    {"id": "MV02", "type": "onchain", "tier": 1, "title": "Block explorer: MVLT token and game contracts", "url": "https://explorer.example/address/0xmvlt", "retrieved": "2026-10-19",
+     "excerpt": "Token contract verified. mint(address,uint256) restricted to owner; owner is an EOA (0x7a3…). Game contracts are UUPS proxies; upgradeTo callable by the same EOA with no delay."},
+    {"id": "MV03", "type": "onchain", "tier": 1, "title": "Reviewer holder & activity queries", "url": "https://dune.example/queries/mvlt", "retrieved": "2026-10-19",
+     "excerpt": "Top-10 non-contract wallets hold 62%. 6 of the top 10 were funded from the same address within one hour of deployment. 30d avg daily active addresses 31,000; 58% of them cluster to 14 funding sources."},
+    {"id": "MV04", "type": "api", "tier": 2, "title": "Market data + order-book snapshot", "url": "https://marketdata.example/mvlt", "retrieved": "2026-10-20",
+     "excerpt": "24h volume $48M against ±2% depth of $90k (533x). 71% of volume on one venue."},
+    {"id": "MV05", "type": "audit", "tier": 1, "title": "Audit — small firm, token contract only (2026-01)", "url": "https://moonvault.example/audit.pdf", "retrieved": "2026-10-18",
+     "excerpt": "Scope: token contract only. 1 high (owner mint) acknowledged, not fixed: 'by design for game rewards'."},
+    {"id": "MV06", "type": "tokenomics", "tier": 3, "title": "MVLT vesting schedule", "url": "https://moonvault.example/token", "retrieved": "2026-10-18",
+     "excerpt": "Team 22% (6m cliff, 12m linear), investors 31% (3m cliff, 9m linear). Cliff for both on 2026-12-01."}
+  ],
+  "metrics": {
+    "market_cap_usd":               {"value": 95000000, "source": "MV04"},
+    "fdv_usd":                      {"value": 610000000, "source": "MV04"},
+    "volume_24h_usd":               {"value": 48000000, "source": "MV04"},
+    "depth_2pct_usd":               {"value": 90000, "source": "MV04"},
+    "top_venue_volume_share_pct":   {"value": 71, "source": "MV04"},
+    "spread_bps":                   {"value": 62, "source": "MV04"},
+    "realized_vol_30d_pct":         {"value": 210, "source": "MV04"},
+    "circulating_supply":           {"value": 1560000000, "source": "MV04"},
+    "total_supply":                 {"value": 10000000000, "source": "MV04"},
+    "mint_authority":               {"value": "eoa", "source": "MV02"},
+    "contracts_verified":           {"value": true, "source": "MV02"},
+    "upgrade_timelock_hours":       {"value": 0, "source": "MV02"},
+    "top10_holder_pct_ex_contracts":{"value": 62, "source": "MV03"},
+    "daa_30d_avg":                  {"value": 31000, "source": "MV03"},
+    "daa_90d_change_pct":           {"value": -46, "source": "MV03"},
+    "retention_30d_pct":            {"value": 6, "source": "MV03"},
+    "holders_count":                {"value": 48000, "source": "MV03"},
+    "annualized_revenue_usd":       {"value": 2100000, "source": "MV03"},
+    "audits_reputable_count":       {"value": 0, "source": "MV05", "note": "one audit, small firm, token only"},
+    "team_vesting_months":          {"value": 18, "source": "MV06"},
+    "insider_allocation_pct":       {"value": 53, "source": "MV06"},
+    "unlock_12m_pct_of_circ":       {"value": 290, "source": "MV06"},
+    "unlock_90d_pct_of_circ":       {"value": 41, "source": "MV06"}
+  },
+  "claims": [
+    {"id": "C1", "statement": "Deck: \"250,000 daily players\"", "metric": "daa_30d_avg", "claimed_value": 250000, "source": "MV01"},
+    {"id": "C2", "statement": "Deck: \"2M+ holders\"", "metric": "holders_count", "claimed_value": 2000000, "source": "MV01"},
+    {"id": "C3", "statement": "Deck: \"$5M monthly revenue\"", "metric": "annualized_revenue_usd", "claimed_value": 60000000, "source": "MV01"}
+  ]
+}

@@ -1,0 +1,76 @@
+# =============================================================================
+# Scoring configuration — every tunable number lives here, not in code
+# =============================================================================
+
+scale_max: 4                     # dimension scores are integers 0..4
+
+# Uncertainty radius (in score points) by confidence level. Used to build the
+# score RANGE shown next to the point score. A low-confidence 3 really means
+# "somewhere between 1.5 and 4".
+confidence_radius:
+  high: 0.25
+  medium: 0.75
+  low: 1.5
+
+# Verification gate for agent-scored dimensions:
+# a "high" confidence claim needs >= 2 independent sources OR >= 1 tier-1
+# source (on-chain data, audit report, signed document). Otherwise the harness
+# downgrades it to "medium" and says so in the report.
+high_confidence_requires:
+  min_sources: 2
+  or_min_tier1_sources: 1
+
+# Contradiction detection: a project claim is contradicted when the observed
+# metric differs from the claimed value by more than this relative tolerance.
+contradiction_tolerance: 0.20
+
+# Coverage: share of applicable dimension WEIGHT that has a valid score.
+coverage:
+  pillar_min: 0.60               # below this a pillar is "insufficient data"
+  overall_min_for_verdict: 0.70  # below this the verdict is INSUFFICIENT_DATA
+
+grades:                          # on the 0–100 point score
+  A: 80
+  B: 65
+  C: 50
+  D: 35
+  F: 0
+
+verdicts:
+  list_min_grade: B              # LIST needs grade B or better, no major/critical gates
+  watchlist_min_grade: C
+
+# -----------------------------------------------------------------------------
+# Sector profiles: pillar weights (sum 100) and dimensions that do not apply.
+# Choose with `profile:` in the project manifest.
+# -----------------------------------------------------------------------------
+profiles:
+
+  defi:
+    description: Lending, DEX, derivatives, yield
+    pillar_weights: {T: 12, P: 10, S: 14, K: 14, O: 10, M: 8, B: 10, C: 8, D: 5, L: 9}
+    not_applicable: [L08, L09]
+
+  l1_l2:
+    description: Base layers, rollups, appchains
+    pillar_weights: {T: 12, P: 14, S: 12, K: 14, O: 12, M: 8, B: 6, C: 10, D: 6, L: 6}
+    not_applicable: [L08, L09, O05, B09]
+
+  rwa:
+    description: Tokenised treasuries, credit, commodities, stablecoins
+    pillar_weights: {T: 12, P: 8, S: 12, K: 10, O: 8, M: 8, B: 12, C: 7, D: 5, L: 18}
+    not_applicable: [O05, K10]
+
+  infra:
+    description: Oracles, bridges, data, AI x crypto, middleware
+    pillar_weights: {T: 12, P: 14, S: 14, K: 14, O: 8, M: 8, B: 10, C: 10, D: 4, L: 6}
+    not_applicable: [L08, L09, O04, O05]
+
+  consumer:
+    description: Gaming, social, memecoins with product, consumer apps
+    pillar_weights: {T: 12, P: 8, S: 12, K: 16, O: 14, M: 10, B: 6, C: 6, D: 10, L: 6}
+    not_applicable: [L08, L09, O04, O05, B04]
+
+llm:
+  model: claude-sonnet-5-5       # used only by `dd100 run --llm`
+  max_tokens: 1200

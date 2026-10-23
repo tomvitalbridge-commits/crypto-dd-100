@@ -1,0 +1,213 @@
+{
+  "project": "Hyperliquid (HYPE)",
+  "as_of": "2026-10-23",
+  "sources": [
+    {
+      "id": "H18",
+      "type": "governance",
+      "tier": 2,
+      "title": "crypto.news — Who actually runs Hyperliquid? The governance audit",
+      "url": "https://crypto.news/who-actually-runs-hyperliquid-the-governance-audit/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Active set grew from 4–5 Foundation validators at launch to 27 (May/Jun 2026). Five Foundation validators hold ~49.3% of stake (down from >81% in Jan 2025). Single closed-source client; validators must adopt upgrades or fall out of consensus. Votes are stake-weighted validator votes; no token-holder vote module."
+    },
+    {
+      "id": "H19",
+      "type": "news",
+      "tier": 2,
+      "title": "Fortune — Jeff Yan and Hyperliquid (12 Jan 2026)",
+      "url": "https://fortune.com/2026/01/12/hyperliquid-jeff-yan-defi-perpetuals-perps-exchange-defi/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Co-founder Jeff Yan: Harvard math/CS, HFT background. Hyperliquid Labs had 11 employees, planning 14. Self-funded, no outside VC equity; Paradigm and a16z reportedly hold HYPE tokens."
+    },
+    {
+      "id": "H20",
+      "type": "github",
+      "tier": 1,
+      "title": "GitHub — hyperliquid-dex/node and org repositories",
+      "url": "https://github.com/hyperliquid-dex/node",
+      "retrieved": "2026-10-23",
+      "excerpt": "Node is distributed as binaries only (binaries.hyperliquid.xyz); repo holds docs/config. Open-sourcing promised 'when safe' since Jan 2025, no date. Org: 11 repos. Last 90 days: 2 commits to node (30 Jul, 10 Aug 2026, peer-IP config); no other repo updated since 25 Jul 2026."
+    },
+    {
+      "id": "H21",
+      "type": "onchain",
+      "tier": 2,
+      "title": "L2BEAT — Hyperliquid bridge risk assessment",
+      "url": "https://www.l2beat.com/bridges/projects/hyperliquid",
+      "retrieved": "2026-10-23",
+      "excerpt": "Validated by Multisig (3/4): hot and cold validator sets of 4 EOAs with equal power; requests accepted with 2/3+1 of validator power; locker threshold 2; cold validators can invalidate withdrawals in a 200s challenge period. Hot validators can change the dispute period and locker threshold; cold validators can emergencyUnlock and change the validator set. Risks listed: funds can be stolen if the validator majority signs an invalid withdrawal; frozen if lockers pause the bridge. L2BEAT does not describe upgradeability."
+    },
+    {
+      "id": "H22",
+      "type": "onchain",
+      "tier": 2,
+      "title": "Bitquery — Hyperliquid bridge ledger investigation",
+      "url": "https://bitquery.io/investigations/hyperliquid-bridge-ledger",
+      "retrieved": "2026-10-23",
+      "excerpt": "Bridge USDC balance ~$431M (10 Aug 2026), down from ~$5.64B peak (Sep 2025) as native USDC via CCTP replaced it. Docs call it the legacy bridge, holding <10% of HyperCore USDC."
+    },
+    {
+      "id": "H23",
+      "type": "audit",
+      "tier": 1,
+      "title": "Zellic — Hyperliquid bridge audit reports (Nov 2023)",
+      "url": "https://reports.zellic.io/publications/hyperliquid",
+      "retrieved": "2026-10-23",
+      "excerpt": "Two Zellic reports on the Arbitrum bridge (first report; final report covering changes, 23–24 Nov 2023). High finding 'disputed actions not blocked by validator rotation' fixed (commit 8c4a182a). The docs audits page also lists Circle's audited contracts used on HyperEVM. No public audit of HyperCore, HyperBFT or the HyperEVM node was found."
+    },
+    {
+      "id": "H24",
+      "type": "doc",
+      "tier": 3,
+      "title": "Hyperliquid docs — Bug bounty program",
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/bug-bounty-program",
+      "retrieved": "2026-10-23",
+      "excerpt": "Up to 1M USDC for critical findings; reports by email to the Foundation, KYC required, no third-party platform."
+    },
+    {
+      "id": "H25",
+      "type": "doc",
+      "tier": 3,
+      "title": "Hyperliquid docs — Oracle",
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/oracle",
+      "retrieved": "2026-10-23",
+      "excerpt": "Validators publish every 3s a weighted median of CEX spot prices (Binance 3, OKX 2, Bybit 2; Kraken, KuCoin, Gate, MEXC, Hyperliquid 1). Final price is the stake-weighted median. HIP-3 deployers set their own oracles."
+    },
+    {
+      "id": "H26",
+      "type": "doc",
+      "tier": 3,
+      "title": "Hyperliquid docs — HIP-1 native token standard",
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-1-native-token-standard",
+      "retrieved": "2026-10-23",
+      "excerpt": "Native tokens have a fixed max supply set at genesis; no freeze or blacklist function described. HYPE is protocol-native: supply changes would require a validator-adopted protocol upgrade, not a key."
+    },
+    {
+      "id": "H27",
+      "type": "news",
+      "tier": 2,
+      "title": "Decrypt — Hyperliquid delists JELLY after validator vote (Mar 2025)",
+      "url": "https://decrypt.co/311713",
+      "retrieved": "2026-10-23",
+      "excerpt": "26–27 Mar 2025: validators delisted JELLY perps and settled at $0.0095; Foundation reimbursed users except flagged addresses; OI limits and on-chain delist votes promised."
+    },
+    {
+      "id": "H28",
+      "type": "news",
+      "tier": 2,
+      "title": "BTC-Echo — POPCAT attack on Hyperliquid (Nov 2025)",
+      "url": "https://www.btc-echo.de/schlagzeilen/angriff-auf-hyperliquid-mit-millionenschaden-219458/",
+      "retrieved": "2026-10-23",
+      "excerpt": "12 Nov 2025: HLP lost ~$4.9M to a coordinated POPCAT manipulation; bridge emergency lock paused deposits/withdrawals ~25–60 min. No reimbursement reported."
+    },
+    {
+      "id": "H29",
+      "type": "news",
+      "tier": 2,
+      "title": "Cointelegraph — Hyperliquid reimburses $2M after API outage (Jul 2025)",
+      "url": "https://cointelegraph.com/news/hyperliquid-reimburses-2m-crypto-traders-outage",
+      "retrieved": "2026-10-23",
+      "excerpt": "29 Jul 2025: 37-minute API outage; ~$1.99M reimbursed; claims above $10k required KYC."
+    },
+    {
+      "id": "H30",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — XPL pre-market squeeze on Hyperliquid (Aug 2025)",
+      "url": "https://www.theblock.co/post/368486",
+      "retrieved": "2026-10-23",
+      "excerpt": "26–27 Aug 2025: ~$17M liquidated in XPL pre-market. Fix: hyperp mark price capped at 10× the 8h EMA, external perp prices added."
+    },
+    {
+      "id": "H31",
+      "type": "news",
+      "tier": 2,
+      "title": "FalconX — Drivers behind Hyperliquid's next phase (ETFs, HIP-4, priority fees, USDC)",
+      "url": "https://www.falconx.io/newsroom/the-drivers-behind-hyperliquids-next-phase-hype-etfs-hip-4-outcome-markets-priority-fees-and-its-usdc-agreement",
+      "retrieved": "2026-10-23",
+      "excerpt": "Shipped: HyperEVM (Feb 2025), HIP-3 builder perps (Oct 2025), priority fees (Apr 2026), native USDC via CCTP, HIP-4 outcome markets (limited mainnet May 2026; permissionless deployment pending)."
+    },
+    {
+      "id": "H48",
+      "type": "news",
+      "tier": 2,
+      "title": "Bitcoin.com — AQAv2 passes, USDC reserve yield to buybacks",
+      "url": "https://news.bitcoin.com/crypto-news/hyperliquid-aqav2-hype-buyback-usdc/",
+      "retrieved": "2026-10-23",
+      "excerpt": "AQAv2 passed with 69.08% of stake; activated 26 Aug 2026; ~90% of USDC reserve yield to buybacks."
+    },
+    {
+      "id": "H49",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Validators vote to treat Assistance Fund HYPE as burned (Dec 2025)",
+      "url": "https://www.theblock.co/post/383091",
+      "retrieved": "2026-10-23",
+      "excerpt": "85% yes. Assistance Fund (system address, no private key) HYPE treated as burned by 'binding social consensus' — no on-chain burn."
+    },
+    {
+      "id": "H58",
+      "type": "news",
+      "tier": 2,
+      "title": "BTC-Echo — Team restakes HYPE despite unlock fears (Dec 2025)",
+      "url": "https://www.btc-echo.de/schlagzeilen/hype-kurs-trotzt-unlock-angst-team-restaked-millionenbetraege-220589/",
+      "retrieved": "2026-10-23",
+      "excerpt": "A team/Labs staking wallet held ~240M HYPE."
+    },
+    {
+      "id": "H62",
+      "type": "github",
+      "tier": 1,
+      "title": "GitHub — hyperliquid-dex/contracts Bridge2.sol",
+      "url": "https://github.com/hyperliquid-dex/contracts/blob/master/Bridge2.sol",
+      "retrieved": "2026-10-23",
+      "excerpt": "`contract Bridge2 is Pausable, ReentrancyGuard` — not a proxy, no upgradeTo/initializer/delegatecall, no owner or admin. Parameters and validator sets change only via hot/cold validator signatures; lockers can vote an emergency pause."
+    },
+    {
+      "id": "H63",
+      "type": "github",
+      "tier": 1,
+      "title": "GitHub — hyperliquid-dex/node README (hl-visor binary installation)",
+      "url": "https://github.com/hyperliquid-dex/node",
+      "retrieved": "2026-10-23",
+      "excerpt": "Validators/nodes run hl-visor, which installs signed hl-node binaries from binaries.hyperliquid.xyz. No documented notice period between a protocol upgrade being published and taking effect."
+    }
+  ],
+  "metrics": {
+    "mint_authority": {
+      "value": "protocol_upgrade",
+      "source": "H26",
+      "note": "no mint key; changing supply needs a validator-adopted upgrade (Foundation validators ~49% of stake, H18)"
+    },
+    "contracts_verified": {
+      "value": true,
+      "source": "H20",
+      "note": "Bridge2.sol is public and verified. The L1 itself (HyperCore/HyperBFT/HyperEVM node) is closed source — scored under P09, not here"
+    },
+    "audits_reputable_count": {
+      "value": 1,
+      "source": "H23",
+      "note": "one reputable firm (Zellic, two reports) covering only the legacy Arbitrum bridge (2023). No public audit of the L1, which holds most user funds"
+    },
+    "bug_bounty_max_usd": {
+      "value": 1000000,
+      "source": "H24"
+    },
+    "github_commits_90d": {
+      "value": 2,
+      "source": "H20",
+      "note": "public repos only; core development happens in a private codebase"
+    },
+    "github_active_contributors_90d": {
+      "value": 1,
+      "source": "H20"
+    },
+    "unreimbursed_exploit_usd": {
+      "value": 0,
+      "source": "H27",
+      "note": "no theft of user funds from the core protocol found 2024–26. HLP vault losses from market manipulation (e.g. ~$4.9M POPCAT, H28) were absorbed by HLP depositors, not users' positions"
+    }
+  },
+  "claims": []
+}

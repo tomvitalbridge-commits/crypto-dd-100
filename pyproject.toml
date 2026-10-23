@@ -1,0 +1,25 @@
+[project]
+name = "dd100"
+version = "0.1.0"
+description = "100-dimension due-diligence harness for crypto projects: evidence-gated scoring, red-flag gates, Claude skill"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+dd100 = "dd100.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["dd100*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

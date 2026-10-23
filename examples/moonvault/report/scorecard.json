@@ -1,0 +1,1473 @@
+{
+  "project": "Moonvault (MVLT)",
+  "profile": "consumer",
+  "as_of": "2026-10-20",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MV01"
+      ],
+      "rationale": "Pseudonymous team; deck lists prior 'Web3 gaming experience' that cannot be verified.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "rejected",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent:claude",
+      "notes": [
+        "human-only dimension cannot be scored by an agent"
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MV06"
+      ],
+      "rationale": "team_vesting_months = 18  (bands 4:≥48, 3:≥36, 2:≥24, 1:≥12)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "contradiction_count = 3  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_commits_90d' not in evidence pack"
+      ]
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_active_contributors_90d' not in evidence pack"
+      ]
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV05"
+      ],
+      "rationale": "audits_reputable_count = 0  (bands 4:≥3, 3:≥2, 2:≥1, 1:≥0.5)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV05"
+      ],
+      "rationale": "Only high finding left unfixed; game contracts never audited.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "MV02"
+      ],
+      "rationale": "contracts_verified = true",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV02"
+      ],
+      "rationale": "upgrade_timelock_hours = 0  (bands 4:≥72, 3:≥48, 2:≥24, 1:≥6)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV02"
+      ],
+      "rationale": "A single EOA holds owner rights over the token and all game proxies.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV02",
+        "MV05"
+      ],
+      "rationale": "Owner can mint unlimited MVLT; auditor flagged it, team kept it 'by design'.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'bug_bounty_max_usd' not in evidence pack"
+      ]
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MV01"
+      ],
+      "rationale": "Token used as in-game reward currency; no sink beyond cosmetic purchases.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "circulating_supply_pct = 15.6  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV03"
+      ],
+      "rationale": "top10_holder_pct_ex_contracts = 62  (bands 4:≤15, 3:≤25, 2:≤40, 1:≤60)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "scored",
+      "score": 0,
+      "confidence": "low",
+      "evidence": [
+        "MV06"
+      ],
+      "rationale": "unlock_12m_pct_of_circ = 290  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MV06"
+      ],
+      "rationale": "insider_allocation_pct = 53  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'price_to_last_round_multiple' not in evidence pack"
+      ]
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_mcap = 6.42  (bands 4:≤1.5, 3:≤2.5, 2:≤4, 1:≤7)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annual_inflation_pct' not in evidence pack"
+      ]
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "MV03"
+      ],
+      "rationale": "daa_30d_avg = 31,000  (bands 4:≥50,000, 3:≥10,000, 2:≥2,000, 1:≥300)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV03"
+      ],
+      "rationale": "daa_90d_change_pct = -46  (bands 4:≥50, 3:≥10, 2:≥-10, 1:≥-40)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV03"
+      ],
+      "rationale": "retention_30d_pct = 6  (bands 4:≥40, 3:≥25, 2:≥15, 1:≥8)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'consumer'"
+      ]
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'consumer'"
+      ]
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV03"
+      ],
+      "rationale": "58% of active addresses cluster to 14 funding sources; top holders funded from one address at launch.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack"
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'live_integrations_count' not in evidence pack"
+      ]
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack"
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MV04"
+      ],
+      "rationale": "depth_2pct_usd = 90,000  (bands 4:≥2e+06, 3:≥500,000, 2:≥150,000, 1:≥50,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MV04"
+      ],
+      "rationale": "top_venue_volume_share_pct = 71  (bands 4:≤30, 3:≤45, 2:≤60, 1:≤80)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "MV04",
+        "MV03"
+      ],
+      "rationale": "Volume is 533x the ±2% depth, 71% on a single venue.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MV04"
+      ],
+      "rationale": "spread_bps = 62  (bands 4:≤5, 3:≤15, 2:≤40, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "scored",
+      "score": 0,
+      "confidence": "medium",
+      "evidence": [
+        "MV04"
+      ],
+      "rationale": "realized_vol_30d_pct = 210  (bands 4:≤50, 3:≤80, 2:≤120, 1:≤180)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "MV03"
+      ],
+      "rationale": "annualized_revenue_usd = 2,100,000  (bands 4:≥5e+07, 3:≥1e+07, 2:≥2e+06, 1:≥250,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'consumer'"
+      ]
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentives_to_revenue' not in evidence pack"
+      ]
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack"
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack"
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'revenue_qoq_growth_pct' not in evidence pack"
+      ]
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "scored",
+      "score": 0,
+      "confidence": "medium",
+      "evidence": [
+        "MV03",
+        "MV01"
+      ],
+      "rationale": "Activity is reward farming; without emissions there is no visible demand.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'category_share_pct' not in evidence pack"
+      ]
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "rejected",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent:claude",
+      "notes": [
+        "cites evidence not in the pack: MV99"
+      ]
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MV01"
+      ],
+      "rationale": "Follower spikes coincide with reward campaigns.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "MV03"
+      ],
+      "rationale": "holders_count = 48,000  (bands 4:≥200,000, 3:≥50,000, 2:≥10,000, 1:≥2,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack"
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack"
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'consumer'"
+      ]
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'consumer'"
+      ]
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided"
+      ]
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 0.625,
+      "coverage": 0.3333333333333333,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 8,
+      "score": null,
+      "coverage": 0.0,
+      "sufficient": false,
+      "scored": 0,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 12,
+      "score": 0.47058823529411764,
+      "coverage": 0.68,
+      "sufficient": true,
+      "scored": 6,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 16,
+      "score": 0.6,
+      "coverage": 0.7142857142857143,
+      "sufficient": true,
+      "scored": 6,
+      "applicable": 10
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 14,
+      "score": 0.6666666666666666,
+      "coverage": 0.6923076923076923,
+      "sufficient": true,
+      "scored": 4,
+      "applicable": 8
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 10,
+      "score": 0.6363636363636364,
+      "coverage": 0.6470588235294118,
+      "sufficient": true,
+      "scored": 5,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 6,
+      "score": 1.2,
+      "coverage": 0.3125,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 9
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 6,
+      "score": null,
+      "coverage": 0.0,
+      "sufficient": false,
+      "scored": 0,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 10,
+      "score": 1.5,
+      "coverage": 0.3076923076923077,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 6,
+      "score": null,
+      "coverage": 0.0,
+      "sufficient": false,
+      "scored": 0,
+      "applicable": 8
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "fired"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "clear"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "fired"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "fired"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "fired"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "fired"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "fired"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "fired"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "fired"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "n/a"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "fired"
+    }
+  ],
+  "contradictions": [
+    {
+      "claim": {
+        "id": "C1",
+        "statement": "Deck: \"250,000 daily players\"",
+        "metric": "daa_30d_avg",
+        "claimed_value": 250000,
+        "source": "MV01"
+      },
+      "observed": 31000,
+      "observed_source": "MV03",
+      "deviation": 7.064516129032258
+    },
+    {
+      "claim": {
+        "id": "C2",
+        "statement": "Deck: \"2M+ holders\"",
+        "metric": "holders_count",
+        "claimed_value": 2000000,
+        "source": "MV01"
+      },
+      "observed": 48000,
+      "observed_source": "MV03",
+      "deviation": 40.666666666666664
+    },
+    {
+      "claim": {
+        "id": "C3",
+        "statement": "Deck: \"$5M monthly revenue\"",
+        "metric": "annualized_revenue_usd",
+        "claimed_value": 60000000,
+        "source": "MV01"
+      },
+      "observed": 2100000,
+      "observed_source": "MV03",
+      "deviation": 27.571428571428573
+    }
+  ],
+  "point_score": 19.0,
+  "score_low": 4.5,
+  "score_high": 69.1,
+  "coverage": 0.447,
+  "grade": "F",
+  "verdict": "REJECT",
+  "verdict_reasons": [
+    "critical gate RF01: Unrestricted mint controlled by a single key"
+  ]
+}

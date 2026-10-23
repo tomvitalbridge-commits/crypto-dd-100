@@ -1,0 +1,217 @@
+{
+  "project": "Hyperliquid (HYPE)",
+  "as_of": "2026-10-23",
+  "sources": [
+    {
+      "id": "H32",
+      "type": "news",
+      "tier": 2,
+      "title": "The Defiant — Coinbase lands Hyperliquid stablecoin role eight months after USDH vote",
+      "url": "https://thedefiant.io/news/defi/coinbase-lands-hyperliquid-stablecoin-role-eight-months-after-governance-vote-picked-native",
+      "retrieved": "2026-10-23",
+      "excerpt": "14 May 2026: Coinbase becomes official USDC treasury deployer; Native Markets winding down USDH, Coinbase holds an option on the brand. Reverses the Sep 2025 validator vote that picked Native Markets."
+    },
+    {
+      "id": "H33",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockhead — Hyperliquid confirms Singapore registration; MAS says it falls outside its jurisdiction",
+      "url": "https://www.blockhead.co/2026/10/07/hyperliquid-confirms-singapore-registration-as-mas-says-exchange-falls-outside-its-jurisdiction/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Hyperliquid Labs' registered HQ is Singapore; it describes itself as 'currently unregulated'. MAS says the platform is not within its regulatory jurisdiction and it is not aware of any major jurisdiction regulating it."
+    },
+    {
+      "id": "H34",
+      "type": "legal",
+      "tier": 1,
+      "title": "UK FCA Warning List — Hyperliquid",
+      "url": "https://www.fca.org.uk/news/warnings/hyperliquid",
+      "retrieved": "2026-10-23",
+      "excerpt": "'May be providing or promoting financial services or products without our permission.' First published 21 May 2026, updated 7 Jun 2026."
+    },
+    {
+      "id": "H35",
+      "type": "news",
+      "tier": 2,
+      "title": "ForkLog — Singapore regulator adds Hyperliquid to Investor Alert List",
+      "url": "https://forklog.com/en/news/singapore-regulator-adds-hyperliquid-to-list-of-risky-platforms",
+      "retrieved": "2026-10-23",
+      "excerpt": "26 Jun 2026: MAS Investor Alert List. Hyperliquid: 'not a ban, enforcement action, or finding of wrongdoing'."
+    },
+    {
+      "id": "H36",
+      "type": "news",
+      "tier": 2,
+      "title": "Unchained — House Oversight targets Hyperliquid, Crypto.com and PredictIt in insider-trading probe",
+      "url": "https://unchainedcrypto.com/house-oversight-targets-hyperliquid-crypto-com-and-predictit-in-insider-trading-probe/",
+      "retrieved": "2026-10-23",
+      "excerpt": "29 Sep 2026: records request (not a subpoena) to Hyperliquid Labs covering KYC, geo-restrictions and surveillance; cites a ~$1.1B short opened before the Oct 2025 tariff announcement."
+    },
+    {
+      "id": "H37",
+      "type": "news",
+      "tier": 2,
+      "title": "Cointelegraph — Lazarus-linked wallets move $30M through Hyperliquid",
+      "url": "https://cointelegraph.com/news/lazarus-group-move-30m-hyperliquid",
+      "retrieved": "2026-10-23",
+      "excerpt": "Cointelegraph (1 Sep 2026): ~$30M moved by wallets linked to the OFAC-sanctioned Lazarus Group through Hyperliquid and HyperUnit in the weeks after 16 Aug 2026 (flagged by Arkham). No Hyperliquid response or screening reported."
+    },
+    {
+      "id": "H38",
+      "type": "legal",
+      "tier": 1,
+      "title": "SEC EDGAR — 21Shares Hyperliquid ETF prospectus (424)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002090011/000121390026103576/ea0306711-424i_21shares.htm",
+      "retrieved": "2026-10-23",
+      "excerpt": "21Shares Hyperliquid Staking ETF: registration effective 11 May 2026; trading as THYP from 12 May 2026 (The Block). Bitwise BHYP (~15 May) and Grayscale HYPG (3 Jun) followed."
+    },
+    {
+      "id": "H39",
+      "type": "news",
+      "tier": 2,
+      "title": "Cointelegraph — ICE and CME press US regulators to rein in Hyperliquid",
+      "url": "https://cointelegraph.com/news/ice-cme-press-us-regulators-rein-hyperliquid-dex",
+      "retrieved": "2026-10-23",
+      "excerpt": "15 May 2026: CME and ICE lobbied the CFTC for oversight of Hyperliquid energy perps, citing manipulation and sanctions-evasion risk."
+    },
+    {
+      "id": "H40",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Trump says CFTC working to bring Hyperliquid to the US 'in a fully compliant fashion'",
+      "url": "https://theblock.co/news/regulation/2026-08-19-hype-token-surges-trump-says-cftc-bring-hyperliquid-us-fully-compliant-fashion-412262",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "H41",
+      "type": "social",
+      "tier": 1,
+      "title": "Discord API — Hyperliquid server member counts",
+      "url": "https://discord.com/api/v9/invites/hyperliquid?with_counts=true",
+      "retrieved": "2026-10-23",
+      "excerpt": "92,770 members, 9,773 online."
+    },
+    {
+      "id": "H42",
+      "type": "social",
+      "tier": 2,
+      "title": "AltIndex — HYPE X/Twitter followers",
+      "url": "https://altindex.com/ticker/hype/twitter-followers",
+      "retrieved": "2026-10-21",
+      "excerpt": "431,112 followers, +4.5% over 3 months."
+    },
+    {
+      "id": "H43",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockworks 0xResearch — HIP-3 market share",
+      "url": "https://blockworks.com/newsletter/0xresearch/issue/post_cd59dc4c-07ec-4969-8c32-4054113b310a",
+      "retrieved": "2026-10-23",
+      "excerpt": "98 of 104 new markets in 2026 launched by HIP-3 deployers; HIP-3 37.5% of volume (27 Apr 2026)."
+    },
+    {
+      "id": "H44",
+      "type": "news",
+      "tier": 2,
+      "title": "Arrakis — Who is trading on HIP-3?",
+      "url": "https://arrakis.finance/blog/who-is-trading-on-hip3",
+      "retrieved": "2026-10-23",
+      "excerpt": "trade.xyz accounts for ~96% of HIP-3 volume (Dec 2025–Mar 2026)."
+    },
+    {
+      "id": "H45",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Hyperliquid OI climbs to $14.3B as HYPE hits ATH",
+      "url": "https://www.theblock.co/news/ecosystems/2026-09-08-hyperliquid-open-interest-climbs-14-3-billion-hype-hits-an-all-time-high-413855",
+      "retrieved": "2026-10-23",
+      "excerpt": "Total OI incl. HIP-3 $14.3B (Sep 2026). Gross revenue fell from $457M (Q3-25) to $202M (Q2-26)."
+    },
+    {
+      "id": "H46",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Hyperliquid perp-DEX share falls as Lighter and Aster surge (Nov 2025)",
+      "url": "https://www.theblock.co/post/377319/",
+      "retrieved": "2026-10-23",
+      "excerpt": "The Block (4 Nov 2025): Hyperliquid's perp-DEX volume share 'has fallen to just 10% at the time of writing, down from 33% just a month ago'; Lighter led at 27% (zero fees), Aster posted record volume. Share later recovered (25.5% Apr 2026, ~33% Oct 2026 per DefiLlama)."
+    },
+    {
+      "id": "H47",
+      "type": "news",
+      "tier": 2,
+      "title": "Cryptoast — Binance lists Hyperliquid after an 'unusually long' wait",
+      "url": "https://cryptoast.fr/binance-listing-hyperliquid-hype/",
+      "retrieved": "2026-10-23",
+      "excerpt": "22-month delay linked to strained relations after the Mar 2025 JELLY episode and direct competition with CEX perps."
+    },
+    {
+      "id": "H50",
+      "type": "legal",
+      "tier": 2,
+      "title": "Memeburn — Is Hyperliquid available in the US? (Terms of Use s.1.5)",
+      "url": "https://memeburn.com/is-hyperliquid-available-in-the-us-what-trump-just-said/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Terms exclude the US, Ontario and US-sanctioned jurisdictions; enforced by front-end IP geofencing; the L1 itself does not geoblock. No KYC on the platform."
+    },
+    {
+      "id": "H51",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — DefiLlama delists Aster perp volume over wash-trading concerns",
+      "url": "https://theblock.co/news/ecosystems/2025-10-05-asters-token-drops-10-after-defillama-head-raises-wash-trading-concerns-delists-perpetuals-data-373458",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "H52",
+      "type": "news",
+      "tier": 2,
+      "title": "FinTelegram — ESMA statement on crypto 'perpetual' derivatives",
+      "url": "https://fintelegram.com/?p=80678",
+      "retrieved": "2026-10-23",
+      "excerpt": "24 Feb 2026: ESMA says perpetuals are likely CFDs under national product intervention — retail crypto leverage capped at 2:1, PRIIPs KID required. Hyperliquid not named."
+    },
+    {
+      "id": "H54",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Hyperliquid hits record share of global perps volume",
+      "url": "https://www.theblock.co/post/403384/",
+      "retrieved": "2026-10-23",
+      "excerpt": "May 2026: record 6.63% of global perps volume incl. CEXs, equal to 14.4% of Binance's. Coinbase routes Base App users to Hyperliquid perps (Aug 2026)."
+    },
+    {
+      "id": "H59",
+      "type": "news",
+      "tier": 2,
+      "title": "ForkLog — Native Markets secures USDH ticker; Dragonfly calls process 'a farce'",
+      "url": "https://forklog.com/en/native-markets-secures-usdh-ticker-for-hyperliquid/",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "H60",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockworks Research — Hyperliquid is centralized",
+      "url": "https://blockworks-research.beehiiv.com/p/hyperliquid-is-centralized",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "H61",
+      "type": "news",
+      "tier": 2,
+      "title": "KuCoin News — Hyperliquid founder rejects outside funding offer",
+      "url": "https://www.kucoin.com/news/flash/hyperliquid-founder-rejects-10b-valuation-funding-offer-commits-to-zero-external-investment-path",
+      "retrieved": "2026-10-23",
+      "excerpt": "Restates Jan 2024 principles: no investors, no paid market makers. (Headline says $10B valuation, body says $1B.)"
+    }
+  ],
+  "metrics": {
+    "active_enforcement_action": {
+      "value": false,
+      "source": "H34",
+      "note": "no lawsuit or enforcement action found. Regulator WARNINGS exist (FCA Warning List, MAS Investor Alert List) and a US House Oversight records request — treated as material risk under L04/L05, not as enforcement"
+    }
+  },
+  "claims": []
+}

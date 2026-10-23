@@ -1,0 +1,5 @@
+# Checks that need a private channel. Only `assessor: human:*` may fill these.
+assessments:
+- {id: T02, score: 4, confidence: high, evidence: [E14, E13], assessor: "human:analyst", rationale: "All four founders KYC'd to the reviewer; two have public professional histories, two are public under real names."}
+- {id: L07, score: 4, confidence: high, evidence: [E20], assessor: "human:analyst", rationale: "Multi-jurisdiction opinion from a recognised firm, shared under NDA."}
+- {id: M05, status: pending, assessor: "human:analyst", rationale: "Team agreed to share MM agreements under NDA (call 2026-10-15); not yet received."}

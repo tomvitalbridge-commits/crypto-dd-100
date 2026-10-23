@@ -1,0 +1,1518 @@
+{
+  "project": "Hyperliquid (HYPE)",
+  "profile": "defi",
+  "as_of": "2026-10-23",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H19",
+        "H10"
+      ],
+      "rationale": "Founders came from HFT and built the largest perp DEX (32.8% of 30d perp-DEX volume) — the outcome is verifiable; earlier ventures are only thinly documented.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "H19",
+        "H20"
+      ],
+      "rationale": "Hyperliquid Labs had 11 employees (Jan 2026) running a closed-source L1 with ~$8.4B TVL; core knowledge sits with a very small group.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H19",
+        "H31"
+      ],
+      "rationale": "In-house team built and keeps shipping its own L1, HyperEVM and HIP-3/HIP-4; no public specs or research to evaluate independently.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H34",
+        "H35",
+        "H36"
+      ],
+      "rationale": "No enforcement actions found, but FCA warning (May 2026), MAS investor alert (Jun 2026) and a US House Oversight records request on insider trading (Sep 2026) are open.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H03"
+      ],
+      "rationale": "team_vesting_months = 36  (bands 4:≥48, 3:≥36, 2:≥24, 1:≥12)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "H18",
+        "H06",
+        "H49"
+      ],
+      "rationale": "Decisions are stake-weighted validator votes; 5 Foundation validators hold ~49% of stake; no token-holder vote; key outcomes (Assistance Fund 'burn') rest on social consensus, not code.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H07",
+        "H49"
+      ],
+      "rationale": "Assistance Fund buybacks are visible on-chain (48.0M HYPE for $1.36B); Foundation treasury balance and spending are not reported.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H04",
+        "H19",
+        "H38"
+      ],
+      "rationale": "No private investors by design, so no VC unlock overhang; institutional exposure comes through spot ETFs and token purchases rather than a cap table.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "contradiction_count = 0  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "H02",
+        "H10"
+      ],
+      "rationale": "$212B 30d perp volume and $907M annualised fees with zero usage incentives — demand is paid for, not subsidised.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "H31",
+        "H04"
+      ],
+      "rationale": "Exchange in production well over 12 months (token genesis Nov 2024 on a live venue); HyperEVM since Feb 2025, HIP-3 since Oct 2025.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H20",
+        "H31"
+      ],
+      "rationale": "Original L1 with a fully on-chain order book, not a fork — but closed source, so originality can't be inspected.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H27",
+        "H28",
+        "H30",
+        "H29"
+      ],
+      "rationale": "Core engine held up in the Oct 2025 crash, but thin markets were repeatedly manipulated (JELLY, XPL, POPCAT) and a 37-minute API outage needed $2M in reimbursements.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H25",
+        "H22",
+        "H32"
+      ],
+      "rationale": "Oracle prices come from CEX feeds (Binance carries the top weight); USDC rails depend on Circle/Coinbase and a legacy Arbitrum bridge.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "H20"
+      ],
+      "rationale": "github_commits_90d = 2  (bands 4:≥300, 3:≥150, 2:≥60, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "H20"
+      ],
+      "rationale": "github_active_contributors_90d = 1  (bands 4:≥25, 3:≥12, 2:≥6, 1:≥3)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H31",
+        "H20"
+      ],
+      "rationale": "HyperEVM, HIP-3, priority fees, native USDC shipped; open-sourcing the node, promised since Jan 2025, still has no date.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "H20"
+      ],
+      "rationale": "Node ships as binaries only; only the bridge contract and SDKs are public. Nobody outside the team can build or verify the L1.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H06",
+        "H25"
+      ],
+      "rationale": "Good integrator docs (staking, oracle, builder codes); no consensus spec or threat model.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "H23"
+      ],
+      "rationale": "audits_reputable_count = 1  (bands 4:≥3, 3:≥2, 2:≥1, 1:≥0.5)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "H23",
+        "H20"
+      ],
+      "rationale": "The only public audits (two Zellic reports, 2023) cover the legacy bridge; no public audit of HyperCore/HyperEVM, which hold most of the ~$8.4B.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "H20"
+      ],
+      "rationale": "contracts_verified = true",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'upgrade_timelock_hours' not in evidence pack",
+        "Bridge2 is not upgradeable (H62). The L1 upgrades by validators adopting new signed binaries (H63); no notice period is documented. Ask: how much notice do users get before a protocol upgrade takes effect?"
+      ]
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "H21",
+        "H62",
+        "H18",
+        "H63"
+      ],
+      "rationale": "No admin key, but bridge withdrawals need only 3 of 4 EOA validator signatures, and L1 upgrades ship as binaries adopted by a validator set where the Foundation holds ~49% of stake.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H26",
+        "H27"
+      ],
+      "rationale": "No mint key and no freeze/blacklist function; but validators have shown they will force-settle a market (JELLY at $0.0095).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "scored",
+      "score": 4,
+      "confidence": "low",
+      "evidence": [
+        "H24"
+      ],
+      "rationale": "bug_bounty_max_usd = 1,000,000  (bands 4:≥1e+06, 3:≥250,000, 2:≥50,000, 1:≥10,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "H27",
+        "H28",
+        "H29",
+        "H30"
+      ],
+      "rationale": "No theft of user funds from the core, but recurring manipulation losses to the HLP vault (~$4M, ~$4.9M, ~$1.2–1.5M) and discretionary interventions.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "H25",
+        "H28",
+        "H30"
+      ],
+      "rationale": "Stake-weighted median of CEX prices is robust for majors; thin and HIP-3 markets (own oracles) have been manipulated repeatedly.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "H21",
+        "H22",
+        "H62"
+      ],
+      "rationale": "Legacy bridge (non-upgradeable contract) still holds ~$431M secured by 3-of-4 EOA validator keys; most USDC now arrives natively via CCTP.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "H02",
+        "H07"
+      ],
+      "rationale": "99% of fees (net of builder fees) buy HYPE on-chain — $1.36B spent so far; HYPE also needed for staking, gas and HIP-3 deployment bonds.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "circulating_supply_pct = 23.3  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top10_holder_pct_ex_contracts' not in evidence pack",
+        "Top holders are dominated by protocol and team addresses (Assistance Fund, staking, ~240M team stake, H58). Needs entity labelling to exclude them; public explorers did not render for this review."
+      ]
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "H03"
+      ],
+      "rationale": "unlock_12m_pct_of_circ = 53.5  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H03"
+      ],
+      "rationale": "insider_allocation_pct = 29.8  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [
+        "H04"
+      ],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "n/a for this project: no private round was ever sold, so there is no investor cost basis to overhang the market"
+      ]
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_mcap = 4.29  (bands 4:≤1.5, 3:≤2.5, 2:≤4, 1:≤7)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H05"
+      ],
+      "rationale": "annual_inflation_pct = 0.5  (bands 4:≤2, 3:≤5, 2:≤10, 1:≤20)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H01",
+        "H03",
+        "H13"
+      ],
+      "rationale": "Buybacks are on-chain, but circulating supply differs by provider (222M vs 254M) and team releases are discretionary claims reported inconsistently.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "H17"
+      ],
+      "rationale": "Only 6.8% of the airdrop is still in recipient wallets and 86% of wallets sold everything — distribution created users, not holders.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H12"
+      ],
+      "rationale": "daa_30d_avg = 20,600  (bands 4:≥50,000, 3:≥10,000, 2:≥2,000, 1:≥300)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_90d_change_pct' not in evidence pack"
+      ]
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'retention_30d_pct' not in evidence pack"
+      ]
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H02"
+      ],
+      "rationale": "tvl_usd = 8,433,000,000  (bands 4:≥1e+09, 3:≥2e+08, 2:≥5e+07, 1:≥1e+07)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H02"
+      ],
+      "rationale": "incentivised_tvl_share_pct = 0  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤75)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H02",
+        "H12",
+        "H44"
+      ],
+      "rationale": "Activity persists with zero incentives since Nov 2024; HIP-3 volume is concentrated in one deployer (trade.xyz ~96%).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack"
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'live_integrations_count' not in evidence pack"
+      ]
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H43",
+        "H44",
+        "H54"
+      ],
+      "rationale": "Third parties launch most new markets (98 of 104 in 2026) and Coinbase routes Base App users in; builder activity is concentrated in a few teams.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack"
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H01"
+      ],
+      "rationale": "depth_2pct_usd = 2,885,381  (bands 4:≥2e+06, 3:≥500,000, 2:≥150,000, 1:≥50,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H01"
+      ],
+      "rationale": "top_venue_volume_share_pct = 23.8  (bands 4:≤30, 3:≤45, 2:≤60, 1:≤80)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "H01"
+      ],
+      "rationale": "Top venues look healthy (0.01% spreads), but reported 24h volume ($829M) is ~4× the top-8 pairs' total; the long tail of 83 markets is unverified.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H01"
+      ],
+      "rationale": "spread_bps = 1  (bands 4:≤5, 3:≤15, 2:≤40, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "H01",
+        "H15",
+        "H16"
+      ],
+      "rationale": "Already on Coinbase, OKX, Bybit, Robinhood and Binance.US, with Binance perps since May 2025.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: HYPE funding-rate history and CEX OI split"
+      ]
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'realized_vol_30d_pct' not in evidence pack"
+      ]
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H01"
+      ],
+      "rationale": "On-chain liquidity is an order book (no LP to pull), but Hyperliquid's own spot book is thin: ~$150k/$55k within ±2%.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "H10",
+        "H38",
+        "H11"
+      ],
+      "rationale": "Category leader in on-chain perps with RWA perps driving new users and three US spot ETFs live.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H02"
+      ],
+      "rationale": "annualized_revenue_usd = 690,280,000  (bands 4:≥5e+07, 3:≥1e+07, 2:≥2e+06, 1:≥250,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H08",
+        "H45"
+      ],
+      "rationale": "Revenue is organic trading fees, but cyclical: gross revenue fell from $457M (Q3-25) to $202M (Q2-26).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "H02",
+        "H07"
+      ],
+      "rationale": "All protocol revenue accrues to holders: Q3-26 $151M of $174M bought back HYPE on-chain; the rest was USDC reserve yield and burns.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_annual_fees = 81.5  (bands 4:≤20, 3:≤50, 2:≤150, 1:≤500)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H02"
+      ],
+      "rationale": "incentives_to_revenue = 0  (bands 4:≤0.5, 3:≤1, 2:≤2, 1:≤4)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack",
+        "Hyper Foundation treasury balance is not published; Labs is self-funded (H19)."
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack"
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H08"
+      ],
+      "rationale": "revenue_qoq_growth_pct = 1.6  (bands 4:≥50, 3:≥15, 2:≥0, 1:≥-25)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H43",
+        "H44"
+      ],
+      "rationale": "HIP-3 is ~37.5% of volume and one deployer does ~96% of HIP-3 — roughly a third of volume runs through a single partner.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H02",
+        "H05"
+      ],
+      "rationale": "No usage incentives, so fees are real; but staking emissions (~9.9M HYPE/yr) about equal buybacks, so holders see little net supply reduction.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H54",
+        "H09"
+      ],
+      "rationale": "Perps are crypto's largest market; Hyperliquid alone reached 6.63% of global perp volume including CEXs.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H10"
+      ],
+      "rationale": "category_share_pct = 32.8  (bands 4:≥30, 3:≥15, 2:≥5, 1:≥1)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H10",
+        "H12",
+        "H46"
+      ],
+      "rationale": "Volume share fell from ~44% (Mar 2026) to 32.8% (Oct 2026); OI share stable at ~55–57%.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H46",
+        "H10",
+        "H51"
+      ],
+      "rationale": "Volume share fell from 33% to ~10% in late 2025 as Lighter (zero fees) and Aster surged, then recovered to ~33% without incentives; Aster's volume data was delisted by DefiLlama over wash-trading concerns.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H20",
+        "H10"
+      ],
+      "rationale": "Closed-source core can't be forked directly, and OI/liquidity concentration is hard to replicate.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H43",
+        "H11"
+      ],
+      "rationale": "CEX-like order book with self-custody plus permissionless markets (RWA/equity perps) competitors don't match yet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H01",
+        "H02"
+      ],
+      "rationale": "FDV/fees ~82× vs Aster ~28× and Lighter ~40× on trailing fees; on market cap (~19×) it is cheaper.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H54",
+        "H47"
+      ],
+      "rationale": "Competes head-on with CEX perps (incl. Binance); Coinbase chose to partner instead.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H32",
+        "H54",
+        "H38"
+      ],
+      "rationale": "Coinbase USDC deployer and Base App routing are live, ETFs trade; the USDH partnership was reversed eight months after it was voted in.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H15",
+        "H16",
+        "H47"
+      ],
+      "rationale": "Top-demand asset users already trade as a Binance perp since May 2025; spot adds a TRY fiat route but lists a direct competitor's token.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H41",
+        "H42"
+      ],
+      "rationale": "431k X followers and ~93k Discord members (~9.8k online); growth is steady rather than campaign-driven.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: bot-likelihood / engagement-quality analysis of X and Discord"
+      ]
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'holders_count' not in evidence pack"
+      ]
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: user geography; ask team or use Binance's own deposit/withdrawal data"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "H61",
+        "H02"
+      ],
+      "rationale": "Stated policy of no investors and no paid market makers; no paid campaigns found and no incentives running.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "H43",
+        "H44"
+      ],
+      "rationale": "External teams ship HIP-3 markets and HyperEVM apps; grants programme details not public.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack",
+        "There is no token-holder vote: governance is stake-weighted validator voting (H18), scored under T07."
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H29",
+        "H37"
+      ],
+      "rationale": "Fast on outage reimbursement; no public response found on Lazarus-linked flows (2026) or later manipulation events.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H59",
+        "H60",
+        "H32"
+      ],
+      "rationale": "Strong trader sentiment, but persistent informed criticism of centralisation and of the reversed USDH vote.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "H32",
+        "H38",
+        "H54"
+      ],
+      "rationale": "Coinbase, Circle and three US ETF issuers have integrated or built products on it.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H33"
+      ],
+      "rationale": "Labs registered in Singapore; Foundation described as Cayman-based with no published registration details; self-described as unregulated.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H38",
+        "H02",
+        "H18"
+      ],
+      "rationale": "Fee-funded buybacks and Foundation-weighted control cut against the token; SEC-effective spot ETFs show US regulators allowed exposure, but that is not a legal determination.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack",
+        "No public wallet screening exists. Lazarus-linked flows of ~$30M were reported (H37). Needs the venue's own Chainalysis/TRM screening of HYPE treasury, team, Assistance Fund and top-holder addresses."
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "scored",
+      "score": 0,
+      "confidence": "high",
+      "evidence": [
+        "H34",
+        "H33",
+        "H52"
+      ],
+      "rationale": "Offers retail leveraged perps (up to 40×) with no licence anywhere; FCA warning list, MAS alert; ESMA caps EU retail at 2:1.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H34",
+        "H35",
+        "H36"
+      ],
+      "rationale": "No litigation or enforcement found; two regulator warnings and a congressional records request are open.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "H26",
+        "H50"
+      ],
+      "rationale": "No privacy or obfuscation features; all activity is public on-chain.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'defi'"
+      ]
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'defi'"
+      ]
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "H50",
+        "H37"
+      ],
+      "rationale": "Front-end geofencing only; the L1 accepts anyone, and Lazarus-linked wallets moved ~$30M through it in Aug 2026.",
+      "assessor": "agent:claude",
+      "notes": []
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 2.5238095238095237,
+      "coverage": 0.875,
+      "sufficient": true,
+      "scored": 9,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 10,
+      "score": 2.473684210526316,
+      "coverage": 1.0,
+      "sufficient": true,
+      "scored": 10,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 14,
+      "score": 2.1363636363636362,
+      "coverage": 0.88,
+      "sufficient": true,
+      "scored": 9,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 14,
+      "score": 2.25,
+      "coverage": 0.8421052631578947,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 9
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 10,
+      "score": 3.4,
+      "coverage": 0.5882352941176471,
+      "sufficient": false,
+      "scored": 5,
+      "applicable": 10
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 8,
+      "score": 3.3846153846153846,
+      "coverage": 0.7647058823529411,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 10,
+      "score": 3.2,
+      "coverage": 0.8333333333333334,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 8,
+      "score": 2.9444444444444446,
+      "coverage": 1.0,
+      "sufficient": true,
+      "scored": 10,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 5,
+      "score": 2.857142857142857,
+      "coverage": 0.5384615384615384,
+      "sufficient": false,
+      "scored": 6,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 9,
+      "score": 1.8333333333333333,
+      "coverage": 0.75,
+      "sufficient": true,
+      "scored": 6,
+      "applicable": 8
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "clear"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "clear"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "clear"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "clear"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "clear"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "clear"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "clear"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "clear"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "clear"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "clear"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "fired"
+    }
+  ],
+  "contradictions": [],
+  "point_score": 66.0,
+  "score_low": 41.4,
+  "score_high": 80.6,
+  "coverage": 0.824,
+  "grade": "B",
+  "verdict": "CONDITIONAL",
+  "verdict_reasons": [
+    "grade B meets the listing bar on score; listing is blocked until:",
+    "critical gates not yet checkable: RF02",
+    "human-only checks outstanding: T02 Identity verification level, M05 Market-maker arrangements, L07 Legal opinion"
+  ]
+}

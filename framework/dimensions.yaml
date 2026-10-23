@@ -1,0 +1,1034 @@
+# =============================================================================
+# DD-100 — the 100-dimension crypto project due-diligence framework
+# =============================================================================
+# 10 pillars x 10 dimensions. Every dimension is scored on an integer 0–4 scale.
+#
+#   method: rule   -> scored deterministically by the harness from a metric in
+#                     the evidence pack (thresholds live HERE, not in code)
+#   method: agent  -> scored by an LLM/analyst against the anchors, and MUST
+#                     cite evidence ids; the harness rejects uncited scores
+#   method: human  -> needs a private channel (team call, data room, legal
+#                     counsel). The harness never lets an agent fill these.
+#
+#   weight: 1–3   relative importance inside its pillar
+#   anchors       0 / 2 / 4 descriptions; 1 and 3 are "between the anchors"
+#   evidence      the source types a reviewer should look for
+#
+# Rule bands are [t4, t3, t2, t1]:
+#   direction: higher -> value >= t4 scores 4, >= t3 scores 3 ... else 0
+#   direction: lower  -> value <= t4 scores 4, <= t3 scores 3 ... else 0
+#   direction: bool   -> value == pass scores 4, otherwise 0
+# =============================================================================
+
+pillars:
+  T: Team & Governance
+  P: Product & Technology
+  S: Security & Smart Contracts
+  K: Tokenomics & Supply
+  O: On-chain Traction
+  M: Market Structure & Liquidity
+  B: Business Model & Fundamentals
+  C: Competition & Moat
+  D: Community & Distribution
+  L: Legal, Compliance & Jurisdiction
+
+dimensions:
+
+# ---------------------------------------------------------------- T  Team & Governance
+- id: T01
+  name: Founder track record
+  question: Have the core founders built and operated comparable products, with verifiable outcomes?
+  method: agent
+  weight: 3
+  evidence: [doc, news, interview]
+  anchors:
+    0: No verifiable history, or a prior venture ended with user losses
+    2: Relevant industry experience but nothing shipped at comparable scale
+    4: Multiple shipped products at scale with outcomes others can verify
+
+- id: T02
+  name: Identity verification level
+  question: Are the key people identified to the reviewer (KYC) and, ideally, publicly?
+  method: human
+  weight: 3
+  evidence: [interview, kyc]
+  anchors:
+    0: Anonymous to everyone including the reviewer
+    2: Pseudonymous publicly, fully KYC'd to the reviewer
+    4: Public identities with verifiable professional histories, KYC'd
+
+- id: T03
+  name: Team depth & key-person risk
+  question: Would the project survive the departure of any single person?
+  method: agent
+  weight: 2
+  evidence: [doc, interview, github]
+  anchors:
+    0: One person holds code, keys and relationships
+    2: Small core team, some redundancy in engineering only
+    4: Senior coverage across engineering, security, BD and ops with documented succession
+
+- id: T04
+  name: Technical leadership
+  question: Is there credible technical leadership able to own protocol design and security decisions?
+  method: agent
+  weight: 2
+  evidence: [github, doc, interview]
+  anchors:
+    0: Engineering is fully outsourced, no in-house technical owner
+    2: Competent leads, limited public technical output
+    4: Recognised technical leaders with public research, specs or core contributions
+
+- id: T05
+  name: Controversies & misconduct history
+  question: Are there credible allegations, enforcement actions or past rugs connected to the team?
+  method: agent
+  weight: 3
+  evidence: [news, legal, onchain]
+  anchors:
+    0: Substantiated misconduct, enforcement action or wallet links to past rugs
+    2: Unresolved but unsubstantiated allegations, adequately answered
+    4: Clean record across news, court records and wallet history
+
+- id: T06
+  name: Team vesting length
+  question: How long are team tokens locked and vested?
+  method: rule
+  weight: 2
+  evidence: [tokenomics, onchain]
+  rule: {metric: team_vesting_months, direction: higher, bands: [48, 36, 24, 12]}
+
+- id: T07
+  name: Governance design & decentralisation path
+  question: Who can change the protocol, and is there a credible path to reducing that power?
+  method: agent
+  weight: 2
+  evidence: [doc, governance, onchain]
+  anchors:
+    0: Single entity controls all parameters, no roadmap to change it
+    2: Token governance exists but is advisory or dominated by insiders
+    4: Binding on-chain governance with checks (timelocks, veto, quorum) and a dated roadmap
+
+- id: T08
+  name: Treasury transparency
+  question: Are treasury addresses, holdings and spending disclosed and reconcilable on-chain?
+  method: agent
+  weight: 2
+  evidence: [onchain, doc]
+  anchors:
+    0: Treasury undisclosed or cannot be reconciled
+    2: Addresses disclosed, irregular reporting
+    4: Regular public reports that reconcile to on-chain balances
+
+- id: T09
+  name: Backer quality & cap table
+  question: Who has invested, on what terms, and do they add more than capital?
+  method: agent
+  weight: 2
+  evidence: [doc, news, interview]
+  anchors:
+    0: Undisclosed or reputationally problematic backers
+    2: Mixed cap table, mostly passive funds or angels
+    4: Reputable lead investors with a record of supporting projects through down cycles
+
+- id: T10
+  name: Disclosure honesty
+  question: Do the project's claims match what the reviewer can observe? (contradictions found by the harness)
+  method: rule
+  weight: 3
+  evidence: [doc, onchain, api]
+  rule: {metric: contradiction_count, direction: lower, bands: [0, 0.5, 1, 2]}
+
+# ---------------------------------------------------------------- P  Product & Technology
+- id: P01
+  name: Problem clarity & real demand
+  question: Is there a specific user with a specific problem that this solves better than today's alternatives?
+  method: agent
+  weight: 3
+  evidence: [doc, onchain, interview]
+  anchors:
+    0: Solution looking for a problem; demand is narrative only
+    2: Real problem, but demand is mostly incentive-driven so far
+    4: Clear problem with paying or retained users who would miss the product
+
+- id: P02
+  name: Product maturity
+  question: What is live today versus promised?
+  method: agent
+  weight: 3
+  evidence: [onchain, doc]
+  anchors:
+    0: Whitepaper or closed testnet only
+    2: Mainnet live with core function, major pieces still on the roadmap
+    4: Mature mainnet product with more than 12 months of production history
+
+- id: P03
+  name: Technical originality
+  question: Is the technology novel, a meaningful improvement, or a fork?
+  method: agent
+  weight: 2
+  evidence: [github, doc]
+  anchors:
+    0: Unmodified fork with a new token
+    2: Fork with meaningful modifications or integrations
+    4: Original design with published research or clear technical advantage
+
+- id: P04
+  name: Architecture soundness
+  question: Is the architecture appropriate for the use case at the target scale?
+  method: agent
+  weight: 2
+  evidence: [doc, github, audit]
+  anchors:
+    0: Design has known failure modes at the target scale
+    2: Workable design with acknowledged scaling or liveness limits
+    4: Battle-tested design patterns, documented trade-offs, stress-tested
+
+- id: P05
+  name: Dependency risk
+  question: How exposed is the protocol to oracles, bridges, sequencers or other protocols it does not control?
+  method: agent
+  weight: 2
+  evidence: [doc, audit, onchain]
+  anchors:
+    0: Critical single dependency with no fallback
+    2: Several external dependencies, partial fallbacks
+    4: Minimal dependencies, each with redundancy or circuit breakers
+
+- id: P06
+  name: Development activity (90d commits)
+  question: How much code is being shipped in public repositories?
+  method: rule
+  weight: 2
+  evidence: [github]
+  rule: {metric: github_commits_90d, direction: higher, bands: [300, 150, 60, 15]}
+
+- id: P07
+  name: Contributor breadth (90d)
+  question: How many distinct developers are actively contributing?
+  method: rule
+  weight: 1
+  evidence: [github]
+  rule: {metric: github_active_contributors_90d, direction: higher, bands: [25, 12, 6, 3]}
+
+- id: P08
+  name: Roadmap delivery record
+  question: Has the team historically shipped what it promised, roughly when it promised?
+  method: agent
+  weight: 2
+  evidence: [doc, news, github]
+  anchors:
+    0: Most past milestones missed or silently dropped
+    2: Core milestones shipped late, secondary items dropped
+    4: Consistent on-time delivery against a public roadmap
+
+- id: P09
+  name: Open source & reproducibility
+  question: Can a third party build and verify what is deployed?
+  method: agent
+  weight: 1
+  evidence: [github, onchain]
+  anchors:
+    0: Closed source
+    2: Contracts open, off-chain components closed
+    4: Full stack open source with reproducible builds matching deployed bytecode
+
+- id: P10
+  name: Documentation quality
+  question: Could an integrator or auditor understand the system from the docs alone?
+  method: agent
+  weight: 1
+  evidence: [doc]
+  anchors:
+    0: Marketing site only
+    2: User docs exist, technical specs thin
+    4: Complete technical specs, integration guides and threat model
+
+# ---------------------------------------------------------------- S  Security & Smart Contracts
+- id: S01
+  name: Audit coverage
+  question: How many reputable independent audits cover the deployed code?
+  method: rule
+  weight: 3
+  evidence: [audit]
+  rule: {metric: audits_reputable_count, direction: higher, bands: [3, 2, 1, 0.5]}
+
+- id: S02
+  name: Audit remediation
+  question: Were critical and high findings fixed and re-verified, and does deployed code match audited code?
+  method: agent
+  weight: 3
+  evidence: [audit, onchain, github]
+  anchors:
+    0: Open criticals, or deployed code differs from audited code
+    2: Highs acknowledged but not all fixed; partial re-audit
+    4: All critical/high fixed, re-verified, deployed bytecode matches audited commit
+
+- id: S03
+  name: Source verification
+  question: Is the source code of every core contract verified on the block explorer?
+  method: rule
+  weight: 2
+  evidence: [onchain]
+  rule: {metric: contracts_verified, direction: bool, pass: true}
+
+- id: S04
+  name: Upgrade timelock
+  question: How long must users wait between an upgrade being queued and executed? (non-upgradeable = 9999)
+  method: rule
+  weight: 3
+  evidence: [onchain]
+  rule: {metric: upgrade_timelock_hours, direction: higher, bands: [72, 48, 24, 6]}
+
+- id: S05
+  name: Admin key custody
+  question: Who holds admin keys, and with what multisig threshold and signer independence?
+  method: agent
+  weight: 3
+  evidence: [onchain, doc]
+  anchors:
+    0: Single EOA holds admin rights
+    2: Multisig with low threshold or all signers from the team
+    4: High-threshold multisig with independent signers, or no admin keys at all
+
+- id: S06
+  name: Mint / freeze / blacklist powers
+  question: Can any party mint, freeze, seize or blacklist, and is that power bounded?
+  method: agent
+  weight: 3
+  evidence: [onchain, audit]
+  anchors:
+    0: Unbounded mint or seizure by a small group
+    2: Powers exist, are bounded and disclosed (e.g. regulated-asset compliance)
+    4: Fixed supply, no freeze or seizure functions
+
+- id: S07
+  name: Bug bounty
+  question: What is the maximum bug bounty payout on an established platform?
+  method: rule
+  weight: 1
+  evidence: [doc]
+  rule: {metric: bug_bounty_max_usd, direction: higher, bands: [1000000, 250000, 50000, 10000]}
+
+- id: S08
+  name: Incident history & response
+  question: Has the protocol been exploited, and how was it handled?
+  method: agent
+  weight: 3
+  evidence: [news, onchain, doc]
+  anchors:
+    0: Exploit with users unreimbursed or an opaque response
+    2: Exploit fully remediated with a credible post-mortem
+    4: No incidents, or minor ones handled in public with fast reimbursement
+
+- id: S09
+  name: Oracle & manipulation resistance
+  question: Can prices or state be manipulated to drain funds (flash loans, thin oracles)?
+  method: agent
+  weight: 2
+  evidence: [audit, doc]
+  anchors:
+    0: Spot-price oracle on thin liquidity
+    2: Reputable oracle without fallback or deviation checks
+    4: Multi-source oracle with TWAP, circuit breakers and tested fallbacks
+
+- id: S10
+  name: Bridge & cross-chain exposure
+  question: How much value depends on bridges or wrapped representations?
+  method: agent
+  weight: 2
+  evidence: [onchain, doc]
+  anchors:
+    0: Most supply or TVL sits on a single unaudited or small-validator bridge
+    2: Material bridge exposure via established bridges
+    4: Native issuance on each chain or negligible bridge exposure
+
+# ---------------------------------------------------------------- K  Tokenomics & Supply
+- id: K01
+  name: Token utility & value accrual
+  question: Why must anyone hold the token, and how does protocol success reach holders?
+  method: agent
+  weight: 3
+  evidence: [doc, onchain]
+  anchors:
+    0: Governance-only token with no economic link to usage
+    2: Indirect utility (staking for security, fee discounts)
+    4: Direct, on-chain value accrual (fee share, buyback, required collateral) already live
+
+- id: K02
+  name: Circulating ratio
+  question: What share of total supply is circulating today?
+  method: rule
+  weight: 2
+  evidence: [api, onchain]
+  rule: {metric: circulating_supply_pct, direction: higher, bands: [60, 40, 25, 15]}
+
+- id: K03
+  name: Holder concentration
+  question: Share of supply held by the top 10 wallets, excluding exchanges, burn and protocol contracts
+  method: rule
+  weight: 3
+  evidence: [onchain]
+  rule: {metric: top10_holder_pct_ex_contracts, direction: lower, bands: [15, 25, 40, 60]}
+
+- id: K04
+  name: 12-month unlock pressure
+  question: Tokens unlocking in the next 12 months as a percentage of current circulating supply
+  method: rule
+  weight: 3
+  evidence: [tokenomics, onchain]
+  rule: {metric: unlock_12m_pct_of_circ, direction: lower, bands: [10, 25, 50, 100]}
+
+- id: K05
+  name: Insider allocation
+  question: Team + investor share of total supply
+  method: rule
+  weight: 2
+  evidence: [tokenomics]
+  rule: {metric: insider_allocation_pct, direction: lower, bands: [25, 35, 45, 55]}
+
+- id: K06
+  name: Investor cost-basis overhang
+  question: Current price as a multiple of the last private round price (higher = more profit to take)
+  method: rule
+  weight: 2
+  evidence: [doc, api]
+  rule: {metric: price_to_last_round_multiple, direction: lower, bands: [3, 10, 30, 100]}
+
+- id: K07
+  name: FDV / market cap
+  question: How much future dilution is priced in?
+  method: rule
+  weight: 2
+  evidence: [api]
+  rule: {metric: fdv_to_mcap, direction: lower, bands: [1.5, 2.5, 4, 7]}
+
+- id: K08
+  name: Annual inflation
+  question: Net annual emission rate after burns
+  method: rule
+  weight: 2
+  evidence: [tokenomics, onchain]
+  rule: {metric: annual_inflation_pct, direction: lower, bands: [2, 5, 10, 20]}
+
+- id: K09
+  name: Supply verifiability
+  question: Can circulating supply and vesting be verified on-chain rather than taken from a spreadsheet?
+  method: agent
+  weight: 1
+  evidence: [onchain, tokenomics]
+  anchors:
+    0: Supply figures exist only in project slides
+    2: Vesting partly on-chain, partly off-chain agreements
+    4: All allocations in verifiable vesting contracts with public addresses
+
+- id: K10
+  name: Airdrop & incentive design
+  question: Do incentive programmes reward real users and resist sybil farming?
+  method: agent
+  weight: 1
+  evidence: [doc, onchain]
+  anchors:
+    0: Points/airdrops dominated by farmers who dump on unlock
+    2: Some sybil filtering, mixed retention after distribution
+    4: Well-targeted distribution with retention evidence after claim
+
+# ---------------------------------------------------------------- O  On-chain Traction
+- id: O01
+  name: Daily active addresses (30d avg)
+  question: How many unique addresses interact with the protocol daily?
+  method: rule
+  weight: 2
+  evidence: [onchain, api]
+  rule: {metric: daa_30d_avg, direction: higher, bands: [50000, 10000, 2000, 300]}
+
+- id: O02
+  name: Activity trend (90d)
+  question: Percentage change in daily active addresses over 90 days
+  method: rule
+  weight: 2
+  evidence: [onchain, api]
+  rule: {metric: daa_90d_change_pct, direction: higher, bands: [50, 10, -10, -40]}
+
+- id: O03
+  name: 30-day user retention
+  question: Share of a new-user cohort still active after 30 days
+  method: rule
+  weight: 2
+  evidence: [onchain]
+  rule: {metric: retention_30d_pct, direction: higher, bands: [40, 25, 15, 8]}
+
+- id: O04
+  name: TVL / AUM
+  question: Value deposited in the protocol (DeFi / RWA)
+  method: rule
+  weight: 2
+  evidence: [api, onchain]
+  rule: {metric: tvl_usd, direction: higher, bands: [1000000000, 200000000, 50000000, 10000000]}
+
+- id: O05
+  name: Incentive-driven TVL share
+  question: Share of TVL attributable to active token incentives (mercenary capital)
+  method: rule
+  weight: 2
+  evidence: [onchain, api]
+  rule: {metric: incentivised_tvl_share_pct, direction: lower, bands: [10, 25, 50, 75]}
+
+- id: O06
+  name: Organic vs sybil activity
+  question: How much of the activity is bots, farmers or self-dealing?
+  method: agent
+  weight: 3
+  evidence: [onchain]
+  anchors:
+    0: Activity dominated by clusters funded from the same sources
+    2: Noticeable farming during campaigns, organic base underneath
+    4: Diverse funding sources, activity persists outside incentive windows
+
+- id: O07
+  name: Fee-paying users (30d)
+  question: Unique addresses that paid fees in the last 30 days
+  method: rule
+  weight: 1
+  evidence: [onchain, api]
+  rule: {metric: fee_paying_users_30d, direction: higher, bands: [100000, 20000, 5000, 1000]}
+
+- id: O08
+  name: Integrations
+  question: Number of live third-party integrations (wallets, protocols, aggregators)
+  method: rule
+  weight: 1
+  evidence: [doc, onchain]
+  rule: {metric: live_integrations_count, direction: higher, bands: [50, 20, 8, 3]}
+
+- id: O09
+  name: Builder ecosystem
+  question: Are independent teams building on or around the protocol?
+  method: agent
+  weight: 1
+  evidence: [github, doc, onchain]
+  anchors:
+    0: Only the core team builds
+    2: A handful of grant-funded integrations
+    4: Self-sustaining third-party ecosystem with its own users
+
+- id: O10
+  name: Net capital flows (90d)
+  question: Net inflow of external capital (stablecoins/majors) into the protocol over 90 days, USD
+  method: rule
+  weight: 1
+  evidence: [onchain, api]
+  rule: {metric: net_inflow_90d_usd, direction: higher, bands: [100000000, 20000000, 0, -20000000]}
+
+# ---------------------------------------------------------------- M  Market Structure & Liquidity
+- id: M01
+  name: Order-book depth (±2%)
+  question: Aggregate USD depth within 2% of mid across major venues
+  method: rule
+  weight: 3
+  evidence: [api]
+  rule: {metric: depth_2pct_usd, direction: higher, bands: [2000000, 500000, 150000, 50000]}
+
+- id: M02
+  name: Venue concentration
+  question: Share of volume on the single largest venue
+  method: rule
+  weight: 2
+  evidence: [api]
+  rule: {metric: top_venue_volume_share_pct, direction: lower, bands: [30, 45, 60, 80]}
+
+- id: M03
+  name: Wash-trading indicators
+  question: Do volume, depth and trade-size patterns suggest fabricated volume?
+  method: agent
+  weight: 3
+  evidence: [api, onchain]
+  anchors:
+    0: Volume/depth ratios far out of line with peers, round-lot or self-trade patterns
+    2: Some venues anomalous, aggregate plausible
+    4: Volume consistent with depth and with on-chain flows across venues
+
+- id: M04
+  name: Bid-ask spread
+  question: Volume-weighted average spread in basis points
+  method: rule
+  weight: 2
+  evidence: [api]
+  rule: {metric: spread_bps, direction: lower, bands: [5, 15, 40, 100]}
+
+- id: M05
+  name: Market-maker arrangements
+  question: Are MM agreements (loans, call options, KPIs) disclosed to the reviewer and reasonable?
+  method: human
+  weight: 2
+  evidence: [interview, contract]
+  anchors:
+    0: Refused to disclose, or terms incentivise dumping on retail
+    2: Disclosed, with some aggressive terms (large token loans, low strikes)
+    4: Fully disclosed, reputable MMs, terms aligned with orderly markets
+
+- id: M06
+  name: Existing venue quality
+  question: Where does the token already trade, and what does that say about prior diligence?
+  method: agent
+  weight: 1
+  evidence: [api]
+  anchors:
+    0: Only low-tier venues with known wash-trading problems
+    2: Mid-tier CEXs and major DEXs
+    4: Multiple tier-1 venues with independent listing diligence
+
+- id: M07
+  name: Derivatives structure
+  question: Do perp open interest and funding indicate healthy two-way markets or crowded positioning?
+  method: agent
+  weight: 1
+  evidence: [api]
+  anchors:
+    0: OI far exceeds spot liquidity, persistent extreme funding
+    2: Moderate OI, occasional funding spikes
+    4: OI proportionate to spot depth, balanced funding, or no perp risk yet
+
+- id: M08
+  name: Realised volatility (30d)
+  question: Annualised 30-day realised volatility
+  method: rule
+  weight: 1
+  evidence: [api]
+  rule: {metric: realized_vol_30d_pct, direction: lower, bands: [50, 80, 120, 180]}
+
+- id: M09
+  name: DEX liquidity ownership
+  question: Is on-chain liquidity protocol-owned/locked or mercenary and removable overnight?
+  method: agent
+  weight: 1
+  evidence: [onchain]
+  anchors:
+    0: Most LP held by a few unlocked wallets
+    2: "Mixed: some locked/POL, some incentive-driven LPs"
+    4: Majority protocol-owned or time-locked liquidity
+
+- id: M10
+  name: Narrative & timing fit
+  question: Is the sector in favour with buyers, and is this project a leader of that narrative?
+  method: agent
+  weight: 1
+  evidence: [news, api]
+  anchors:
+    0: Fading sector, project is a laggard
+    2: Neutral sector or project is a follower
+    4: Strong sector demand and the project is a recognised leader
+
+# ---------------------------------------------------------------- B  Business Model & Fundamentals
+- id: B01
+  name: Annualised protocol revenue
+  question: Revenue retained by the protocol/treasury (not total fees), annualised from the last 90 days, USD
+  method: rule
+  weight: 3
+  evidence: [api, onchain]
+  rule: {metric: annualized_revenue_usd, direction: higher, bands: [50000000, 10000000, 2000000, 250000]}
+
+- id: B02
+  name: Revenue quality
+  question: Is revenue organic and recurring, or one-off, wash or self-generated?
+  method: agent
+  weight: 2
+  evidence: [onchain, api]
+  anchors:
+    0: Revenue mostly from insiders, incentives looping back or one-off events
+    2: Organic but cyclical and concentrated in a few sources
+    4: Diversified, recurring revenue from independent users
+
+- id: B03
+  name: Holder value capture
+  question: What share of revenue reaches token holders, and is that mechanism live?
+  method: agent
+  weight: 2
+  evidence: [doc, onchain]
+  anchors:
+    0: None, and no plan
+    2: Fee switch designed or governance-approved but not live
+    4: Live buyback, burn or distribution verifiable on-chain
+
+- id: B04
+  name: Valuation vs fees (FDV / annualised fees)
+  question: Price paid per dollar of fees generated
+  method: rule
+  weight: 2
+  evidence: [api]
+  rule: {metric: fdv_to_annual_fees, direction: lower, bands: [20, 50, 150, 500]}
+
+- id: B05
+  name: Incentive spend vs revenue
+  question: USD value of token incentives divided by protocol revenue (90d)
+  method: rule
+  weight: 2
+  evidence: [onchain, api]
+  rule: {metric: incentives_to_revenue, direction: lower, bands: [0.5, 1, 2, 4]}
+
+- id: B06
+  name: Treasury runway
+  question: Months of runway at current burn, counting non-native assets at full value and native token at 50%
+  method: rule
+  weight: 2
+  evidence: [onchain, doc]
+  rule: {metric: runway_months, direction: higher, bands: [48, 36, 24, 12]}
+
+- id: B07
+  name: Treasury diversification
+  question: Share of treasury held in assets other than the native token
+  method: rule
+  weight: 1
+  evidence: [onchain]
+  rule: {metric: treasury_non_native_pct, direction: higher, bands: [60, 40, 20, 5]}
+
+- id: B08
+  name: Revenue growth (90d)
+  question: Quarter-on-quarter change in protocol revenue
+  method: rule
+  weight: 1
+  evidence: [api]
+  rule: {metric: revenue_qoq_growth_pct, direction: higher, bands: [50, 15, 0, -25]}
+
+- id: B09
+  name: Counterparty concentration
+  question: Does a single client, partner or whale drive most of the usage or revenue?
+  method: agent
+  weight: 1
+  evidence: [onchain, interview]
+  anchors:
+    0: One counterparty accounts for more than half
+    2: Top 5 counterparties account for most activity
+    4: Long-tail distribution with no dependency on any one party
+
+- id: B10
+  name: Sustainability without emissions
+  question: If incentives stopped tomorrow, would the business stand?
+  method: agent
+  weight: 2
+  evidence: [onchain, doc]
+  anchors:
+    0: Activity and revenue would collapse
+    2: Partial — a smaller but real core business remains
+    4: Already profitable on revenue alone
+
+# ---------------------------------------------------------------- C  Competition & Moat
+- id: C01
+  name: Segment size & growth
+  question: How large and fast-growing is the addressable on-chain segment?
+  method: agent
+  weight: 2
+  evidence: [api, news]
+  anchors:
+    0: Small or shrinking segment
+    2: Mid-sized segment with moderate growth
+    4: Large segment growing faster than the overall market
+
+- id: C02
+  name: Category market share
+  question: Share of the relevant category metric (TVL, volume, fees) held by this project
+  method: rule
+  weight: 2
+  evidence: [api]
+  rule: {metric: category_share_pct, direction: higher, bands: [30, 15, 5, 1]}
+
+- id: C03
+  name: Share trajectory
+  question: Is market share rising or falling over the last two quarters?
+  method: agent
+  weight: 2
+  evidence: [api]
+  anchors:
+    0: Losing share consistently
+    2: Stable share
+    4: Consistently gaining share without proportional incentive spend
+
+- id: C04
+  name: Moat
+  question: What stops a well-funded competitor from taking the users? (liquidity, network effects, integrations, licences, brand)
+  method: agent
+  weight: 3
+  evidence: [doc, onchain, interview]
+  anchors:
+    0: No identifiable moat
+    2: Early or single-source moat (first-mover, one partnership)
+    4: Compounding moat demonstrated by retention through competitor incentive campaigns
+
+- id: C05
+  name: Forkability
+  question: Could a fork with an airdrop replicate the product and pull users away?
+  method: agent
+  weight: 2
+  evidence: [github, onchain]
+  anchors:
+    0: Trivially forkable, and forks have already taken share
+    2: Forkable code, but liquidity or integrations are sticky
+    4: Off-chain assets (licences, relationships, data) make forks ineffective
+
+- id: C06
+  name: Differentiation vs top-3 peers
+  question: Can the reviewer state, in one sentence, why a user chooses this over each top competitor?
+  method: agent
+  weight: 2
+  evidence: [doc, api]
+  anchors:
+    0: No meaningful difference
+    2: Differentiated on one axis competitors could copy
+    4: Clear, hard-to-copy differentiation on axes users care about
+
+- id: C07
+  name: Relative valuation
+  question: Is the valuation reasonable against peers on comparable metrics?
+  method: agent
+  weight: 2
+  evidence: [api]
+  anchors:
+    0: Large premium to peers without superior metrics
+    2: In line with peers
+    4: Discount to peers despite equal or better metrics
+
+- id: C08
+  name: Platform & incumbent threat
+  question: Could an L1, wallet, CEX or major protocol absorb this as a native feature?
+  method: agent
+  weight: 1
+  evidence: [news, doc]
+  anchors:
+    0: An incumbent has announced a competing native feature
+    2: Plausible threat, nothing announced
+    4: Unlikely to be absorbed, or incumbents are partners
+
+- id: C09
+  name: Partnership substance
+  question: Are announced partnerships live integrations with measurable usage, or press releases?
+  method: agent
+  weight: 1
+  evidence: [onchain, doc, news]
+  anchors:
+    0: Mostly logos and MOUs with no observable activity
+    2: Some live integrations, many announcements unverified
+    4: Key partnerships live and visible in on-chain flows
+
+- id: C10
+  name: Exchange-level strategic fit
+  question: Does listing/supporting this add something the venue's users lack (new sector, new users, ecosystem synergy)?
+  method: agent
+  weight: 1
+  evidence: [doc, api]
+  anchors:
+    0: Duplicates exposure users already have, no synergy
+    2: Incremental exposure in a covered sector
+    4: Opens a new sector or user segment, or strengthens an ecosystem the venue invests in
+
+# ---------------------------------------------------------------- D  Community & Distribution
+- id: D01
+  name: Organic audience
+  question: Size and quality of the audience across X, Telegram, Discord and regional channels
+  method: agent
+  weight: 1
+  evidence: [social]
+  anchors:
+    0: Large follower counts with negligible engagement
+    2: Moderate audience, engagement concentrated in campaigns
+    4: Engaged audience with sustained, organic conversation
+
+- id: D02
+  name: Engagement authenticity
+  question: What share of engagement appears bot-driven or paid?
+  method: agent
+  weight: 2
+  evidence: [social]
+  anchors:
+    0: Clear bot farms, copy-paste replies, sudden follower jumps
+    2: Some inauthentic signals around campaigns
+    4: Engagement patterns consistent with real users
+
+- id: D03
+  name: Token holder count
+  question: Number of addresses holding a non-dust balance
+  method: rule
+  weight: 2
+  evidence: [onchain]
+  rule: {metric: holders_count, direction: higher, bands: [200000, 50000, 10000, 2000]}
+
+- id: D04
+  name: Geographic & user diversity
+  question: Is the user base spread across regions, or concentrated where the venue cannot serve it?
+  method: agent
+  weight: 1
+  evidence: [social, api, interview]
+  anchors:
+    0: Concentrated in one region, much of it restricted
+    2: Two or three dominant regions
+    4: Broad global distribution in servable markets
+
+- id: D05
+  name: Paid-promotion dependence
+  question: How much attention comes from paid KOLs, undisclosed promotions or points campaigns?
+  method: agent
+  weight: 2
+  evidence: [social, news]
+  anchors:
+    0: Attention is mostly paid, with undisclosed promotions
+    2: Disclosed paid campaigns alongside organic interest
+    4: Mostly organic attention
+
+- id: D06
+  name: Developer community
+  question: Grants, hackathons and external contributors beyond the core team
+  method: agent
+  weight: 1
+  evidence: [github, doc]
+  anchors:
+    0: None
+    2: Grant programme with modest uptake
+    4: Active external developer community with shipped projects
+
+- id: D07
+  name: Governance participation
+  question: Average share of circulating supply voting on recent proposals
+  method: rule
+  weight: 1
+  evidence: [governance]
+  rule: {metric: governance_participation_pct, direction: higher, bands: [15, 8, 3, 1]}
+
+- id: D08
+  name: Communication transparency
+  question: Does the team communicate bad news promptly and plainly?
+  method: agent
+  weight: 1
+  evidence: [social, doc, news]
+  anchors:
+    0: Deleted posts, silence during incidents
+    2: Regular updates, slow on bad news
+    4: Prompt, specific disclosures including of incidents and delays
+
+- id: D09
+  name: Sentiment & controversy
+  question: What is the prevailing tone among informed market participants?
+  method: agent
+  weight: 1
+  evidence: [social, news]
+  anchors:
+    0: Widespread distrust among informed participants
+    2: Mixed, with specific unresolved criticism
+    4: Broadly positive among informed participants
+
+- id: D10
+  name: Ecosystem credibility
+  question: Do respected builders, auditors and protocols vouch for or integrate with the project?
+  method: agent
+  weight: 1
+  evidence: [news, onchain]
+  anchors:
+    0: Avoided by credible ecosystem participants
+    2: Neutral
+    4: Actively integrated or endorsed by credible participants
+
+# ---------------------------------------------------------------- L  Legal, Compliance & Jurisdiction
+- id: L01
+  name: Legal entity & jurisdiction
+  question: Is there an accountable legal entity in a jurisdiction with functioning courts?
+  method: agent
+  weight: 2
+  evidence: [legal, doc]
+  anchors:
+    0: No identifiable entity
+    2: Entity in a light-touch jurisdiction, limited substance
+    4: Accountable entity with real substance in a reputable jurisdiction
+
+- id: L02
+  name: Securities-law risk
+  question: How strong is the argument that the token is a security in major jurisdictions?
+  method: agent
+  weight: 3
+  evidence: [legal, doc]
+  anchors:
+    0: Marketed on profit expectations from the team's efforts, concentrated control
+    2: Mixed facts, mitigations in progress
+    4: Strong functional utility, decentralised control, favourable legal analysis
+
+- id: L03
+  name: Sanctions & AML exposure
+  question: Has screening found exposure to sanctioned addresses, mixers or illicit flows above tolerance?
+  method: rule
+  weight: 3
+  evidence: [onchain, screening]
+  rule: {metric: sanctions_exposure, direction: bool, pass: false}
+
+- id: L04
+  name: Licensing for regulated activity
+  question: If the project performs regulated activity (custody, exchange, payments, issuance), is it licensed?
+  method: agent
+  weight: 2
+  evidence: [legal, doc]
+  anchors:
+    0: Regulated activity performed unlicensed in major markets
+    2: Licensing in progress or partial coverage
+    4: Licensed where required, or no regulated activity
+
+- id: L05
+  name: Litigation & enforcement
+  question: Any pending lawsuits, regulator actions or subpoenas?
+  method: agent
+  weight: 3
+  evidence: [legal, news]
+  anchors:
+    0: Active enforcement action or material litigation
+    2: Minor or resolved matters
+    4: None found after searching court and regulator records
+
+- id: L06
+  name: Privacy & obfuscation features
+  question: Do privacy features create AML or delisting risk in major jurisdictions?
+  method: agent
+  weight: 1
+  evidence: [doc, legal]
+  anchors:
+    0: Default-on anonymity with no compliance tooling
+    2: Optional privacy, limited compliance tooling
+    4: No obfuscation features, or privacy with view keys / compliance hooks
+
+- id: L07
+  name: Legal opinion
+  question: Has the project provided a token legal opinion from reputable counsel?
+  method: human
+  weight: 1
+  evidence: [legal]
+  anchors:
+    0: Refused or unavailable
+    2: Opinion from small or unknown firm, or for one jurisdiction only
+    4: Reputable multi-jurisdiction opinion shared with the reviewer
+
+- id: L08
+  name: RWA custody & bankruptcy remoteness
+  question: For tokenised real-world assets, are underlying assets held by a regulated custodian in a bankruptcy-remote structure?
+  method: agent
+  weight: 3
+  evidence: [legal, doc, attestation]
+  anchors:
+    0: Assets held by the issuer itself, structure unclear
+    2: Third-party custodian, bankruptcy remoteness not legally confirmed
+    4: Regulated custodian, SPV/trust structure, legal opinion on remoteness
+
+- id: L09
+  name: RWA attestation frequency
+  question: How often are reserves/underlying assets attested by an independent firm?
+  method: agent
+  weight: 2
+  evidence: [attestation]
+  anchors:
+    0: Never, or self-attested only
+    2: Quarterly attestation by a recognised firm
+    4: Daily/real-time proof of reserves plus monthly independent attestation
+
+- id: L10
+  name: Restricted-jurisdiction controls
+  question: Does the project geofence and enforce restrictions consistent with its legal analysis?
+  method: agent
+  weight: 1
+  evidence: [doc, legal]
+  anchors:
+    0: No controls despite restricted markets in its own terms
+    2: Front-end geofencing only
+    4: Consistent controls across front end, token distribution and incentives

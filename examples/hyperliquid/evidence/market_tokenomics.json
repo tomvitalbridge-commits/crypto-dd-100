@@ -1,0 +1,294 @@
+{
+  "project": "Hyperliquid (HYPE)",
+  "as_of": "2026-10-23",
+  "sources": [
+    {
+      "id": "H01",
+      "type": "api",
+      "tier": 2,
+      "title": "CoinGecko — Hyperliquid (HYPE): price, supply, venues, order-book depth",
+      "url": "https://www.coingecko.com/en/coins/hyperliquid",
+      "retrieved": "2026-10-23",
+      "excerpt": "Price $77.43; market cap $17,220,728,159; FDV ~$73.89B; 24h volume $828.7M; circulating 222.446M, total 955.307M, max 1B. Top spot venues by 24h volume: Hyperliquid $46.4M, Binance HYPE/USDT $33.9M, Bybit $29.1M, Gate $25.0M, OKX USDC $22.2M, OKX USDT $17.1M, Coinbase $15.9M, Bitget $5.0M. ±2% depth (+/−): Binance $795k/$1.08M, Coinbase $576k/$1.20M, Gate $984k/$930k, Hyperliquid spot $150k/$55k. Spreads 0.01% (Coinbase 0.03%). CoinMarketCap shows circulating 253.82M — supply figures differ by provider."
+    },
+    {
+      "id": "H02",
+      "type": "api",
+      "tier": 2,
+      "title": "DefiLlama — Hyperliquid protocol: fees, revenue, TVL, OI, methodology",
+      "url": "https://defillama.com/protocol/hyperliquid",
+      "retrieved": "2026-10-21",
+      "excerpt": "Fees 30d $85.36M, annualised $906.89M. Revenue 30d $68.5M, annualised $690.28M, cumulative $1.359B; revenue = holders revenue. Revenue is mostly Assistance Fund buybacks (99% of perp/spot fees net of builder fees) plus ~90% of AQAv2 USDC reserve yield (since 27 Aug 2026) and spot-deployer auction burns: Q3-26 revenue $173.97M, of which buybacks $151.34M, reserve yield $22.16M, burns $0.47M. Perp volume 30d $212.1B; OI $7.495B; TVL $8.433B. Incentives: $0."
+    },
+    {
+      "id": "H03",
+      "type": "tokenomics",
+      "tier": 2,
+      "title": "Tokenomist — Hyperliquid allocation, vesting and unlock tracking",
+      "url": "https://tokenomist.ai/hyperliquid",
+      "retrieved": "2026-10-23",
+      "excerpt": "Future emissions 38.888%, genesis airdrop 31.0% (unlocked 29 Nov 2024), core contributors 23.8% (1-year lock from 29 Nov 2024, then 24 months linear, ceiling ~9.92M HYPE/month), Foundation 6.0%, community grants 0.3%. Actual monthly claims far below the ceiling (e.g. Nov-25 1.75M, Feb-26 0.14M, Oct-26 3.75M). Next unlock 6 Nov 2026."
+    },
+    {
+      "id": "H04",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Hyperliquid genesis event and allocation (28 Nov 2024)",
+      "url": "https://www.theblock.co/post/328631/hyperliquid-plans-to-launch-hype-token-in-nov-29-genesis-event",
+      "retrieved": "2026-10-23",
+      "excerpt": "Team statement: no allocations for private investors, centralized exchanges or market makers."
+    },
+    {
+      "id": "H05",
+      "type": "api",
+      "tier": 2,
+      "title": "Staking Rewards — Hyperliquid staking",
+      "url": "https://www.stakingrewards.com/asset/hyperliquid",
+      "retrieved": "2026-10-23",
+      "excerpt": "442.14M HYPE staked (46.51% staking ratio), reward rate 2.23%, 27 validators. Implied staking emission ≈ 9.86M HYPE/yr."
+    },
+    {
+      "id": "H06",
+      "type": "doc",
+      "tier": 3,
+      "title": "Hyperliquid docs — Staking",
+      "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking",
+      "retrieved": "2026-10-23",
+      "excerpt": "Reward rate 2.37% at 400M staked, scaling with 1/sqrt(total stake). Validator self-delegation minimum 10k HYPE locked 1 year. No automatic slashing; validators can vote to jail peers."
+    },
+    {
+      "id": "H07",
+      "type": "news",
+      "tier": 2,
+      "title": "crypto.news — HYPE price falls despite $1.36B in buybacks",
+      "url": "https://crypto.news/hype-price-falls-despite-1-36b-in-buybacks/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Assistance Fund has spent $1,364,831,403.93 buying 48,000,102.51 HYPE (13 Oct 2026)."
+    },
+    {
+      "id": "H08",
+      "type": "news",
+      "tier": 2,
+      "title": "Coinpaprika — Hyperliquid revenue keeps falling",
+      "url": "https://coinpaprika.com/news/hype-revenue-keeps-falling-hyperliquid/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Buybacks: Q3-25 ~$290M, Q2-26 ~$149M, Q3-26 $151.34M (+1.6% QoQ, −48% YoY). Gross fees Q3-25 ~$357M → Q3-26 ~$183M. HIP-3 builder fee-sharing raised cost of revenue to 18% in Q2-26."
+    },
+    {
+      "id": "H09",
+      "type": "news",
+      "tier": 2,
+      "title": "21Shares — Hyperliquid fees and revenue, H1 2026 (ETF issuer: has a commercial interest)",
+      "url": "https://21shares.com/en-eu/insights/hyperliquid-fees-revenue-h1-2026",
+      "retrieved": "2026-10-23",
+      "excerpt": "H1-26 gross fees $419.3M. Hyperliquid 54.5% of DeFi perp OI and 10.3% of all crypto perp OI incl. CEXs (Binance 14%), 30 Jun 2026. Average daily users +90% in H1."
+    },
+    {
+      "id": "H10",
+      "type": "api",
+      "tier": 2,
+      "title": "DefiLlama — Perps dashboard (volume and open interest by protocol)",
+      "url": "https://defillama.com/perps",
+      "retrieved": "2026-10-22",
+      "excerpt": "30d perp DEX volume $633.9B: Hyperliquid 32.8%, Variational 13.2%, Lighter 10.4%, Aster 7.5%, GMX 4.5%, edgeX 3.8%. Perp DEX OI $13.75B: Hyperliquid 57.5%, Aster 9.6%, Variational 7.1%, Lighter 5.5%."
+    },
+    {
+      "id": "H11",
+      "type": "news",
+      "tier": 2,
+      "title": "DefiLlama Research — Hyperliquid's RWA boom by the numbers",
+      "url": "https://defillama-research.beehiiv.com/p/hyperliquid-s-rwa-boom-by-the-numbers",
+      "retrieved": "2026-10-23",
+      "excerpt": "534k new trading wallets in H1-26; 31.7% made their first trade on RWA markets."
+    },
+    {
+      "id": "H12",
+      "type": "news",
+      "tier": 2,
+      "title": "Datawallet — Hyperliquid statistics",
+      "url": "https://www.datawallet.com/es/cripto/hyperliquid-statistics",
+      "retrieved": "2026-10-23",
+      "excerpt": "~20,600 daily active addresses (citing DefiLlama). Perp DEX volume share ~44% in March 2026, 34.6% on 27 Sep 2026. ATH $97.96 on 23 Sep 2026."
+    },
+    {
+      "id": "H13",
+      "type": "news",
+      "tier": 2,
+      "title": "The Crypto Times — HYPE token unlock, 6 Oct 2026",
+      "url": "https://www.cryptotimes.io/2026/10/06/hyperliquid-price-today-340m-token-unlock-hits-as-hype-trades-near-93/",
+      "retrieved": "2026-10-23",
+      "excerpt": "3.75M HYPE claimed in October and sold OTC to a single undisclosed institution, per co-founder iliensinc. Other outlets report the 9.92M ceiling as if fully released."
+    },
+    {
+      "id": "H14",
+      "type": "api",
+      "tier": 2,
+      "title": "Trading Strategy — Hyperliquidity Provider (HLP) vault",
+      "url": "https://tradingstrategy.ai/vaults/hyperliquidity-provider-hlp",
+      "retrieved": "2026-10-22",
+      "excerpt": "HLP TVL $177.1M (peak $603.9M); 1-year return 7.0%."
+    },
+    {
+      "id": "H15",
+      "type": "news",
+      "tier": 2,
+      "title": "BeInCrypto — Binance lists Hyperliquid (HYPE) with 3 spot pairs, Seed Tag",
+      "url": "https://beincrypto.com/binance-lists-hyperliquid-hype-seed-tag/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Spot trading 24 Sep 2026 11:00 UTC; HYPE/USDT, HYPE/USDC, HYPE/TRY; Seed Tag; no listing fee; residents of US, Canada, Netherlands excluded."
+    },
+    {
+      "id": "H16",
+      "type": "news",
+      "tier": 2,
+      "title": "Bloomingbit — Binance Futures lists HYPE perpetual (May 2025)",
+      "url": "https://en.bloomingbit.io/feed/news/89258",
+      "retrieved": "2026-10-23",
+      "excerpt": "Binance Futures HYPE perpetual live 30 May 2025 — about 16 months before the spot listing."
+    },
+    {
+      "id": "H17",
+      "type": "onchain",
+      "tier": 2,
+      "title": "Otomato — HYPE airdrop retention analysis",
+      "url": "https://otomato.xyz/blog/hype-airdrop-retention",
+      "retrieved": "2026-10-23",
+      "excerpt": "94,019 recipient wallets. 6.8% of the 271M airdropped HYPE still in receiving wallets; 86% of wallets sold everything; median exit price $6.25; 11.8% active in the last 30 days (9 Jul 2026)."
+    },
+    {
+      "id": "H56",
+      "type": "news",
+      "tier": 2,
+      "title": "crypto.news — a16z-linked wallets may rank No. 6 among HYPE holders",
+      "url": "https://crypto.news/hype-whale-alert-a16z-linked-wallets-may-rank-no-6/",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "H57",
+      "type": "news",
+      "tier": 2,
+      "title": "KuCoin News — Hyperliquid Strategies (PURR) grows HYPE treasury to 29.3M",
+      "url": "https://www.kucoin.com/news/flash/hyperliquid-strategies-raises-647m-grows-hype-treasury-to-29-3m-tokens",
+      "retrieved": "2026-10-23"
+    }
+  ],
+  "metrics": {
+    "market_cap_usd": {
+      "value": 17220728159,
+      "source": "H01"
+    },
+    "fdv_usd": {
+      "value": 73888000000,
+      "source": "H01"
+    },
+    "volume_24h_usd": {
+      "value": 828741253,
+      "source": "H01",
+      "note": "aggregated across 83 spot markets"
+    },
+    "circulating_supply": {
+      "value": 222446000,
+      "source": "H01",
+      "note": "CoinMarketCap reports 253.82M; CoinGecko/Tokenomist figure used"
+    },
+    "total_supply": {
+      "value": 955307000,
+      "source": "H01",
+      "note": "1B max less ~44.7M removed"
+    },
+    "team_vesting_months": {
+      "value": 36,
+      "source": "H03",
+      "note": "12-month lock + 24-month linear from 29 Nov 2024"
+    },
+    "insider_allocation_pct": {
+      "value": 29.8,
+      "source": "H03",
+      "note": "core contributors 23.8% + Foundation 6.0%; no investor allocation"
+    },
+    "unlock_12m_pct_of_circ": {
+      "value": 53.5,
+      "source": "H03",
+      "note": "contractual ceiling: 12 × 9.917M / 222.446M. At the October claim pace (3.75M/month) it would be 20.2%. Ceiling used, because the team can claim it."
+    },
+    "unlock_90d_pct_of_circ": {
+      "value": 13.4,
+      "source": "H03",
+      "note": "contractual ceiling: 3 × 9.917M / 222.446M (5.1% at October pace)"
+    },
+    "price_to_last_round_multiple": {
+      "value": null,
+      "source": "H04",
+      "note": "no private round was ever sold, so there is no investor cost basis to overhang the market"
+    },
+    "annual_inflation_pct": {
+      "value": 0.5,
+      "source": "H05",
+      "note": "staking emission ~9.86M HYPE/yr (H05) minus buybacks ~8.85M HYPE/yr ($690M annualised revenue at ~$78, H02) = ~1.0M net, ≈0.45% of circulating. Excludes contributor unlocks (see K04)."
+    },
+    "tvl_usd": {
+      "value": 8433000000,
+      "source": "H02"
+    },
+    "incentivised_tvl_share_pct": {
+      "value": 0,
+      "source": "H02",
+      "note": "DefiLlama incentives $0; points programme ended Nov 2024; HLP has no emissions"
+    },
+    "daa_30d_avg": {
+      "value": 20600,
+      "source": "H12"
+    },
+    "annualized_fees_usd": {
+      "value": 906890000,
+      "source": "H02"
+    },
+    "annualized_revenue_usd": {
+      "value": 690280000,
+      "source": "H02",
+      "note": "holders revenue: buybacks + USDC reserve yield + auction burns (Q3-26: $151.3M + $22.2M + $0.5M)"
+    },
+    "revenue_qoq_growth_pct": {
+      "value": 1.6,
+      "source": "H08",
+      "note": "Q3-26 vs Q2-26 buybacks; −48% year on year"
+    },
+    "incentives_to_revenue": {
+      "value": 0,
+      "source": "H02",
+      "note": "no usage incentives. Staking emissions (~$760M/yr at current price) are a security budget, roughly offset by buybacks — see K08"
+    },
+    "category_share_pct": {
+      "value": 32.8,
+      "source": "H10",
+      "note": "30d perp-DEX volume share; OI share 57.5%"
+    },
+    "depth_2pct_usd": {
+      "value": 2885381,
+      "source": "H01",
+      "note": "sum over Binance, Coinbase, Gate and Hyperliquid spot of the mean of +2% and −2% depth; single snapshot, 4 venues only"
+    },
+    "top_venue_volume_share_pct": {
+      "value": 23.8,
+      "source": "H01",
+      "note": "Hyperliquid spot's share of the top-8 spot pairs' volume"
+    },
+    "spread_bps": {
+      "value": 1,
+      "source": "H01"
+    },
+    "staking_apr_pct": {
+      "value": 2.23,
+      "source": "H05"
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "Docs: staking reward rate formula (2.37% at 400M staked, ∝ 1/√stake) implies 2.25% at 442M staked",
+      "metric": "staking_apr_pct",
+      "claimed_value": 2.25,
+      "source": "H06"
+    }
+  ]
+}

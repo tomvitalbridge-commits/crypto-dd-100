@@ -1,0 +1,15 @@
+assessments:
+- {id: T01, score: 1, confidence: low, evidence: [MV01], assessor: "agent:claude", rationale: "Pseudonymous team; deck lists prior 'Web3 gaming experience' that cannot be verified."}
+- {id: S05, score: 0, confidence: high, evidence: [MV02], assessor: "agent:claude", rationale: "A single EOA holds owner rights over the token and all game proxies."}
+- {id: S06, score: 0, confidence: high, evidence: [MV02, MV05], assessor: "agent:claude", rationale: "Owner can mint unlimited MVLT; auditor flagged it, team kept it 'by design'."}
+- {id: S02, score: 0, confidence: high, evidence: [MV05], assessor: "agent:claude", rationale: "Only high finding left unfixed; game contracts never audited."}
+- {id: K01, score: 1, confidence: medium, evidence: [MV01], assessor: "agent:claude", rationale: "Token used as in-game reward currency; no sink beyond cosmetic purchases."}
+- {id: O06, score: 0, confidence: high, evidence: [MV03], assessor: "agent:claude", rationale: "58% of active addresses cluster to 14 funding sources; top holders funded from one address at launch."}
+- {id: M03, score: 0, confidence: high, evidence: [MV04, MV03], assessor: "agent:claude", rationale: "Volume is 533x the ±2% depth, 71% on a single venue."}
+- {id: B10, score: 0, confidence: medium, evidence: [MV03, MV01], assessor: "agent:claude", rationale: "Activity is reward farming; without emissions there is no visible demand."}
+- {id: D02, score: 1, confidence: low, evidence: [MV01], assessor: "agent:claude", rationale: "Follower spikes coincide with reward campaigns."}
+
+# The two lines below are deliberately invalid, to show what the harness does with them:
+# an agent trying to fill a human-only dimension, and a score citing evidence that does not exist.
+- {id: T02, score: 2, confidence: medium, evidence: [MV01], assessor: "agent:claude", rationale: "Team says founders will KYC on request."}
+- {id: C04, score: 3, confidence: high, evidence: [MV99], assessor: "agent:claude", rationale: "Strong brand moat in the gaming segment."}

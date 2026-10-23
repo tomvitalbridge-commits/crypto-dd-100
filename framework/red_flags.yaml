@@ -1,0 +1,120 @@
+# =============================================================================
+# Red-flag gates — things that must NOT average out
+# =============================================================================
+# A weighted score lets a great community hide an EOA that can mint unlimited
+# supply. Gates break that. They are evaluated AFTER scoring and override it.
+#
+#   critical -> verdict REJECT, whatever the score
+#   major    -> grade capped at C, so verdict at best WATCHLIST (needs sign-off)
+#   minor    -> shown in the report, no automatic effect
+#
+# Conditions reference evidence metrics (metric:), dimension scores (dim:) or
+# pillar scores on the 0–4 scale (pillar:). Ops: eq ne gt gte lt lte.
+#
+# skip_if_na: a gate about a dimension the sector profile marks N/A is shown
+# as n/a rather than unchecked (e.g. mercenary-TVL for a consumer app).
+#
+# Fail-loud rule: if a CRITICAL gate cannot be evaluated because its metric is
+# missing, the gate is UNCHECKED and the verdict cannot be LIST. Absence of
+# evidence is not evidence of absence.
+# =============================================================================
+
+gates:
+
+- id: RF01
+  severity: critical
+  title: Unrestricted mint controlled by a single key
+  why: Supply can be inflated at will; every other number in the report is conditional on one person's restraint.
+  when: {all: [{metric: mint_authority, op: eq, value: eoa}]}
+
+- id: RF02
+  severity: critical
+  title: Sanctions / illicit-finance exposure
+  why: Listing would create direct regulatory liability for the venue.
+  when: {all: [{metric: sanctions_exposure, op: eq, value: true}]}
+
+- id: RF03
+  severity: critical
+  title: Core contracts not source-verified
+  why: Nobody outside the team can see what users are interacting with.
+  when: {all: [{metric: contracts_verified, op: eq, value: false}]}
+
+- id: RF04
+  severity: critical
+  title: Unremediated exploit with user losses
+  why: Users are owed money; listing would expose new users to the same counterparty.
+  when: {all: [{metric: unreimbursed_exploit_usd, op: gt, value: 0}]}
+
+- id: RF05
+  severity: critical
+  title: Active enforcement action against the project or founders
+  why: Outcome could force delisting or freeze assets after listing.
+  when: {all: [{metric: active_enforcement_action, op: eq, value: true}]}
+
+- id: RF06
+  severity: major
+  title: Upgradeable contracts with no meaningful timelock
+  why: Logic can change under users with no time to exit.
+  when: {all: [{metric: upgrade_timelock_hours, op: lt, value: 6}]}
+
+- id: RF07
+  severity: major
+  title: Extreme holder concentration
+  why: A handful of wallets can set the price; order books will not absorb their exit.
+  when: {all: [{metric: top10_holder_pct_ex_contracts, op: gt, value: 50}]}
+
+- id: RF08
+  severity: major
+  title: Unlock cliff within 90 days
+  why: More than a quarter of circulating supply unlocks shortly after a listing window.
+  when: {all: [{metric: unlock_90d_pct_of_circ, op: gt, value: 25}]}
+
+- id: RF09
+  severity: major
+  title: No independent audit
+  why: Code holding user funds has never been reviewed by a third party.
+  when: {all: [{metric: audits_reputable_count, op: lt, value: 1}]}
+
+- id: RF10
+  severity: major
+  title: Material misrepresentation
+  why: Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.
+  when: {all: [{metric: contradiction_count, op: gte, value: 2}]}
+
+- id: RF11
+  severity: major
+  title: Security pillar failing
+  why: Average security score below 1.5/4 — structural rather than one-off weakness.
+  when: {all: [{pillar: S, op: lt, value: 1.5}]}
+
+- id: RF12
+  severity: major
+  title: Anonymous team with centralised admin powers
+  why: Unaccountable people holding privileged keys.
+  when: {all: [{dim: T02, op: lte, value: 0}, {dim: S05, op: lte, value: 1}]}
+
+- id: RF13
+  severity: major
+  title: Undisclosed market-maker terms
+  why: Token loans and call options are where post-listing dumps are engineered.
+  when: {all: [{dim: M05, op: lte, value: 0}]}
+
+- id: RF14
+  severity: minor
+  title: Insider-heavy allocation
+  why: Team and investors hold more than half of supply.
+  skip_if_na: [K05]
+  when: {all: [{metric: insider_allocation_pct, op: gt, value: 50}]}
+
+- id: RF15
+  severity: minor
+  title: Mercenary TVL
+  why: Most deposits are paid to be there and will leave when incentives stop.
+  skip_if_na: [O05]
+  when: {all: [{metric: incentivised_tvl_share_pct, op: gt, value: 60}]}
+
+- id: RF16
+  severity: minor
+  title: Volume implausible versus depth
+  why: Daily volume more than 100x the ±2% depth is a common wash-trading signature.
+  when: {all: [{metric: volume_to_depth_ratio, op: gt, value: 100}]}

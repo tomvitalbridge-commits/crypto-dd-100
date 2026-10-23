@@ -1,0 +1,52 @@
+{
+  "project": "Halcyon Finance",
+  "as_of": "2026-10-20",
+  "sources": [
+    {"id": "E01", "type": "doc", "tier": 3, "title": "Halcyon docs & whitepaper v2.3", "url": "https://halcyon.example/docs", "retrieved": "2026-10-18",
+     "excerpt": "Isolated-market lending on Ethereum and Arbitrum. Mainnet since 2024-03. Risk curators set per-market parameters; liquidations via Dutch auction. Chainlink primary oracle with Uniswap v3 TWAP fallback and 5% deviation breaker. Fee switch: 35% of interest spread to stakers (live since 2025-09)."},
+    {"id": "E02", "type": "tokenomics", "tier": 3, "title": "HLCN tokenomics & vesting schedule", "url": "https://halcyon.example/token", "retrieved": "2026-10-18",
+     "excerpt": "1B fixed supply. Team 18% (12m cliff, 48m linear), investors 20% (12m cliff, 24m linear), treasury 27%, community incentives 25%, liquidity 10%. Net emissions ~4%/yr declining. All allocations in Sablier-style vesting contracts (addresses listed)."},
+    {"id": "E05", "type": "audit", "tier": 1, "title": "Audit report — Firm A, v2 core (2025-11)", "url": "https://halcyon.example/audits/a-2025-11.pdf", "retrieved": "2026-10-18",
+     "excerpt": "0 critical, 2 high, 5 medium. Both highs (liquidation rounding; curator fee bypass) fixed and verified in v2.3.0."},
+    {"id": "E06", "type": "audit", "tier": 1, "title": "Audit report — Firm B, periphery & oracle adapter (2026-02)", "url": "https://halcyon.example/audits/b-2026-02.pdf", "retrieved": "2026-10-18",
+     "excerpt": "0 critical, 0 high, 3 medium (2 fixed, 1 acknowledged: TWAP window configurable by curator)."},
+    {"id": "E07", "type": "audit", "tier": 1, "title": "Audit report — Firm C, v2.3 diff + formal verification of solvency invariants (2026-06)", "url": "https://halcyon.example/audits/c-2026-06.pdf", "retrieved": "2026-10-18"},
+    {"id": "E13", "type": "interview", "tier": 3, "title": "Reviewer call with CEO and CTO, 2026-10-15 (notes)", "url": "", "retrieved": "2026-10-15",
+     "excerpt": "Team of 23 FTE (11 eng, 2 security). CEO previously ran risk at a top-10 lending protocol; CTO ex-core contributor to a major L2 client. Key person: CTO holds design authority on liquidation engine; second senior engineer shadowing. Committed to sharing MM agreements under NDA — not yet received. Largest borrower is a market-making firm (~11% of borrows)."},
+    {"id": "E14", "type": "kyc", "tier": 1, "title": "KYC verification record: 4 founders + legal entity", "url": "", "retrieved": "2026-10-16"},
+    {"id": "E15", "type": "doc", "tier": 3, "title": "Halcyon treasury report Q3 2026", "url": "https://halcyon.example/treasury-q3", "retrieved": "2026-10-18",
+     "excerpt": "Treasury $64M: 46% stablecoins/ETH, 54% HLCN. Monthly opex $1.15M. Incentives spend Q3 $2.9M vs protocol revenue $3.6M. Treasury addresses published; report reconciles to on-chain balances."},
+    {"id": "E17", "type": "news", "tier": 2, "title": "News, court-record and regulator database search: Halcyon, founders, entity", "url": "", "retrieved": "2026-10-17",
+     "excerpt": "No enforcement actions or litigation found. One 2025 forum allegation of insider front-running of a market listing, investigated by an independent delegate; on-chain review found no supporting evidence."},
+    {"id": "E18", "type": "doc", "tier": 3, "title": "Bug bounty programme listing", "url": "https://bounty.example/halcyon", "retrieved": "2026-10-18",
+     "excerpt": "Max payout $500,000 for critical smart-contract bugs. 3 medium reports paid in 2026."},
+    {"id": "E19", "type": "social", "tier": 2, "title": "Social analytics: X, Discord, Telegram, 90 days", "url": "", "retrieved": "2026-10-18",
+     "excerpt": "X 96k followers, engagement rate 1.1% (peer median 0.8%). Bot-likelihood of top repliers 7%. Discord 21k, ~600 weekly active posters. Two disclosed paid campaigns in 90d."},
+    {"id": "E20", "type": "legal", "tier": 1, "title": "Token legal opinion (US + EU + SG), dated 2026-04", "url": "", "retrieved": "2026-10-16",
+     "excerpt": "Opinion from a recognised international law firm. Concludes HLCN is unlikely to be a security in SG and EU (MiCA other crypto-asset), with moderate US risk noted given fee-share to stakers. Foundation in Cayman, development company in Switzerland. Front end geoblocks US, OFAC jurisdictions."},
+    {"id": "E21", "type": "doc", "tier": 3, "title": "Cap table & fundraising history", "url": "", "retrieved": "2026-10-16",
+     "excerpt": "Seed 2023 at $0.03/token led by an established crypto fund; Series A 2024 at $0.10/token co-led by two established funds that also backed the team through the 2025 drawdown. Current price $0.42."},
+    {"id": "E23", "type": "doc", "tier": 3, "title": "Halcyon investor update & website claims, 2026-10", "url": "https://halcyon.example/", "retrieved": "2026-10-18"}
+  ],
+  "metrics": {
+    "team_vesting_months":          {"value": 48, "source": "E02"},
+    "insider_allocation_pct":       {"value": 38, "source": "E02"},
+    "annual_inflation_pct":         {"value": 4, "source": "E02"},
+    "unlock_12m_pct_of_circ":       {"value": 38, "source": "E02", "note": "cross-checked against vesting contracts in E03"},
+    "unlock_90d_pct_of_circ":       {"value": 6, "source": "E02"},
+    "audits_reputable_count":       {"value": 3, "source": "E05"},
+    "bug_bounty_max_usd":           {"value": 500000, "source": "E18"},
+    "price_to_last_round_multiple": {"value": 4.2, "source": "E21"},
+    "incentives_to_revenue":        {"value": 0.8, "source": "E15"},
+    "runway_months":                {"value": 40, "source": "E15", "note": "non-native $29.4M + 50% of HLCN $34.6M = $46.7M / $1.15M"},
+    "treasury_non_native_pct":      {"value": 46, "source": "E15"},
+    "live_integrations_count":      {"value": 34, "source": "E01"},
+    "unreimbursed_exploit_usd":     {"value": 0, "source": "E17"},
+    "active_enforcement_action":    {"value": false, "source": "E17"}
+  },
+  "claims": [
+    {"id": "C1", "statement": "Website: \"40,000+ daily active users\"", "metric": "daa_30d_avg", "claimed_value": 40000, "source": "E23"},
+    {"id": "C2", "statement": "Investor update: \"TVL above $650M\"", "metric": "tvl_usd", "claimed_value": 650000000, "source": "E23"},
+    {"id": "C3", "statement": "Investor update: \"three independent audits\"", "metric": "audits_reputable_count", "claimed_value": 3, "source": "E23"}
+  ]
+}

@@ -1,0 +1,28 @@
+# REAL project, PUBLIC sources only. Binance listed HYPE spot on 2026-09-24 (Seed Tag).
+# This review uses only what an outside analyst can verify from public data.
+# Human-only checks (KYC, market-maker terms, legal opinion) are left open on
+# purpose: they need a private channel with the project.
+project: Hyperliquid (HYPE)
+profile: defi          # perp DEX on its own L1; business model and risks are DeFi-shaped
+as_of: 2026-10-23
+
+evidence:
+  - evidence/market_tokenomics.json
+  - evidence/protocol_security.json
+  - evidence/legal_community_competition.json
+
+assessments:
+  - assessments/agent.yaml
+
+collect:
+  coingecko_id: hyperliquid
+  defillama_slug: hyperliquid
+  github_org: hyperliquid-dex
+
+# Why some metrics are deliberately NOT set. Each becomes a note in the report.
+notes:
+  S04: "Bridge2 is not upgradeable (H62). The L1 upgrades by validators adopting new signed binaries (H63); no notice period is documented. Ask: how much notice do users get before a protocol upgrade takes effect?"
+  L03: "No public wallet screening exists. Lazarus-linked flows of ~$30M were reported (H37). Needs the venue's own Chainalysis/TRM screening of HYPE treasury, team, Assistance Fund and top-holder addresses."
+  K03: "Top holders are dominated by protocol and team addresses (Assistance Fund, staking, ~240M team stake, H58). Needs entity labelling to exclude them; public explorers did not render for this review."
+  D07: "There is no token-holder vote: governance is stake-weighted validator voting (H18), scored under T07."
+  B06: "Hyper Foundation treasury balance is not published; Labs is self-funded (H19)."

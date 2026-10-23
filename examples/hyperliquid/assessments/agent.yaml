@@ -1,0 +1,82 @@
+# Hyperliquid (HYPE) — judgment scores from public sources, as of 2026-10-23.
+# Every score cites evidence ids in evidence/*.json. Where public sources were
+# not enough, the dimension is left `pending` with what is missing.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, score: 3, confidence: medium, evidence: [H19, H10], assessor: "agent:claude", rationale: "Founders came from HFT and built the largest perp DEX (32.8% of 30d perp-DEX volume) — the outcome is verifiable; earlier ventures are only thinly documented."}
+- {id: T03, score: 1, confidence: medium, evidence: [H19, H20], assessor: "agent:claude", rationale: "Hyperliquid Labs had 11 employees (Jan 2026) running a closed-source L1 with ~$8.4B TVL; core knowledge sits with a very small group."}
+- {id: T04, score: 3, confidence: medium, evidence: [H19, H31], assessor: "agent:claude", rationale: "In-house team built and keeps shipping its own L1, HyperEVM and HIP-3/HIP-4; no public specs or research to evaluate independently."}
+- {id: T05, score: 2, confidence: medium, evidence: [H34, H35, H36], assessor: "agent:claude", rationale: "No enforcement actions found, but FCA warning (May 2026), MAS investor alert (Jun 2026) and a US House Oversight records request on insider trading (Sep 2026) are open."}
+- {id: T07, score: 1, confidence: high, evidence: [H18, H06, H49], assessor: "agent:claude", rationale: "Decisions are stake-weighted validator votes; 5 Foundation validators hold ~49% of stake; no token-holder vote; key outcomes (Assistance Fund 'burn') rest on social consensus, not code."}
+- {id: T08, score: 2, confidence: medium, evidence: [H07, H49], assessor: "agent:claude", rationale: "Assistance Fund buybacks are visible on-chain (48.0M HYPE for $1.36B); Foundation treasury balance and spending are not reported."}
+- {id: T09, score: 3, confidence: medium, evidence: [H04, H19, H38], assessor: "agent:claude", rationale: "No private investors by design, so no VC unlock overhang; institutional exposure comes through spot ETFs and token purchases rather than a cap table."}
+
+# --- P Product & Technology
+- {id: P01, score: 4, confidence: high, evidence: [H02, H10], assessor: "agent:claude", rationale: "$212B 30d perp volume and $907M annualised fees with zero usage incentives — demand is paid for, not subsidised."}
+- {id: P02, score: 4, confidence: high, evidence: [H31, H04], assessor: "agent:claude", rationale: "Exchange in production well over 12 months (token genesis Nov 2024 on a live venue); HyperEVM since Feb 2025, HIP-3 since Oct 2025."}
+- {id: P03, score: 3, confidence: medium, evidence: [H20, H31], assessor: "agent:claude", rationale: "Original L1 with a fully on-chain order book, not a fork — but closed source, so originality can't be inspected."}
+- {id: P04, score: 2, confidence: medium, evidence: [H27, H28, H30, H29], assessor: "agent:claude", rationale: "Core engine held up in the Oct 2025 crash, but thin markets were repeatedly manipulated (JELLY, XPL, POPCAT) and a 37-minute API outage needed $2M in reimbursements."}
+- {id: P05, score: 2, confidence: medium, evidence: [H25, H22, H32], assessor: "agent:claude", rationale: "Oracle prices come from CEX feeds (Binance carries the top weight); USDC rails depend on Circle/Coinbase and a legacy Arbitrum bridge."}
+- {id: P08, score: 3, confidence: medium, evidence: [H31, H20], assessor: "agent:claude", rationale: "HyperEVM, HIP-3, priority fees, native USDC shipped; open-sourcing the node, promised since Jan 2025, still has no date."}
+- {id: P09, score: 1, confidence: high, evidence: [H20], assessor: "agent:claude", rationale: "Node ships as binaries only; only the bridge contract and SDKs are public. Nobody outside the team can build or verify the L1."}
+- {id: P10, score: 2, confidence: medium, evidence: [H06, H25], assessor: "agent:claude", rationale: "Good integrator docs (staking, oracle, builder codes); no consensus spec or threat model."}
+
+# --- S Security
+- {id: S02, score: 1, confidence: high, evidence: [H23, H20], assessor: "agent:claude", rationale: "The only public audits (two Zellic reports, 2023) cover the legacy bridge; no public audit of HyperCore/HyperEVM, which hold most of the ~$8.4B."}
+- {id: S05, score: 1, confidence: high, evidence: [H21, H62, H18, H63], assessor: "agent:claude", rationale: "No admin key, but bridge withdrawals need only 3 of 4 EOA validator signatures, and L1 upgrades ship as binaries adopted by a validator set where the Foundation holds ~49% of stake."}
+- {id: S06, score: 3, confidence: medium, evidence: [H26, H27], assessor: "agent:claude", rationale: "No mint key and no freeze/blacklist function; but validators have shown they will force-settle a market (JELLY at $0.0095)."}
+- {id: S08, score: 2, confidence: high, evidence: [H27, H28, H29, H30], assessor: "agent:claude", rationale: "No theft of user funds from the core, but recurring manipulation losses to the HLP vault (~$4M, ~$4.9M, ~$1.2–1.5M) and discretionary interventions."}
+- {id: S09, score: 2, confidence: high, evidence: [H25, H28, H30], assessor: "agent:claude", rationale: "Stake-weighted median of CEX prices is robust for majors; thin and HIP-3 markets (own oracles) have been manipulated repeatedly."}
+- {id: S10, score: 2, confidence: high, evidence: [H21, H22, H62], assessor: "agent:claude", rationale: "Legacy bridge (non-upgradeable contract) still holds ~$431M secured by 3-of-4 EOA validator keys; most USDC now arrives natively via CCTP."}
+
+# --- K Tokenomics
+- {id: K01, score: 4, confidence: high, evidence: [H02, H07], assessor: "agent:claude", rationale: "99% of fees (net of builder fees) buy HYPE on-chain — $1.36B spent so far; HYPE also needed for staking, gas and HIP-3 deployment bonds."}
+- {id: K09, score: 2, confidence: medium, evidence: [H01, H03, H13], assessor: "agent:claude", rationale: "Buybacks are on-chain, but circulating supply differs by provider (222M vs 254M) and team releases are discretionary claims reported inconsistently."}
+- {id: K10, score: 1, confidence: medium, evidence: [H17], assessor: "agent:claude", rationale: "Only 6.8% of the airdrop is still in recipient wallets and 86% of wallets sold everything — distribution created users, not holders."}
+
+# --- O On-chain Traction
+- {id: O06, score: 3, confidence: medium, evidence: [H02, H12, H44], assessor: "agent:claude", rationale: "Activity persists with zero incentives since Nov 2024; HIP-3 volume is concentrated in one deployer (trade.xyz ~96%)."}
+- {id: O09, score: 3, confidence: medium, evidence: [H43, H44, H54], assessor: "agent:claude", rationale: "Third parties launch most new markets (98 of 104 in 2026) and Coinbase routes Base App users in; builder activity is concentrated in a few teams."}
+
+# --- M Market Structure
+- {id: M03, score: 2, confidence: low, evidence: [H01], assessor: "agent:claude", rationale: "Top venues look healthy (0.01% spreads), but reported 24h volume ($829M) is ~4× the top-8 pairs' total; the long tail of 83 markets is unverified."}
+- {id: M06, score: 4, confidence: high, evidence: [H01, H15, H16], assessor: "agent:claude", rationale: "Already on Coinbase, OKX, Bybit, Robinhood and Binance.US, with Binance perps since May 2025."}
+- {id: M09, score: 2, confidence: medium, evidence: [H01], assessor: "agent:claude", rationale: "On-chain liquidity is an order book (no LP to pull), but Hyperliquid's own spot book is thin: ~$150k/$55k within ±2%."}
+- {id: M10, score: 4, confidence: high, evidence: [H10, H38, H11], assessor: "agent:claude", rationale: "Category leader in on-chain perps with RWA perps driving new users and three US spot ETFs live."}
+- {id: M07, status: pending, rationale: "missing: HYPE funding-rate history and CEX OI split"}
+
+# --- B Business Model
+- {id: B02, score: 3, confidence: medium, evidence: [H08, H45], assessor: "agent:claude", rationale: "Revenue is organic trading fees, but cyclical: gross revenue fell from $457M (Q3-25) to $202M (Q2-26)."}
+- {id: B03, score: 4, confidence: high, evidence: [H02, H07], assessor: "agent:claude", rationale: "All protocol revenue accrues to holders: Q3-26 $151M of $174M bought back HYPE on-chain; the rest was USDC reserve yield and burns."}
+- {id: B09, score: 2, confidence: medium, evidence: [H43, H44], assessor: "agent:claude", rationale: "HIP-3 is ~37.5% of volume and one deployer does ~96% of HIP-3 — roughly a third of volume runs through a single partner."}
+- {id: B10, score: 3, confidence: medium, evidence: [H02, H05], assessor: "agent:claude", rationale: "No usage incentives, so fees are real; but staking emissions (~9.9M HYPE/yr) about equal buybacks, so holders see little net supply reduction."}
+
+# --- C Competition & Moat
+- {id: C01, score: 4, confidence: medium, evidence: [H54, H09], assessor: "agent:claude", rationale: "Perps are crypto's largest market; Hyperliquid alone reached 6.63% of global perp volume including CEXs."}
+- {id: C03, score: 2, confidence: medium, evidence: [H10, H12, H46], assessor: "agent:claude", rationale: "Volume share fell from ~44% (Mar 2026) to 32.8% (Oct 2026); OI share stable at ~55–57%."}
+- {id: C04, score: 3, confidence: medium, evidence: [H46, H10, H51], assessor: "agent:claude", rationale: "Volume share fell from 33% to ~10% in late 2025 as Lighter (zero fees) and Aster surged, then recovered to ~33% without incentives; Aster's volume data was delisted by DefiLlama over wash-trading concerns."}
+- {id: C05, score: 3, confidence: medium, evidence: [H20, H10], assessor: "agent:claude", rationale: "Closed-source core can't be forked directly, and OI/liquidity concentration is hard to replicate."}
+- {id: C06, score: 3, confidence: medium, evidence: [H43, H11], assessor: "agent:claude", rationale: "CEX-like order book with self-custody plus permissionless markets (RWA/equity perps) competitors don't match yet."}
+- {id: C07, score: 2, confidence: medium, evidence: [H01, H02], assessor: "agent:claude", rationale: "FDV/fees ~82× vs Aster ~28× and Lighter ~40× on trailing fees; on market cap (~19×) it is cheaper."}
+- {id: C08, score: 2, confidence: medium, evidence: [H54, H47], assessor: "agent:claude", rationale: "Competes head-on with CEX perps (incl. Binance); Coinbase chose to partner instead."}
+- {id: C09, score: 3, confidence: medium, evidence: [H32, H54, H38], assessor: "agent:claude", rationale: "Coinbase USDC deployer and Base App routing are live, ETFs trade; the USDH partnership was reversed eight months after it was voted in."}
+- {id: C10, score: 3, confidence: medium, evidence: [H15, H16, H47], assessor: "agent:claude", rationale: "Top-demand asset users already trade as a Binance perp since May 2025; spot adds a TRY fiat route but lists a direct competitor's token."}
+
+# --- D Community
+- {id: D01, score: 3, confidence: medium, evidence: [H41, H42], assessor: "agent:claude", rationale: "431k X followers and ~93k Discord members (~9.8k online); growth is steady rather than campaign-driven."}
+- {id: D05, score: 3, confidence: low, evidence: [H61, H02], assessor: "agent:claude", rationale: "Stated policy of no investors and no paid market makers; no paid campaigns found and no incentives running."}
+- {id: D06, score: 3, confidence: medium, evidence: [H43, H44], assessor: "agent:claude", rationale: "External teams ship HIP-3 markets and HyperEVM apps; grants programme details not public."}
+- {id: D08, score: 2, confidence: medium, evidence: [H29, H37], assessor: "agent:claude", rationale: "Fast on outage reimbursement; no public response found on Lazarus-linked flows (2026) or later manipulation events."}
+- {id: D09, score: 2, confidence: medium, evidence: [H59, H60, H32], assessor: "agent:claude", rationale: "Strong trader sentiment, but persistent informed criticism of centralisation and of the reversed USDH vote."}
+- {id: D10, score: 4, confidence: high, evidence: [H32, H38, H54], assessor: "agent:claude", rationale: "Coinbase, Circle and three US ETF issuers have integrated or built products on it."}
+- {id: D02, status: pending, rationale: "missing: bot-likelihood / engagement-quality analysis of X and Discord"}
+- {id: D04, status: pending, rationale: "missing: user geography; ask team or use Binance's own deposit/withdrawal data"}
+
+# --- L Legal & Compliance
+- {id: L01, score: 2, confidence: medium, evidence: [H33], assessor: "agent:claude", rationale: "Labs registered in Singapore; Foundation described as Cayman-based with no published registration details; self-described as unregulated."}
+- {id: L02, score: 2, confidence: medium, evidence: [H38, H02, H18], assessor: "agent:claude", rationale: "Fee-funded buybacks and Foundation-weighted control cut against the token; SEC-effective spot ETFs show US regulators allowed exposure, but that is not a legal determination."}
+- {id: L04, score: 0, confidence: high, evidence: [H34, H33, H52], assessor: "agent:claude", rationale: "Offers retail leveraged perps (up to 40×) with no licence anywhere; FCA warning list, MAS alert; ESMA caps EU retail at 2:1."}
+- {id: L05, score: 2, confidence: medium, evidence: [H34, H35, H36], assessor: "agent:claude", rationale: "No litigation or enforcement found; two regulator warnings and a congressional records request are open."}
+- {id: L06, score: 4, confidence: medium, evidence: [H26, H50], assessor: "agent:claude", rationale: "No privacy or obfuscation features; all activity is public on-chain."}
+- {id: L10, score: 2, confidence: medium, evidence: [H50, H37], assessor: "agent:claude", rationale: "Front-end geofencing only; the L1 accepts anyone, and Lazarus-linked wallets moved ~$30M through it in Aug 2026."}

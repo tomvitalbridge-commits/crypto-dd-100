@@ -1,0 +1,20 @@
+# Halcyon Finance is a FICTIONAL project. All names, numbers and sources in
+# this example are invented to demonstrate the harness end to end.
+project: Halcyon Finance (HLCN)
+profile: defi
+as_of: 2026-10-20
+
+evidence:
+  - evidence/market_onchain.json
+  - evidence/documents.json
+
+assessments:
+  - assessments/agent.yaml     # produced by the Claude skill, reviewed by an analyst
+  - assessments/human.yaml     # private-channel checks (KYC call, MM terms, legal opinion)
+
+# Used by `dd100 collect` for real projects. Halcyon is fictional, so these
+# would return nothing; they are here to show the shape.
+collect:
+  coingecko_id: halcyon-finance
+  defillama_slug: halcyon-finance
+  github_org: halcyon-finance
