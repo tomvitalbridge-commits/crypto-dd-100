@@ -1,0 +1,1518 @@
+{
+  "project": "Kite (KITE)",
+  "profile": "l1_l2",
+  "as_of": "2025-11-03",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-09",
+        "KITE-10",
+        "KITE-12"
+      ],
+      "rationale": "CEO led data products at Databricks and CTO built real-time AI infra at Uber; their prior company (ZettaBlock) served data to Sui, Polygon, Chainlink and EigenLayer, but no founder-led product at comparable scale has a verifiable outcome.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: team size and named owners for security, BD and operations beyond the two founders; only a project claim of staff from Uber, Databricks, Salesforce and NEAR (KITE-09)"
+      ]
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KITE-09",
+        "KITE-21"
+      ],
+      "rationale": "In-house technical leadership (CTO from Uber/Salesforce Einstein) and a whitepaper describing the SPACE framework; the 30+ patents/publications are a project claim and no protocol spec or research was reviewed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: court, regulator and wallet-history checks on founders and deployer; no allegations appear in the funding or listing coverage reviewed, which is not a clean-record search"
+      ]
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'team_vesting_months' not in evidence pack",
+        "team_vesting_months not set: only 'multi-year vesting' is stated (KITE-05)."
+      ]
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-05",
+        "KITE-15",
+        "KITE-21"
+      ],
+      "rationale": "No governance exists at TGE; the token contract owner can pause transfers and set cross-chain peers; holder governance is promised for an undated mainnet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: foundation, ecosystem (48%) and modules (20%) wallet addresses and any treasury report; foundation site not readable in this review"
+      ]
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-09",
+        "KITE-10",
+        "KITE-13",
+        "KITE-26"
+      ],
+      "rationale": "Led by PayPal Ventures and General Catalyst with Coinbase Ventures, Samsung Next, 8VC, Hashed and HashKey; terms are opaque — valuation and token warrants undisclosed — and a market maker (GSR Markets) is on the cap table.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'contradiction_count' not in evidence pack",
+        "No project claim could be checked against an independent observation as of listing (no testnet or on-chain metrics were published by the project in the sources found); T10 left unscored rather than awarded."
+      ]
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-10",
+        "KITE-11",
+        "KITE-12"
+      ],
+      "rationale": "Agent payments is a real problem, but the lead investor calls current agent activity 'very small and experimental' and the PayPal and Shopify integrations are pilots; no paying users are evidenced.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "KITE-05",
+        "KITE-21",
+        "KITE-11",
+        "KITE-08"
+      ],
+      "rationale": "Mainnet is not live at listing; a public testnet has run since February 2025 and staking, commissions and governance are deferred to mainnet; Binance's own disclaimer says features are still in development.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KITE-11",
+        "KITE-18",
+        "KITE-21"
+      ],
+      "rationale": "Builds on Avalanche's L1 stack and adds agent identity (three-tier identity, Agent Passport), state-channel micropayments and modules — meaningful modifications rather than an original consensus design.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: technical review of the whitepaper architecture; no production chain exists to evidence behaviour at scale"
+      ]
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-11",
+        "KITE-15",
+        "KITE-02",
+        "KITE-13"
+      ],
+      "rationale": "Depends on the Avalanche L1 stack, LayerZero messaging for the token on three chains, external stablecoins for payments and Coinbase's x402 standard; no fallbacks are described.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_commits_90d' not in evidence pack",
+        "GitHub activity not measured: the audited repo (GoKite-AI/contracts-external) was not reachable from this review, and no public chain/node repository was found."
+      ]
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_active_contributors_90d' not in evidence pack"
+      ]
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: a dated public roadmap; testnet launched Feb 2025 and mainnet had no published date at listing"
+      ]
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: public chain/node source; the token source is verified on Etherscan (KITE-15) but the audited repo (GoKite-AI/contracts-external, KITE-16) could not be reached"
+      ]
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: review of docs and whitepaper (gokite.ai/kite-whitepaper not readable in this review)"
+      ]
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "KITE-16"
+      ],
+      "rationale": "audits_reputable_count = 1  (bands 4:≥3, 3:≥2, 2:≥1, 1:≥0.5)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-16",
+        "KITE-17"
+      ],
+      "rationale": "The one High (missing pause controls) was fixed and the other report has no critical/high/medium findings, with three informational items acknowledged; deployed bytecode was not matched to the audited commits.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "KITE-15"
+      ],
+      "rationale": "contracts_verified = true",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'upgrade_timelock_hours' not in evidence pack",
+        "The KITE token is not a proxy (KITE-15), but owner-controlled setPeer/pause take effect immediately; the Kite chain's own upgrade process is undocumented in the sources reviewed."
+      ]
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: owner() of the KITE OFT on each chain and whether it is an EOA or a multisig with independent signers"
+      ]
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-15",
+        "KITE-16"
+      ],
+      "rationale": "No direct mint function, but the owner can pause all transfers and sets the LayerZero peers whose messages mint supply on other chains; who holds that key is undisclosed.",
+      "assessor": "agent:claude",
+      "notes": [
+        "(gate RF01) mint_authority not set. KITE is a LayerZero OFT (KITE-15): no public mint, but supply on non-native chains is minted on receipt from peers the owner configures (setPeer/setDelegate), and the owner can pause all transfers. The owner() address and whether it is an EOA or multisig could not be read (no RPC/explorer read access in this review). Ask: owner of the KITE OFT on Ethereum, BNB Chain and Avalanche, its multisig threshold and signers, and the LayerZero DVN configuration."
+      ]
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'bug_bounty_max_usd' not in evidence pack",
+        "No dated bug-bounty programme found before listing."
+      ]
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: incident-database check; contracts were weeks old at listing and no incident appears in pre-listing sources, which is absence of evidence, not a record",
+        "(gate RF04) unreimbursed_exploit_usd not set. Token contracts were ~4 weeks old at listing; no incident appears in any pre-listing source reviewed, but no incident database (rekt, SlowMist, DefiLlama hacks) could be queried. A search result headline about an attack on the Ethereum KITE token was seen but could not be opened or dated, so it was neither used nor ruled out."
+      ]
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "no oracle-dependent contracts in production before mainnet; nothing to assess"
+      ]
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-02",
+        "KITE-15",
+        "KITE-18"
+      ],
+      "rationale": "KITE exists on Ethereum, BNB Chain and Avalanche as a LayerZero OFT, so each chain's supply relies on an established bridge and the owner's peer/DVN configuration; Upbit supports only the Ethereum version.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-05",
+        "KITE-21",
+        "KITE-06"
+      ],
+      "rationale": "At TGE the token only gates module activation, liquidity locks and ecosystem access; commission buybacks, staking and governance start at a mainnet that is not live.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "circulating_supply_pct = 18  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top10_holder_pct_ex_contracts' not in evidence pack",
+        "No holder distribution as of listing: claims opened on listing day (KITE-23) and on-chain explorers could not be queried point-in-time."
+      ]
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'unlock_12m_pct_of_circ' not in evidence pack",
+        "No pre-listing source publishes cliffs or durations for team (20%), investors (12%), modules (20%) or ecosystem (48%) — only 'multi-year vesting' (KITE-05). OKX warned on 30 Oct that the issuance plan was not finalised (KITE-08). 12-month and 90-day (gate RF08) unlock pressure cannot be computed. Ask the project for the full vesting schedule and which of the 1.8B initial circulating sits with the foundation vs the market."
+      ]
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-03"
+      ],
+      "rationale": "insider_allocation_pct = 32  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'price_to_last_round_multiple' not in evidence pack",
+        "Last private round price undisclosed — the CEO declined to give the valuation or say whether investors hold token warrants (KITE-10)."
+      ]
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_mcap = 5.56  (bands 4:≤1.5, 3:≤2.5, 2:≤4, 1:≤7)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annual_inflation_pct' not in evidence pack",
+        "Emission schedule (module rewards, 'piggy bank' emissions, staking) not published with numbers."
+      ]
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-05",
+        "KITE-08",
+        "KITE-03"
+      ],
+      "rationale": "Allocations are published only as percentages, vesting as 'multi-year' with no vesting contracts disclosed, and OKX said on 30 Oct that the issuance plan was not final.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: airdrop recipient count, sybil filtering and post-claim retention; claims opened on listing day (KITE-23) and the testnet was XP-incentivised (KITE-27)"
+      ]
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_30d_avg' not in evidence pack",
+        "Mainnet not live (KITE-05, KITE-21). Testnet activity is points/XP-incentivised (KITE-27) and was not measured here; no daily active address, retention or fee-payer data for a production chain."
+      ]
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_90d_change_pct' not in evidence pack"
+      ]
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'retention_30d_pct' not in evidence pack"
+      ]
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'tvl_usd' not in evidence pack",
+        "No mainnet, so no TVL."
+      ]
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'l1_l2'"
+      ]
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: testnet address clustering; only an XP-incentivised testnet exists (KITE-27), no mainnet"
+      ]
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack"
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'live_integrations_count' not in evidence pack",
+        "PayPal and Shopify integrations are pilots (KITE-11); no live integration count established."
+      ]
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: evidence of independent teams building on Kite before listing; only pilot integrations (KITE-11)"
+      ]
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack"
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'depth_2pct_usd' not in evidence pack",
+        "No spot order book existed before 13:00 UTC on 3 Nov; only pre-market perps (KITE-08). Depth, spread, volume, venue share and realised volatility are not observable at as_of."
+      ]
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top_venue_volume_share_pct' not in evidence pack"
+      ]
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "no spot market existed before 13:00 UTC on 3 Nov; only pre-market perps (KITE-08)"
+      ]
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'spread_bps' not in evidence pack",
+        "See M01."
+      ]
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-24",
+        "KITE-18",
+        "KITE-20",
+        "KITE-22",
+        "KITE-21"
+      ],
+      "rationale": "Coinbase, Upbit, OKX, Bitget and HTX all list spot on the same day, each after its own review; there is no prior spot trading history to observe.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "KITE-08",
+        "KITE-06",
+        "KITE-20"
+      ],
+      "rationale": "Leveraged pre-market perps (OKX up to 20x, Bybit 10x, Aster 5x, plus Binance Futures) set the price from 29 Oct, before any spot market; open interest and funding were not observed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'realized_vol_30d_pct' not in evidence pack",
+        "See M01: no 30-day price history (pre-market began 29 Oct)."
+      ]
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: DEX pool ownership; no on-chain liquidity data at as_of"
+      ]
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-14",
+        "KITE-13",
+        "KITE-26",
+        "KITE-09"
+      ],
+      "rationale": "Agent payments/x402 is a rising narrative (156k x402 transactions in one day, Coinbase and PayPal investing), and Kite is one of the funded first movers, though not a proven leader.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "scored",
+      "score": 0,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-05"
+      ],
+      "rationale": "annualized_revenue_usd = 0  (bands 4:≥5e+07, 3:≥1e+07, 2:≥2e+06, 1:≥250,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "no protocol revenue exists before mainnet (KITE-05)"
+      ]
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-05",
+        "KITE-21"
+      ],
+      "rationale": "Commissions on AI service transactions are designed to buy KITE, but only from mainnet; nothing accrues to holders at listing.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fdv_to_annual_fees' not in evidence pack"
+      ]
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentives_to_revenue' not in evidence pack"
+      ]
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack",
+        "Foundation treasury and Kite AI Inc. burn not published; $33M raised (KITE-09)."
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack"
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'revenue_qoq_growth_pct' not in evidence pack"
+      ]
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'l1_l2'"
+      ]
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "KITE-05",
+        "KITE-27",
+        "KITE-10"
+      ],
+      "rationale": "No revenue yet; activity is an XP-incentivised testnet, and the business runs on $33M of venture funding.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-10",
+        "KITE-14"
+      ],
+      "rationale": "Agent payments is small today ('very small and experimental' per PayPal Ventures) but growing fast on x402 activity.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'category_share_pct' not in evidence pack",
+        "No category share data for agent-payment chains as of listing."
+      ]
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "no market share exists before mainnet"
+      ]
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-13",
+        "KITE-11"
+      ],
+      "rationale": "x402 is Coinbase's open standard that Kite implements among other L1s; the distinguishing assets are investor relationships and pilot integrations, with no live network effect.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KITE-11",
+        "KITE-21",
+        "KITE-09"
+      ],
+      "rationale": "EVM chain on an Avalanche stack is forkable; the PayPal/Shopify pilots and investor relationships are the off-chain assets a fork would lack.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "KITE-09",
+        "KITE-13",
+        "KITE-18"
+      ],
+      "rationale": "Differentiates on agent identity (Agent Passport, three-tier identity) plus native x402 — an axis general-purpose chains that already support x402 could copy.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: peer FDVs as of 3 Nov; pre-market implies ~$1.75B FDV (KITE-06) with no revenue"
+      ]
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-13",
+        "KITE-09",
+        "KITE-14"
+      ],
+      "rationale": "Coinbase (x402's author) and PayPal are investors but also run their own agent-payment rails; absorption is plausible though nothing competing was announced against Kite.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-11",
+        "KITE-12",
+        "KITE-09"
+      ],
+      "rationale": "The PayPal partnership and Shopify integration are pilots and no mainnet exists, so no partnership is visible in on-chain flows.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "KITE-01",
+        "KITE-14",
+        "KITE-13"
+      ],
+      "rationale": "Gives Binance users exposure to a dedicated agent-payments L1, a sub-sector not otherwise represented by a funded chain; general AI tokens already cover the broader theme.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: social audience and engagement data as of listing"
+      ]
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: bot-likelihood analysis"
+      ]
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'holders_count' not in evidence pack",
+        "Holder count at listing not observable (airdrop claims opened 3 Nov)."
+      ]
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: user geography; Upbit KRW listing (KITE-18) hints at Korean demand only"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-01",
+        "KITE-06",
+        "KITE-23",
+        "KITE-27"
+      ],
+      "rationale": "Attention at launch is driven by disclosed campaigns: Binance Launchpool and Alpha points, testnet XP, Aster trading points and a 50M KITE marketing reserve.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: grant and hackathon record dated before listing"
+      ]
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack",
+        "No governance exists before mainnet (KITE-05)."
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-08",
+        "KITE-05",
+        "KITE-03"
+      ],
+      "rationale": "Days before listing, no cliffs or durations for the 20% team and 12% investor allocations were public and OKX said the issuance plan was not finalised.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: informed-participant sentiment as of listing"
+      ]
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-09",
+        "KITE-13",
+        "KITE-11",
+        "KITE-16"
+      ],
+      "rationale": "PayPal Ventures, Coinbase Ventures, Avalanche Foundation and LayerZero invested and Halborn audited; integrations by credible platforms are still pilots.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: KITE Foundation registration and jurisdiction; operating company Kite AI (formerly ZettaBlock) domicile not confirmed in sources"
+      ]
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-05",
+        "KITE-15",
+        "KITE-10"
+      ],
+      "rationale": "Core utility is deferred to mainnet, a commission-funded buyback is planned, the foundation controls the token contract and VC terms are undisclosed; no legal analysis is public.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack",
+        "sanctions_exposure not set: no wallet screening available. Needs Chainalysis/TRM screening of deployer (0x148c…8799), foundation, team and top-holder addresses."
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: whether Kite AIR merchant settlement involves custody or money transmission, and any licences"
+      ]
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "no assessment provided",
+        "(gate RF05) active_enforcement_action not set. No enforcement or litigation is mentioned in any source reviewed (funding coverage, exchange notices), but SEC/CFTC/court and other regulator databases were not searched. Needs a regulator/court check on Kite AI Inc. (formerly ZettaBlock), the KITE Foundation and the founders."
+      ]
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "KITE-18",
+        "KITE-21"
+      ],
+      "rationale": "No privacy features; the design is identity-first (three-tier identity, compliance-ready SPACE framework).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'l1_l2'"
+      ]
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'l1_l2'"
+      ]
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: project's own restricted-jurisdiction policy for airdrop claims and front end"
+      ]
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 2.0,
+      "coverage": 0.375,
+      "sufficient": false,
+      "scored": 4,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 14,
+      "score": 1.2,
+      "coverage": 0.5263157894736842,
+      "sufficient": false,
+      "scored": 4,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 12,
+      "score": 2.3076923076923075,
+      "coverage": 0.52,
+      "sufficient": false,
+      "scored": 5,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 14,
+      "score": 1.4,
+      "coverage": 0.47619047619047616,
+      "sufficient": false,
+      "scored": 5,
+      "applicable": 10
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 12,
+      "score": null,
+      "coverage": 0.0,
+      "sufficient": false,
+      "scored": 0,
+      "applicable": 9
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 8,
+      "score": 2.3333333333333335,
+      "coverage": 0.17647058823529413,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 6,
+      "score": 0.8571428571428571,
+      "coverage": 0.4117647058823529,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 9
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 10,
+      "score": 1.75,
+      "coverage": 0.6666666666666666,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 6,
+      "score": 2.0,
+      "coverage": 0.3076923076923077,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 6,
+      "score": 1.75,
+      "coverage": 0.25,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 8
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "clear"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "clear"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "clear"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "clear"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "n/a"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "unchecked"
+    }
+  ],
+  "contradictions": [],
+  "point_score": 43.2,
+  "score_low": 9.0,
+  "score_high": 84.9,
+  "coverage": 0.387,
+  "grade": "D",
+  "verdict": "INSUFFICIENT_DATA",
+  "verdict_reasons": [
+    "evidence coverage 39% below the 70% needed for a verdict"
+  ]
+}

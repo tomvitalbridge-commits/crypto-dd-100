@@ -1,0 +1,144 @@
+{
+  "project": "Kite (KITE)",
+  "as_of": "2025-11-03",
+  "sources": [
+    {
+      "id": "KITE-09",
+      "type": "press_release",
+      "tier": 3,
+      "title": "PayPal Newsroom / Kite press release: Kite raises $18M Series A, 2025-09-02",
+      "url": "https://newsroom.paypal-corp.com/2025-09-02-Kite-Raises-18M-in-Series-A-Funding-To-Enforce-Trust-in-the-Agentic-Web",
+      "retrieved": "2026-10-23",
+      "published": "2025-09-02",
+      "excerpt": "$18M Series A led by PayPal Ventures and General Catalyst; total raised $33M. Other investors: 8VC, Samsung Next, Alumni Ventures, SBI US Gateway Fund, Vertex, Dispersion, Avalanche Foundation, GSR Markets, LayerZero, Hashed, HashKey, Animoca, Essence VC, Alchemy. CEO Chi Zhang (PhD UC Berkeley, led data products at Databricks); CTO Scott Shi (Uber real-time AI infra, founding engineer Salesforce Einstein). Formerly Zettablock (data infra for Sui, Polygon, Chainlink, EigenLayer). Team claims 30+ patents/publications. Kite AIR (Agent Passport + Agent App Store) 'live' via open integrations with Shopify and PayPal."
+    },
+    {
+      "id": "KITE-10",
+      "type": "news",
+      "tier": 2,
+      "title": "Fortune: Kite raises $18M from PayPal and General Catalyst, 2025-09-02",
+      "url": "https://www.fortune.com/crypto/2025/09/02/kite-ai-blockchain-paypal-general-catalyst-18-million",
+      "retrieved": "2026-10-23",
+      "published": "2025-09-02",
+      "excerpt": "$33M total including a previously undisclosed seed. CEO declined to give the valuation or say whether investors hold token warrants. PayPal Ventures partner Alan Du called current agent activity 'very small and experimental'. Notes AI-crypto combinations have had 'mixed at best' results."
+    },
+    {
+      "id": "KITE-11",
+      "type": "news",
+      "tier": 2,
+      "title": "Cointelegraph: PayPal Ventures backs Kite AI with $18M, 2025-09-02",
+      "url": "https://regional-front.cointelegraph.com/news/paypal-ventures-backs-kite-ai-with-18m-to-power-ai-agents",
+      "retrieved": "2026-10-23",
+      "published": "2025-09-02",
+      "excerpt": "Kite is building an AI-focused L1 based on Avalanche; testnet launched February 2025. Kite AIR live; PayPal partnership and Shopify API integration both described as in a pilot phase."
+    },
+    {
+      "id": "KITE-12",
+      "type": "news",
+      "tier": 2,
+      "title": "PYMNTS: PayPal-backed Kite raises $18M for agentic web, 2025-09-02",
+      "url": "https://www.pymnts.com/news/investment-tracker/2025/paypal-backed-kite-raises-18-million-for-agentic-web",
+      "retrieved": "2026-10-23",
+      "published": "2025-09-02",
+      "excerpt": "Kite AIR 'recently introduced'; PayPal and Shopify merchants can opt in via public APIs to be discoverable by AI shopping agents; further integrations described as being built, not live. Claims sourced mainly from PayPal release and the CEO."
+    },
+    {
+      "id": "KITE-13",
+      "type": "news",
+      "tier": 2,
+      "title": "ChainCatcher: Kite announces Coinbase Ventures investment, 2025-10-27",
+      "url": "https://www.chaincatcher.com/en/article/2215457",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-27",
+      "excerpt": "Undisclosed Coinbase Ventures investment extending the $33M round. Kite says it natively integrated Coinbase's x402 agent-payment standard and is 'one of the earliest' L1s implementing x402 primitives; positions itself as an execution/settlement layer for x402. No usage metrics."
+    },
+    {
+      "id": "KITE-26",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News: Coinbase Ventures invests in Kite, 2025-10-27",
+      "url": "https://www.mexc.com/news/143824",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-27",
+      "excerpt": "Coinbase Ventures strategic investment (amount undisclosed) after the $33M PayPal Ventures/General Catalyst round; funds for agent payment infrastructure and x402 adoption with Coinbase. No transaction, user or agent metrics."
+    },
+    {
+      "id": "KITE-14",
+      "type": "news",
+      "tier": 2,
+      "title": "Bitrue blog: Kite AI and x402 strategic partnership, 2025-10-28 (exchange blog, promotional)",
+      "url": "https://www.bitrue.com/blog/kite-ai-and-x402-strategic-partnership",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-28",
+      "excerpt": "x402 processed 'over 156,000 transactions' in a single day (ecosystem-wide, not attributed to Kite). Visa and PayPal described as 'exploring' integrations; Coinbase Ventures money to accelerate x402 rollout."
+    },
+    {
+      "id": "KITE-27",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News: Kite raises $18M; Ozone testnet live, 2025-09-04",
+      "url": "https://www.mexc.com/news/84648",
+      "retrieved": "2026-10-23",
+      "published": "2025-09-04",
+      "excerpt": "Ozone testnet live; early users stake testnet tokens to earn XP and can interact with partner agents as integrations roll out. No testnet usage figures. CEO declined to disclose valuation or token-warrant terms."
+    },
+    {
+      "id": "KITE-15",
+      "type": "onchain",
+      "tier": 1,
+      "title": "Etherscan: KITE token contract 0x904567252D8F48555b7447c67dCA23F0372E16be (source and ABI)",
+      "url": "https://etherscan.io/address/0x904567252D8F48555b7447c67dCA23F0372E16be",
+      "retrieved": "2026-10-23",
+      "published": "2025-10 (contract creation, ~early Oct 2025)",
+      "excerpt": "Source verified (Exact Match), contract name 'Kite', solc 0.8.30. Not a proxy; no upgradeTo. Ownable (owner/transferOwnership/renounceOwnership). pause()/unpause(). No public mint or blacklist function. LayerZero OFT functions: send, lzReceive, setPeer, setDelegate, setEnforcedOptions, setMsgInspector, isNativeChain — cross-chain supply is minted/credited on receipt from owner-configured peers. Creator labelled 'Kite: Deployer' (0x148c…8799). Only static code facts used; the page's current-state banners were ignored as post-cutoff."
+    },
+    {
+      "id": "KITE-16",
+      "type": "audit",
+      "tier": 1,
+      "title": "Halborn: Kite token audit (KiteOFTWithPausable.sol), 2025-10-07, last updated 2025-10-10",
+      "url": "https://www.halborn.com/audits/kite/kite-031103",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-10",
+      "excerpt": "Scope: KiteOFTWithPausable.sol only, repo GoKite-AI/contracts-external, commit 29ebe6e, remediation db3fbba. One-day engagement, one engineer. 1 finding: HAL-01 High 'missing pause and unpause function' — solved by adding owner pause controls. 0 critical/medium/low open."
+    },
+    {
+      "id": "KITE-17",
+      "type": "audit",
+      "tier": 1,
+      "title": "Halborn: GoKite contracts audit (account, airdrop, subnet registry), 2025-09-22 to 25, last updated 2025-10-21",
+      "url": "https://www.halborn.com/audits/kite/gokite-contracts-633ec7",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-21",
+      "excerpt": "Scope GokiteAccount.sol, KiteAirdrop.sol, Subnet.sol, SubnetRegistry.sol (commit 00e3bd8). 6 findings: 0 critical/high/medium; 1 low solved; 5 informational (2 solved, 3 acknowledged incl. no two-step ownership transfer and unsafe token transfer in airdrop claim). Economic attacks out of scope. The L1 chain itself is not in scope of any audit found."
+    }
+  ],
+  "metrics": {
+    "contracts_verified": {
+      "value": true,
+      "source": "KITE-15",
+      "note": "Ethereum deployment verified (Exact Match). The BNB Chain explorer page could not be loaded for this review; Avalanche not checked. Same address on all three chains per KITE-02"
+    },
+    "audits_reputable_count": {
+      "value": 1,
+      "source": "KITE-16",
+      "note": "one reputable firm (Halborn), two reports: token contract (one-day, one-engineer review) and account/airdrop/subnet contracts (KITE-17). No public audit of the Kite L1 / testnet chain"
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "Kite/PayPal release: total funding raised to date is $33M (Series A $18M plus earlier seed)",
+      "metric": "total_funding_usd",
+      "claimed_value": 33000000,
+      "source": "KITE-09"
+    },
+    {
+      "id": "C2",
+      "statement": "Kite/PayPal release: team holds over 30 patents and publications (NeurIPS, ICML etc.)",
+      "metric": "team_patents_publications",
+      "claimed_value": 30,
+      "source": "KITE-09"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+# Kite (KITE) — judgment scores from public sources published on or before
+# 2025-11-03 (listing day). Every score cites evidence ids in evidence/*.json.
+# Where pre-listing public sources were not enough, the dimension is `pending`
+# with what is missing. T02, M05, L07 are human-only and left for the analyst.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, score: 2, confidence: medium, evidence: [KITE-09, KITE-10, KITE-12], assessor: "agent:claude", rationale: "CEO led data products at Databricks and CTO built real-time AI infra at Uber; their prior company (ZettaBlock) served data to Sui, Polygon, Chainlink and EigenLayer, but no founder-led product at comparable scale has a verifiable outcome."}
+- {id: T03, status: pending, rationale: "missing: team size and named owners for security, BD and operations beyond the two founders; only a project claim of staff from Uber, Databricks, Salesforce and NEAR (KITE-09)"}
+- {id: T04, score: 2, confidence: low, evidence: [KITE-09, KITE-21], assessor: "agent:claude", rationale: "In-house technical leadership (CTO from Uber/Salesforce Einstein) and a whitepaper describing the SPACE framework; the 30+ patents/publications are a project claim and no protocol spec or research was reviewed."}
+- {id: T05, status: pending, rationale: "missing: court, regulator and wallet-history checks on founders and deployer; no allegations appear in the funding or listing coverage reviewed, which is not a clean-record search"}
+- {id: T07, score: 1, confidence: medium, evidence: [KITE-05, KITE-15, KITE-21], assessor: "agent:claude", rationale: "No governance exists at TGE; the token contract owner can pause transfers and set cross-chain peers; holder governance is promised for an undated mainnet."}
+- {id: T08, status: pending, rationale: "missing: foundation, ecosystem (48%) and modules (20%) wallet addresses and any treasury report; foundation site not readable in this review"}
+- {id: T09, score: 3, confidence: medium, evidence: [KITE-09, KITE-10, KITE-13, KITE-26], assessor: "agent:claude", rationale: "Led by PayPal Ventures and General Catalyst with Coinbase Ventures, Samsung Next, 8VC, Hashed and HashKey; terms are opaque — valuation and token warrants undisclosed — and a market maker (GSR Markets) is on the cap table."}
+
+# --- P Product & Technology
+- {id: P01, score: 1, confidence: medium, evidence: [KITE-10, KITE-11, KITE-12], assessor: "agent:claude", rationale: "Agent payments is a real problem, but the lead investor calls current agent activity 'very small and experimental' and the PayPal and Shopify integrations are pilots; no paying users are evidenced."}
+- {id: P02, score: 1, confidence: high, evidence: [KITE-05, KITE-21, KITE-11, KITE-08], assessor: "agent:claude", rationale: "Mainnet is not live at listing; a public testnet has run since February 2025 and staking, commissions and governance are deferred to mainnet; Binance's own disclaimer says features are still in development."}
+- {id: P03, score: 2, confidence: low, evidence: [KITE-11, KITE-18, KITE-21], assessor: "agent:claude", rationale: "Builds on Avalanche's L1 stack and adds agent identity (three-tier identity, Agent Passport), state-channel micropayments and modules — meaningful modifications rather than an original consensus design."}
+- {id: P04, status: pending, rationale: "missing: technical review of the whitepaper architecture; no production chain exists to evidence behaviour at scale"}
+- {id: P05, score: 1, confidence: medium, evidence: [KITE-11, KITE-15, KITE-02, KITE-13], assessor: "agent:claude", rationale: "Depends on the Avalanche L1 stack, LayerZero messaging for the token on three chains, external stablecoins for payments and Coinbase's x402 standard; no fallbacks are described."}
+- {id: P08, status: pending, rationale: "missing: a dated public roadmap; testnet launched Feb 2025 and mainnet had no published date at listing"}
+- {id: P09, status: pending, rationale: "missing: public chain/node source; the token source is verified on Etherscan (KITE-15) but the audited repo (GoKite-AI/contracts-external, KITE-16) could not be reached"}
+- {id: P10, status: pending, rationale: "missing: review of docs and whitepaper (gokite.ai/kite-whitepaper not readable in this review)"}
+
+# --- S Security
+- {id: S02, score: 3, confidence: medium, evidence: [KITE-16, KITE-17], assessor: "agent:claude", rationale: "The one High (missing pause controls) was fixed and the other report has no critical/high/medium findings, with three informational items acknowledged; deployed bytecode was not matched to the audited commits."}
+- {id: S05, status: pending, rationale: "missing: owner() of the KITE OFT on each chain and whether it is an EOA or a multisig with independent signers"}
+- {id: S06, score: 1, confidence: medium, evidence: [KITE-15, KITE-16], assessor: "agent:claude", rationale: "No direct mint function, but the owner can pause all transfers and sets the LayerZero peers whose messages mint supply on other chains; who holds that key is undisclosed."}
+- {id: S08, status: pending, rationale: "missing: incident-database check; contracts were weeks old at listing and no incident appears in pre-listing sources, which is absence of evidence, not a record"}
+- {id: S09, status: pending, rationale: "no oracle-dependent contracts in production before mainnet; nothing to assess"}
+- {id: S10, score: 2, confidence: medium, evidence: [KITE-02, KITE-15, KITE-18], assessor: "agent:claude", rationale: "KITE exists on Ethereum, BNB Chain and Avalanche as a LayerZero OFT, so each chain's supply relies on an established bridge and the owner's peer/DVN configuration; Upbit supports only the Ethereum version."}
+
+# --- K Tokenomics
+- {id: K01, score: 1, confidence: medium, evidence: [KITE-05, KITE-21, KITE-06], assessor: "agent:claude", rationale: "At TGE the token only gates module activation, liquidity locks and ecosystem access; commission buybacks, staking and governance start at a mainnet that is not live."}
+- {id: K09, score: 1, confidence: medium, evidence: [KITE-05, KITE-08, KITE-03], assessor: "agent:claude", rationale: "Allocations are published only as percentages, vesting as 'multi-year' with no vesting contracts disclosed, and OKX said on 30 Oct that the issuance plan was not final."}
+- {id: K10, status: pending, rationale: "missing: airdrop recipient count, sybil filtering and post-claim retention; claims opened on listing day (KITE-23) and the testnet was XP-incentivised (KITE-27)"}
+
+# --- O On-chain Traction
+- {id: O06, status: pending, rationale: "missing: testnet address clustering; only an XP-incentivised testnet exists (KITE-27), no mainnet"}
+- {id: O09, status: pending, rationale: "missing: evidence of independent teams building on Kite before listing; only pilot integrations (KITE-11)"}
+
+# --- M Market Structure
+- {id: M03, status: pending, rationale: "no spot market existed before 13:00 UTC on 3 Nov; only pre-market perps (KITE-08)"}
+- {id: M06, score: 3, confidence: medium, evidence: [KITE-24, KITE-18, KITE-20, KITE-22, KITE-21], assessor: "agent:claude", rationale: "Coinbase, Upbit, OKX, Bitget and HTX all list spot on the same day, each after its own review; there is no prior spot trading history to observe."}
+- {id: M07, score: 1, confidence: low, evidence: [KITE-08, KITE-06, KITE-20], assessor: "agent:claude", rationale: "Leveraged pre-market perps (OKX up to 20x, Bybit 10x, Aster 5x, plus Binance Futures) set the price from 29 Oct, before any spot market; open interest and funding were not observed."}
+- {id: M09, status: pending, rationale: "missing: DEX pool ownership; no on-chain liquidity data at as_of"}
+- {id: M10, score: 3, confidence: medium, evidence: [KITE-14, KITE-13, KITE-26, KITE-09], assessor: "agent:claude", rationale: "Agent payments/x402 is a rising narrative (156k x402 transactions in one day, Coinbase and PayPal investing), and Kite is one of the funded first movers, though not a proven leader."}
+
+# --- B Business Model
+- {id: B02, status: pending, rationale: "no protocol revenue exists before mainnet (KITE-05)"}
+- {id: B03, score: 2, confidence: medium, evidence: [KITE-05, KITE-21], assessor: "agent:claude", rationale: "Commissions on AI service transactions are designed to buy KITE, but only from mainnet; nothing accrues to holders at listing."}
+- {id: B10, score: 1, confidence: low, evidence: [KITE-05, KITE-27, KITE-10], assessor: "agent:claude", rationale: "No revenue yet; activity is an XP-incentivised testnet, and the business runs on $33M of venture funding."}
+
+# --- C Competition & Moat
+- {id: C01, score: 2, confidence: medium, evidence: [KITE-10, KITE-14], assessor: "agent:claude", rationale: "Agent payments is small today ('very small and experimental' per PayPal Ventures) but growing fast on x402 activity."}
+- {id: C03, status: pending, rationale: "no market share exists before mainnet"}
+- {id: C04, score: 1, confidence: medium, evidence: [KITE-13, KITE-11], assessor: "agent:claude", rationale: "x402 is Coinbase's open standard that Kite implements among other L1s; the distinguishing assets are investor relationships and pilot integrations, with no live network effect."}
+- {id: C05, score: 2, confidence: low, evidence: [KITE-11, KITE-21, KITE-09], assessor: "agent:claude", rationale: "EVM chain on an Avalanche stack is forkable; the PayPal/Shopify pilots and investor relationships are the off-chain assets a fork would lack."}
+- {id: C06, score: 2, confidence: low, evidence: [KITE-09, KITE-13, KITE-18], assessor: "agent:claude", rationale: "Differentiates on agent identity (Agent Passport, three-tier identity) plus native x402 — an axis general-purpose chains that already support x402 could copy."}
+- {id: C07, status: pending, rationale: "missing: peer FDVs as of 3 Nov; pre-market implies ~$1.75B FDV (KITE-06) with no revenue"}
+- {id: C08, score: 2, confidence: medium, evidence: [KITE-13, KITE-09, KITE-14], assessor: "agent:claude", rationale: "Coinbase (x402's author) and PayPal are investors but also run their own agent-payment rails; absorption is plausible though nothing competing was announced against Kite."}
+- {id: C09, score: 1, confidence: medium, evidence: [KITE-11, KITE-12, KITE-09], assessor: "agent:claude", rationale: "The PayPal partnership and Shopify integration are pilots and no mainnet exists, so no partnership is visible in on-chain flows."}
+- {id: C10, score: 3, confidence: low, evidence: [KITE-01, KITE-14, KITE-13], assessor: "agent:claude", rationale: "Gives Binance users exposure to a dedicated agent-payments L1, a sub-sector not otherwise represented by a funded chain; general AI tokens already cover the broader theme."}
+
+# --- D Community
+- {id: D01, status: pending, rationale: "missing: social audience and engagement data as of listing"}
+- {id: D02, status: pending, rationale: "missing: bot-likelihood analysis"}
+- {id: D04, status: pending, rationale: "missing: user geography; Upbit KRW listing (KITE-18) hints at Korean demand only"}
+- {id: D05, score: 2, confidence: medium, evidence: [KITE-01, KITE-06, KITE-23, KITE-27], assessor: "agent:claude", rationale: "Attention at launch is driven by disclosed campaigns: Binance Launchpool and Alpha points, testnet XP, Aster trading points and a 50M KITE marketing reserve."}
+- {id: D06, status: pending, rationale: "missing: grant and hackathon record dated before listing"}
+- {id: D08, score: 1, confidence: medium, evidence: [KITE-08, KITE-05, KITE-03], assessor: "agent:claude", rationale: "Days before listing, no cliffs or durations for the 20% team and 12% investor allocations were public and OKX said the issuance plan was not finalised."}
+- {id: D09, status: pending, rationale: "missing: informed-participant sentiment as of listing"}
+- {id: D10, score: 3, confidence: medium, evidence: [KITE-09, KITE-13, KITE-11, KITE-16], assessor: "agent:claude", rationale: "PayPal Ventures, Coinbase Ventures, Avalanche Foundation and LayerZero invested and Halborn audited; integrations by credible platforms are still pilots."}
+
+# --- L Legal & Compliance
+- {id: L01, status: pending, rationale: "missing: KITE Foundation registration and jurisdiction; operating company Kite AI (formerly ZettaBlock) domicile not confirmed in sources"}
+- {id: L02, score: 1, confidence: medium, evidence: [KITE-05, KITE-15, KITE-10], assessor: "agent:claude", rationale: "Core utility is deferred to mainnet, a commission-funded buyback is planned, the foundation controls the token contract and VC terms are undisclosed; no legal analysis is public."}
+- {id: L04, status: pending, rationale: "missing: whether Kite AIR merchant settlement involves custody or money transmission, and any licences"}
+- {id: L06, score: 4, confidence: medium, evidence: [KITE-18, KITE-21], assessor: "agent:claude", rationale: "No privacy features; the design is identity-first (three-tier identity, compliance-ready SPACE framework)."}
+- {id: L10, status: pending, rationale: "missing: project's own restricted-jurisdiction policy for airdrop claims and front end"}

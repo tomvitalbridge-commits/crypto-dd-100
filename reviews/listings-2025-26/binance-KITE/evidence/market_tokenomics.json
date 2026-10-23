@@ -1,0 +1,199 @@
+{
+  "project": "Kite (KITE)",
+  "as_of": "2025-11-03",
+  "sources": [
+    {
+      "id": "KITE-01",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockmedia: Binance names Kite (KITE) its 71st Launchpool project (relays the Binance announcement), published 2025-10-31 08:35 UTC",
+      "url": "https://www.blockmedia.co.kr/archives/999087",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-31",
+      "excerpt": "Total supply 10B KITE. Circulating at Binance listing ~1.8B (18%). Launchpool 150M KITE (1.5%), 85% BNB / 10% USDC / 5% FDUSD pools, farming 1-3 Nov. Spot listing 3 Nov with Seed Tag; pairs USDT, USDC, BNB, TRY. A further 50M KITE reserved for marketing six months after listing. No vesting schedule given."
+    },
+    {
+      "id": "KITE-02",
+      "type": "news",
+      "tier": 2,
+      "title": "AiCoin mirror of Binance announcement 'Introducing Kite (KITE) on Binance Launchpool', published 2025-10-31",
+      "url": "https://www.aicoin.com/news-flash/2600123",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-31",
+      "excerpt": "Spot trading 3 Nov 2025 13:00 UTC; Seed Tag applied; listing fee 0; available on Binance Alpha first. Contract 0x904567252D8F48555b7447c67dCA23F0372E16be on BNB Smart Chain, Ethereum and Avalanche. Initial circulating 1.8B (18%). (The mirror misprints total supply as 100B; Blockmedia and Phemex give 10B.)"
+    },
+    {
+      "id": "KITE-03",
+      "type": "news",
+      "tier": 2,
+      "title": "Foresight News (via AiCoin): KITE Foundation publishes tokenomics, published 2025-10-31",
+      "url": "https://www.aicoin.com/news-flash/2600160",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-31",
+      "excerpt": "Total supply 10B. Ecosystem & community 48%; Modules 20% (rewards for AI service providers based on verified usage); Team, advisors & early contributors 20%; Investors 12%. No vesting terms given."
+    },
+    {
+      "id": "KITE-04",
+      "type": "news",
+      "tier": 2,
+      "title": "ChainCatcher: Kite releases token economic model, published 2025-10-31",
+      "url": "https://www.chaincatcher.com/en/article/2216379",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-31",
+      "excerpt": "Same allocation (48/20/20/12) on 10B supply. Ozone testnet snapshot (interaction and social-binding data) completed; EOA wallet binding still open. No vesting terms."
+    },
+    {
+      "id": "KITE-05",
+      "type": "news",
+      "tier": 2,
+      "title": "cryptonews.net: Kite tokenomics and utility explainer, published 2025-11-03 12:10 UTC (before 13:00 UTC listing)",
+      "url": "https://cryptonews.net/news/altcoins/31910522/",
+      "retrieved": "2026-10-23",
+      "published": "2025-11-03",
+      "excerpt": "Team allocation has 'multi-year vesting', investors follow 'vesting schedules' — no cliffs or durations. Launch-phase utility: module owners lock KITE in liquidity pools, builders must hold KITE. Mainnet-phase utility (not yet live): commissions from AI service transactions buy KITE, PoS staking, governance. 'Piggy bank' emissions: claiming forfeits future emissions. Mainnet not live at publication."
+    },
+    {
+      "id": "KITE-06",
+      "type": "news",
+      "tier": 2,
+      "title": "Coinspot: Kite AI listing date announced — pre-market prices, published 2025-10-31 19:30",
+      "url": "https://coinspot.io/en/analysis/kite-ai-listing-date-announced-how-much-will-the-kite-token-cost/",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-31",
+      "excerpt": "Pre-market perps: Bybit ~$0.17492 (up to 10x), OKX ~$0.17521 (up to 20x, fixed 0.03%/day funding), AsterDex $0.175–0.18 (5x, trading-points boost to 2 Nov). Utility in two phases (access/liquidity/builder incentives now; service fees, staking, governance later). No vesting schedule."
+    },
+    {
+      "id": "KITE-07",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinGabbar: Kite AI airdrop and listing date, published 2025-10-31",
+      "url": "https://www.coingabbar.com/en/crypto-currency-news/kite-ai-airdrop-listing-date-binance-kite-token-price-funding",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-31",
+      "excerpt": "Same pre-market prints: Bybit ~$0.1749, OKX ~$0.1752, AsterDex $0.175–0.18. $33M total funding; backers include Samsung Next, Animoca, HashKey, 8VC, LayerZero Labs, Avalanche Foundation. No vesting schedule."
+    },
+    {
+      "id": "KITE-08",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockmedia: KITE pre-market perpetuals open on Binance Futures, OKX, Bybit and Aster, published 2025-10-30 05:40 UTC",
+      "url": "https://www.blockmedia.co.kr/archives/998212",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-30",
+      "excerpt": "Binance Futures, OKX and Bybit opened KITE pre-market perpetuals on 29 Oct; Aster opened a pre-launch market. OKX states the team had not finalised its token issuance plan and total supply was uncertain. Binance disclaimer: some product features still in development, utility may be limited."
+    },
+    {
+      "id": "KITE-18",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockmedia: Upbit lists Kite (KITE) on KRW/BTC/USDT markets, published 2025-11-03 08:17 UTC",
+      "url": "https://www.blockmedia.co.kr/archives/1000001",
+      "retrieved": "2026-10-23",
+      "published": "2025-11-03",
+      "excerpt": "Upbit trading from 3 Nov 22:00 KST, Ethereum network only, contract 0x904567252D8F48555b7447c67dCA23F0372E16be. Buy orders restricted ~5 min, limit-only ~2 h; pre-listing deposits subject to Travel Rule checks. Describes an L1 with stablecoin payments, programmable governance, three-tier identity and state-channel micropayments; staking/governance utility 'planned'."
+    },
+    {
+      "id": "KITE-19",
+      "type": "news",
+      "tier": 2,
+      "title": "Bloomingbit: Upbit KITE listing notice, published 2025-11-03",
+      "url": "https://bloomingbit.io/feed/news/100040",
+      "retrieved": "2026-10-23",
+      "published": "2025-11-03",
+      "excerpt": "Upbit KRW/BTC/USDT support, Ethereum network, same contract address; launch may be delayed if liquidity is insufficient. Links gokite.ai and gokite.ai/kite-whitepaper."
+    },
+    {
+      "id": "KITE-20",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockchain.news: OKX lists KITE spot and converts pre-market futures to perpetuals, published 2025-11-03 03:33 UTC",
+      "url": "https://blockchain.news/news/okx-lists-kite-spot-trading-converts-futures-perpetual",
+      "retrieved": "2026-10-23",
+      "published": "2025-11-03",
+      "excerpt": "OKX KITE/USDT spot from 13:00 UTC 3 Nov after a 12:00–13:00 call auction; pre-market futures convert to standard USDT perpetuals (0.01–20x per this article) within three hours of spot opening."
+    },
+    {
+      "id": "KITE-21",
+      "type": "news",
+      "tier": 2,
+      "title": "Newsfile: HTX opens trading for Kite (KITE), published 2025-11-03",
+      "url": "https://business.mammothtimes.com/mammothtimes/article/newsfile-2025-11-3-htx-opens-trading-for-kite-kite-ai",
+      "retrieved": "2026-10-23",
+      "published": "2025-11-03",
+      "excerpt": "HTX lists KITE spot, 10x margin and perpetuals on 3 Nov. Describes a PoS EVM-compatible L1 with 'Modules'; SPACE framework (stablecoin-native, programmable constraints, agent-first auth, compliance-ready, micropayments). Utility at TGE: module activation, ecosystem access, contributor incentives; commissions, staking and governance arrive at mainnet."
+    },
+    {
+      "id": "KITE-22",
+      "type": "news",
+      "tier": 2,
+      "title": "Bitget press release: Bitget lists Kite (KITE), dated 2025-11-03",
+      "url": "https://tools.prnewswire.com/en-us/live/20813/release/20251103EN13641",
+      "retrieved": "2026-10-23",
+      "published": "2025-11-03",
+      "excerpt": "KITE/USDT spot on Bitget from 13:00 UTC 3 Nov in its Innovation/AI zone; Kite described as an EVM-compatible L1 aiming to be 'the first AI payment blockchain'. No metrics, tokenomics or mainnet status."
+    },
+    {
+      "id": "KITE-23",
+      "type": "news",
+      "tier": 2,
+      "title": "PANews weekly preview: KITE claims open and Binance listing, published 2025-11-02",
+      "url": "https://panewscn.substack.com/p/kite",
+      "retrieved": "2026-10-23",
+      "published": "2025-11-02",
+      "excerpt": "KITE Foundation airdrop checker live; claims open 3 Nov. Testnet and NFT snapshots completed. 1.8B (18%) initial circulating; 48% to community and ecosystem; 50M KITE for marketing after six months."
+    },
+    {
+      "id": "KITE-24",
+      "type": "news",
+      "tier": 2,
+      "title": "Phemex News: Coinbase to launch KITE spot trading on 3 November (citing Wu Blockchain), published 2025-11-03",
+      "url": "https://phemex.com/news/article/coinbase-to-launch-kite-kite-spot-trading-on-november-3-32394",
+      "retrieved": "2026-10-23",
+      "published": "2025-11-03",
+      "excerpt": "Coinbase adds KITE-USD spot on 3 Nov, live later that day subject to liquidity, in supported regions."
+    },
+    {
+      "id": "KITE-25",
+      "type": "news",
+      "tier": 2,
+      "title": "Phemex News: Binance Launchpool introduces AI payment project Kite, published 2025-10-31",
+      "url": "https://phemex.com/news/article/binance-launchpool-introduces-ai-payment-project-kite-kite-31670",
+      "retrieved": "2026-10-23",
+      "published": "2025-10-31",
+      "excerpt": "71st Launchpool project; total supply 10B; initial circulating 1.8B (18%); two-day farming from 1 Nov; listing 3 Nov 21:00 UTC+8 on BNB Chain, Ethereum and Avalanche."
+    }
+  ],
+  "metrics": {
+    "total_supply": {
+      "value": 10000000000,
+      "source": "KITE-01",
+      "note": "10B fixed total/max supply per Binance announcement (KITE-01, KITE-25) and KITE Foundation tokenomics (KITE-03)"
+    },
+    "circulating_supply": {
+      "value": 1800000000,
+      "source": "KITE-01",
+      "note": "initial circulating at Binance listing (18%); figure originates with the project via the exchange announcement — not reconciled on-chain"
+    },
+    "market_cap_usd": {
+      "value": 315000000,
+      "source": "KITE-06",
+      "note": "DERIVED pre-listing snapshot: ~$0.175 pre-market perp price on Bybit/OKX (31 Oct, KITE-06, KITE-07) x 1.8B initial circulating. Perp pre-market, not spot; no spot price existed before 13:00 UTC on 3 Nov"
+    },
+    "fdv_usd": {
+      "value": 1750000000,
+      "source": "KITE-06",
+      "note": "DERIVED: ~$0.175 pre-market price x 10B total supply"
+    },
+    "insider_allocation_pct": {
+      "value": 32,
+      "source": "KITE-03",
+      "note": "team, advisors & early contributors 20% + investors 12%. Modules (20%) and ecosystem (48%) excluded although both are foundation-administered"
+    },
+    "annualized_revenue_usd": {
+      "value": 0,
+      "source": "KITE-05",
+      "note": "mainnet not live; commission-based value capture only starts at mainnet (KITE-05, KITE-21). No protocol revenue at listing"
+    }
+  },
+  "claims": []
+}

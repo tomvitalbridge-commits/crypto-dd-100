@@ -1,0 +1,43 @@
+# REAL project, PUBLIC sources only, POINT-IN-TIME review.
+# Kite (KITE) was listed for spot trading on Binance (Launchpool, Seed Tag) and
+# Coinbase on 2025-11-03 at 13:00 UTC. This review uses only information
+# published on or before 2025-11-03 — what a listing analyst could have known
+# that morning. Every source carries a `published` date; `retrieved` is when it
+# was read. No `collect:` block on purpose: the collectors pull today's data,
+# which would leak post-listing outcomes.
+project: Kite (KITE)
+profile: l1_l2         # PoS EVM L1 (Avalanche-based) for agent payments; token is the chain's staking/gas/governance asset
+as_of: 2025-11-03
+
+evidence:
+  - evidence/market_tokenomics.json
+  - evidence/team_protocol_security.json
+
+assessments:
+  - assessments/agent.yaml
+
+# Metrics deliberately NOT set, and why. Each becomes a note in the report.
+notes:
+  S06: "(gate RF01) mint_authority not set. KITE is a LayerZero OFT (KITE-15): no public mint, but supply on non-native chains is minted on receipt from peers the owner configures (setPeer/setDelegate), and the owner can pause all transfers. The owner() address and whether it is an EOA or multisig could not be read (no RPC/explorer read access in this review). Ask: owner of the KITE OFT on Ethereum, BNB Chain and Avalanche, its multisig threshold and signers, and the LayerZero DVN configuration."
+  S08: "(gate RF04) unreimbursed_exploit_usd not set. Token contracts were ~4 weeks old at listing; no incident appears in any pre-listing source reviewed, but no incident database (rekt, SlowMist, DefiLlama hacks) could be queried. A search result headline about an attack on the Ethereum KITE token was seen but could not be opened or dated, so it was neither used nor ruled out."
+  L05: "(gate RF05) active_enforcement_action not set. No enforcement or litigation is mentioned in any source reviewed (funding coverage, exchange notices), but SEC/CFTC/court and other regulator databases were not searched. Needs a regulator/court check on Kite AI Inc. (formerly ZettaBlock), the KITE Foundation and the founders."
+  L03: "sanctions_exposure not set: no wallet screening available. Needs Chainalysis/TRM screening of deployer (0x148c…8799), foundation, team and top-holder addresses."
+  K04: "No pre-listing source publishes cliffs or durations for team (20%), investors (12%), modules (20%) or ecosystem (48%) — only 'multi-year vesting' (KITE-05). OKX warned on 30 Oct that the issuance plan was not finalised (KITE-08). 12-month and 90-day (gate RF08) unlock pressure cannot be computed. Ask the project for the full vesting schedule and which of the 1.8B initial circulating sits with the foundation vs the market."
+  T06: "team_vesting_months not set: only 'multi-year vesting' is stated (KITE-05)."
+  K03: "No holder distribution as of listing: claims opened on listing day (KITE-23) and on-chain explorers could not be queried point-in-time."
+  K06: "Last private round price undisclosed — the CEO declined to give the valuation or say whether investors hold token warrants (KITE-10)."
+  K08: "Emission schedule (module rewards, 'piggy bank' emissions, staking) not published with numbers."
+  M01: "No spot order book existed before 13:00 UTC on 3 Nov; only pre-market perps (KITE-08). Depth, spread, volume, venue share and realised volatility are not observable at as_of."
+  M04: "See M01."
+  M08: "See M01: no 30-day price history (pre-market began 29 Oct)."
+  O01: "Mainnet not live (KITE-05, KITE-21). Testnet activity is points/XP-incentivised (KITE-27) and was not measured here; no daily active address, retention or fee-payer data for a production chain."
+  O04: "No mainnet, so no TVL."
+  O08: "PayPal and Shopify integrations are pilots (KITE-11); no live integration count established."
+  P06: "GitHub activity not measured: the audited repo (GoKite-AI/contracts-external) was not reachable from this review, and no public chain/node repository was found."
+  S04: "The KITE token is not a proxy (KITE-15), but owner-controlled setPeer/pause take effect immediately; the Kite chain's own upgrade process is undocumented in the sources reviewed."
+  S07: "No dated bug-bounty programme found before listing."
+  B06: "Foundation treasury and Kite AI Inc. burn not published; $33M raised (KITE-09)."
+  T10: "No project claim could be checked against an independent observation as of listing (no testnet or on-chain metrics were published by the project in the sources found); T10 left unscored rather than awarded."
+  D03: "Holder count at listing not observable (airdrop claims opened 3 Nov)."
+  D07: "No governance exists before mainnet (KITE-05)."
+  C02: "No category share data for agent-payment chains as of listing."
