@@ -8,7 +8,7 @@ pipeline. A Claude **skill** does the research and makes cited judgments; a
 deterministic **harness** verifies every judgment against its evidence,
 computes the score, applies red-flag gates and writes the committee memo.
 
-**Contents:** [Framework](#the-framework) · [Red flags](#red-flags-that-dont-average-out) · [How it works](#how-it-works-skill--harness) · [Case study: Hyperliquid](#case-study-hyperliquid-hype) · [Quick start](#quick-start)
+**Contents:** [Framework](#the-framework) · [Red flags](#red-flags-that-dont-average-out) · [How it works](#how-it-works-skill--harness) · [Case study: Hyperliquid](#case-study-hyperliquid-hype) · [Backtest](#backtest-a-year-of-binance-and-coinbase-listings) · [Quick start](#quick-start)
 
 ---
 
@@ -155,6 +155,33 @@ report are in **[examples/hyperliquid](examples/hyperliquid)**.
 
 ---
 
+## Backtest: a year of Binance and Coinbase listings
+
+We applied the same framework, with no tuning, to all **120 spot listings
+Binance and Coinbase made between Oct 2025 and Oct 2026**, using only data
+available on listing day. Each token was then measured against BTC over the
+following 90 days.
+
+![Float at listing vs 90-day return](docs/img/backtest-float.png)
+
+- **The base rate is harsh.** 85% of new listings lagged BTC over 90 days,
+  with a median underperformance of 34 points.
+- **Float at listing was the clearest warning.** Float is the share of supply
+  actually circulating. All 9 tokens that listed under 15% float lagged BTC,
+  by a median of 74%. Tokens with more than 40% float lagged by a median of
+  21% (ρ +0.26, p=0.01, 89 unique tokens).
+- **Listing-day volume was a second signal (ρ −0.30), and it isn't in the
+  framework yet.** Heavy day-one trading preceded weaker returns.
+- **The composite screening score was weak** (ρ +0.15, p=0.15), because free
+  public data fills only about 2 of the 100 dimensions on listing day. That
+  is the case for a full review, and it is an honest limit of screening on
+  public data alone.
+
+Full method, caveats (look-ahead in supply data, sample size, market regime)
+and reproduction steps: **[docs/BACKTEST.md](docs/BACKTEST.md)**.
+
+---
+
 ## Quick start
 
 ```bash
@@ -165,7 +192,7 @@ dd100 validate                                  # framework integrity
 dd100 run examples/hyperliquid/manifest.yaml    # real project: CONDITIONAL
 dd100 run examples/halcyon/manifest.yaml        # fictional: CONDITIONAL
 dd100 run examples/moonvault/manifest.yaml      # fictional: REJECT, RF01 critical
-pytest -q                                       # 31 tests
+pytest -q                                       # 33 tests
 ```
 
 **Review a real project**
@@ -212,14 +239,15 @@ dd100/                      harness (no thresholds in code)
 skills/crypto-dd/           Claude skill + research playbook + red-flag patterns
 examples/                   Hyperliquid (real, public data) + two fictional projects, with reports
 docs/                       METHODOLOGY · ARCHITECTURE · FRAMEWORK
-tests/                      31 tests incl. end-to-end verdicts
+tests/                      33 tests incl. end-to-end verdicts
 ```
 
 ## Limitations and next steps
 
-- **Thresholds are judgment-calibrated, not back-tested.** The next step is
-  fitting the bands against historical listings and their 6/12-month outcomes
-  (liquidity retention, drawdown vs sector, delisting).
+- **Thresholds are judgment-calibrated.** The [listing backtest](docs/BACKTEST.md)
+  checks the screening layer against 12 months of real listings and points to
+  two changes: a low-float gate and a listing-day hype dimension. They are not
+  applied yet; the honest test is the next 12 months of listings.
 - **Free collectors only.** Depth, wallet screening and entity labels need paid
   data; the collector interface is ready for them (see ARCHITECTURE.md).
 - **Snapshot, not monitor.** Post-listing surveillance = scheduled re-runs with

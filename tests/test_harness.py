@@ -206,3 +206,23 @@ def test_null_metric_means_not_applicable(fw):
     pack = _pack(metrics={"price_to_last_round_multiple": Metric("price_to_last_round_multiple", None, "E1", "no round")})
     ds = score_rule(fw.dimensions["K06"], pack)
     assert ds.status == "na" and "no round" in ds.notes[0]
+
+
+def test_no_claims_means_disclosure_unscored(fw, tmp_path):
+    """Zero contradictions is not evidence of honesty when nothing was checked."""
+    pack = {"project": "x", "as_of": "2026-01-01", "sources": [{"id": "S", "tier": 2}],
+            "metrics": {"circulating_supply": {"value": 1, "source": "S"}}, "claims": []}
+    (tmp_path / "pack.json").write_text(json.dumps(pack))
+    (tmp_path / "m.yaml").write_text("project: x\nprofile: defi\nevidence:\n  - pack.json\n")
+    a, _ = run(tmp_path / "m.yaml", fw=fw)
+    assert a.dims["T10"].status == "unscored"
+
+
+def test_backtest_inputs_are_consistent():
+    import pandas as pd
+    f = ROOT / "data" / "backtest" / "features.csv"
+    df = pd.read_csv(f, dtype={"sym": str})
+    assert len(df) == 120 and set(df.ex) == {"binance", "coinbase"}
+    cols = ["p0", "p30", "p90", "plast", "btc0", "circ0", "max_supply", "tvl0", "rev_ann0"]
+    calc = df[cols].fillna(0).sum(axis=1)
+    assert ((calc - df.chk).abs() / df.chk.abs().clip(lower=1) < 1e-4).all()

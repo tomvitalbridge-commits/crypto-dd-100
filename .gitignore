@@ -6,3 +6,4 @@ projects/*
 !projects/README.md
 **/assessments/llm.generated.yaml
 **/evidence/auto.json
+data/backtest/runs/

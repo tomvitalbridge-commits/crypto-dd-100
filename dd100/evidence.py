@@ -120,7 +120,13 @@ def add_derived_metrics(pack: EvidencePack, contradictions: list[Contradiction])
         if name not in pack.metrics:
             pack.metrics[name] = Metric(name=name, value=value, source=HARNESS_SOURCE_ID, note=note)
 
-    put("contradiction_count", len(contradictions), "claims contradicted by independent observation")
+    # Zero contradictions only means something if claims were actually checked.
+    # With no claims in the pack the metric stays unset, so T10 is unscored
+    # rather than silently awarded full marks.
+    checkable = [c for c in pack.claims if c.metric in pack.metrics]
+    if checkable:
+        put("contradiction_count", len(contradictions),
+            f"claims contradicted by independent observation ({len(checkable)} checked)")
 
     mv = {k: m.value for k, m in pack.metrics.items()}
     mv = {k: v for k, v in mv.items() if v is not None}

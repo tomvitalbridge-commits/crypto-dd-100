@@ -1,0 +1,167 @@
+{
+  "events": 120,
+  "by_exchange": {
+    "coinbase": 91,
+    "binance": 29
+  },
+  "window": [
+    "2025-10-23",
+    "2026-10-21"
+  ],
+  "n90": 105,
+  "unique_tokens90": 89,
+  "base_rate": {
+    "x30": {
+      "median": -0.269,
+      "share_below_btc": 0.842,
+      "n": 114
+    },
+    "x90": {
+      "median": -0.336,
+      "share_below_btc": 0.848,
+      "n": 105
+    },
+    "xlast": {
+      "median": -0.489,
+      "share_below_btc": 0.85,
+      "n": 120
+    }
+  },
+  "by_exchange_x90": {
+    "binance": {
+      "size": 26,
+      "median": -0.353
+    },
+    "coinbase": {
+      "size": 79,
+      "median": -0.324
+    }
+  },
+  "signals_event": {
+    "score": {
+      "rho": 0.12,
+      "p": 0.224,
+      "n": 105
+    },
+    "circ_pct": {
+      "rho": 0.234,
+      "p": 0.0161,
+      "n": 105
+    },
+    "fdv_mcap": {
+      "rho": -0.234,
+      "p": 0.0161,
+      "n": 105
+    },
+    "vol0": {
+      "rho": -0.247,
+      "p": 0.011,
+      "n": 105
+    },
+    "unlock12": {
+      "rho": -0.012,
+      "p": 0.9443,
+      "n": 38
+    },
+    "insider_pct": {
+      "rho": -0.121,
+      "p": 0.4684,
+      "n": 38
+    },
+    "rev_ann0": {
+      "rho": -0.028,
+      "p": 0.8954,
+      "n": 25
+    },
+    "tvl0": {
+      "rho": 0.111,
+      "p": 0.607,
+      "n": 24
+    }
+  },
+  "signals_token": {
+    "score": {
+      "rho": 0.154,
+      "p": 0.1491,
+      "n": 89
+    },
+    "circ_pct": {
+      "rho": 0.258,
+      "p": 0.0147,
+      "n": 89
+    },
+    "vol0": {
+      "rho": -0.298,
+      "p": 0.0045,
+      "n": 89
+    }
+  },
+  "circ_pct_schedule_subset": {
+    "rho": 0.417,
+    "p": 0.0092,
+    "n": 38
+  },
+  "coverage_median_dims": 2.0,
+  "float_buckets": {
+    "<15%": {
+      "n": 9,
+      "median": -0.739,
+      "share_below_btc": 1.0
+    },
+    "15-25%": {
+      "n": 47,
+      "median": -0.334,
+      "share_below_btc": 0.872
+    },
+    "25-40%": {
+      "n": 22,
+      "median": -0.424,
+      "share_below_btc": 0.909
+    },
+    ">40%": {
+      "n": 27,
+      "median": -0.207,
+      "share_below_btc": 0.704
+    }
+  },
+  "score_terciles": {
+    "low": {
+      "n": 35,
+      "median": -0.334,
+      "score_range": [
+        0.0,
+        25.0
+      ]
+    },
+    "mid": {
+      "n": 35,
+      "median": -0.462,
+      "score_range": [
+        27.8,
+        54.6
+      ]
+    },
+    "high": {
+      "n": 35,
+      "median": -0.26,
+      "score_range": [
+        60.1,
+        100.0
+      ]
+    }
+  },
+  "volume_terciles": {
+    "low": {
+      "n": 35,
+      "median": -0.202
+    },
+    "mid": {
+      "n": 35,
+      "median": -0.485
+    },
+    "high": {
+      "n": 35,
+      "median": -0.397
+    }
+  }
+}

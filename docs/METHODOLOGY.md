@@ -87,9 +87,10 @@ consumer app; custody for a DEX). See `config/scoring.yaml`.
 
 ## Known limitations
 
-- Thresholds are starting points calibrated on judgment, not fitted to a
-  labelled history of listings. The right next step is back-testing against
-  past listings and their 6- and 12-month outcomes, then tuning the bands.
+- Thresholds are starting points calibrated on judgment. [BACKTEST.md](BACKTEST.md)
+  tests the public-data screening layer against 120 Binance/Coinbase listings:
+  float at listing predicted 90-day returns; the composite screening score
+  only weakly. Thresholds were deliberately not re-fitted to that sample.
 - Rule dimensions are only as good as the metric definitions. K03 in particular
   depends on correctly labelling exchange, bridge and vesting addresses.
 - The collectors cover free public APIs. Order-book depth, wallet screening and
