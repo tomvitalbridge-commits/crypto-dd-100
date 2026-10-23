@@ -186,7 +186,7 @@
         "MEGA-06",
         "MEGA-16"
       ],
-      "rationale": "One high-spec sequencer (100+ cores, TB-scale RAM) run by MegaLabs; BlockSec found DoS paths at the 10B gas limit, mitigated by a 200M compute-gas cap rather than fixed. Liveness limits are acknowledged in the white paper.",
+      "rationale": "One high-spec sequencer (100+ cores, TB-scale RAM) run by MegaLabs; BlockSec found DoS paths at the 10B gas limit, three confirmed but not fixed in code; a 200M compute-gas cap mitigates the opcode-loop path. Liveness limits are acknowledged in the white paper.",
       "assessor": "agent:claude",
       "notes": []
     },
@@ -290,7 +290,7 @@
       "evidence": [
         "MEGA-17"
       ],
-      "rationale": "BlockSec's 4 High MegaEVM findings: 1 Fixed, 3 Confirmed and mitigated by a compute-gas cap rather than code fixes; SALT Medium fixed. Spearbit/Sherlock remediation is claimed but unpublished.",
+      "rationale": "BlockSec's 4 High MegaEVM findings: 1 Fixed and 3 Confirmed but not fixed in code; the 200M compute-gas cap is documented as the mitigation for the opcode-loop finding only; SALT Medium fixed. Spearbit/Sherlock remediation is claimed but unpublished.",
       "assessor": "agent:claude",
       "notes": []
     },

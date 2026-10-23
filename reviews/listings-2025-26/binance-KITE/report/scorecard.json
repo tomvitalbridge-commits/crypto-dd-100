@@ -89,7 +89,7 @@
         "KITE-15",
         "KITE-21"
       ],
-      "rationale": "No governance exists at TGE; the token contract owner can pause transfers and set cross-chain peers; holder governance is promised for an undated mainnet.",
+      "rationale": "No governance exists at TGE; the token contract exposes owner, pause/unpause and cross-chain peer functions (access control on pause not confirmed from source); holder governance is promised for an undated mainnet.",
       "assessor": "agent:claude",
       "notes": []
     },
@@ -335,7 +335,7 @@
         "KITE-15",
         "KITE-16"
       ],
-      "rationale": "No direct mint function, but the owner can pause all transfers and sets the LayerZero peers whose messages mint supply on other chains; who holds that key is undisclosed.",
+      "rationale": "No direct mint function, but the contract has owner-gated admin functions (pause/unpause per the ABI; onlyOwner on pause not confirmed from source) and an owner who sets the LayerZero peers whose messages mint supply on other chains; who holds that key is undisclosed.",
       "assessor": "agent:claude",
       "notes": [
         "(gate RF01) mint_authority not set. KITE is a LayerZero OFT (KITE-15): no public mint, but supply on non-native chains is minted on receipt from peers the owner configures (setPeer/setDelegate), and the owner can pause all transfers. The owner() address and whether it is an EOA or multisig could not be read (no RPC/explorer read access in this review). Ask: owner of the KITE OFT on Ethereum, BNB Chain and Avalanche, its multisig threshold and signers, and the LayerZero DVN configuration."

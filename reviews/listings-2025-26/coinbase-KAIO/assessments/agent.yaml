@@ -13,7 +13,7 @@ assessments:
 - {id: T05, score: 3, confidence: medium, evidence: [KAIO-19, KAIO-08, KAIO-11], assessor: "agent:claude", rationale: "No VARA notice and no allegations in 2024–26 press coverage; court records, other regulators and wallet history were not checked, so not a 4."}
 - {id: T07, score: 1, confidence: medium, evidence: [KAIO-01, KAIO-05, KAIO-16], assessor: "agent:claude", rationale: "The KAIO Foundation was set up in Apr 2026 and token voting is promised but not live at TGE; on the platform a KAIO Admin role sits at the top of all permissions."}
 - {id: T08, status: pending, rationale: "missing: Foundation/treasury and vesting wallet addresses; the token docs page and Etherscan were not accessible for this review"}
-- {id: T09, score: 3, confidence: high, evidence: [KAIO-08, KAIO-09, KAIO-14], assessor: "agent:claude", rationale: "Incubated by Laser Digital (Nomura) and WebN (Alan Howard); $19M raised including Tether, Brevan Howard Digital and Further. Round terms are undisclosed, and early investors hold 31% of supply."}
+- {id: T09, score: 3, confidence: high, evidence: [KAIO-08, KAIO-09, KAIO-14], assessor: "agent:claude", rationale: "Incubated by Laser Digital (Nomura) and WebN (Alan Howard); $19M raised in total; the $8M round in Apr 2026 brought in Tether and Systemic Ventures, with existing investors Further Ventures and Laser Digital (WebN is the incubator, not a round participant). Round terms are undisclosed, and early investors hold 31% of supply."}
 
 # --- P Product & Technology
 - {id: P01, score: 2, confidence: medium, evidence: [KAIO-08, KAIO-11, KAIO-17], assessor: "agent:claude", rationale: "Real problem (on-chain access to institutional funds), but two years in, AUM is about $108.5M, against claims of more than $200M issued, so demand looks modest."}
@@ -75,7 +75,7 @@ assessments:
 
 # --- L Legal & Compliance
 - {id: L01, score: 2, confidence: medium, evidence: [KAIO-09, KAIO-15, KAIO-01], assessor: "agent:claude", rationale: "HQ in ADGM, a Singapore VCC fund entity and LibreCo Holdings are identifiable; the issuer of the KAIO token (KAIO Foundation) has no stated jurisdiction."}
-- {id: L02, score: 2, confidence: low, evidence: [KAIO-05, KAIO-01, KAIO-16], assessor: "agent:claude", rationale: "Marketed as governance/access with no fee rights; insiders hold 45.5%, and the platform is centrally administered."}
+- {id: L02, score: 2, confidence: low, evidence: [KAIO-05, KAIO-01, KAIO-16], assessor: "agent:claude", rationale: "Marketed as governance/access with no fee rights; team and investors hold 42% (45.5% with pre-TGE sale buyers), and the platform is centrally administered."}
 - {id: L04, score: 2, confidence: medium, evidence: [KAIO-17, KAIO-15, KAIO-09], assessor: "agent:claude", rationale: "KAIO holds no licences itself and relies on a MAS-regulated manager and third-party administrators; distribution is said to run under CIMA/MAS frameworks, but no ADGM licence is named."}
 - {id: L05, score: 3, confidence: medium, evidence: [KAIO-19, KAIO-08, KAIO-11], assessor: "agent:claude", rationale: "No regulator action on VARA's list and none in press coverage; FSRA, MAS and court records were not searched directly."}
 - {id: L06, score: 4, confidence: medium, evidence: [KAIO-15, KAIO-13, KAIO-11], assessor: "agent:claude", rationale: "No privacy features; fund tokens transfer only between KYC'd, allowlisted investors."}

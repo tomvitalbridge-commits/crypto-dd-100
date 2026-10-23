@@ -90,9 +90,9 @@
       "note": "12-month cliff + 24-month linear; same terms in KAIO-04"
     },
     "insider_allocation_pct": {
-      "value": 45.5,
+      "value": 42,
       "source": "KAIO-05",
-      "note": "team 11% + early investors 31% + pre-TGE sale 3.5% (KAIO-03, KAIO-04). Adding the Foundation's 17% gives 62.5%."
+      "note": "team 11% + early investors 31% (KAIO-03, KAIO-04). Pre-TGE sale buyers (3.5%) are not counted as insiders; including them gives 45.5% (KAIO-05). Adding the Foundation's 17% to 45.5% gives 62.5%."
     },
     "unlock_90d_pct_of_circ": {
       "value": 0,

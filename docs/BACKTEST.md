@@ -144,7 +144,7 @@ infrastructure tokens.
 | Token | Listed | Score (range) | Grade | Coverage | Gates fired | 90d vs BTC | To 23 Oct 2026 |
 |---|---|---|---|---:|---|---:|---:|
 | MMT | Binance 2025-11-04 | 52.6 (15–87) | C | 51% | – | -92% | -93% |
-| KAIO | Coinbase 2026-05-06 | 43.9 (14–86) | D | 47% | – | -88% | -85% |
+| KAIO | Coinbase 2026-05-06 | 44.3 (14–86) | D | 47% | – | -88% | -85% |
 | MEGA | Binance 2026-04-30 | 55.9 (21–85) | C | 56% | – | -74% | -75% |
 | FOGO | Binance 2026-01-15 | 48.1 (18–82) | D | 54% | RF09,RF14 | -51% | -90% |
 | LIGHTER | Coinbase 2026-01-15 | 62.3 (28–85) | C | 61% | RF06 | -29% | +115% |
@@ -177,8 +177,8 @@ What they got wrong:
 
 - **KITE and GWEI scored D and were the two best performers** (+148% and
   +179% vs BTC at 90 days). They carried the same kind of risk as
-  MMT and KAIO: KITE listed at 18% float with no mainnet and an undisclosed
-  pause key; GWEI at 17.5% float, 59% insiders, 12-month unlocks of 73% and
+  MMT and KAIO: KITE listed at 18% float with no mainnet and admin functions
+  (pause, cross-chain peers) held by an undisclosed owner; GWEI at 17.5% float, 59% insiders, 12-month unlocks of 73% and
   no full audit (RF09, RF11, RF14 fired). The reviews saw the risk but not
   which way it would break.
 
@@ -198,7 +198,14 @@ Point-in-time research from today is never fully blind. What was checked:
 - Every source in every evidence pack carries a publication date, and the
   harness reports the `as_of` date. After the reviews, an independent agent
   re-checked 24 load-bearing claims across the ten packs for accuracy and
-  for sources dated after `as_of`.
+  for sources dated after `as_of`. 19 held up, one was wrong (a backer
+  wrongly placed in KAIO's round), three overstated their sources (FOGO's
+  presale, MEGA's audit mitigations, Lighter's upgrade governance) and one
+  needed rewording (KAIO's insider share, 45.5% → 42% once pre-TGE buyers
+  are excluded). None relied only on a post-`as_of` source. All five, plus an
+  unconfirmed detail about KITE's pause control, were corrected and the
+  reviews re-run; KAIO moved from 43.9 to
+  44.3 and nothing else changed.
 - Where the reviewer saw later information while searching, it is disclosed
   in that review's notes: MEGA (post-listing price fall seen in search
   results, not used), DRV (an October all-time high seen, not used), MMT

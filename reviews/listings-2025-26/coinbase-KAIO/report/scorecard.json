@@ -119,7 +119,7 @@
         "KAIO-09",
         "KAIO-14"
       ],
-      "rationale": "Incubated by Laser Digital (Nomura) and WebN (Alan Howard); $19M raised including Tether, Brevan Howard Digital and Further. Round terms are undisclosed, and early investors hold 31% of supply.",
+      "rationale": "Incubated by Laser Digital (Nomura) and WebN (Alan Howard); $19M raised in total; the $8M round in Apr 2026 brought in Tether and Systemic Ventures, with existing investors Further Ventures and Laser Digital (WebN is the incubator, not a round participant). Round terms are undisclosed, and early investors hold 31% of supply.",
       "assessor": "agent:claude",
       "notes": []
     },
@@ -446,12 +446,12 @@
     "K05": {
       "dim_id": "K05",
       "status": "scored",
-      "score": 1,
+      "score": 2,
       "confidence": "medium",
       "evidence": [
         "KAIO-05"
       ],
-      "rationale": "insider_allocation_pct = 45.5  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "rationale": "insider_allocation_pct = 42  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
       "assessor": "rule",
       "notes": []
     },
@@ -1168,7 +1168,7 @@
         "KAIO-01",
         "KAIO-16"
       ],
-      "rationale": "Marketed as governance/access with no fee rights; insiders hold 45.5%, and the platform is centrally administered.",
+      "rationale": "Marketed as governance/access with no fee rights; team and investors hold 42% (45.5% with pre-TGE sale buyers), and the platform is centrally administered.",
       "assessor": "agent:claude",
       "notes": []
     },
@@ -1315,7 +1315,7 @@
       "pillar": "K",
       "name": "Tokenomics & Supply",
       "weight": 10,
-      "score": 1.3333333333333333,
+      "score": 1.5,
       "coverage": 0.6,
       "sufficient": true,
       "scored": 5,
@@ -1510,9 +1510,9 @@
       "deviation": 0.8433179723502304
     }
   ],
-  "point_score": 43.9,
-  "score_low": 13.6,
-  "score_high": 86.2,
+  "point_score": 44.3,
+  "score_low": 13.9,
+  "score_high": 86.5,
   "coverage": 0.473,
   "grade": "D",
   "verdict": "INSUFFICIENT_DATA",

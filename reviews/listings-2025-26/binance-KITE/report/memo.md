@@ -16,7 +16,7 @@
 
 1. Problem clarity & real demand (1/4) — Agent payments is a real problem, but the lead investor calls current agent activity 'very small and experimental' and the PayPal and Shopify integrations are pilots; no paying users are evidenced.
 2. Product maturity (1/4) — Mainnet is not live at listing; a public testnet has run since February 2025 and staking, commissions and governance are deferred to mainnet; Binance's own disclaimer says features are still in development.
-3. Mint / freeze / blacklist powers (1/4) — No direct mint function, but the owner can pause all transfers and sets the LayerZero peers whose messages mint supply on other chains; who holds that key is undisclosed.
+3. Mint / freeze / blacklist powers (1/4) — No direct mint function, but the contract has owner-gated admin functions (pause/unpause per the ABI; onlyOwner on pause not confirmed from source) and an owner who sets the LayerZero peers whose messages mint supply on other chains; who holds that key is undisclosed.
 
 **What has to be true before we act**
 

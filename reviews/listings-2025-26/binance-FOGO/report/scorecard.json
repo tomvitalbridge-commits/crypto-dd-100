@@ -134,7 +134,7 @@
       "rationale": "contradiction_count = 1  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
       "assessor": "rule",
       "notes": [
-        "Dec 11 tokenomics (FOGO-01/02) and launch tokenomics (FOGO-09/11) differ: institutional 8.77% to 12.06%, Foundation ~30.4% to 21.76% + 6.5% launch liquidity, and the 2% presale cancelled on 13 Dec was re-run as the Binance Prime Sale at a lower price ($0.035 vs $0.10). Recorded as claims C1-C3."
+        "Dec 11 tokenomics (FOGO-01/02) and launch tokenomics (FOGO-09/11) differ: institutional 8.77% to 12.06%, Foundation ~30.4% to 21.76% + 6.5% launch liquidity, and the 2% presale cancelled on 13 Dec was redirected to an airdrop, while a separate 2% was sold a month later in the Binance Wallet Prime Sale ($7M at $0.035 vs the presale's $0.10). Recorded as claims C1-C3."
       ]
     },
     "P01": {
@@ -1122,7 +1122,7 @@
         "FOGO-09",
         "FOGO-10"
       ],
-      "rationale": "Published tokenomics and explained the presale cancellation, but a month later sold the same 2% via the Binance Prime Sale and revised investor and Foundation shares; no explanation of the revisions was found.",
+      "rationale": "Published tokenomics and explained the presale cancellation, but a month later sold a separate 2% via the Binance Wallet Prime Sale at a third of the cancelled presale's price and revised investor and Foundation shares; no explanation of the revisions was found.",
       "assessor": "agent:claude",
       "notes": []
     },

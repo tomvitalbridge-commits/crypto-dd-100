@@ -1,6 +1,6 @@
 # Kaio (KAIO) — DD-100 Due-Diligence Report
 
-> **⚪ INSUFFICIENT DATA** · Grade **D** · Score **43.9/100** (range 14–86) · Evidence coverage **47%**  
+> **⚪ INSUFFICIENT DATA** · Grade **D** · Score **44.3/100** (range 14–86) · Evidence coverage **47%**  
 > Profile `rwa` · Evidence as of 2026-05-06 · 100 dimensions · 21 sources
 
 The range is the honest number: it shows where the score could land once unscored dimensions are filled and low-confidence judgments are firmed up.
@@ -35,7 +35,7 @@ The range is the honest number: it shows where the score could land once unscore
 | T · Team & Governance | 12 | 2.26 | `██████░░░░` | 79% | 8/10 |
 | P · Product & Technology | 8 | 2.20 | `██████░░░░` | 79% | 7/10 |
 | S · Security & Smart Contracts | 12 | 1.60 | `████░░░░░░` | 20% ⚠️ | 3/10 |
-| K · Tokenomics & Supply | 10 | 1.33 | `███░░░░░░░` | 60% | 5/9 |
+| K · Tokenomics & Supply | 10 | 1.50 | `████░░░░░░` | 60% | 5/9 |
 | O · On-chain Traction | 8 | 2.00 | `█████░░░░░` | 20% ⚠️ | 2/9 |
 | M · Market Structure & Liquidity | 8 | 2.00 | `█████░░░░░` | 12% ⚠️ | 2/10 |
 | B · Business Model & Fundamentals | 12 | 0.00 | `░░░░░░░░░░` | 11% ⚠️ | 1/10 |
@@ -147,7 +147,7 @@ Everything below is unscored. Each one is a question to put to the team or a dat
 | T06 | Team vesting length | rule | 2 | **3** | medium | KAIO-03 | team_vesting_months = 36  (bands 4:≥48, 3:≥36, 2:≥24, 1:≥12) |
 | T07 | Governance design & decentralisation path | agent | 2 | **1** | medium | KAIO-01, KAIO-05, KAIO-16 | The KAIO Foundation was set up in Apr 2026 and token voting is promised but not live at TGE; on the platform a KAIO Admin role sits at the top of all permissions. |
 | T08 | Treasury transparency | agent | 2 | – |  |  | missing: Foundation/treasury and vesting wallet addresses; the token docs page and Etherscan were not accessible for this review |
-| T09 | Backer quality & cap table | agent | 2 | **3** | high | KAIO-08, KAIO-09, KAIO-14 | Incubated by Laser Digital (Nomura) and WebN (Alan Howard); $19M raised including Tether, Brevan Howard Digital and Further. Round terms are undisclosed, and early investors hold 31% of supply. |
+| T09 | Backer quality & cap table | agent | 2 | **3** | high | KAIO-08, KAIO-09, KAIO-14 | Incubated by Laser Digital (Nomura) and WebN (Alan Howard); $19M raised in total; the $8M round in Apr 2026 brought in Tether and Systemic Ventures, with existing investors Further Ventures and Laser Digital (WebN is the incubator, not a round participant). Round terms are undisclosed, and early investors hold 31% of supply. |
 | T10 | Disclosure honesty | rule | 3 | **2** | high | HARNESS | contradiction_count = 1  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2) |
 
 ### P · Product & Technology
@@ -188,7 +188,7 @@ Everything below is unscored. Each one is a question to put to the team or a dat
 | K02 | Circulating ratio | rule | 2 | **0** | high | HARNESS | circulating_supply_pct = 6.8  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15) |
 | K03 | Holder concentration | rule | 3 | – |  |  | metric 'top10_holder_pct_ex_contracts' not in evidence pack; top10_holder_pct_ex_contracts not set: at TGE, supply sits in Foundation, community and vesting wallets, and airdrop claims open on 8 May. Needs labelled holder data on the day. |
 | K04 | 12-month unlock pressure | rule | 3 | **1** | medium | KAIO-03 | unlock_12m_pct_of_circ = 84.6  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤100) |
-| K05 | Insider allocation | rule | 2 | **1** | medium | KAIO-05 | insider_allocation_pct = 45.5  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55) |
+| K05 | Insider allocation | rule | 2 | **2** | medium | KAIO-05 | insider_allocation_pct = 42  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55) |
 | K06 | Investor cost-basis overhang | rule | 2 | – |  |  | metric 'price_to_last_round_multiple' not in evidence pack; price_to_last_round_multiple not set: round prices (early investors 31%, pre-TGE sale 3.5%) and the listing price were not found in sources dated on or before 2026-05-06. |
 | K07 | FDV / market cap | rule | 2 | – |  |  | metric 'fdv_to_mcap' not in evidence pack; market_cap_usd / fdv_usd not set: trading began on listing day (KuCoin 13:00 UTC, Coinbase conditional on liquidity) and no pre-listing price or pre-market quote was found. Later values were deliberately not looked up. |
 | K08 | Annual inflation | rule | 2 | **4** | medium | KAIO-03 | annual_inflation_pct = 0  (bands 4:≤2, 3:≤5, 2:≤10, 1:≤20) |
@@ -275,7 +275,7 @@ Everything below is unscored. Each one is a question to put to the team or a dat
 | ID | Dimension | Method | W | Score | Conf. | Evidence | Basis |
 |---|---|---|---:|---:|---|---|---|
 | L01 | Legal entity & jurisdiction | agent | 2 | **2** | medium | KAIO-09, KAIO-15, KAIO-01 | HQ in ADGM, a Singapore VCC fund entity and LibreCo Holdings are identifiable; the issuer of the KAIO token (KAIO Foundation) has no stated jurisdiction. |
-| L02 | Securities-law risk | agent | 3 | **2** | low | KAIO-05, KAIO-01, KAIO-16 | Marketed as governance/access with no fee rights; insiders hold 45.5%, and the platform is centrally administered. |
+| L02 | Securities-law risk | agent | 3 | **2** | low | KAIO-05, KAIO-01, KAIO-16 | Marketed as governance/access with no fee rights; team and investors hold 42% (45.5% with pre-TGE sale buyers), and the platform is centrally administered. |
 | L03 | Sanctions & AML exposure | rule | 3 | – |  |  | metric 'sanctions_exposure' not in evidence pack; sanctions_exposure unknown: needs venue wallet screening of the deployer, Foundation, vesting and top-holder addresses. |
 | L04 | Licensing for regulated activity | agent | 2 | **2** | medium | KAIO-17, KAIO-15, KAIO-09 | KAIO holds no licences itself and relies on a MAS-regulated manager and third-party administrators; distribution is said to run under CIMA/MAS frameworks, but no ADGM licence is named. |
 | L05 | Litigation & enforcement | agent | 3 | **3** | medium | KAIO-19, KAIO-08, KAIO-11 | No regulator action on VARA's list and none in press coverage; FSRA, MAS and court records were not searched directly. |

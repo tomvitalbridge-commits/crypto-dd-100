@@ -28,5 +28,5 @@ notes:
   B01: "B01, B05, B06, B07, B08 not set: no fee revenue yet; Foundation treasury size and burn rate are not published. Funding raised: $5.5M seed + $8M Echo + $7M Prime Sale (FOGO-07)."
   C02: "No category share at day 0."
   S06: "The FOGO sold in the Prime Sale was subscribed on BSC (FOGO-08). The mint authority and bridge for any BSC representation were not checked; RF01 is set from the native token only."
-  T10: "Dec 11 tokenomics (FOGO-01/02) and launch tokenomics (FOGO-09/11) differ: institutional 8.77% to 12.06%, Foundation ~30.4% to 21.76% + 6.5% launch liquidity, and the 2% presale cancelled on 13 Dec was re-run as the Binance Prime Sale at a lower price ($0.035 vs $0.10). Recorded as claims C1-C3."
+  T10: "Dec 11 tokenomics (FOGO-01/02) and launch tokenomics (FOGO-09/11) differ: institutional 8.77% to 12.06%, Foundation ~30.4% to 21.76% + 6.5% launch liquidity, and the 2% presale cancelled on 13 Dec was redirected to an airdrop, while a separate 2% was sold a month later in the Binance Wallet Prime Sale ($7M at $0.035 vs the presale's $0.10). Recorded as claims C1-C3."
   P10: "fogo.io and docs.fogo.io could not be fetched in this review (access not granted), so official docs, the litepaper, treasury addresses and the published vesting addresses were not read directly."

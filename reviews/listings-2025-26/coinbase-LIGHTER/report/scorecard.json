@@ -90,7 +90,7 @@
         "LIT-01",
         "LIT-24"
       ],
-      "rationale": "A US C-Corp issues LIT and runs the protocol; there is no token-holder vote, the network governor is a single EOA, and decentralisation via staking is described only as 'progressive'.",
+      "rationale": "A US C-Corp issues LIT and runs the protocol; there is no token-holder vote, the network governor is an EOA (a team multisig acting as security council can skip the 21-day upgrade delay), and decentralisation via staking is described only as 'progressive'.",
       "assessor": "agent:claude",
       "notes": []
     },
