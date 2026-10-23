@@ -1,0 +1,185 @@
+{
+  "project": "Lighter (LIT)",
+  "as_of": "2026-01-15",
+  "sources": [
+    {
+      "id": "LIT-01",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Lighter launches native token LIT, allocates half to ecosystem growth (published 30 Dec 2025)",
+      "url": "https://www.theblock.co/post/383940/lighter-native-token-lit",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 30 Dec 2025. Allocation: 50% ecosystem (incl. immediate airdrop of 25% of FDV to points seasons 1–2 and future incentives/partnerships), 26% team, 24% investors; team and investors under a one-year lock and three-year linear vesting. Team: value from all Lighter products 'will fully accrue to LIT holders'; revenue trackable on-chain, used for growth and buybacks. Token issued directly by Lighter's US C-Corp, which operates the protocol 'at cost'; staking tiers planned. LIT ~$2.34 on launch morning vs ~$3.25 pre-market. Lighter November volume $292.5B vs Aster $259.2B."
+    },
+    {
+      "id": "LIT-02",
+      "type": "tokenomics",
+      "tier": 2,
+      "title": "Whale Alert — Lighter launches LIT token: 25% airdropped, 50% team/investors with 1-year lock and 3-year vesting (30 Dec 2025)",
+      "url": "https://whale-alert.io/stories/c2736d8500c1/Lighter-launches-LIT-token-as-native-asset-for-its-zk-rollup-DEX-25-of-supply-airdropped-50-reserved-for-team-investors-with-1year-lock-and-3year-vesting",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 30 Dec 2025. 25% of supply airdropped immediately to season 1–2 points holders (part of the 50% ecosystem share); team 26% and investors 24% locked one year, then linear vesting over three years. Revenues to be split between growth and buybacks depending on market conditions. LIT issued by Lighter's US C-Corp."
+    },
+    {
+      "id": "LIT-03",
+      "type": "news",
+      "tier": 2,
+      "title": "Foresight News (via MEXC) — With Lighter TGE imminent, market expects FDV above $2B? (30 Dec 2025)",
+      "url": "https://www.mexc.com/news/371545",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 30 Dec 2025, pre-launch. Total supply 1 billion LIT; airdrop 25% = 250M LIT. Pre-market LIT perp at $3.46, FDV above $3B. Lighter platform 24h volume $2.147B."
+    },
+    {
+      "id": "LIT-04",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinDesk (via MEXC) — Traders split over whether Lighter's LIT clears $3B FDV after launch (30 Dec 2025)",
+      "url": "https://www.mexc.com/news/374140",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 30 Dec 2025. Pre-market ~$3.20 per CoinMarketCap (FDV >$3B); Polymarket ~even odds of >$3B FDV a day after launch. Dune: Lighter averaged ~$2.7B daily perp volume over the prior week."
+    },
+    {
+      "id": "LIT-05",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News — Coinbase lists Lighter token as LIT nears $3 on launch day (30 Dec 2025)",
+      "url": "https://www.mexc.com/news/377021",
+      "retrieved": "2026-10-23",
+      "excerpt": "Launch-day report (TGE 30 Dec 2025; page itself undated). Coinbase said LIGHTER-USD spot trading would go live once liquidity conditions are met. About 25% of the 1B LIT supply circulating at TGE. LIT traded just under $3, then $2.7–2.9."
+    },
+    {
+      "id": "LIT-06",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Lighter's LIT token rises 14% as protocol indicates active buyback (5 Jan 2026)",
+      "url": "https://www.theblock.co/post/384399/lighter-lit-buyback",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 5 Jan 2026. Lighter said fees and buybacks can be tracked via the treasury account (Account #0) in its block explorer; at 10pm ET 5 Jan it held 180,588 LIT (~$549k). Buyback not formally confirmed; no amounts or prices published. LIT ~$3.04. Lighter reported >$200B December volume (Aster $177.5B, Hyperliquid $169.3B). Public mainnet launched October 2025."
+    },
+    {
+      "id": "LIT-07",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Lighter introduces mandatory LIT staking for liquidity pool access (14 Jan 2026, 21:52 EST)",
+      "url": "https://www.theblock.co/post/385696/lighter-lit-staking",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 14 Jan 2026 21:52 EST (02:52 UTC 15 Jan) — the last pre-listing snapshot used. 1 staked LIT unlocks up to 10 USDC of LLP deposits; existing LLP depositors must stake by 28 Jan. Staking ≥100 LIT waives withdrawal/transfer fees; staking APR undisclosed. Fees for market makers/HFT rising with LIT-staking discounts; retail stays free. LIT $2.07 (−2.56% 24h). December volume >$200B."
+    },
+    {
+      "id": "LIT-14",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Lighter raises $68 million at a $1.5 billion valuation (11 Nov 2025)",
+      "url": "https://www.theblock.co/post/378358/lighter-raises-68-million-1-5-billion-valuation-vc-bets-flood-perp-dex-infrastructure-report",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 11 Nov 2025. $68M round at ~$1.5B valuation (single source with knowledge of the matter), led by Founders Fund and Ribbit Capital with Haun Ventures and Robinhood; round included token warrants. On-chain perp volume hit a record $1.2T in October 2025; perps >56% of DEX volume in 2025."
+    },
+    {
+      "id": "LIT-16",
+      "type": "research",
+      "tier": 2,
+      "title": "0xJermo (Substack) — The thesis: Lighter (2 Jan 2026; author holds LIT, team gave feedback)",
+      "url": "https://0xjermo.substack.com/p/the-thesis-lighter",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2 Jan 2026. Conflict: author holds LIT and Lighter reviewed the draft. Annualised fees ~$132.5M (DefiLlama). Fee model: standard accounts 0/0 fees with latency delays; premium accounts pay maker 0.002 / taker 0.02 (%) for lower latency. OI ~$1.55B (CoinGlass). CEO quoted: TVL 'consolidating around $1.5 billion' (undated). Founder Vladimir Novakovski: Harvard at 18, Citadel, Head of ML at Quora, VP Eng at Addepar. '23 of 28 engineers' olympiad winners. Backers listed: a16z, Coatue, Coinbase, Craft, Dragonfly, Founders Fund, Haun, Lightspeed, Ribbit, Robinhood. Buyback share and timing at team discretion; LIT not yet withdrawable from Lighter, so off-platform LIT may be IOUs; team says it won't pay for listings."
+    },
+    {
+      "id": "LIT-17",
+      "type": "research",
+      "tier": 2,
+      "title": "OneKey blog — Lighter's TGE is imminent: what valuation counts as reasonable? (22 Dec 2025)",
+      "url": "https://onekey.so/blog/ecosystem/lighters-tge-is-imminent-what-valuation-counts-as-reasonable",
+      "retrieved": "2026-10-23",
+      "excerpt": "Figures 'current as of 22 Dec 2025' from DefiLlama: annualised protocol revenue near ~$200M; 30-day perp volume ~$259B; TVL ~$1.46B. Base-case FDV range $2.2–3.6B."
+    },
+    {
+      "id": "LIT-27",
+      "type": "onchain",
+      "tier": 2,
+      "title": "Bitquery DEXrabbit — LIT (Lighter) token on Ethereum",
+      "url": "https://dexrabbit.bitquery.io/eth/token/0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2",
+      "retrieved": "2026-10-23",
+      "excerpt": "ERC-20 'Lighter' (LIT) at 0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2; total supply 1B. No information on mint/owner roles. Only static contract facts were read from this live page; market data on it was ignored."
+    }
+  ],
+  "metrics": {
+    "price_usd": {
+      "value": 2.07,
+      "source": "LIT-07",
+      "note": "last dated pre-listing price found (14 Jan 2026 21:52 EST)"
+    },
+    "market_cap_usd": {
+      "value": 517500000,
+      "source": "LIT-07",
+      "note": "computed: $2.07 (LIT-07) × 250M circulating (LIT-03, LIT-05)"
+    },
+    "fdv_usd": {
+      "value": 2070000000,
+      "source": "LIT-07",
+      "note": "computed: $2.07 × 1B total supply"
+    },
+    "circulating_supply": {
+      "value": 250000000,
+      "source": "LIT-05",
+      "note": "25% airdrop at TGE (LIT-03). Any ecosystem-reserve tokens already released (e.g. LIT reportedly paid to a market maker, LIT-08) are not in this figure — no provider snapshot dated ≤15 Jan was available."
+    },
+    "total_supply": {
+      "value": 1000000000,
+      "source": "LIT-03"
+    },
+    "team_vesting_months": {
+      "value": 48,
+      "source": "LIT-02",
+      "note": "1-year lock then 3-year linear (LIT-02). Some write-ups say '1-year cliff, 3-year vesting', which could mean 36 months total; the vesting contract was not read."
+    },
+    "insider_allocation_pct": {
+      "value": 50,
+      "source": "LIT-01",
+      "note": "team 26% + investors 24%"
+    },
+    "unlock_90d_pct_of_circ": {
+      "value": 0,
+      "source": "LIT-02",
+      "note": "scheduled team/investor tranches only: the lock runs to ~30 Dec 2026. The remaining ~25% ecosystem reserve (250M LIT = 100% of circulating) has no published release schedule and can be distributed at the team's discretion — not counted here, flagged under K09."
+    },
+    "unlock_12m_pct_of_circ": {
+      "value": 2.9,
+      "source": "LIT-02",
+      "note": "team+investor 500M vesting linearly over 36 months from ~30 Dec 2026: ~7.3M LIT by 15 Jan 2027 = 2.9% of 250M circulating. Excludes the undisclosed ecosystem-reserve schedule (see K09) and assumes no cliff release."
+    },
+    "price_to_last_round_multiple": {
+      "value": 1.4,
+      "source": "LIT-14",
+      "note": "listing FDV $2.07B vs ~$1.5B Nov-2025 equity valuation (round included token warrants; warrant terms not public)"
+    },
+    "tvl_usd": {
+      "value": 1300000000,
+      "source": "LIT-08",
+      "note": "≈$1.4B before the airdrop (Bubblemaps, LIT-08) less ~$101M net outflow in the first 24h. LIT-18 says 'over $1.2B'; LIT-17 had $1.46B on 22 Dec."
+    },
+    "annualized_fees_usd": {
+      "value": 132500000,
+      "source": "LIT-16",
+      "note": "DefiLlama annualised fees as quoted 2 Jan 2026. Other estimates: ~$200M revenue run-rate (LIT-17, 22 Dec), ~$105M (LIT-18, undated)."
+    },
+    "annualized_revenue_usd": {
+      "value": 132500000,
+      "source": "LIT-16",
+      "note": "fees are charged by the protocol (no LP fee split; LLP earns from market-making, not fees), so revenue ≈ fees; operator costs ('at cost', LIT-01) are not disclosed"
+    },
+    "category_share_pct": {
+      "value": 20,
+      "source": "LIT-18",
+      "note": "share of DEX perp market at end-2025 (KuCoin Ventures); Lighter led monthly volume in Nov and Dec (LIT-01, LIT-06), but OI ~$1.4B vs Hyperliquid ~$8B"
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "CEO Vladimir Novakovski: TVL is 'consolidating around $1.5 billion' (undated statement, quoted 2 Jan 2026)",
+      "metric": "tvl_usd",
+      "claimed_value": 1500000000,
+      "source": "LIT-16"
+    }
+  ]
+}

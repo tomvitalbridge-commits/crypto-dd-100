@@ -1,0 +1,1524 @@
+{
+  "project": "Lighter (LIT)",
+  "profile": "defi",
+  "as_of": "2026-01-15",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-16",
+        "LIT-15",
+        "LIT-06"
+      ],
+      "rationale": "Founder's career (Citadel, Head of ML at Quora, VP Eng at Addepar, prior AI start-up) is documented, and Lighter led perp-DEX monthly volume within ~3 months of public mainnet; the founder's earlier company outcome is not documented.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel",
+        "Human-only: KYC of Vladimir Novakovski and core team."
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "LIT-16"
+      ],
+      "rationale": "A ~28-engineer team is reported only in a write-up the team reviewed; public communication centres on the CEO and no ops/security leads or succession are documented.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "LIT-20",
+        "LIT-21",
+        "LIT-26"
+      ],
+      "rationale": "In-house team designed custom ZK circuits for verifiable matching, reviewed by zkSecurity since 2024, and published the prover code in Dec 2025; no specs or research papers of its own.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-08",
+        "LIT-09"
+      ],
+      "rationale": "Open allegations at TGE: an LLP-linked 5-wallet cluster received ~10M LIT and sold ~2.76M, and a market maker reportedly got >$24M of LIT; the CEO said the wallets were a third-party LP with no undisclosed ties. No enforcement found in coverage.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-02"
+      ],
+      "rationale": "team_vesting_months = 48  (bands 4:≥48, 3:≥36, 2:≥24, 1:≥12)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "LIT-01",
+        "LIT-24"
+      ],
+      "rationale": "A US C-Corp issues LIT and runs the protocol; there is no token-holder vote, the network governor is a single EOA, and decentralisation via staking is described only as 'progressive'.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-06",
+        "LIT-01"
+      ],
+      "rationale": "Treasury Account #0 is public on the explorer (180,588 LIT on 5 Jan), but no buyback amounts, reports, or custody details for the 250M-LIT ecosystem reserve are published.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-14",
+        "LIT-16"
+      ],
+      "rationale": "Nov-2025 round led by Founders Fund and Ribbit with Haun and Robinhood; a16z, Dragonfly, Lightspeed, Coatue and Coinbase also listed as backers. Investor token warrants (24% of supply) make them a 2027+ supply source.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "contradiction_count = 0  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-16",
+        "LIT-17",
+        "LIT-18"
+      ],
+      "rationale": "Premium (low-latency) accounts pay real fees, ~$105–200M annualised; but retail volume is free and was largely farmed for points, so demand outside incentives is unproven.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "LIT-12",
+        "LIT-06",
+        "LIT-25"
+      ],
+      "rationale": "Public mainnet since early Oct 2025 (~3.5 months at listing) after a 2025 private beta; spot trading and staking added Dec 2025–Jan 2026.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "LIT-20",
+        "LIT-21",
+        "LIT-22"
+      ],
+      "rationale": "Original design: an app-specific Ethereum ZK-rollup whose custom Plonky2 circuits prove order matching and liquidations, not a fork; no peer-reviewed research.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "LIT-12",
+        "LIT-11"
+      ],
+      "rationale": "Sequencer database failed for ~4.5h in the 10 Oct 2025 crash (known weak point, upgrade postponed), and the prover lagged the sequencer on 30 Dec, delaying withdrawals.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-24",
+        "LIT-11",
+        "LIT-23"
+      ],
+      "rationale": "Single operator runs sequencer and prover; Ethereum is the settlement/DA layer with a 14-day desert-mode fallback; fast exits route via Arbitrum. Oracle sources were not documented in dated sources.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_commits_90d' not in evidence pack",
+        "GitHub activity not measured (GitHub org listing blocked from this environment); lighter-prover repo published 26 Dec 2025 (LIT-26)."
+      ]
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_active_contributors_90d' not in evidence pack"
+      ]
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-24",
+        "LIT-26",
+        "LIT-25"
+      ],
+      "rationale": "Circuit open-sourcing promised in '1–2 weeks' on 8 Oct 2025 arrived 26 Dec; desert-mode circuits still not public on 5 Jan 2026. Spot, token and staking did ship.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "LIT-24",
+        "LIT-25",
+        "LIT-26"
+      ],
+      "rationale": "L1 contracts are verified and perp/spot circuits are public, but desert circuits are closed and L2BEAT had not reproduced the deployed verifiers; the matching engine is off-chain and closed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: dated review of docs.lighter.xyz (technical specs, API, risk docs) as of Jan 2026"
+      ]
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "LIT-21"
+      ],
+      "rationale": "audits_reputable_count = 1  (bands 4:≥3, 3:≥2, 2:≥1, 1:≥0.5)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "LIT-21",
+        "LIT-22",
+        "LIT-23",
+        "LIT-25"
+      ],
+      "rationale": "All six high findings across three 2025 zkSecurity circuit audits were fixed (one low left open), but no audit of the L1 contracts or token was found and the deployed verifiers were not independently matched to source.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-24"
+      ],
+      "rationale": "contracts_verified = true",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "scored",
+      "score": 0,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-24"
+      ],
+      "rationale": "upgrade_timelock_hours = 0  (bands 4:≥72, 3:≥48, 2:≥24, 1:≥6)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-24",
+        "LIT-25"
+      ],
+      "rationale": "Network governor and upgrade-master role sit with one EOA; the 21-day upgrade delay can be skipped entirely by a team multisig whose threshold and signers are not disclosed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: LIT token contract roles (owner/minter, mint function) and any L2-side mint/freeze powers; Etherscan not reachable",
+        "mint_authority (gate RF01) NOT established. LIT ERC-20 is 0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2 (LIT-27), total supply 1B, but its source/roles could not be read: Etherscan and RPC endpoints were not reachable from this review environment. Needs: read owner/minter roles and any mint function on the token contract and on the L2 asset config."
+      ]
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'bug_bounty_max_usd' not in evidence pack",
+        "Bug bounty programme not found in dated sources."
+      ]
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-12",
+        "LIT-13",
+        "LIT-11",
+        "LIT-29"
+      ],
+      "rationale": "No exploit; the Oct 2025 outage (LLP also lost money) got a public loss breakdown and stablecoin+points compensation within days. Dec 2025 withdrawal delays were acknowledged only on Discord.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: dated description of the index/mark-price oracle, its fallbacks and whether signatures are verified on-chain"
+      ]
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-24",
+        "LIT-23",
+        "LIT-09"
+      ],
+      "rationale": "Funds sit in a validity-proved Ethereum rollup with an audited desert-mode exit, not a multisig bridge; ~$52M of exits went via Arbitrum, and the instant-upgrade path (S05) can override the exit.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-01",
+        "LIT-06",
+        "LIT-07"
+      ],
+      "rationale": "Team says all product value accrues to LIT; treasury LIT balance rose (implied buybacks) and LIT staking became mandatory for LLP access on 14 Jan. Buyback size and rules are discretionary and unpublished.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "circulating_supply_pct = 25  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top10_holder_pct_ex_contracts' not in evidence pack",
+        "Top-holder concentration not established: holder lists as of 15 Jan were not available without using post-listing explorer data. Needs labelled top-20 on Ethereum and on Lighter L2, incl. the LP-linked 5-wallet cluster (~10M LIT, LIT-09) and the market maker's allocation (LIT-08)."
+      ]
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-02"
+      ],
+      "rationale": "unlock_12m_pct_of_circ = 2.9  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-01"
+      ],
+      "rationale": "insider_allocation_pct = 50  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-14"
+      ],
+      "rationale": "price_to_last_round_multiple = 1.4  (bands 4:≤3, 3:≤10, 2:≤30, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_mcap = 4  (bands 4:≤1.5, 3:≤2.5, 2:≤4, 1:≤7)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annual_inflation_pct' not in evidence pack",
+        "annual_inflation_pct not set: the ~25% ecosystem reserve (250M LIT, equal to all circulating supply) has no published emission schedule."
+      ]
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-01",
+        "LIT-16",
+        "LIT-06"
+      ],
+      "rationale": "Total supply is on-chain, but no vesting-contract addresses for the 50% team/investor share or the ecosystem reserve were published, and LIT was not yet withdrawable from Lighter on 2 Jan.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-18",
+        "LIT-19",
+        "LIT-09",
+        "LIT-10",
+        "LIT-28"
+      ],
+      "rationale": "Points rewarded volume that analysts tie to farming (volume/OI ~27 in beta); ~$250M left in 24h after the drop and farmers were moving on by 12 Jan; ~75% of addresses still held on day 1 (unnamed analysts).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_30d_avg' not in evidence pack",
+        "Daily active addresses, retention and fee-paying users not found in dated sources."
+      ]
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_90d_change_pct' not in evidence pack"
+      ]
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'retention_30d_pct' not in evidence pack"
+      ]
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-08"
+      ],
+      "rationale": "tvl_usd = 1,300,000,000  (bands 4:≥1e+09, 3:≥2e+08, 2:≥5e+07, 1:≥1e+07)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentivised_tvl_share_pct' not in evidence pack",
+        "Share of TVL earning points not published; LLP deposits earned points through the airdrop seasons (LIT-09)."
+      ]
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-19",
+        "LIT-29",
+        "LIT-18",
+        "LIT-09",
+        "LIT-28"
+      ],
+      "rationale": "Volume/OI ~27 in beta and ~8 in Nov 2025 (called points farming); volume reportedly fell from $15B to $3B and farmers left after the airdrop. No sybil clustering data published.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack"
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'live_integrations_count' not in evidence pack"
+      ]
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: count of third-party builders/integrations (SDK users, front-ends, vault operators) as of Jan 2026"
+      ]
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack"
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'depth_2pct_usd' not in evidence pack",
+        "LIT order-book depth, spread and 24h token volume as of 15 Jan were not found in any dated source; live pages were not used. Pre-listing, LIT traded mainly on Lighter's own spot book and as pre-market/IOU products elsewhere (LIT-16)."
+      ]
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top_venue_volume_share_pct' not in evidence pack",
+        "Venue split as of 15 Jan not found."
+      ]
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: dated LIT spot volume, depth and trade-size data across venues at listing"
+      ]
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'spread_bps' not in evidence pack"
+      ]
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel",
+        "Human-only: market-maker terms. Reports say Jump Crypto got >$24M of LIT for market making (LIT-08); size, loan/option terms and lock-ups must come from the project."
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: dated list of LIT spot venues before 15 Jan; LIT was not withdrawable on 2 Jan, so off-platform listings may have been IOUs"
+      ]
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: LIT perp OI and funding history; only pre-market prices and a 54% short skew among top accounts are known"
+      ]
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'realized_vol_30d_pct' not in evidence pack"
+      ]
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: who supplies liquidity on Lighter's LIT spot book and the size of the market-maker allocation"
+      ]
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-14",
+        "LIT-06",
+        "LIT-18",
+        "LIT-28"
+      ],
+      "rationale": "On-chain perps hit a record $1.2T in Oct 2025 and Lighter led monthly volume in Nov–Dec; but LIT fell ~30% in the week to 12 Jan as farmers moved to newer perp DEXs.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-16"
+      ],
+      "rationale": "annualized_revenue_usd = 132,500,000  (bands 4:≥5e+07, 3:≥1e+07, 2:≥2e+06, 1:≥250,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-16",
+        "LIT-18"
+      ],
+      "rationale": "Revenue comes from premium accounts (market makers/HFT) paying for latency, not retail; organic, but concentrated in a professional segment and tied to volume cycles.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-06",
+        "LIT-31",
+        "LIT-30",
+        "LIT-01"
+      ],
+      "rationale": "Treasury Account #0 visibly bought ~180k LIT with USDC around 5–6 Jan, but the buyback was not formally confirmed, and the share of revenue used and the schedule are undisclosed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_annual_fees = 15.6  (bands 4:≤20, 3:≤50, 2:≤150, 1:≤500)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentives_to_revenue' not in evidence pack",
+        "incentives_to_revenue not set: the $675M airdrop (LIT-10) paid for ~12 months of points seasons against ~$105–200M annualised revenue, but the season windows and revenue for the same period could not be matched."
+      ]
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack",
+        "Company treasury/runway not public; $68M raised Nov 2025 (LIT-14)."
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack"
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'revenue_qoq_growth_pct' not in evidence pack"
+      ]
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: revenue split by account; premium/API fee payers are likely concentrated but no data published"
+      ]
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-16",
+        "LIT-09",
+        "LIT-18"
+      ],
+      "rationale": "Professional fee revenue (~$105–200M annualised) would remain, but much retail volume was points-driven and reportedly fell ~5× from the November peak around the airdrop.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-14",
+        "LIT-18"
+      ],
+      "rationale": "Perps are most of crypto trading volume; on-chain perps hit a record $1.2T in Oct 2025 and rose to >56% of DEX volume.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-18"
+      ],
+      "rationale": "category_share_pct = 20  (bands 4:≥30, 3:≥15, 2:≥5, 1:≥1)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-29",
+        "LIT-18",
+        "LIT-10",
+        "LIT-28"
+      ],
+      "rationale": "Volume share went from launch to 27.7% (Nov) and ~20% (end-2025), but OI share was only 12.5%, the gain was paid for with a $675M points airdrop, and farmers were leaving by mid-January.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-18",
+        "LIT-16"
+      ],
+      "rationale": "Zero retail fees and ZK-verified matching are the moat; OI (~$1.4B vs Hyperliquid ~$8B) shows positions and liquidity did not follow volume, and retention after incentives is untested.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-26",
+        "LIT-18"
+      ],
+      "rationale": "Circuits are now open source and zero fees are easy to copy; liquidity and the LLP are the sticky parts.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-16",
+        "LIT-24",
+        "LIT-23"
+      ],
+      "rationale": "Versus Hyperliquid and Aster: free retail trading plus Ethereum settlement with ZK-proved execution and a proof-based escape hatch; the fee edge is copyable, the verifiability less so.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: peer FDV and fees on the same date (Hyperliquid, Aster) to compare with LIT's ~15.6× FDV/fees"
+      ]
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "LIT-14",
+        "LIT-16"
+      ],
+      "rationale": "CEX perps dwarf DEX perps and Robinhood/Coinbase (both reported backers) could offer similar products; no competing native feature announced against Lighter specifically.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: live partner integrations with observable flows; announced relationships are investors, not integrations"
+      ]
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "LIT-05",
+        "LIT-01",
+        "LIT-16"
+      ],
+      "rationale": "Adds a US-issued, Ethereum-settled perp-DEX token to Coinbase's Ethereum/Base focus; Coinbase is reported as a backer, a conflict the listing committee should record.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: dated social audience and engagement data"
+      ]
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: bot-likelihood / engagement-quality analysis"
+      ]
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'holders_count' not in evidence pack"
+      ]
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: user geography and whether US persons can trade perps"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "LIT-18",
+        "LIT-16"
+      ],
+      "rationale": "Attention was driven by a disclosed points programme; team says it does not pay for listings; no undisclosed KOL payments found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: grants, hackathons and external contributors"
+      ]
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack"
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-12",
+        "LIT-11",
+        "LIT-06",
+        "LIT-08"
+      ],
+      "rationale": "Detailed loss data and compensation after the Oct outage; but Discord-only response to Dec withdrawal delays, unconfirmed buybacks, and limited upfront disclosure of the market-maker allocation.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-08",
+        "LIT-09",
+        "LIT-28",
+        "LIT-16"
+      ],
+      "rationale": "Bullish theses coexist with specific unresolved criticism: insider/LP airdrop allocation, market-maker deal, farmer exodus and a ~30% weekly price drop.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-14",
+        "LIT-20",
+        "LIT-24"
+      ],
+      "rationale": "Top-tier investors and Robinhood backed it, zkSecurity audits it and L2BEAT tracks it; few independent protocol integrations documented.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-01",
+        "LIT-02"
+      ],
+      "rationale": "Token issued by Lighter's US C-Corp, which operates the protocol; entity name and registry record not checked.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-01",
+        "LIT-06",
+        "LIT-24"
+      ],
+      "rationale": "A US company issues the token, controls upgrades via an EOA governor, and markets that all value 'will fully accrue to LIT holders' with buybacks — facts that cut toward a security analysis.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack",
+        "sanctions_exposure NOT established. No public wallet screening. Needs the venue's own Chainalysis/TRM screening of treasury Account #0, team, deployer, the market-maker and LLP-linked wallets named in LIT-08/LIT-09."
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: whether US persons are blocked from perps and any CFTC/other registration for a US-issuer-operated derivatives venue"
+      ]
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: search of SEC/CFTC/state regulator and court records; press coverage to 14 Jan reports none",
+        "active_enforcement_action NOT established. Press coverage from 30 Dec 2025 to 14 Jan 2026 (LIT-01, LIT-06, LIT-07, LIT-08, LIT-09) reports no regulatory action, but SEC/CFTC/state regulator and court databases were not searched (web search budget exhausted). Lighter's US C-Corp issues the token and operates a perp venue, so this check matters more than usual."
+      ]
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "LIT-24",
+        "LIT-23"
+      ],
+      "rationale": "No privacy features: ZK proofs are used for validity, state diffs are posted to Ethereum and accounts map to L1 addresses.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel",
+        "Human-only: legal opinion on LIT — critical here because a US C-Corp issues the token and says all value accrues to holders (LIT-01)."
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'defi'"
+      ]
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'defi'"
+      ]
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: geofencing terms and enforcement across front end, API and airdrop"
+      ]
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 2.8095238095238093,
+      "coverage": 0.875,
+      "sufficient": true,
+      "scored": 9,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 10,
+      "score": 2.3333333333333335,
+      "coverage": 0.7894736842105263,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 14,
+      "score": 2.0,
+      "coverage": 0.76,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 14,
+      "score": 2.5625,
+      "coverage": 0.7619047619047619,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 10,
+      "score": 2.2,
+      "coverage": 0.29411764705882354,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 8,
+      "score": 3.0,
+      "coverage": 0.058823529411764705,
+      "sufficient": false,
+      "scored": 1,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 10,
+      "score": 3.090909090909091,
+      "coverage": 0.6111111111111112,
+      "sufficient": true,
+      "scored": 5,
+      "applicable": 10
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 8,
+      "score": 2.6,
+      "coverage": 0.8333333333333334,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 5,
+      "score": 2.2,
+      "coverage": 0.38461538461538464,
+      "sufficient": false,
+      "scored": 4,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 9,
+      "score": 2.1666666666666665,
+      "coverage": 0.375,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 8
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "clear"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "clear"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "fired"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "clear"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "clear"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "clear"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "clear"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "clear"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "unchecked"
+    }
+  ],
+  "contradictions": [],
+  "point_score": 62.3,
+  "score_low": 28.2,
+  "score_high": 84.7,
+  "coverage": 0.612,
+  "grade": "C",
+  "verdict": "INSUFFICIENT_DATA",
+  "verdict_reasons": [
+    "evidence coverage 61% below the 70% needed for a verdict"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "project": "Lighter (LIT)",
+  "as_of": "2026-01-15",
+  "sources": [
+    {
+      "id": "LIT-12",
+      "type": "news",
+      "tier": 2,
+      "title": "Crypto Times — Lighter Ethereum L2 goes offline for 5 hours amid volatile trading (13 Oct 2025)",
+      "url": "https://www.cryptotimes.io/2025/10/13/lighter-ethereum-l2-goes-offline-for-5-hours-amid-volatile-trading/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 13 Oct 2025, ~10 days after public mainnet. Outage 10:30pm EST 10 Oct to 3am EST 11 Oct: sequencer database failed under 10× average load (up to 100× in some blocks); the team had known the DB was a weak point and postponed the upgrade. Team's early loss data: 2,008 traders lost >$1k, 367 >$10k, 38 >$100k. Compensation in stablecoins and points, starting the following Monday; a separate, unrelated LLP drop to be partly compensated."
+    },
+    {
+      "id": "LIT-13",
+      "type": "news",
+      "tier": 2,
+      "title": "The Defiant — Lighter distributes points to users affected by platform outage (17 Oct 2025)",
+      "url": "https://thedefiant.io/news/defi/lighter-distributes-points-to-users-affected-by-platform-outage",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 17 Oct 2025. Headline: Lighter distributed points to users affected by the outage after perp DEXs were overwhelmed by volatility. Article body did not load; amounts not available."
+    },
+    {
+      "id": "LIT-11",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinAlertNews — Lighter users face withdrawal disruptions on Arbitrum amid team silence (31 Dec 2025)",
+      "url": "https://coinalertnews.com/news/2025/12/31/0d34a889",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 31 Dec 2025. From 30 Dec, withdrawals via Arbitrum failed/delayed; core issue reported as the prover lagging the sequencer, delaying batch submission. Team acknowledged on Discord 30 Dec and advised Ethereum L1 withdrawals (up to ~4h); no further public statement at writing. Funds reported secure."
+    },
+    {
+      "id": "LIT-20",
+      "type": "audit",
+      "tier": 1,
+      "title": "zkSecurity — Lighter ZK circuits review (blog, 24 Apr 2024)",
+      "url": "https://blog.zksecurity.xyz/posts/lighter-xyz/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 24 Apr 2024. Review of Lighter's custom ZK circuits for verifiable order-book matching, incl. the exit-hatch ('desert') circuit; describes the code as solid and well organised; no specific vulnerabilities listed on the page."
+    },
+    {
+      "id": "LIT-21",
+      "type": "audit",
+      "tier": 1,
+      "title": "zkSecurity — Audit of Lighter's block circuits (Plonky2), engagement from 4 Aug 2025",
+      "url": "https://reports.zksecurity.xyz/reports/zklighter-block.md",
+      "retrieved": "2026-10-23",
+      "excerpt": "Engagement 4 Aug 2025, 3 weeks, 2 consultants. Scope: prover circuits only (no smart contracts), no commit hash given. 10 findings: 2 high, 1 medium, 3 low, 4 informational; 9 'acknowledged and fixed', 1 partially fixed. If the sequencer censors too long, L1 contracts switch to 'desert mode' for direct withdrawals; market create/update restricted to the governor, enforced by L1 contracts."
+    },
+    {
+      "id": "LIT-22",
+      "type": "audit",
+      "tier": 1,
+      "title": "zkSecurity — Lighter audit #3 (circuits, 8 Sep 2025)",
+      "url": "https://reports.zksecurity.xyz/reports/lighter-3",
+      "retrieved": "2026-10-23",
+      "excerpt": "Dated 8 Sep 2025, 3 weeks. Scope: circuit changes between commits 4876a50 and b119f03 (account delta tree, recursion, bigint, etc.); wrapper layer deferred. 11 findings: 3 high, 6 low (all fixed, mostly in commit b99c425), 2 informational acknowledged."
+    },
+    {
+      "id": "LIT-23",
+      "type": "audit",
+      "tier": 1,
+      "title": "zkSecurity — Audit of Lighter's exit hatch (desert exit circuit), 5 Nov 2025",
+      "url": "https://reports.zksecurity.xyz/reports/zklighter-desertexit.md",
+      "retrieved": "2026-10-23",
+      "excerpt": "Dated 5 Nov 2025 (engagement from 3 Nov, ~1 week). Scope: desert-exit circuit at commit b99c425 of a private lighter-prover repo. 4 findings: 1 high (negative-TAV bypass letting an underwater account withdraw) fixed, 1 medium fixed, 1 informational fixed (commit f6818da), 1 low not fixed. Desert exit lets users withdraw against the last state root via a SNARK even if the sequencer fails to include transactions."
+    },
+    {
+      "id": "LIT-24",
+      "type": "onchain",
+      "tier": 2,
+      "title": "L2BEAT config diff PR 9796 — Lighter contracts discovery (note dated 8 Oct 2025)",
+      "url": "https://config-diff.l2beat.com/pr-9796",
+      "retrieved": "2026-10-23",
+      "excerpt": "Note dated 8 Oct 2025: circuit source code not public, so business logic cannot be fully verified; team said it would be released in 1–2 weeks. Contracts Lighter (0x3B4D…5ca7), UpgradeGatekeeper (0x94da…6f67), Governance (0xa464…81A1), ZkLighterVerifier (0xac3C…2BaA) and the new DesertVerifier all 'isVerified: true'; the earlier DesertVerifier was unverified. Regular upgrade delay 21d via UpgradeGatekeeper, which 'can be entirely skipped by Lighter Multisig' (security council; threshold not given). Risk text: 'There is no delay on code upgrades'; 'no window for users to exit in case of an unwanted regular upgrade since contracts are instantly upgradable'. Network governor and getMaster role = 'EOA 4'; validators are 4 EOAs. Security council does not meet Stage 1 requirements. Desert-mode trigger windows changed from 18d to 14d (inferred)."
+    },
+    {
+      "id": "LIT-25",
+      "type": "onchain",
+      "tier": 2,
+      "title": "L2BEAT config diff PR 10541 — Lighter ZK catalog (note dated 5 Jan 2026)",
+      "url": "https://config-diff.l2beat.com/pr-10541",
+      "retrieved": "2026-10-23",
+      "excerpt": "Note dated 5 Jan 2026: desert-mode circuits source code not publicly available. Verifier deployments 0x7ddA…eEd4, 0x05F8…25a2 (ZK Lighter verifier) and 0xd446…Bc67 (desert verifier) marked 'verificationStatus: notVerified' (L2BEAT has not reproduced them from source). Regular upgrades by 'network governor' with 21d delay; 'security council' can reduce the delay to zero in an emergency. Tracked since 1 Oct 2025."
+    },
+    {
+      "id": "LIT-26",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockonomi — Lighter open-sources zero-knowledge proof circuits following security audits (26 Dec 2025)",
+      "url": "https://blockonomi.com/lighter-open-sources-zero-knowledge-proof-circuits-following-security-audits/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 26 Dec 2025. Perp and spot circuits published at github.com/elliottech/lighter-prover after audits; build_circuits.sh regenerates a ZkLighterVerifier the project says matches the deployed one (no completed independent comparison reported). Project claims ~500M orders and cancellations per day (unsourced). No smart-contract audit cited."
+    },
+    {
+      "id": "LIT-19",
+      "type": "research",
+      "tier": 2,
+      "title": "K33 Research — Lighter: revolutionary perp DEX or points pump? (22 Apr 2025)",
+      "url": "https://k33.com/research/articles/lighter-revolutionary-perp-dex-or-points-pump",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 22 Apr 2025, closed beta. Daily volume >$2B; volume/OI ratio ~27, which the author says suggests wash trading or incentive-driven activity. Zero fees and strong incentives for on-chain traders."
+    }
+  ],
+  "metrics": {
+    "contracts_verified": {
+      "value": true,
+      "source": "LIT-24",
+      "note": "core L1 contracts (Lighter, UpgradeGatekeeper, Governance, ZkLighterVerifier, current DesertVerifier) are source-verified. Open caveats: desert circuits not public as of 5 Jan 2026 and L2BEAT has not reproduced the verifiers (LIT-25) — scored under P09. LIT ERC-20 source verification not checked (Etherscan not reachable)."
+    },
+    "upgrade_timelock_hours": {
+      "value": 0,
+      "source": "LIT-24",
+      "note": "nominal 21-day delay, but the Lighter Multisig (security council, threshold undisclosed) can skip it entirely; L2BEAT: 'There is no delay on code upgrades' and no exit window. Effective minimum delay = 0."
+    },
+    "audits_reputable_count": {
+      "value": 1,
+      "source": "LIT-21",
+      "note": "one reputable firm (zkSecurity) with four engagements 2024–Nov 2025 (LIT-20..23), all on ZK circuits. No audit of the L1 Solidity contracts or the LIT token contract was found."
+    },
+    "unreimbursed_exploit_usd": {
+      "value": 0,
+      "source": "LIT-12",
+      "note": "no exploit/theft found. The 10–11 Oct 2025 sequencer outage caused trader losses that were compensated in stablecoins and points (LIT-12, LIT-13); the amount paid and whether it covered all losses was not published."
+    }
+  },
+  "claims": []
+}

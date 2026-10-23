@@ -1,0 +1,38 @@
+# REAL project, PUBLIC sources only, POINT-IN-TIME. Coinbase listed LIGHTER spot on
+# 2026-01-15 (roadmap added 2025-12-30). Every source used was published on or
+# before 2026-01-15; publication dates are in each excerpt. No post-listing price
+# or news was used. Human-only checks (KYC, market-maker terms, legal opinion) are
+# left open on purpose.
+project: Lighter (LIT)
+profile: defi          # ZK-rollup perp DEX; business model and risks are DeFi-shaped
+as_of: 2026-01-15
+
+evidence:
+  - evidence/market_tokenomics.json
+  - evidence/protocol_security.json
+  - evidence/legal_community_competition.json
+
+assessments:
+  - assessments/agent.yaml
+
+# No collect: block on purpose — the collectors pull CURRENT market/TVL data,
+# which would break the point-in-time rule.
+
+# Why some metrics are deliberately NOT set. Each becomes a note in the report.
+notes:
+  S06: "mint_authority (gate RF01) NOT established. LIT ERC-20 is 0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2 (LIT-27), total supply 1B, but its source/roles could not be read: Etherscan and RPC endpoints were not reachable from this review environment. Needs: read owner/minter roles and any mint function on the token contract and on the L2 asset config."
+  L03: "sanctions_exposure NOT established. No public wallet screening. Needs the venue's own Chainalysis/TRM screening of treasury Account #0, team, deployer, the market-maker and LLP-linked wallets named in LIT-08/LIT-09."
+  L05: "active_enforcement_action NOT established. Press coverage from 30 Dec 2025 to 14 Jan 2026 (LIT-01, LIT-06, LIT-07, LIT-08, LIT-09) reports no regulatory action, but SEC/CFTC/state regulator and court databases were not searched (web search budget exhausted). Lighter's US C-Corp issues the token and operates a perp venue, so this check matters more than usual."
+  K03: "Top-holder concentration not established: holder lists as of 15 Jan were not available without using post-listing explorer data. Needs labelled top-20 on Ethereum and on Lighter L2, incl. the LP-linked 5-wallet cluster (~10M LIT, LIT-09) and the market maker's allocation (LIT-08)."
+  K08: "annual_inflation_pct not set: the ~25% ecosystem reserve (250M LIT, equal to all circulating supply) has no published emission schedule."
+  M01: "LIT order-book depth, spread and 24h token volume as of 15 Jan were not found in any dated source; live pages were not used. Pre-listing, LIT traded mainly on Lighter's own spot book and as pre-market/IOU products elsewhere (LIT-16)."
+  M02: "Venue split as of 15 Jan not found."
+  O01: "Daily active addresses, retention and fee-paying users not found in dated sources."
+  O05: "Share of TVL earning points not published; LLP deposits earned points through the airdrop seasons (LIT-09)."
+  B05: "incentives_to_revenue not set: the $675M airdrop (LIT-10) paid for ~12 months of points seasons against ~$105–200M annualised revenue, but the season windows and revenue for the same period could not be matched."
+  B06: "Company treasury/runway not public; $68M raised Nov 2025 (LIT-14)."
+  P06: "GitHub activity not measured (GitHub org listing blocked from this environment); lighter-prover repo published 26 Dec 2025 (LIT-26)."
+  S07: "Bug bounty programme not found in dated sources."
+  T02: "Human-only: KYC of Vladimir Novakovski and core team."
+  M05: "Human-only: market-maker terms. Reports say Jump Crypto got >$24M of LIT for market making (LIT-08); size, loan/option terms and lock-ups must come from the project."
+  L07: "Human-only: legal opinion on LIT — critical here because a US C-Corp issues the token and says all value accrues to holders (LIT-01)."

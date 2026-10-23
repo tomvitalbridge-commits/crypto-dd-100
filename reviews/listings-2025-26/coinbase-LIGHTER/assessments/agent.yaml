@@ -1,0 +1,83 @@
+# Lighter (LIT) — judgment scores from public sources published on or before
+# 2026-01-15 (Coinbase listing date). Every score cites evidence ids in
+# evidence/*.json. Where dated public sources were not enough, the dimension is
+# left `pending` with what is missing. T02, M05 and L07 are human-only.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, score: 3, confidence: medium, evidence: [LIT-16, LIT-15, LIT-06], assessor: "agent:claude", rationale: "Founder's career (Citadel, Head of ML at Quora, VP Eng at Addepar, prior AI start-up) is documented, and Lighter led perp-DEX monthly volume within ~3 months of public mainnet; the founder's earlier company outcome is not documented."}
+- {id: T03, score: 2, confidence: low, evidence: [LIT-16], assessor: "agent:claude", rationale: "A ~28-engineer team is reported only in a write-up the team reviewed; public communication centres on the CEO and no ops/security leads or succession are documented."}
+- {id: T04, score: 3, confidence: high, evidence: [LIT-20, LIT-21, LIT-26], assessor: "agent:claude", rationale: "In-house team designed custom ZK circuits for verifiable matching, reviewed by zkSecurity since 2024, and published the prover code in Dec 2025; no specs or research papers of its own."}
+- {id: T05, score: 2, confidence: medium, evidence: [LIT-08, LIT-09], assessor: "agent:claude", rationale: "Open allegations at TGE: an LLP-linked 5-wallet cluster received ~10M LIT and sold ~2.76M, and a market maker reportedly got >$24M of LIT; the CEO said the wallets were a third-party LP with no undisclosed ties. No enforcement found in coverage."}
+- {id: T07, score: 1, confidence: high, evidence: [LIT-01, LIT-24], assessor: "agent:claude", rationale: "A US C-Corp issues LIT and runs the protocol; there is no token-holder vote, the network governor is a single EOA, and decentralisation via staking is described only as 'progressive'."}
+- {id: T08, score: 2, confidence: medium, evidence: [LIT-06, LIT-01], assessor: "agent:claude", rationale: "Treasury Account #0 is public on the explorer (180,588 LIT on 5 Jan), but no buyback amounts, reports, or custody details for the 250M-LIT ecosystem reserve are published."}
+- {id: T09, score: 4, confidence: medium, evidence: [LIT-14, LIT-16], assessor: "agent:claude", rationale: "Nov-2025 round led by Founders Fund and Ribbit with Haun and Robinhood; a16z, Dragonfly, Lightspeed, Coatue and Coinbase also listed as backers. Investor token warrants (24% of supply) make them a 2027+ supply source."}
+
+# --- P Product & Technology
+- {id: P01, score: 3, confidence: medium, evidence: [LIT-16, LIT-17, LIT-18], assessor: "agent:claude", rationale: "Premium (low-latency) accounts pay real fees, ~$105–200M annualised; but retail volume is free and was largely farmed for points, so demand outside incentives is unproven."}
+- {id: P02, score: 2, confidence: high, evidence: [LIT-12, LIT-06, LIT-25], assessor: "agent:claude", rationale: "Public mainnet since early Oct 2025 (~3.5 months at listing) after a 2025 private beta; spot trading and staking added Dec 2025–Jan 2026."}
+- {id: P03, score: 3, confidence: high, evidence: [LIT-20, LIT-21, LIT-22], assessor: "agent:claude", rationale: "Original design: an app-specific Ethereum ZK-rollup whose custom Plonky2 circuits prove order matching and liquidations, not a fork; no peer-reviewed research."}
+- {id: P04, score: 2, confidence: high, evidence: [LIT-12, LIT-11], assessor: "agent:claude", rationale: "Sequencer database failed for ~4.5h in the 10 Oct 2025 crash (known weak point, upgrade postponed), and the prover lagged the sequencer on 30 Dec, delaying withdrawals."}
+- {id: P05, score: 2, confidence: medium, evidence: [LIT-24, LIT-11, LIT-23], assessor: "agent:claude", rationale: "Single operator runs sequencer and prover; Ethereum is the settlement/DA layer with a 14-day desert-mode fallback; fast exits route via Arbitrum. Oracle sources were not documented in dated sources."}
+- {id: P08, score: 2, confidence: medium, evidence: [LIT-24, LIT-26, LIT-25], assessor: "agent:claude", rationale: "Circuit open-sourcing promised in '1–2 weeks' on 8 Oct 2025 arrived 26 Dec; desert-mode circuits still not public on 5 Jan 2026. Spot, token and staking did ship."}
+- {id: P09, score: 2, confidence: high, evidence: [LIT-24, LIT-25, LIT-26], assessor: "agent:claude", rationale: "L1 contracts are verified and perp/spot circuits are public, but desert circuits are closed and L2BEAT had not reproduced the deployed verifiers; the matching engine is off-chain and closed."}
+- {id: P10, status: pending, rationale: "missing: dated review of docs.lighter.xyz (technical specs, API, risk docs) as of Jan 2026"}
+
+# --- S Security
+- {id: S02, score: 2, confidence: high, evidence: [LIT-21, LIT-22, LIT-23, LIT-25], assessor: "agent:claude", rationale: "All six high findings across three 2025 zkSecurity circuit audits were fixed (one low left open), but no audit of the L1 contracts or token was found and the deployed verifiers were not independently matched to source."}
+- {id: S05, score: 1, confidence: medium, evidence: [LIT-24, LIT-25], assessor: "agent:claude", rationale: "Network governor and upgrade-master role sit with one EOA; the 21-day upgrade delay can be skipped entirely by a team multisig whose threshold and signers are not disclosed."}
+- {id: S06, status: pending, rationale: "missing: LIT token contract roles (owner/minter, mint function) and any L2-side mint/freeze powers; Etherscan not reachable"}
+- {id: S08, score: 3, confidence: medium, evidence: [LIT-12, LIT-13, LIT-11, LIT-29], assessor: "agent:claude", rationale: "No exploit; the Oct 2025 outage (LLP also lost money) got a public loss breakdown and stablecoin+points compensation within days. Dec 2025 withdrawal delays were acknowledged only on Discord."}
+- {id: S09, status: pending, rationale: "missing: dated description of the index/mark-price oracle, its fallbacks and whether signatures are verified on-chain"}
+- {id: S10, score: 3, confidence: medium, evidence: [LIT-24, LIT-23, LIT-09], assessor: "agent:claude", rationale: "Funds sit in a validity-proved Ethereum rollup with an audited desert-mode exit, not a multisig bridge; ~$52M of exits went via Arbitrum, and the instant-upgrade path (S05) can override the exit."}
+
+# --- K Tokenomics
+- {id: K01, score: 3, confidence: medium, evidence: [LIT-01, LIT-06, LIT-07], assessor: "agent:claude", rationale: "Team says all product value accrues to LIT; treasury LIT balance rose (implied buybacks) and LIT staking became mandatory for LLP access on 14 Jan. Buyback size and rules are discretionary and unpublished."}
+- {id: K09, score: 1, confidence: medium, evidence: [LIT-01, LIT-16, LIT-06], assessor: "agent:claude", rationale: "Total supply is on-chain, but no vesting-contract addresses for the 50% team/investor share or the ecosystem reserve were published, and LIT was not yet withdrawable from Lighter on 2 Jan."}
+- {id: K10, score: 1, confidence: medium, evidence: [LIT-18, LIT-19, LIT-09, LIT-10, LIT-28], assessor: "agent:claude", rationale: "Points rewarded volume that analysts tie to farming (volume/OI ~27 in beta); ~$250M left in 24h after the drop and farmers were moving on by 12 Jan; ~75% of addresses still held on day 1 (unnamed analysts)."}
+
+# --- O On-chain Traction
+- {id: O06, score: 1, confidence: medium, evidence: [LIT-19, LIT-29, LIT-18, LIT-09, LIT-28], assessor: "agent:claude", rationale: "Volume/OI ~27 in beta and ~8 in Nov 2025 (called points farming); volume reportedly fell from $15B to $3B and farmers left after the airdrop. No sybil clustering data published."}
+- {id: O09, status: pending, rationale: "missing: count of third-party builders/integrations (SDK users, front-ends, vault operators) as of Jan 2026"}
+
+# --- M Market Structure
+- {id: M03, status: pending, rationale: "missing: dated LIT spot volume, depth and trade-size data across venues at listing"}
+- {id: M06, status: pending, rationale: "missing: dated list of LIT spot venues before 15 Jan; LIT was not withdrawable on 2 Jan, so off-platform listings may have been IOUs"}
+- {id: M07, status: pending, rationale: "missing: LIT perp OI and funding history; only pre-market prices and a 54% short skew among top accounts are known"}
+- {id: M09, status: pending, rationale: "missing: who supplies liquidity on Lighter's LIT spot book and the size of the market-maker allocation"}
+- {id: M10, score: 3, confidence: medium, evidence: [LIT-14, LIT-06, LIT-18, LIT-28], assessor: "agent:claude", rationale: "On-chain perps hit a record $1.2T in Oct 2025 and Lighter led monthly volume in Nov–Dec; but LIT fell ~30% in the week to 12 Jan as farmers moved to newer perp DEXs."}
+
+# --- B Business Model
+- {id: B02, score: 2, confidence: medium, evidence: [LIT-16, LIT-18], assessor: "agent:claude", rationale: "Revenue comes from premium accounts (market makers/HFT) paying for latency, not retail; organic, but concentrated in a professional segment and tied to volume cycles."}
+- {id: B03, score: 3, confidence: medium, evidence: [LIT-06, LIT-31, LIT-30, LIT-01], assessor: "agent:claude", rationale: "Treasury Account #0 visibly bought ~180k LIT with USDC around 5–6 Jan, but the buyback was not formally confirmed, and the share of revenue used and the schedule are undisclosed."}
+- {id: B09, status: pending, rationale: "missing: revenue split by account; premium/API fee payers are likely concentrated but no data published"}
+- {id: B10, score: 2, confidence: medium, evidence: [LIT-16, LIT-09, LIT-18], assessor: "agent:claude", rationale: "Professional fee revenue (~$105–200M annualised) would remain, but much retail volume was points-driven and reportedly fell ~5× from the November peak around the airdrop."}
+
+# --- C Competition & Moat
+- {id: C01, score: 4, confidence: medium, evidence: [LIT-14, LIT-18], assessor: "agent:claude", rationale: "Perps are most of crypto trading volume; on-chain perps hit a record $1.2T in Oct 2025 and rose to >56% of DEX volume."}
+- {id: C03, score: 2, confidence: medium, evidence: [LIT-29, LIT-18, LIT-10, LIT-28], assessor: "agent:claude", rationale: "Volume share went from launch to 27.7% (Nov) and ~20% (end-2025), but OI share was only 12.5%, the gain was paid for with a $675M points airdrop, and farmers were leaving by mid-January."}
+- {id: C04, score: 2, confidence: medium, evidence: [LIT-18, LIT-16], assessor: "agent:claude", rationale: "Zero retail fees and ZK-verified matching are the moat; OI (~$1.4B vs Hyperliquid ~$8B) shows positions and liquidity did not follow volume, and retention after incentives is untested."}
+- {id: C05, score: 2, confidence: medium, evidence: [LIT-26, LIT-18], assessor: "agent:claude", rationale: "Circuits are now open source and zero fees are easy to copy; liquidity and the LLP are the sticky parts."}
+- {id: C06, score: 3, confidence: medium, evidence: [LIT-16, LIT-24, LIT-23], assessor: "agent:claude", rationale: "Versus Hyperliquid and Aster: free retail trading plus Ethereum settlement with ZK-proved execution and a proof-based escape hatch; the fee edge is copyable, the verifiability less so."}
+- {id: C07, status: pending, rationale: "missing: peer FDV and fees on the same date (Hyperliquid, Aster) to compare with LIT's ~15.6× FDV/fees"}
+- {id: C08, score: 2, confidence: low, evidence: [LIT-14, LIT-16], assessor: "agent:claude", rationale: "CEX perps dwarf DEX perps and Robinhood/Coinbase (both reported backers) could offer similar products; no competing native feature announced against Lighter specifically."}
+- {id: C09, status: pending, rationale: "missing: live partner integrations with observable flows; announced relationships are investors, not integrations"}
+- {id: C10, score: 3, confidence: low, evidence: [LIT-05, LIT-01, LIT-16], assessor: "agent:claude", rationale: "Adds a US-issued, Ethereum-settled perp-DEX token to Coinbase's Ethereum/Base focus; Coinbase is reported as a backer, a conflict the listing committee should record."}
+
+# --- D Community
+- {id: D01, status: pending, rationale: "missing: dated social audience and engagement data"}
+- {id: D02, status: pending, rationale: "missing: bot-likelihood / engagement-quality analysis"}
+- {id: D04, status: pending, rationale: "missing: user geography and whether US persons can trade perps"}
+- {id: D05, score: 2, confidence: low, evidence: [LIT-18, LIT-16], assessor: "agent:claude", rationale: "Attention was driven by a disclosed points programme; team says it does not pay for listings; no undisclosed KOL payments found."}
+- {id: D06, status: pending, rationale: "missing: grants, hackathons and external contributors"}
+- {id: D08, score: 2, confidence: medium, evidence: [LIT-12, LIT-11, LIT-06, LIT-08], assessor: "agent:claude", rationale: "Detailed loss data and compensation after the Oct outage; but Discord-only response to Dec withdrawal delays, unconfirmed buybacks, and limited upfront disclosure of the market-maker allocation."}
+- {id: D09, score: 2, confidence: medium, evidence: [LIT-08, LIT-09, LIT-28, LIT-16], assessor: "agent:claude", rationale: "Bullish theses coexist with specific unresolved criticism: insider/LP airdrop allocation, market-maker deal, farmer exodus and a ~30% weekly price drop."}
+- {id: D10, score: 3, confidence: medium, evidence: [LIT-14, LIT-20, LIT-24], assessor: "agent:claude", rationale: "Top-tier investors and Robinhood backed it, zkSecurity audits it and L2BEAT tracks it; few independent protocol integrations documented."}
+
+# --- L Legal & Compliance
+- {id: L01, score: 3, confidence: medium, evidence: [LIT-01, LIT-02], assessor: "agent:claude", rationale: "Token issued by Lighter's US C-Corp, which operates the protocol; entity name and registry record not checked."}
+- {id: L02, score: 1, confidence: medium, evidence: [LIT-01, LIT-06, LIT-24], assessor: "agent:claude", rationale: "A US company issues the token, controls upgrades via an EOA governor, and markets that all value 'will fully accrue to LIT holders' with buybacks — facts that cut toward a security analysis."}
+- {id: L04, status: pending, rationale: "missing: whether US persons are blocked from perps and any CFTC/other registration for a US-issuer-operated derivatives venue"}
+- {id: L05, status: pending, rationale: "missing: search of SEC/CFTC/state regulator and court records; press coverage to 14 Jan reports none"}
+- {id: L06, score: 4, confidence: medium, evidence: [LIT-24, LIT-23], assessor: "agent:claude", rationale: "No privacy features: ZK proofs are used for validity, state diffs are posted to Ethereum and accounts map to L1 addresses."}
+- {id: L10, status: pending, rationale: "missing: geofencing terms and enforcement across front end, API and airdrop"}

@@ -1,0 +1,89 @@
+{
+  "project": "Lighter (LIT)",
+  "as_of": "2026-01-15",
+  "sources": [
+    {
+      "id": "LIT-08",
+      "type": "news",
+      "tier": 2,
+      "title": "Coin360 — Lighter LIT token launch: airdrop and market-maker controversy (2 Jan 2026)",
+      "url": "https://coin360.com/news/lighter-lit-token-launch-airdrop-market-maker-controversy",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 2 Jan 2026. Reports that Jump Crypto received >$24M of LIT for market-making and kept ~323,956 LIT as fees, with limited upfront communication. ~$250M withdrawn within 24h of the airdrop (~20% of ~$1.4B TVL); net outflow ~$101M. CEO Novakovski: scrutinised wallets belonged to a third-party liquidity provider from the private beta; no undisclosed relationships (paraphrase). Linked wallets got ~10M LIT (~4% of circulating) after ~$5M USDC in LLP from April 2025; ~2.76M LIT (~$7.18M) sold. LIT opened ~$3.30, fell ~32% to ~$2.20, rebounded ~$2.60; ~54% of top accounts short."
+    },
+    {
+      "id": "LIT-09",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinGape — Lighter team under fire after alleged $7.18M LIT dump post-airdrop (1 Jan 2026)",
+      "url": "https://coingape.com/lighter-team-under-fire-after-alleged-7-18m-lit-token-dump-post-airdrop/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 1 Jan 2026. Researcher MLM: one entity split ~$5M USDC LLP deposit across 5 wallets and received 9,999,999.6 LIT (~1% of supply, ~4% of circulating); ~2.76M LIT sold since TGE. ZachXBT hinted at insider trading. Bubblemaps: ~$250M withdrawn in 24h ($201.9M Ethereum, $52.2M Arbitrum), ~20% of $1.4B TVL. Platform volume reportedly fell from $15B (November) to $3B. No team comment in the article."
+    },
+    {
+      "id": "LIT-10",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinAcademy — $250M withdrawn from Lighter less than 24h after LIT airdrop (31 Dec 2025)",
+      "url": "https://coinacademy.fr/actu/250-millions-retires-lighter-24-heures-airdrop-lit/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 31 Dec 2025. Bubblemaps: $250M withdrawals in 24h. Airdrop worth ~$675M. Unnamed on-chain analysts: ~75% of recipient addresses still hold LIT, ~7% bought more. LIT >$2.70, market cap ~$678M at writing. Buyback terms not clearly defined."
+    },
+    {
+      "id": "LIT-15",
+      "type": "news",
+      "tier": 2,
+      "title": "The Defiant — Lighter becomes top perp DEX by volume, reveals $68M raise (12 Nov 2025)",
+      "url": "https://thedefiant.io/news/defi/lighter-becomes-top-perp-dex-by-volume-reveals-usd68-million-raise",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 12 Nov 2025. Lighter moved to the top of perp DEXs by volume, ahead of Hyperliquid and Aster; founder Vladimir Novakovski described as a former AI entrepreneur; $68M raise led by Founders Fund and Ribbit at ~$1.5B."
+    },
+    {
+      "id": "LIT-18",
+      "type": "research",
+      "tier": 2,
+      "title": "KuCoin Ventures weekly report — Lighter's sector disruption (6 Jan 2026)",
+      "url": "https://www.kucoin.com/blog/en-kucoin-ventures-weekly-report-asset-recovery-strategic-gaming-amid-geopolitical-shocks-from-lighter-s-sector-disruption-to-broccoli-s-liquidity-hunt",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 6 Jan 2026 (KuCoin is an exchange; has its own listing interest). TGE 30 Dec 2025, 25% airdropped (~$675M), no vesting on airdrop. TVL grew to >$1.2B in H2-2025 (DefiLlama chart). ~20% of DEX perp market by end-2025; 30d volume briefly >$200B. OI ~$1.4B vs Hyperliquid ~$8B (undated, DefiLlama). Volume/OI ratio consistently above peers; frequent small leveraged trades to farm points ('wash trading' — no direct proof). Retail 0% taker fee; estimated annualised revenue ~$105M vs >$800M for Hyperliquid on similar volume. ~1 point ≈ 20 LIT; est. 75% retention."
+    },
+    {
+      "id": "LIT-28",
+      "type": "news",
+      "tier": 2,
+      "title": "The Defiant — Lighter token struggles as farmers transition to alternative exchanges (12 Jan 2026)",
+      "url": "https://thedefiant.io/news/defi/lighter-token-struggles-as-farmers-transition-to-alternative-exchanges",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 12 Jan 2026 20:33 UTC. Summary: LIT down nearly 30% over the past week as points farmers move to other exchanges. Article body did not load; no figures available."
+    },
+    {
+      "id": "LIT-29",
+      "type": "research",
+      "tier": 2,
+      "title": "TechFlow — perp DEX comparison incl. Lighter volume/OI and LLP performance (18 Nov 2025)",
+      "url": "https://techflowpost.com/en-US/article/29149",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 18 Nov 2025. Lighter 24h volume $12.78B vs OI $1.591B (ratio ~8); 30-day $294B volume vs $47B cumulative OI (6.25), called 'clear farming behavior'. >56,000 users within weeks of the 2 Oct 2025 launch; $1.1B TVL within weeks; November share 27.7% of perp-DEX volume and 12.5% of OI (24h, undated). In the 10–11 Oct crash Lighter had a ~4h outage after a database failure and its LLP lost money while Hyperliquid's HLP stayed profitable."
+    },
+    {
+      "id": "LIT-30",
+      "type": "news",
+      "tier": 2,
+      "title": "Bitrue blog (sponsored) — LIT price analysis: why is it going up? (7 Jan 2026)",
+      "url": "https://www.bitrue.com/blog/lit-price-analysis-why-is-it-going-up",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 7 Jan 2026; sponsored exchange content, figures not independently verified. On 6 Jan the treasury spent USDC to buy ~180,700 LIT; an assistance fund bought ~165,790 LIT at ~$3.05 (undated). LIT ~$3.09; 24h volume ~$36M (undated)."
+    },
+    {
+      "id": "LIT-31",
+      "type": "news",
+      "tier": 2,
+      "title": "Capwolf — Lighter LIT token surges 16% on buyback launch (6 Jan 2026)",
+      "url": "https://capwolf.com/lighter-lit-token-surges-16-on-buyback-launch/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 6 Jan 2026. Explorer reportedly showed ~180,000 LIT and ~$1.35M in stablecoins in the treasury; no executed buyback amount reported. LIT ~$3.06; past-week range $2.33–$3.37. Session (5–6 Jan) spot volume ~$157.8M, derivatives volume ~$21M, OI ~$1.81M (aggregator source not named)."
+    }
+  ],
+  "metrics": {},
+  "claims": []
+}
