@@ -1,0 +1,180 @@
+{
+  "project": "Fogo (FOGO)",
+  "as_of": "2026-01-15",
+  "sources": [
+    {
+      "id": "FOGO-01",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Fogo cancels $20 million pre-sale, will airdrop tokens instead (published 12 Dec 2025, updated 15 Dec 2025)",
+      "url": "https://www.theblock.co/post/382435/fogo-solana-svm-airdrop-token-sale-mainnet-launch",
+      "retrieved": "2026-10-23",
+      "excerpt": "Fogo cancelled a $20M presale (2% of supply at $1B FDV, set for 17 Dec); the 2% goes to an airdrop before the 13 Jan mainnet. Before cancelling it burned a further 2% of genesis supply set aside for core contributors. Tokenomics published 11 Dec: core contributors 34% on four-year vesting; institutional investors Distributed Global and CMS Holdings 8.77%; advisors 7%; community ownership 11.25% (Echo sales and the cancelled Metaplex sale); about one-third of supply unlocked to fund the Foundation; 6.6% airdrop/launch. Echo: ~3,200 investors, $8M at a $100M valuation. Testnet live since July. Robert Sagurton (Foundation director) is ex-Jump Crypto. Airdrop eligibility: Fogo Fishers users, Portal Bridge points holders, USDC transfers since the presale announcement."
+    },
+    {
+      "id": "FOGO-02",
+      "type": "news",
+      "tier": 2,
+      "title": "Gate News — Fogo's strategic pivot: $20M presale cancelled, switched to airdrop (15 Dec 2025)",
+      "url": "https://www.gate.com/news/detail/16831725",
+      "retrieved": "2026-10-23",
+      "excerpt": "Restates the December tokenomics: 38.98% of supply unlocks on 13 Jan, which the article calls much higher than most new projects; ~one-third unlocked to fund the Foundation; core contributors 34% over four years; Distributed Global + CMS 8.77%; advisors 7%; community 11.25%. Fogo representative on the 2% burn: 'These tokens are now gone forever.'"
+    },
+    {
+      "id": "FOGO-03",
+      "type": "news",
+      "tier": 2,
+      "title": "OurCryptoTalk — Fogo cancels ICO amid backlash (16 Dec 2025)",
+      "url": "https://ourcryptotalk.com/news/fogo-cancels-ico-amid-backlash",
+      "retrieved": "2026-10-23",
+      "excerpt": "Presale announced 11 Dec (2% of 10B supply at $0.10, $1B FDV, $20M) and cancelled 13 Dec after community criticism of the FDV, small float and early-investor advantage; critics called it 'extractive'. Fogo cited community feedback and a market that did not favour high-FDV launches."
+    },
+    {
+      "id": "FOGO-06",
+      "type": "research",
+      "tier": 2,
+      "title": "BlockEden — Fogo L1: Firedancer, institutional trading on SVM (13 Jan 2026, updated 14 Jan 2026)",
+      "url": "https://blockeden.xyz/blog/2026/01/13/fogo-l1-firedancer-institutional-solana-rwa/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Pure-Firedancer SVM L1 with a hand-picked validator set and 'multi-local' consensus: primary validators clustered in Tokyo with global backup nodes. Testnet ~40ms blocks. Team: Robert Sagurton (ex-Global Head of Digital Asset Sales, Jump Crypto), Douglas Colkitt (built Ambient Finance, ex-Citadel quant), Douro Labs (Pyth) contributors. Funding $13.5M: $5.5M seed led by Distributed Global, $8M Echo round at $100M. Lists Foundation 30.38% unlocked at launch, core contributors 34%, institutional 8.77%. Ecosystem: Ambient (perps), Valiant (DEX), FluxBeam, Pyron/Fogolend, Brasa (LST), Moonit/Metaplex; Pyth feeds. Risks named: curated validators, Tokyo clustering as a regional point of failure, a 30%+ unlocked foundation allocation, and Firedancer adoption on Solana (~21% of staked SOL) narrowing Fogo's speed edge. Promotional tone."
+    },
+    {
+      "id": "FOGO-07",
+      "type": "tokenomics",
+      "tier": 2,
+      "title": "ICO Drops — Fogo (FOGO) funding rounds, Binance Wallet sale and allocation amounts",
+      "url": "https://icodrops.com/fogo/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Seed Q4 2024 $5.5M (CMS Holdings, Distributed Global); 24 Jan 2025 $8M (Cobie, CMS Holdings, Kain Warwick, Larry Cermak); Binance Wallet sale 13 Jan 2026 $7M at $0.035/FOGO (200M FOGO, 2% of supply, $350M valuation). Allocation amounts: core contributors 3.4B, advisors 700M, Echo raises 868M, institutional investors 1.21B (all locked); Binance Prime Sale 200M, community airdrop 600M, launch liquidity 650M, Foundation 2.18B (all unlocked). Live tracker page; only the allocation and sale terms were used."
+    },
+    {
+      "id": "FOGO-08",
+      "type": "exchange",
+      "tier": 2,
+      "title": "CoinCarp — Fogo Prime Sale on Binance Wallet (event page)",
+      "url": "https://www.coincarp.com/events/fogo-new-listing-on-binance-wallet/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Binance Wallet FOGO Prime Sale: subscription 13 Jan 2026 08:00–10:00 UTC on BSC, $7,000,000 raised in BNB, 200,000,000 FOGO (2% of total supply) at $0.035, 6 BNB cap per user, pro-rata, Alpha Points required. Alpha limit-order trading from 15 Jan 2026 12:00 UTC. (Page is undated and also shows a live price widget; that price was ignored.)"
+    },
+    {
+      "id": "FOGO-09",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinGabbar — Fogo airdrop listing on Binance: $FOGO pre-TGE sale and price details (13 Jan 2026)",
+      "url": "https://www.coingabbar.com/en/crypto-currency-news/fogo-airdrop-listing-date-binance-pre-tge-sale-price-today",
+      "retrieved": "2026-10-23",
+      "excerpt": "Final tokenomics: community 16.68% (Echo 8.68%, Binance Prime Sale 2%, community airdrop 6%), core contributors 34% locked four years, Foundation 21.76%, advisors 7% locked then gradual release, institutional investors 12.06% locked until 2026, launch liquidity 6.5%, burned 2%. 36.26% unlocked at launch. Prime Sale $7M, 200M FOGO at $0.035, 13 Jan. Page shows a later 'last updated' stamp; only the 13 Jan content was used. Speculative listing-price projections in the article were not used."
+    },
+    {
+      "id": "FOGO-11",
+      "type": "tokenomics",
+      "tier": 2,
+      "title": "Tokenomics.com — Fogo unlock schedule (contractual terms)",
+      "url": "https://app.tokenomics.com/tokenomics/fogo/unlocks",
+      "retrieved": "2026-10-23",
+      "excerpt": "Total supply 10,000,000,000; TGE 15 Jan 2026. Core contributors 34%, advisors 7%, institutional investors 12.1%, Echo raise 8.7%: each 8-month cliff then 36-month linear, schedule ending 15 Aug 2029. 100% at TGE: Foundation 21.8%, launch liquidity 6.5%, community future rewards 4.5%, 15 Jan distribution 1.5%, Binance Prime Sale 2%. Burned 2%. Live tracker; only the contractual schedule was used, not price or current supply."
+    },
+    {
+      "id": "FOGO-12",
+      "type": "exchange",
+      "tier": 2,
+      "title": "Bloomingbit — Binance to list Fogo (FOGO) with Seed Tag (12 Jan 2026)",
+      "url": "https://en.bloomingbit.io/feed/news/103882",
+      "retrieved": "2026-10-23",
+      "excerpt": "Binance spot listing of FOGO with Seed Tag: FOGO/USDT, FOGO/USDC, FOGO/TRY from 15 Jan 2026 14:00 UTC; withdrawals from 16 Jan 14:00 UTC; an additional 50,000,000 FOGO allocated for future marketing campaigns; Binance Alpha exposure ends when spot trading opens."
+    },
+    {
+      "id": "FOGO-13",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinTurk — Binance announces altcoin listing: Fogo joins the market (12 Jan 2026)",
+      "url": "https://en.coin-turk.com/binance-announces-surprise-altcoin-listing-fogo-coin-joins-the-market/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Seed Tag; trading 15 Jan 2026 14:00 UTC; pairs FOGO/USDT, FOGO/USDC, FOGO/TRY (Binance TR); listing fee 0 BNB; 50M FOGO for marketing campaigns; FOGO moves from Alpha to Spot accounts."
+    },
+    {
+      "id": "FOGO-14",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News — Binance to list FOGO with Seed Tag (13 Jan 2026)",
+      "url": "https://www.mexc.com/news/465004",
+      "retrieved": "2026-10-23",
+      "excerpt": "States mainnet and TGE on 13 Jan 2026, $13.5M of funding plus a $7M pre-TGE Prime Sale, testnet throughput of 1,433 TPS, 0 BNB listing fee, 50M FOGO for marketing. (Other sources date the public mainnet to 15 Jan; the page's live price widget was ignored.)"
+    }
+  ],
+  "metrics": {
+    "total_supply": {
+      "value": 9800000000,
+      "source": "FOGO-11",
+      "note": "10B genesis supply (FOGO-11) less the 2% burned before TGE (FOGO-01). Supply is not capped: fixed 2% annual inflation (see annual_inflation_pct)."
+    },
+    "circulating_supply": {
+      "value": 3626000000,
+      "source": "FOGO-11",
+      "note": "Supply unlocked at TGE = 36.26% of 10B (FOGO-09, FOGO-11). Not an observed market snapshot. It includes 21.76% Foundation and 4.5% future community rewards still held by the Foundation, so the free float on 15 Jan is smaller."
+    },
+    "tge_unlocked_pct": {
+      "value": 36.26,
+      "source": "FOGO-11",
+      "note": "sum of the categories marked 100% at TGE; FOGO-09 gives the same 36.26%"
+    },
+    "institutional_investor_pct": {
+      "value": 12.06,
+      "source": "FOGO-07",
+      "note": "1.21B FOGO; FOGO-09 and FOGO-11 agree (12.06% / 12.1%)"
+    },
+    "foundation_controlled_pct": {
+      "value": 28.26,
+      "source": "FOGO-09",
+      "note": "Foundation 21.76% + launch liquidity 6.5%, both unlocked at TGE"
+    },
+    "insider_allocation_pct": {
+      "value": 61.74,
+      "source": "FOGO-11",
+      "note": "core contributors 34% + advisors 7% + institutional investors 12.06% + Echo raise 8.68%. Adding the team-run Foundation (21.76%) would give 83.5%."
+    },
+    "team_vesting_months": {
+      "value": 44,
+      "source": "FOGO-11",
+      "note": "8-month cliff from TGE then 36 monthly releases, ending 15 Aug 2029. FOGO-09 describes it as a four-year lock."
+    },
+    "unlock_90d_pct_of_circ": {
+      "value": 0,
+      "source": "FOGO-11",
+      "note": "No vesting tranche falls before the 8-month cliff (~15 Sep 2026). The Foundation's 21.76% is already unlocked and counted in circulating supply, so it can be sold at any time without appearing as an 'unlock'."
+    },
+    "unlock_12m_pct_of_circ": {
+      "value": 23.6,
+      "source": "FOGO-11",
+      "note": "Reviewer's calculation from FOGO-11 terms: 6.174B vesting tokens (34 + 7 + 12.06 + 8.68%) / 36 per month = ~171.5M/month; 5 tranches (Sep 2026 to 15 Jan 2027) = ~857M = 23.6% of 3.626B. Excludes discretionary sales from the unlocked Foundation balance."
+    },
+    "annual_inflation_pct": {
+      "value": 2,
+      "source": "FOGO-17",
+      "note": "validator client sets fixed 2% annual inflation (feature 'fixed_2pct_inflation', commit 008996d, 29 Oct 2025). Fee burn not established, so gross = net here."
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "December tokenomics: 38.98% of supply unlocks at network launch",
+      "metric": "tge_unlocked_pct",
+      "claimed_value": 38.98,
+      "source": "FOGO-02"
+    },
+    {
+      "id": "C2",
+      "statement": "December tokenomics: institutional investors (Distributed Global, CMS Holdings) hold 8.77% of supply",
+      "metric": "institutional_investor_pct",
+      "claimed_value": 8.77,
+      "source": "FOGO-01"
+    },
+    {
+      "id": "C3",
+      "statement": "December tokenomics as restated at launch: Foundation 30.38%, unlocked at launch",
+      "metric": "foundation_controlled_pct",
+      "claimed_value": 30.38,
+      "source": "FOGO-06"
+    }
+  ]
+}

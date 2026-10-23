@@ -1,0 +1,32 @@
+# REAL project, PUBLIC sources only. Point-in-time review AS OF 2026-01-15, the day
+# Binance listed FOGO spot (Seed Tag, 14:00 UTC). Only sources published on or
+# before that date are used; live tracker pages were used only for contractual
+# terms (allocation, vesting), never for price or supply snapshots.
+# Human-only checks (KYC, market-maker terms, legal opinion) are left open on purpose.
+project: Fogo (FOGO)
+profile: l1_l2          # SVM base layer; value accrues through gas and staking
+as_of: 2026-01-15
+
+evidence:
+  - evidence/market_tokenomics.json
+  - evidence/protocol_security.json
+  - evidence/legal_community_competition.json
+
+assessments:
+  - assessments/agent.yaml
+
+# Why some metrics are deliberately NOT set. Each becomes a note in the report.
+notes:
+  K07: "Price, market cap, FDV, 24h volume, depth and spread at listing are not set. Trading opened on 15 Jan 2026; no pre-listing exchange snapshot or listing-day price published on or before that date was found. The only priced reference is the Binance Wallet Prime Sale on 13 Jan: $0.035/FOGO, about $350M FDV on 10B supply (FOGO-07, FOGO-08). The Echo round was $8M at a $100M valuation (FOGO-01). M01, M02, M04, M08, K06, K07, B04 are therefore unscored."
+  L03: "sanctions_exposure not established: no public wallet screening. Needs the venue's own Chainalysis/TRM screening of the Foundation, launch-liquidity, Prime Sale and team addresses."
+  K03: "Top-holder concentration not established. At TGE the Foundation controls 21.76% plus 6.5% launch liquidity, about 78% of the 36.26% unlocked supply (FOGO-09). Needs labelled holder data from the Fogo explorer; locked allocations' custody (vesting contracts or custodian) is not documented."
+  S04: "No upgrade timelock is documented. Protocol changes ship as client releases adopted by a curated validator set (FOGO-17, FOGO-20). Ask: notice period before upgrades, and who controls the Sessions programs' upgrade authority."
+  S07: "No public bug bounty was found for Fogo or Fogo Sessions."
+  D03: "Holder count not available; the token was not distributed until 15 Jan."
+  D07: "No token-holder governance exists (FOGO-20); not applicable in practice."
+  O01: "O01, O02, O03, O07, O10 and TVL are not set: public mainnet was 0–2 days old on 15 Jan 2026 (FOGO-14 says 13 Jan, FOGO-15/16 say 15 Jan)."
+  B01: "B01, B05, B06, B07, B08 not set: no fee revenue yet; Foundation treasury size and burn rate are not published. Funding raised: $5.5M seed + $8M Echo + $7M Prime Sale (FOGO-07)."
+  C02: "No category share at day 0."
+  S06: "The FOGO sold in the Prime Sale was subscribed on BSC (FOGO-08). The mint authority and bridge for any BSC representation were not checked; RF01 is set from the native token only."
+  T10: "Dec 11 tokenomics (FOGO-01/02) and launch tokenomics (FOGO-09/11) differ: institutional 8.77% to 12.06%, Foundation ~30.4% to 21.76% + 6.5% launch liquidity, and the 2% presale cancelled on 13 Dec was re-run as the Binance Prime Sale at a lower price ($0.035 vs $0.10). Recorded as claims C1-C3."
+  P10: "fogo.io and docs.fogo.io could not be fetched in this review (access not granted), so official docs, the litepaper, treasury addresses and the published vesting addresses were not read directly."

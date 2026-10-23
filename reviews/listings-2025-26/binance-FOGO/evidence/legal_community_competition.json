@@ -1,0 +1,32 @@
+{
+  "project": "Fogo (FOGO)",
+  "as_of": "2026-01-15",
+  "sources": [
+    {
+      "id": "FOGO-10",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinGabbar — FOGO airdrop claim live as Binance, Gate and KuCoin list tomorrow (14 Jan 2026)",
+      "url": "https://www.coingabbar.com/en/crypto-currency-news/fogo-airdrop-claim-live-binance-gate-kucoin-listing-tomorrow",
+      "retrieved": "2026-10-23",
+      "excerpt": "Allocation checker live 14 Jan; claims and distribution from 15 Jan with the public mainnet. Allocations roughly 12,000 to 100,000+ FOGO depending on Flames activity, Fishing and early participation; the team acknowledged a display bug hiding some Season 1 Flames allocations (mainly EVM wallets). Spot listings 15 Jan: Binance (Seed Tag), plus Gate, KuCoin and OKX. Page carries a later 'last updated' stamp; only the 14 Jan content was used."
+    },
+    {
+      "id": "FOGO-21",
+      "type": "search",
+      "tier": 2,
+      "title": "Reviewer search — enforcement actions, lawsuits or regulator warnings naming Fogo, Fogo Foundation, Robert Sagurton or Douglas Colkitt",
+      "url": "",
+      "retrieved": "2026-10-23",
+      "excerpt": "Web searches on the project and founders (with SEC, lawsuit, enforcement, controversy), read only for items dated on or before 15 Jan 2026, found no enforcement action, lawsuit or regulator warning. None of the pre-listing coverage (FOGO-01, FOGO-03, FOGO-04, FOGO-06) mentions one. Court registries and regulator lists were not searched directly."
+    }
+  ],
+  "metrics": {
+    "active_enforcement_action": {
+      "value": false,
+      "source": "FOGO-21",
+      "note": "Negative news search only. Court-record (PACER) and regulator-list checks were not done; the venue's compliance team should confirm."
+    }
+  },
+  "claims": []
+}

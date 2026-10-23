@@ -1,0 +1,83 @@
+# Fogo (FOGO): judgment scores from public sources, as of 2026-01-15 (Binance spot listing day).
+# Point-in-time review: only sources published on or before 15 Jan 2026 are used.
+# Every score cites evidence ids in evidence/*.json. Where public sources were not
+# enough, the dimension is `pending` with what is missing. T02, M05 and L07 are
+# human-only and deliberately absent.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, score: 3, confidence: medium, evidence: [FOGO-06, FOGO-05, FOGO-04], assessor: "agent:claude", rationale: "Colkitt built Ambient Finance (ex-Citadel quant); Sagurton ran digital-asset sales at Jump Crypto; engineering comes from Douro Labs, the team behind Pyth and Pythnet. Outcomes of Ambient were not established from these sources."}
+- {id: T03, score: 2, confidence: medium, evidence: [FOGO-17, FOGO-18, FOGO-05], assessor: "agent:claude", rationale: "9 human committers across the two public repos in the 90 days to listing, several from Douro Labs; core development depends on one outside firm, and no security, BD or ops leads are named."}
+- {id: T04, score: 3, confidence: medium, evidence: [FOGO-17, FOGO-18, FOGO-04], assessor: "agent:claude", rationale: "In-house (Douro Labs) engineers ship public changes to a Firedancer fork (zones, validator manager, fixed inflation) and an original Sessions standard; the underlying client is Jump's work, not theirs."}
+- {id: T05, score: 3, confidence: medium, evidence: [FOGO-03, FOGO-04, FOGO-21], assessor: "agent:claude", rationale: "No enforcement or misconduct found; public criticism concerns pricing (the $1B-FDV presale called 'extractive', cancelled within two days) and raising on forked code, not conduct."}
+- {id: T07, score: 1, confidence: medium, evidence: [FOGO-04, FOGO-20, FOGO-06], assessor: "agent:claude", rationale: "Validators are hand-picked by a genesis authority and clustered in one zone; there is no token-holder governance and the DAO roadmap has no dates."}
+- {id: T08, status: pending, rationale: "missing: Foundation and launch-liquidity wallet addresses (21.76% + 6.5% unlocked at TGE) and any treasury reporting; fogo.io docs could not be accessed in this review"}
+- {id: T09, score: 2, confidence: medium, evidence: [FOGO-07, FOGO-01, FOGO-06], assessor: "agent:claude", rationale: "Seed led by Distributed Global with CMS Holdings, then an Echo community round (Cobie, Kain Warwick, Larry Cermak, ~3,200 investors) and a Binance Wallet sale; crypto-native funds and angels, no record of support through a down cycle established."}
+
+# --- P Product & Technology
+- {id: P01, score: 2, confidence: medium, evidence: [FOGO-01, FOGO-05, FOGO-10], assessor: "agent:claude", rationale: "Low-latency on-chain trading is a real need, but Fogo's only usage so far is testnet activity rewarded with Flames points that convert into the airdrop."}
+- {id: P02, score: 2, confidence: medium, evidence: [FOGO-14, FOGO-15, FOGO-16, FOGO-18], assessor: "agent:claude", rationale: "Public mainnet went live 13–15 Jan 2026, days before listing; Sessions is still a 'developer preview' and zone rotation and open validator entry are not live."}
+- {id: P03, score: 2, confidence: high, evidence: [FOGO-17, FOGO-04], assessor: "agent:claude", rationale: "Client is a declared fork of Firedancer with meaningful changes (multi-local zones, validator manager, fixed 2% inflation, Sessions instruction)."}
+- {id: P04, score: 2, confidence: medium, evidence: [FOGO-05, FOGO-06, FOGO-20], assessor: "agent:claude", rationale: "Speed comes from co-locating validators in one data centre in Asia with a single client; a global fallback is described but its trigger is undocumented and untested on mainnet."}
+- {id: P05, score: 1, confidence: medium, evidence: [FOGO-17, FOGO-15, FOGO-05], assessor: "agent:claude", rationale: "Depends on upstream Firedancer (Jump) as its only client, Wormhole as the sole official bridge for USDC/ETH/SOL, Douro Labs for engineering and one data centre for block production."}
+- {id: P08, score: 2, confidence: high, evidence: [FOGO-04, FOGO-01, FOGO-15], assessor: "agent:claude", rationale: "Testnet and mainnet were planned for H1 2025; testnet shipped July 2025 and mainnet January 2026, about six months late."}
+- {id: P09, score: 3, confidence: medium, evidence: [FOGO-17, FOGO-18], assessor: "agent:claude", rationale: "Validator client and Sessions programs are public under Apache 2.0; reproducible builds against mainnet binaries are not documented."}
+- {id: P10, status: pending, rationale: "missing: docs.fogo.io and the litepaper could not be accessed in this review; need technical specs for zone rotation, fallback and validator admission"}
+
+# --- S Security
+- {id: S02, score: 1, confidence: medium, evidence: [FOGO-19, FOGO-17, FOGO-18], assessor: "agent:claude", rationale: "The only audit found covers upstream Firedancer v0.1 for Jump (2 highs, Agave runtime out of scope); Fogo's own modifications and the Sessions programs have no public audit."}
+- {id: S05, score: 1, confidence: medium, evidence: [FOGO-20, FOGO-04, FOGO-17], assessor: "agent:claude", rationale: "A genesis authority curates the validator set, and protocol changes ship as client releases from the Foundation-funded team; no on-chain timelock or independent signer set is documented."}
+- {id: S06, score: 3, confidence: medium, evidence: [FOGO-17, FOGO-05], assessor: "agent:claude", rationale: "Native token with no mint key; issuance is a fixed 2% a year set in the client. Supply is not fixed, and the BSC token used for the Prime Sale was not checked."}
+- {id: S08, status: pending, rationale: "missing: production history; mainnet was 0–2 days old at as_of, so no incident record exists to judge"}
+- {id: S09, status: pending, rationale: "missing: which oracle setups the launch DeFi apps use; native Pyth integration is claimed (FOGO-06) but not verified"}
+- {id: S10, score: 2, confidence: medium, evidence: [FOGO-15, FOGO-05], assessor: "agent:claude", rationale: "USDC, ETH and SOL reach Fogo only through Wormhole, its official native bridge; an established bridge, but all external liquidity sits behind it."}
+
+# --- K Tokenomics
+- {id: K01, score: 2, confidence: medium, evidence: [FOGO-05, FOGO-17], assessor: "agent:claude", rationale: "FOGO pays gas and secures the chain through staking, rewarded by 2% fixed inflation; no fee share, buyback or burn is documented."}
+- {id: K09, score: 1, confidence: medium, evidence: [FOGO-01, FOGO-06, FOGO-09, FOGO-11], assessor: "agent:claude", rationale: "Allocations changed between the 11 Dec tokenomics and launch (institutional 8.77% to 12.06%, Foundation 30.38% to 21.76% + 6.5% launch liquidity) and no vesting contract addresses were found."}
+- {id: K10, score: 1, confidence: low, evidence: [FOGO-01, FOGO-03, FOGO-10], assessor: "agent:claude", rationale: "Airdrop goes to testnet game players, bridge-points holders and anyone who sent USDC after 11 Dec, all of which can be farmed; no sybil filtering was disclosed and the checker launched with a display bug."}
+
+# --- O On-chain Traction
+- {id: O06, status: pending, rationale: "missing: mainnet activity data; the chain was 0–2 days old at as_of"}
+- {id: O09, score: 2, confidence: low, evidence: [FOGO-05, FOGO-06], assessor: "agent:claude", rationale: "About seven launch apps are announced (perps, DEX, lending, LST, launchpad), one of them (Ambient) built by a co-founder; none verified live with users at as_of."}
+
+# --- M Market Structure
+- {id: M03, status: pending, rationale: "missing: trading history; spot trading started on listing day"}
+- {id: M06, score: 3, confidence: low, evidence: [FOGO-10, FOGO-12], assessor: "agent:claude", rationale: "No prior spot venue except Binance Alpha; Binance, OKX, Gate and KuCoin all list it on 15 Jan, reported by one secondary source."}
+- {id: M07, status: pending, rationale: "missing: whether perpetual or pre-market futures existed at listing, with OI and funding"}
+- {id: M09, status: pending, rationale: "missing: on-chain ownership of DEX pools; 6.5% launch-liquidity allocation is Foundation-held (FOGO-09) but its deployment was not verified"}
+- {id: M10, score: 2, confidence: medium, evidence: [FOGO-03, FOGO-06], assessor: "agent:claude", rationale: "Launches into a market Fogo itself said did not favour high-FDV launches, as a follower among high-performance SVM chains whose speed edge narrows as Solana adopts Firedancer."}
+
+# --- B Business Model
+- {id: B02, status: pending, rationale: "missing: no fee revenue history; mainnet days old"}
+- {id: B03, status: pending, rationale: "missing: fee split/burn parameters on Fogo; docs not accessible, no source found"}
+- {id: B10, status: pending, rationale: "missing: no activity or revenue data yet"}
+
+# --- C Competition & Moat
+- {id: C01, status: pending, rationale: "missing: dated pre-listing sizing of the on-chain trading / high-performance L1 segment"}
+- {id: C03, status: pending, rationale: "missing: no share history; mainnet days old"}
+- {id: C04, score: 1, confidence: medium, evidence: [FOGO-06, FOGO-04], assessor: "agent:claude", rationale: "The only edge is latency from validator co-location and Firedancer; Solana is adopting the same client (~21% of stake), and no retention has been shown."}
+- {id: C05, score: 1, confidence: medium, evidence: [FOGO-17, FOGO-04], assessor: "agent:claude", rationale: "Fogo is itself an Apache-licensed fork of open-source Firedancer; no liquidity or integrations are sticky yet."}
+- {id: C06, score: 2, confidence: medium, evidence: [FOGO-05, FOGO-06], assessor: "agent:claude", rationale: "40ms blocks and gasless Sessions set it apart from Solana today, but both are copyable and Solana's Firedancer rollout narrows the gap."}
+- {id: C07, status: pending, rationale: "missing: market FDV at listing (only the $0.035 Prime Sale price, ~$350M FDV, FOGO-07) and dated peer valuations"}
+- {id: C08, score: 1, confidence: medium, evidence: [FOGO-06, FOGO-04], assessor: "agent:claude", rationale: "The incumbent, Solana, is rolling out the same Firedancer client (~21% of stake), which goes straight at Fogo's speed pitch."}
+- {id: C09, score: 2, confidence: low, evidence: [FOGO-15, FOGO-06, FOGO-05], assessor: "agent:claude", rationale: "Wormhole is confirmed live by Wormhole; Pyth and the DEX/lending partners are announced but not observed live."}
+- {id: C10, score: 2, confidence: medium, evidence: [FOGO-08, FOGO-12], assessor: "agent:claude", rationale: "Adds another SVM L1 to sectors Binance already covers; the Binance Wallet Prime Sale and Alpha launch tie it to Binance's own funnel."}
+
+# --- D Community & Distribution
+- {id: D01, status: pending, rationale: "missing: social analytics (engagement, bot share) for dates before 15 Jan 2026"}
+- {id: D02, status: pending, rationale: "missing: social analytics for dates before 15 Jan 2026"}
+- {id: D04, status: pending, rationale: "missing: user geography of testnet/airdrop recipients"}
+- {id: D05, score: 2, confidence: low, evidence: [FOGO-05, FOGO-12, FOGO-01], assessor: "agent:claude", rationale: "Disclosed paid content (sponsored CoinGecko explainer), a 50M FOGO Binance marketing allocation and points campaigns run alongside organic interest."}
+- {id: D06, status: pending, rationale: "missing: count of external developers or shipped third-party projects beyond announced launch apps"}
+- {id: D08, score: 2, confidence: medium, evidence: [FOGO-01, FOGO-03, FOGO-08, FOGO-09, FOGO-10], assessor: "agent:claude", rationale: "Published tokenomics and explained the presale cancellation, but a month later sold the same 2% via the Binance Prime Sale and revised investor and Foundation shares; no explanation of the revisions was found."}
+- {id: D09, score: 2, confidence: medium, evidence: [FOGO-03, FOGO-04], assessor: "agent:claude", rationale: "Informed participants criticised the $1B-FDV presale and the forked-code raise; the switch to an airdrop answered part of it."}
+- {id: D10, score: 3, confidence: medium, evidence: [FOGO-15, FOGO-07, FOGO-10], assessor: "agent:claude", rationale: "Integrated by Wormhole, backed by CMS and Distributed Global, sold through Binance Wallet and listed the same day by Binance, OKX, Gate and KuCoin."}
+
+# --- L Legal & Compliance
+- {id: L01, status: pending, rationale: "missing: Fogo Foundation jurisdiction and registry record"}
+- {id: L02, score: 1, confidence: medium, evidence: [FOGO-01, FOGO-08, FOGO-20], assessor: "agent:claude", rationale: "Tokens were sold to ~3,200 Echo investors and to the public via Binance Wallet while a genesis authority controls the validator set; utility is gas and staking."}
+- {id: L04, score: 3, confidence: low, evidence: [FOGO-05, FOGO-08], assessor: "agent:claude", rationale: "A base layer with no custody or exchange function of its own; the public token sales are the only activity that may need a licence."}
+- {id: L05, score: 3, confidence: medium, evidence: [FOGO-21, FOGO-01], assessor: "agent:claude", rationale: "No litigation or enforcement found in news coverage; court and regulator registries were not searched directly."}
+- {id: L06, score: 4, confidence: medium, evidence: [FOGO-17, FOGO-05], assessor: "agent:claude", rationale: "Transparent SVM ledger forked from Firedancer; no privacy or obfuscation feature appears in the client or the product description."}
+- {id: L10, status: pending, rationale: "missing: front-end geofencing and airdrop-eligibility restrictions"}

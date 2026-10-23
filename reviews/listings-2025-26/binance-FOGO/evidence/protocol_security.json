@@ -1,0 +1,116 @@
+{
+  "project": "Fogo (FOGO)",
+  "as_of": "2026-01-15",
+  "sources": [
+    {
+      "id": "FOGO-04",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockworks — Fogo plots a Solana chain running 'pure Firedancer' (24 Feb 2025)",
+      "url": "https://blockworks.com/news/solana-chain-running-pure-firedancer",
+      "retrieved": "2026-10-23",
+      "excerpt": "New SVM L1 running only the Firedancer client, with multi-local consensus (validators co-locate to cut latency) and a curated validator set; the white paper says it will exclude under-provisioned and abusive nodes. Raised $8M at a $100M valuation on Echo. Testnet and mainnet planned for H1 2025. Several contributors are from Douro Labs (Pyth, Pythnet). A Solana developer criticised raising on 'redeploying some software that you don't understand'; Colkitt called some criticism 'fair'."
+    },
+    {
+      "id": "FOGO-05",
+      "type": "doc",
+      "tier": 3,
+      "title": "CoinGecko Learn — What is Fogo? (sponsored by Fogo; last updated 9 Dec 2025)",
+      "url": "https://www.coingecko.com/learn/what-is-fogo",
+      "retrieved": "2026-10-23",
+      "excerpt": "Sponsored content. Conceived by Robert Sagurton (ex-Jump Crypto, JPMorgan, State Street, Morgan Stanley) and Douglas Colkitt (ex-Citadel); Douro Labs leads development. Firedancer-based client, validator colocation, Fogo Sessions (sign-once, app-sponsored gas). 40ms blocks, ~1.3s finality. Initial validators in one data centre in Asia with full nodes elsewhere for contingency. Public testnet since July 2025: 40M+ transactions. 10B genesis supply; FOGO used for fees and staking. Planned mainnet apps: Ambient, Valiant, Pyron, FogoLend, Brasa, FluxBeam; Wormhole day-one bridge."
+    },
+    {
+      "id": "FOGO-15",
+      "type": "partner",
+      "tier": 2,
+      "title": "Wormhole blog — Fogo mainnet launches with interoperability powered by Wormhole (15 Jan 2026)",
+      "url": "https://wormhole.com/blog/fogo-mainnet-launches-with-interoperability-powered-by-wormhole",
+      "retrieved": "2026-10-23",
+      "excerpt": "Partner announcement: Fogo mainnet is live; Wormhole is the 'official native bridge'; USDC, ETH and SOL can be moved to Fogo via Wormhole Portal from 40+ chains; Wormhole Connect for app developers. Cites 40ms blocks and 1.3s confirmations."
+    },
+    {
+      "id": "FOGO-16",
+      "type": "news",
+      "tier": 2,
+      "title": "The Defiant — Fogo launches public mainnet after Binance token sale (15 Jan 2026)",
+      "url": "https://thedefiant.io/fogo-launches-public-mainnet-after-binance-token-sale",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 15 Jan 2026 18:52 UTC: the Solana-compatible L1 launched its public mainnet with live apps, exchange listings and a token airdrop. Only the summary rendered; article body not retrieved. No incident reported."
+    },
+    {
+      "id": "FOGO-17",
+      "type": "github",
+      "tier": 1,
+      "title": "GitHub — fogo-foundation/fogo (validator client), history to 15 Jan 2026",
+      "url": "https://github.com/fogo-foundation/fogo",
+      "retrieved": "2026-10-23",
+      "excerpt": "Reviewer's clone. README: 'Fogo is a fork of Firedancer'; Apache 2.0. Public history starts 24 Oct 2025 ('Initialize repository'). 17 Oct 2025 to 15 Jan 2026: 32 commits by 4 authors (Dewyer 13, Ming Xu 11, Thomaz Leite 6, mukkarum-douro 2), several with @dourolabs.xyz emails. Commit 008996d (29 Oct 2025) adds the feature 'fixed_2pct_inflation' (Inflation::new_fixed(0.02)). Other changes: validator manager, zone state, leader slots cut to 375 (15s), Fogo Sessions intent-transfer instruction, tx/CU block limits. Last release before as_of: v20 (23 Dec 2025). No audit or Fogo-specific security report in the repo (only upstream Agave/solana-sdk SECURITY.md)."
+    },
+    {
+      "id": "FOGO-18",
+      "type": "github",
+      "tier": 1,
+      "title": "GitHub — fogo-foundation/fogo-sessions, history to 15 Jan 2026",
+      "url": "https://github.com/fogo-foundation/fogo-sessions",
+      "retrieved": "2026-10-23",
+      "excerpt": "Reviewer's clone. Apache-2.0 'open-source standard for Web3 app sessions on Fogo' (programs, Rust/TS SDKs, paymaster services); README marks it a 'developer preview' with possible breaking changes. First commit 9 Jun 2025. 17 Oct 2025 to 15 Jan 2026: 248 commits, of which 33 by github-actions[bot]; humans: Connor Prussin 76, guibescos 65, Alexandru Cambose 41, Anirudh Suresh 26, Ben Duran 5, fogo-ops 1, Dewyer 1. No audit report in the repository."
+    },
+    {
+      "id": "FOGO-19",
+      "type": "audit",
+      "tier": 1,
+      "title": "Neodyme — Firedancer v0.1 security audit for Jump Crypto (30 Jun 2024)",
+      "url": "https://neodyme.io/reports/Firedancer.pdf",
+      "retrieved": "2026-10-23",
+      "excerpt": "Audit of upstream Firedancer v0.1 (net, quic, verify, dedup, pack, shred, sign, metric, bank, poh, store tiles), commits 89da411 to fdd8973; Agave runtime, blockstore, consensus and gossip were out of scope. 16 findings: 0 critical, 2 high, 6 medium, 6 low, 2 other. Commissioned by Jump Crypto, not Fogo; does not cover Fogo's fork."
+    },
+    {
+      "id": "FOGO-20",
+      "type": "research",
+      "tier": 2,
+      "title": "Encapsulate (validator operator) — FogoChain overview (undated, pre-mainnet)",
+      "url": "https://encapsulate.xyz/blog/fogochain",
+      "retrieved": "2026-10-23",
+      "excerpt": "Validators co-located in geographic 'zones' that rotate across epochs ('follow-the-sun'), falling back to global consensus on failure; how rotation and fallback trigger is not explained. Launch uses a curated validator set chosen by a 'genesis authority'; roadmap mentions DAO-based governance without dates. Single canonical Firedancer-based client. Author operates validators and is not independent. Date not shown; content is pre-mainnet."
+    }
+  ],
+  "metrics": {
+    "mint_authority": {
+      "value": "protocol_upgrade",
+      "source": "FOGO-17",
+      "note": "FOGO is the L1's native gas token: no mint key; issuance is fixed 2%/yr in the validator client. Changing it needs a client release adopted by the curated validator set. Not checked: whoever controls the BSC representation sold in the Prime Sale (FOGO-08)."
+    },
+    "contracts_verified": {
+      "value": true,
+      "source": "FOGO-17",
+      "note": "Validator client (fogo) and the Sessions programs (FOGO-18) are public under Apache 2.0. Not verified: that mainnet binaries and deployed Sessions program bytecode reproduce from these repos."
+    },
+    "audits_reputable_count": {
+      "value": 0,
+      "source": "FOGO-17",
+      "note": "No public audit of Fogo's fork (zones, inflation, validator manager) or of the Sessions programs was found; neither repo carries one. Upstream Firedancer v0.1 was audited by Neodyme for Jump (FOGO-19); this is not counted because it does not cover Fogo's code or the Agave runtime Fogo bundles."
+    },
+    "github_commits_90d": {
+      "value": 247,
+      "source": "FOGO-17",
+      "note": "17 Oct 2025 to 15 Jan 2026, excluding bots: fogo 32 + fogo-sessions 215 (FOGO-18)"
+    },
+    "github_active_contributors_90d": {
+      "value": 9,
+      "source": "FOGO-17",
+      "note": "unique human authors across fogo (4) and fogo-sessions (FOGO-18), Dewyer counted once; the fogo-ops account counted"
+    },
+    "unreimbursed_exploit_usd": {
+      "value": 0,
+      "source": "FOGO-16",
+      "note": "Mainnet was 0–2 days old on 15 Jan 2026; no exploit or incident appears in any pre-listing source. This reflects a short history, not proven security."
+    },
+    "live_integrations_count": {
+      "value": 1,
+      "source": "FOGO-15",
+      "note": "Only Wormhole is confirmed live on 15 Jan by a party other than Fogo. Ambient, Valiant, Pyron, FogoLend, Brasa, FluxBeam and Pyth are announced (FOGO-05, FOGO-06) but were not verified live."
+    }
+  },
+  "claims": []
+}
