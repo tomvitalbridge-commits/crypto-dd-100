@@ -1,0 +1,1516 @@
+{
+  "project": "ETHGas (GWEI)",
+  "profile": "infra",
+  "as_of": "2026-02-24",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-07",
+        "GWEI-19",
+        "GWEI-01"
+      ],
+      "rationale": "Founder led structured derivatives at Morgan Stanley and Barclays; his previous crypto venture, Infinity Exchange ($4.2M seed, 2022), reached no reported scale and is now paused.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-01",
+        "GWEI-03"
+      ],
+      "rationale": "18 contributors, about half in Hong Kong, with staff from Morgan Stanley, Deutsche Bank, HKEx and Lockheed; the founder is the only named person in every source, so key-person risk sits with him.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-15",
+        "GWEI-20",
+        "GWEI-03"
+      ],
+      "rationale": "In-house team built the Commit-Boost module and order book; public technical output is limited to forum posts and one co-authored ethresear.ch post.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "GWEI-01",
+        "GWEI-07",
+        "GWEI-19"
+      ],
+      "rationale": "No misconduct or enforcement found in press coverage 2023–Feb 2026; court records and team wallets were not checked, and why Infinity Exchange was paused is not explained.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-05"
+      ],
+      "rationale": "team_vesting_months = 36  (bands 4:≥48, 3:≥36, 2:≥24, 1:≥12)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-04",
+        "GWEI-05",
+        "GWEI-15"
+      ],
+      "rationale": "veGWEI governance was only announced at TGE; the marketplace is a central limit order book run by ETHGas, and insiders plus the liquid 8% Foundation hold 59% of supply.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: Foundation/treasury addresses or any treasury report; none found in sources dated to 2026-02-24"
+      ]
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "high",
+      "evidence": [
+        "GWEI-01",
+        "GWEI-03"
+      ],
+      "rationale": "Seed led by Polychain with BlueYard, Stake Capital, Amber, SIG DT and Lafayette; sold as a SAFT with no valuation disclosed and no board seats.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "contradiction_count = 1  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-01",
+        "GWEI-02",
+        "GWEI-03"
+      ],
+      "rationale": "Gas-cost hedging and guaranteed inclusion are real problems, but no buyer-side usage figure is public; the $800M 'commitments' are validator supply, not demand.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-01",
+        "GWEI-02",
+        "GWEI-15"
+      ],
+      "rationale": "Blockspace futures launched on mainnet in Dec 2025, but the founder said full rollout was due Q1 2026 and execution guarantees were not broadly deployed before Jan/Feb 2026.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-15",
+        "GWEI-17"
+      ],
+      "rationale": "Forward market for whole blocks and preconfirmations up to 64 slots ahead plus base-fee futures is an original design; per-transaction preconfirmations already exist elsewhere (mev-commit).",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-02",
+        "GWEI-15"
+      ],
+      "rationale": "Out-of-protocol design that relies on relays and builders enforcing constraints, with fallback to a conforming block; the founder concedes 'centralizing vectors' and the 99.96% delivery figure is unverified.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-15",
+        "GWEI-16",
+        "GWEI-02"
+      ],
+      "rationale": "Depends on Commit-Boost, MEV-Boost relays/builders and EigenLayer collateral; the PBS fallback is a partial safeguard.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_commits_90d' not in evidence pack",
+        "GitHub activity not collected: the API was restricted in this environment, and 90-day commit counts would have to be reconstructed as of 2026-02-24."
+      ]
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_active_contributors_90d' not in evidence pack"
+      ]
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-15",
+        "GWEI-16",
+        "GWEI-01"
+      ],
+      "rationale": "Mainnet was targeted for Q1 2025 and full rollout slipped to Q1 2026; audit reports promised 'shortly' in Feb 2025 were still not public.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: public repositories and Etherscan/BscScan source-verification status of the token, collateral and pool contracts (explorers unreachable for this review)"
+      ]
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: ETHGas technical documentation (docs site not retrieved); only forum posts reviewed"
+      ]
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "GWEI-16"
+      ],
+      "rationale": "audits_reputable_count = 0.5  (bands 4:≥3, 3:≥2, 2:≥1, 1:≥0.5)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: the Sigma Prime report(s) — scope, commit, findings and remediation; none published as of 2026-02-24"
+      ]
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'contracts_verified' not in evidence pack",
+        "contracts_verified not established for the same reason (explorers unreachable). Must be checked on both chains before sign-off."
+      ]
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'upgrade_timelock_hours' not in evidence pack",
+        "upgrade_timelock_hours unknown: whether the token, collateral and pool contracts are upgradeable was not read."
+      ]
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: on-chain owner/admin of GWEI (Ethereum and BSC) and of the collateral/pool contracts, multisig threshold and signers"
+      ]
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: token contract read — mint, pause and blacklist functions and their holders on both deployments",
+        "mint_authority not established. GWEI exists on Ethereum (0x2798b1cC5A993085E8A9D46e80499F1B63f42204, GWEI-08) and BNB Smart Chain (0x30117e4bc17d7b044194b76a38365c53b72f7d49, GWEI-09). Etherscan/BscScan and RPC endpoints were unreachable for this review, so mint, owner, pause and blacklist functions were not read. The 'fixed 10B supply' is only the project's statement. This critical gate stays UNCHECKED."
+      ]
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'bug_bounty_max_usd' not in evidence pack",
+        "No bug bounty programme found in sources dated to 2026-02-24; not set rather than set to 0."
+      ]
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: incident-database check; no incident found in press, but the product was not broadly deployed so there is no track record to score"
+      ]
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: settlement reference for cash-settled base-fee futures and delivery-verification mechanism for preconfirmations"
+      ]
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: how GWEI on BNB Smart Chain (GWEI-09) is issued or bridged from the Ethereum ERC-20, and what share of supply sits there"
+      ]
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-04",
+        "GWEI-06",
+        "GWEI-01",
+        "GWEI-14"
+      ],
+      "rationale": "GWEI is a governance token (veGWEI); the 5% trading fee accrues to the company, and fee sharing with stakers appears only in exchange marketing, not as a live mechanism.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "circulating_supply_pct = 17.5  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top10_holder_pct_ex_contracts' not in evidence pack",
+        "Top-holder concentration at listing needs a point-in-time holder snapshot with Foundation, vesting, exchange and bridge addresses labelled; not obtainable from current explorers without leaking post-listing state."
+      ]
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-05"
+      ],
+      "rationale": "unlock_12m_pct_of_circ = 73  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 0,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-05"
+      ],
+      "rationale": "insider_allocation_pct = 59  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-13"
+      ],
+      "rationale": "price_to_last_round_multiple = 4.8  (bands 4:≤3, 3:≤10, 2:≤30, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "fdv_to_mcap = 5.66  (bands 4:≤1.5, 3:≤2.5, 2:≤4, 1:≤7)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annual_inflation_pct' not in evidence pack",
+        "Annual inflation not set: supply is announced as fixed, but mint authority is unverified (RF01) and staking-reward funding for veGWEI is undisclosed. Unlock-driven float growth is captured in K04."
+      ]
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-05",
+        "GWEI-06",
+        "GWEI-07"
+      ],
+      "rationale": "Allocation changed between announcements (investors 20%→27%, team 25%→22%), no vesting-contract addresses are published, and the buckets behind the 17.5% launch float are not disclosed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "GWEI-06",
+        "GWEI-05",
+        "GWEI-10"
+      ],
+      "rationale": "Airdrop weighted by historical gas spend with a 30-day auto-stake, but also first-come Binance Alpha giveaways to points holders; no post-claim retention data.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_30d_avg' not in evidence pack",
+        "No on-chain activity metric for ETHGas buyers/sellers exists in public pre-listing sources; the marketplace runs on an off-chain order book."
+      ]
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_90d_change_pct' not in evidence pack"
+      ]
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'retention_30d_pct' not in evidence pack"
+      ]
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'infra'"
+      ]
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'infra'"
+      ]
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: buyer-side activity data (preconfirmation/futures buyers, funding sources) — no indexer or dashboard data found"
+      ]
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack"
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'live_integrations_count' not in evidence pack"
+      ]
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: evidence of third-party products built on ETHGas; validator/node-operator testing (GWEI-16) is supply side"
+      ]
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack"
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'depth_2pct_usd' not in evidence pack",
+        "±2% depth, spread, 24h volume and 30d realised volatility at listing could not be found in any source dated on or before 2026-02-24; only later values exist, so they are omitted."
+      ]
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top_venue_volume_share_pct' not in evidence pack"
+      ]
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: pre-listing 24h volume, ±2% depth and venue split"
+      ]
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'spread_bps' not in evidence pack"
+      ]
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "scored",
+      "score": 2,
+      "confidence": "high",
+      "evidence": [
+        "GWEI-07",
+        "GWEI-08",
+        "GWEI-09",
+        "GWEI-11"
+      ],
+      "rationale": "Spot on KuCoin, Bitget, MEXC and Binance Alpha (not Binance spot), plus Binance perpetuals; Coinbase would be the first tier-1 spot venue.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: perp OI and funding history; perps at up to 50x opened on Binance eight days after TGE with a 17.5% float (GWEI-11, GWEI-13)"
+      ]
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'realized_vol_30d_pct' not in evidence pack"
+      ]
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: DEX pools on Ethereum/BSC and LP ownership"
+      ]
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-02",
+        "GWEI-17",
+        "GWEI-13"
+      ],
+      "rationale": "Gas futures and real-time preconfirmations are an Ethereum-roadmap-adjacent narrative Buterin has raised; ETHGas is the first blockspace futures market, in a niche that is still small.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annualized_revenue_usd' not in evidence pack",
+        "No revenue figure published; The Block reports only the 5% fee rate (GWEI-01). FDV/fees cannot be computed."
+      ]
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: any revenue figure; only the 5% fee rate is disclosed (GWEI-01)"
+      ]
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-01",
+        "GWEI-14"
+      ],
+      "rationale": "No live buyback, burn or distribution; staker benefit from marketplace fees is described only in exchange marketing.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fdv_to_annual_fees' not in evidence pack"
+      ]
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentives_to_revenue' not in evidence pack"
+      ]
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack",
+        "~$17M raised (pre-seed ~$5M + $12M seed, GWEI-01); burn and treasury holdings undisclosed, so runway and diversification are unknown."
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack"
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'revenue_qoq_growth_pct' not in evidence pack"
+      ]
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: distribution of blockspace sellers/buyers; commitment providers are unnamed (GWEI-03)"
+      ]
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: revenue and cost base; ~$17M raised (GWEI-01) but burn unknown"
+      ]
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-17",
+        "GWEI-02"
+      ],
+      "rationale": "Preconfirmation market is nascent: the leading competitor had ~1% of validators opted in and 8,090 preconfs in Aug 2025.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'category_share_pct' not in evidence pack",
+        "No category-share data for blockspace/preconfirmation venues in dated sources."
+      ]
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: market-share data for ETHGas vs mev-commit and other preconf/blockspace venues over two periods"
+      ]
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "GWEI-01",
+        "GWEI-03"
+      ],
+      "rationale": "First-mover blockspace futures venue with claimed validator commitments; no retention test against a competitor yet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "GWEI-15",
+        "GWEI-16"
+      ],
+      "rationale": "Module design could be copied; the stickier assets are validator registrations and order-book liquidity.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-15",
+        "GWEI-17",
+        "GWEI-07"
+      ],
+      "rationale": "Broader product set (64-slot forward market, whole blocks, base-fee futures) than per-transaction preconf protocols; competitors could add these.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: peer valuations (FDV vs fees/usage) for preconf and MEV-infrastructure tokens"
+      ]
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: dated source on in-protocol alternatives (ePBS, enshrined preconfirmations) and their timeline"
+      ]
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-03",
+        "GWEI-16",
+        "GWEI-17"
+      ],
+      "rationale": "A Kiln-EthGas cohort shows up in independent mainnet research and Lido operators tested on testnets, but the $800M commitment providers are unnamed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-13",
+        "GWEI-02"
+      ],
+      "rationale": "Adds Ethereum-blockspace exposure that Coinbase's books lack, alongside a same-day Coinbase Futures listing; segment still unproven.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: social analytics (engagement rate, follower quality)"
+      ]
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: bot-likelihood / engagement-authenticity data"
+      ]
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'holders_count' not in evidence pack",
+        "Holder count at listing not available in a pre-listing source."
+      ]
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: user and holder geography"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-10",
+        "GWEI-12",
+        "GWEI-18"
+      ],
+      "rationale": "Attention was bought through sponsored content, a points quest, Binance Alpha giveaways and a buy-volume trading competition worth 'hundreds of thousands of dollars'; organic interest is not evidenced.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: external developer activity (repos, grants, shipped integrations)"
+      ]
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack",
+        "veGWEI governance had no recorded votes before listing."
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-06",
+        "GWEI-05",
+        "GWEI-16",
+        "GWEI-01"
+      ],
+      "rationale": "Allocation figures changed within eight days without explanation, audit reports promised in Feb 2025 were never published, and the valuation was withheld.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: sentiment data from informed participants"
+      ]
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-01",
+        "GWEI-16",
+        "GWEI-17"
+      ],
+      "rationale": "Polychain-led, Lido node operators (Stakely, Chorus One, A41) engaged in testing, and a Kiln cohort is live on mainnet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-04",
+        "GWEI-03"
+      ],
+      "rationale": "An 'ETHGas Foundation' issues the token, but no jurisdiction or registration is disclosed; the operating team is in Hong Kong.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-01",
+        "GWEI-04",
+        "GWEI-05"
+      ],
+      "rationale": "Token pre-sold to investors via SAFT, governance-only utility, and the team runs the marketplace; 59% of supply sits with insiders and the Foundation.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack",
+        "sanctions_exposure needs the venue's own Chainalysis/TRM screening of deployer, Foundation, team and top-holder addresses."
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "GWEI-07",
+        "GWEI-01"
+      ],
+      "rationale": "Operates a futures market for blockspace (incl. cash-settled base-fee futures) with no licensing position disclosed; whether this is a regulated derivative is untested.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "GWEI-07",
+        "GWEI-13",
+        "GWEI-01"
+      ],
+      "rationale": "No litigation or enforcement in coverage up to listing; court and regulator databases were not searched directly.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "GWEI-15",
+        "GWEI-01"
+      ],
+      "rationale": "Blockspace marketplace and ERC-20 with no privacy or obfuscation features.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'infra'"
+      ]
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'infra'"
+      ]
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: terms of service, front-end geofencing and airdrop jurisdiction restrictions"
+      ]
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 2.263157894736842,
+      "coverage": 0.7916666666666666,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 14,
+      "score": 1.7857142857142858,
+      "coverage": 0.7368421052631579,
+      "sufficient": true,
+      "scored": 6,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 14,
+      "score": 1.0,
+      "coverage": 0.12,
+      "sufficient": false,
+      "scored": 1,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 14,
+      "score": 1.1875,
+      "coverage": 0.7619047619047619,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 8,
+      "score": null,
+      "coverage": 0.0,
+      "sufficient": false,
+      "scored": 0,
+      "applicable": 8
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 8,
+      "score": 2.5,
+      "coverage": 0.11764705882352941,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 10,
+      "score": 1.0,
+      "coverage": 0.1111111111111111,
+      "sufficient": false,
+      "scored": 1,
+      "applicable": 10
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 10,
+      "score": 1.9090909090909092,
+      "coverage": 0.6111111111111112,
+      "sufficient": true,
+      "scored": 6,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 4,
+      "score": 1.5,
+      "coverage": 0.3076923076923077,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 6,
+      "score": 1.8181818181818181,
+      "coverage": 0.6875,
+      "sufficient": true,
+      "scored": 5,
+      "applicable": 8
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "clear"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "clear"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "clear"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "fired"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "clear"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "fired"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "fired"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "n/a"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "unchecked"
+    }
+  ],
+  "contradictions": [
+    {
+      "claim": {
+        "id": "C1",
+        "statement": "13 Jan announcement (as reported): investors receive 20% of supply",
+        "metric": "investor_allocation_pct",
+        "claimed_value": 20,
+        "source": "GWEI-06"
+      },
+      "observed": 27,
+      "observed_source": "GWEI-05",
+      "deviation": 0.25925925925925924
+    }
+  ],
+  "point_score": 40.4,
+  "score_low": 10.8,
+  "score_high": 83.1,
+  "coverage": 0.457,
+  "grade": "D",
+  "verdict": "INSUFFICIENT_DATA",
+  "verdict_reasons": [
+    "evidence coverage 46% below the 70% needed for a verdict"
+  ]
+}

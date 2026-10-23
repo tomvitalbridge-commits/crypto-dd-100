@@ -1,0 +1,82 @@
+{
+  "project": "ETHGas (GWEI)",
+  "as_of": "2026-02-24",
+  "sources": [
+    {
+      "id": "GWEI-03",
+      "type": "press_release",
+      "tier": 3,
+      "title": "EQS / PR Newswire — ETHGas debuts Ethereum's blockspace futures market with $800M of commitments and $12M seed round led by Polychain Capital (19 Dec 2025, Hong Kong)",
+      "url": "https://www.gettex.de/en/news-overview/newsdetail/eqs-news-ethgas-debuts-ethereums-blockspace-futures-market-with-800m-of-commitments-and-12m-seed-round-led-by-polychain-capital/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Company release, Hong Kong dateline. $800M of initial commitments from seed investors plus unnamed validators, builders and relays. Claims 3ms settlement and 'close alignment' with the Ethereum Foundation (no formal partnership described). Team: Kevin Lepsoe (ex-head of Morgan Stanley structured derivatives, Asia) with engineers from Morgan Stanley, Deutsche Bank, HKEx, Lockheed Martin. Legal entity and incorporation place not disclosed."
+    },
+    {
+      "id": "GWEI-10",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News / PANews — Binance Alpha GWEI airdrop for Alpha Points holders (21 Jan 2026)",
+      "url": "https://www.mexc.com/news/523003",
+      "retrieved": "2026-10-23",
+      "excerpt": "Binance Alpha trading from 21 Jan 2026 20:00 UTC+8; first-come-first-served airdrop of 2,400 GWEI per user holding at least 230 Alpha Points, threshold falling by 5 points every 5 minutes."
+    },
+    {
+      "id": "GWEI-11",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News — Binance Futures to launch GWEIUSDT perpetual, up to 50x (29 Jan 2026)",
+      "url": "https://www.mexc.com/news/583895",
+      "retrieved": "2026-10-23",
+      "excerpt": "Binance Futures launches the GWEIUSDT USDT-margined perpetual on 29 Jan 2026 13:30 UTC+8 with maximum leverage 50x — eight days after TGE."
+    },
+    {
+      "id": "GWEI-12",
+      "type": "news",
+      "tier": 2,
+      "title": "KuCoin News — GWEI added to Coinbase listing roadmap; Binance Wallet launches GWEI trading competition (11 Feb 2026)",
+      "url": "https://www.kucoin.com/es/news/articles/gwei-added-to-coinbase-listing-roadmap-binance-wallet-launches-trading-competition",
+      "retrieved": "2026-10-23",
+      "excerpt": "Coinbase added GWEI to its listing roadmap. Binance Wallet with Binance Alpha runs a GWEI trading competition ranked by cumulative net purchase volume, prize pool in GWEI 'worth hundreds of thousands of dollars', running in phases to end-Feb 2026."
+    },
+    {
+      "id": "GWEI-17",
+      "type": "research",
+      "tier": 2,
+      "title": "Ethereum Research — Measuring validator economics under preconfirmations: early mainnet evidence (murat, 15 Sep 2025)",
+      "url": "https://ethresear.ch/t/measuring-validator-economics-under-preconfirmations-early-mainnet-evidence/23066",
+      "retrieved": "2026-10-23",
+      "excerpt": "Competitor-authored (Primev / mev-commit) analysis. mev-commit: ~1% of validators opted in; 8,090 preconfirmations settled in Aug 2025, 18,000+ to date; preconfs in >5% of blocks over 24h, peak 11.33% on 20 Aug. Includes a 'Kiln-EthGas' validator cohort on mainnet, but gives no standalone ETHGas figures. Results described as indicative."
+    },
+    {
+      "id": "GWEI-18",
+      "type": "sponsored",
+      "tier": 3,
+      "title": "The Defiant (sponsored, written by ETHGas) — ETHGas: building critical infrastructure for Ethereum blockspace (25 Sep 2025)",
+      "url": "https://thedefiant.io/news/infrastructure/ethgas-building-critical-infrastructure-for-ethereum-blockspace",
+      "retrieved": "2026-10-23",
+      "excerpt": "Paid content. Products: inclusion guarantees, whole blocks, base-fee futures 'soon'. Quest campaign earning 'Beans' points; Open Gas initiative lets protocols sponsor users' gas via rebates hedged with base-fee futures. No partners or metrics disclosed."
+    },
+    {
+      "id": "GWEI-19",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Nomura's Laser Digital invests in DeFi protocol Infinity Exchange (15 Feb 2023)",
+      "url": "https://www.theblock.co/post/211852/nomura-laser-digital-invests-infinity-exchange",
+      "retrieved": "2026-10-23",
+      "excerpt": "Infinity Exchange, founded 2022 by Kevin Lepsoe (ex-head of structuring, Morgan Stanley HK): institutional DeFi lending and rate trading. $4.2M seed (GSR, Flow Traders) Sept 2022 plus Laser Digital. On Goerli testnet; mainnet expected end-Q2 2023; 12 staff. No usage figures. (GWEI-01 reports it is now paused.)"
+    },
+    {
+      "id": "GWEI-20",
+      "type": "research",
+      "tier": 3,
+      "title": "Ethereum Research — An observation on Ethereum's blockspace market (co-authored by Kevin L., ETHGas; 16 Dec 2025)",
+      "url": "https://ethresear.ch/t/an-observation-on-ethereum-s-blockspace-market/23669",
+      "retrieved": "2026-10-23",
+      "excerpt": "Research post on Ethereum's blockspace market co-authored by the ETHGas founder; the retrieved excerpt contained no ETHGas metrics."
+    }
+  ],
+  "metrics": {
+    "active_enforcement_action": {"value": false, "source": "GWEI-07", "note": "No enforcement action against ETHGas, the ETHGas Foundation or Kevin Lepsoe appears in any coverage dated up to 24 Feb 2026 (GWEI-01, -02, -07, -13); GWEI-07 discusses possible CFTC-style scrutiny of blockspace futures as a risk, not an action. Regulator databases (SEC, CFTC, SFC) were not queried directly — re-check before sign-off."}
+  },
+  "claims": []
+}

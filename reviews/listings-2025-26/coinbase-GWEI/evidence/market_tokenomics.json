@@ -1,0 +1,98 @@
+{
+  "project": "ETHGas (GWEI)",
+  "as_of": "2026-02-24",
+  "sources": [
+    {
+      "id": "GWEI-01",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — ETHGas raises $12M in token round as it launches Ethereum blockspace futures market with $800M in liquidity commitments (17 Dec 2025)",
+      "url": "https://www.theblock.co/post/382960/ethgas-raises-12-million-in-token-round-as-it-launches-ethereum-blockspace-futures-market-with-800-million-in-liquidity-commitments",
+      "retrieved": "2026-10-23",
+      "excerpt": "Published 17 Dec 2025 (page also shows an 'updated' stamp of Oct 2026; only the Dec 2025 facts are used). $12M seed sold entirely as a SAFT token round, July–Aug 2025, led by Polychain; also Stake Capital, BlueYard, Lafayette Macro Advisors, SIG DT, Amber Group. Unannounced ~$5M pre-seed mid-2024. Valuation not disclosed; no board seats. ~$800M of 'commitments' are blockspace supplied by validators, builders and relays, not cash. 18 contributors, about half in Hong Kong. Spun out of Infinity Exchange, a fixed-income protocol that is paused. Validators can sell up to 64 blocks ahead. Revenue: 5% fee on blockspace futures trades. Founder: 'ETA Q1 for full rollout'; model has run on mainnet but is not broadly deployed."
+    },
+    {
+      "id": "GWEI-02",
+      "type": "news",
+      "tier": 2,
+      "title": "Cointelegraph — ETHGas raised $12M as it launches Buterin-proposed gas futures (18 Dec 2025)",
+      "url": "https://cointelegraph.com/news/ethgas-raised-12m-as-it-launches-buterin-proposed-gas-futures",
+      "retrieved": "2026-10-23",
+      "excerpt": "Blocks split into 240 pieces of 50ms; claimed >10,000 TPS, capacity limited until more validators join. Execution guarantees tested on mainnet, broad deployment not before Jan/Feb 2026. Validators post ETH or EigenLayer-restaked collateral and can be slashed. Founder claims 99.96% of preconfirmations honoured; Cointelegraph could not verify. Founder acknowledges 'some centralizing vectors'; builders/relays such as Titan and Ultrasound process perhaps 50% of blocks. Vitalik Buterin had discussed an on-chain gas futures market."
+    },
+    {
+      "id": "GWEI-04",
+      "type": "news",
+      "tier": 2,
+      "title": "ForkLog — Ethereum gas to become tradable asset with GWEI token launch (14 Jan 2026)",
+      "url": "https://forklog.com/en/ethereum-gas-to-become-tradable-asset-with-gwei-token-launch/amp",
+      "retrieved": "2026-10-23",
+      "excerpt": "ETHGas Foundation announced GWEI on 13 Jan 2026 as a governance token. Total supply 10B. Allocation: Ecosystem 31%, Investors 27%, Team 22%, Community 10%, Foundation 8%, Advisors 2%. Holders vote on parameters, upgrades and treasury allocations. Airdrop snapshot 19 Jan."
+    },
+    {
+      "id": "GWEI-05",
+      "type": "news",
+      "tier": 2,
+      "title": "ChainCatcher — GWEI airdrop checker live; claims open 21 Jan; tokenomics and vesting (21 Jan 2026)",
+      "url": "https://www.chaincatcher.com/en/article/2239077",
+      "retrieved": "2026-10-23",
+      "excerpt": "Total supply 10B. Ecosystem 31% (10-year linear); Investors 27% (1-year lock, 10% at cliff, then 2-year linear); Team 22% (same); Community 10% (4-year linear); Foundation 8% (unlocked on day one); Advisors 2% (same as team). Airdropped GWEI auto-staked for 30 days; lock 1 week–4 years for veGWEI. Claims from 21 Jan 2026 21:00 UTC+8."
+    },
+    {
+      "id": "GWEI-06",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News / PANews — ETHGas announces GWEI and Genesis Harvest airdrop (13 Jan 2026)",
+      "url": "https://www.mexc.com/news/476147",
+      "retrieved": "2026-10-23",
+      "excerpt": "Timestamp 13 Jan 2026. Fixed supply 10B. Allocation stated as 50% ecosystem and community, 25% core team, 20% investors (incl. Polychain and Amber), 5% advisors; 10% of supply for community airdrops. veGWEI for governance. 'Proof of Pain' airdrop weighted by historical gas spend and social participation; snapshot 19 Jan 2026 00:00 UTC."
+    },
+    {
+      "id": "GWEI-07",
+      "type": "research",
+      "tier": 2,
+      "title": "BlockEden.xyz — ETHGas 'Proof of Pain' airdrop and GWEI blockspace futures (23 Jan 2026)",
+      "url": "https://blockeden.xyz/blog/2026/01/23/ethgas-proof-of-pain-airdrop-gwei-blockspace-futures/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Circulating at launch 1.75B GWEI (17.5% of 10B). Listed on Binance Alpha, Bitget and MEXC. Allocation and vesting as GWEI-05. Products: inclusion and execution preconfirmations, whole-block commitments, cash-settled base-fee futures. Founder Kevin Lepsoe previously led structured derivatives at Morgan Stanley and Barclays Capital. Risks noted: MEV attack vectors, centralisation of forward blockspace, possible CFTC-style derivatives scrutiny, unproven 3ms settlement claim. No exploit or enforcement action mentioned."
+    },
+    {
+      "id": "GWEI-13",
+      "type": "news",
+      "tier": 2,
+      "title": "Yellow.com — Coinbase opens spot trading for ETHGas (GWEI) (23 Feb 2026, 20:57)",
+      "url": "https://yellow.com/uk/news/coinbase-opens-spot-trading-for-ethgas-gwei-as-ethereum-blockspace-protocol-gains-exchange-foothold",
+      "retrieved": "2026-10-23",
+      "excerpt": "Coinbase Markets announced GWEI-USD spot trading from Tue 24 Feb 2026, 09:00 PT, two weeks after roadmap addition on 11 Feb; ERC-20 on Ethereum; also on Coinbase Futures. At 'current prices' ~$0.030, market cap ~$53M, circulating ~1.75B (17.5%, per CoinMarketCap), max supply 10B. Early investor average cost ~$0.0063. Binance launched a GWEI perpetual on 29 Jan; later futures listings offered up to 50x."
+    },
+    {
+      "id": "GWEI-14",
+      "type": "news",
+      "tier": 2,
+      "title": "KuCoin blog — What is ETHGas (GWEI)? (22 Jan 2026; exchange promotional content)",
+      "url": "https://www.kucoin.com/blog/my-what-is-ethgas-gwei-a-comprehensive-guide-to-the-future-of-ethereum-blockspace",
+      "retrieved": "2026-10-23",
+      "excerpt": "Promotional exchange post, unsourced figures. 'Controlled initial release of 17.5%'; price up ~90% within 24h of listing; market cap 'hovering near' $50M. Investors named: Polychain, Amber. Stakers 'said to benefit' from blockspace marketplace fees; airdrop has a 30-day staking period."
+    }
+  ],
+  "metrics": {
+    "circulating_supply": {"value": 1750000000, "source": "GWEI-13", "note": "17.5% of 10B, per CoinMarketCap as quoted on 23 Feb 2026; matches the launch figure in GWEI-07"},
+    "total_supply": {"value": 10000000000, "source": "GWEI-04", "note": "announced fixed supply; not read on-chain (Etherscan unreachable for this review)"},
+    "market_cap_usd": {"value": 53000000, "source": "GWEI-13", "note": "pre-listing snapshot in a 23 Feb 2026 article at ~$0.030; exact timestamp of the price not given"},
+    "fdv_usd": {"value": 300000000, "source": "GWEI-13", "note": "~$0.030 x 10B max supply"},
+    "team_vesting_months": {"value": 36, "source": "GWEI-05", "note": "12-month lock, 10% at cliff, then 24 months linear, from TGE 21 Jan 2026"},
+    "insider_allocation_pct": {"value": 59, "source": "GWEI-05", "note": "team 22 + investors 27 + advisors 2 + Foundation 8 (Foundation fully liquid at TGE and project-controlled, counted as insider as in the Hyperliquid example). Excluding the Foundation it is 51%."},
+    "investor_allocation_pct": {"value": 27, "source": "GWEI-05", "note": "consistent with GWEI-13's ~$0.0063 average investor cost: ($12M seed + ~$5M pre-seed, GWEI-01) / 2.7B tokens = $0.0063"},
+    "team_allocation_pct": {"value": 22, "source": "GWEI-05"},
+    "unlock_90d_pct_of_circ": {"value": 8.0, "source": "GWEI-05", "note": "24 Feb–25 May 2026: ecosystem 31%/120 months + community 10%/48 months = ~0.47% of supply per month x 3 = 1.4% of supply / 17.5% circulating. Assumes linear streams run from TGE; investor/team/advisor cliffs are not until Jan 2027."},
+    "unlock_12m_pct_of_circ": {"value": 73, "source": "GWEI-05", "note": "to 24 Feb 2027: ecosystem 3.1% + community 2.5% + 10% cliff on 51% insiders (5.1%) at Jan 2027 + ~1.1 months of post-cliff linear (45.9%/24 x 1.1 = 2.1%) = 12.8% of supply / 17.5% circulating. Schedule ceiling; how the 17.5% TGE float was sourced from these buckets is not disclosed (see K09)."},
+    "price_to_last_round_multiple": {"value": 4.8, "source": "GWEI-13", "note": "$0.030 / $0.0063 average investor cost (pre-seed + seed blended); the seed-round price alone was not disclosed"}
+  },
+  "claims": [
+    {"id": "C1", "statement": "13 Jan announcement (as reported): investors receive 20% of supply", "metric": "investor_allocation_pct", "claimed_value": 20, "source": "GWEI-06"},
+    {"id": "C2", "statement": "13 Jan announcement (as reported): core team receives 25% of supply", "metric": "team_allocation_pct", "claimed_value": 25, "source": "GWEI-06"},
+    {"id": "C3", "statement": "~$800M of blockspace liquidity commitments from validators, builders and relays", "metric": "liquidity_commitments_usd", "claimed_value": 800000000, "source": "GWEI-01"},
+    {"id": "C4", "statement": "Validators have honoured 99.96% of preconfirmations", "metric": "preconf_honour_rate_pct", "claimed_value": 99.96, "source": "GWEI-02"},
+    {"id": "C5", "statement": "Real-time Ethereum capacity of over 10,000 TPS", "metric": "throughput_tps", "claimed_value": 10000, "source": "GWEI-02"}
+  ]
+}

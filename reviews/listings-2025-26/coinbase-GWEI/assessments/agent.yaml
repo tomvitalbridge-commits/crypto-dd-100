@@ -1,0 +1,83 @@
+# ETHGas (GWEI) — judgment scores from public sources, point-in-time as of 2026-02-24
+# (Coinbase spot listing day). Only sources dated on or before that day are cited.
+# Where public sources were not enough, the dimension is left `pending` with what is missing.
+# Human-only dimensions T02, M05, L07 are deliberately absent.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, score: 2, confidence: medium, evidence: [GWEI-07, GWEI-19, GWEI-01], assessor: "agent:claude", rationale: "Founder led structured derivatives at Morgan Stanley and Barclays; his previous crypto venture, Infinity Exchange ($4.2M seed, 2022), reached no reported scale and is now paused."}
+- {id: T03, score: 2, confidence: medium, evidence: [GWEI-01, GWEI-03], assessor: "agent:claude", rationale: "18 contributors, about half in Hong Kong, with staff from Morgan Stanley, Deutsche Bank, HKEx and Lockheed; the founder is the only named person in every source, so key-person risk sits with him."}
+- {id: T04, score: 2, confidence: medium, evidence: [GWEI-15, GWEI-20, GWEI-03], assessor: "agent:claude", rationale: "In-house team built the Commit-Boost module and order book; public technical output is limited to forum posts and one co-authored ethresear.ch post."}
+- {id: T05, score: 3, confidence: low, evidence: [GWEI-01, GWEI-07, GWEI-19], assessor: "agent:claude", rationale: "No misconduct or enforcement found in press coverage 2023–Feb 2026; court records and team wallets were not checked, and why Infinity Exchange was paused is not explained."}
+- {id: T07, score: 1, confidence: medium, evidence: [GWEI-04, GWEI-05, GWEI-15], assessor: "agent:claude", rationale: "veGWEI governance was only announced at TGE; the marketplace is a central limit order book run by ETHGas, and insiders plus the liquid 8% Foundation hold 59% of supply."}
+- {id: T08, status: pending, rationale: "missing: Foundation/treasury addresses or any treasury report; none found in sources dated to 2026-02-24"}
+- {id: T09, score: 3, confidence: high, evidence: [GWEI-01, GWEI-03], assessor: "agent:claude", rationale: "Seed led by Polychain with BlueYard, Stake Capital, Amber, SIG DT and Lafayette; sold as a SAFT with no valuation disclosed and no board seats."}
+
+# --- P Product & Technology
+- {id: P01, score: 1, confidence: medium, evidence: [GWEI-01, GWEI-02, GWEI-03], assessor: "agent:claude", rationale: "Gas-cost hedging and guaranteed inclusion are real problems, but no buyer-side usage figure is public; the $800M 'commitments' are validator supply, not demand."}
+- {id: P02, score: 2, confidence: medium, evidence: [GWEI-01, GWEI-02, GWEI-15], assessor: "agent:claude", rationale: "Blockspace futures launched on mainnet in Dec 2025, but the founder said full rollout was due Q1 2026 and execution guarantees were not broadly deployed before Jan/Feb 2026."}
+- {id: P03, score: 3, confidence: medium, evidence: [GWEI-15, GWEI-17], assessor: "agent:claude", rationale: "Forward market for whole blocks and preconfirmations up to 64 slots ahead plus base-fee futures is an original design; per-transaction preconfirmations already exist elsewhere (mev-commit)."}
+- {id: P04, score: 2, confidence: medium, evidence: [GWEI-02, GWEI-15], assessor: "agent:claude", rationale: "Out-of-protocol design that relies on relays and builders enforcing constraints, with fallback to a conforming block; the founder concedes 'centralizing vectors' and the 99.96% delivery figure is unverified."}
+- {id: P05, score: 2, confidence: medium, evidence: [GWEI-15, GWEI-16, GWEI-02], assessor: "agent:claude", rationale: "Depends on Commit-Boost, MEV-Boost relays/builders and EigenLayer collateral; the PBS fallback is a partial safeguard."}
+- {id: P08, score: 1, confidence: medium, evidence: [GWEI-15, GWEI-16, GWEI-01], assessor: "agent:claude", rationale: "Mainnet was targeted for Q1 2025 and full rollout slipped to Q1 2026; audit reports promised 'shortly' in Feb 2025 were still not public."}
+- {id: P09, status: pending, rationale: "missing: public repositories and Etherscan/BscScan source-verification status of the token, collateral and pool contracts (explorers unreachable for this review)"}
+- {id: P10, status: pending, rationale: "missing: ETHGas technical documentation (docs site not retrieved); only forum posts reviewed"}
+
+# --- S Security
+- {id: S02, status: pending, rationale: "missing: the Sigma Prime report(s) — scope, commit, findings and remediation; none published as of 2026-02-24"}
+- {id: S05, status: pending, rationale: "missing: on-chain owner/admin of GWEI (Ethereum and BSC) and of the collateral/pool contracts, multisig threshold and signers"}
+- {id: S06, status: pending, rationale: "missing: token contract read — mint, pause and blacklist functions and their holders on both deployments"}
+- {id: S08, status: pending, rationale: "missing: incident-database check; no incident found in press, but the product was not broadly deployed so there is no track record to score"}
+- {id: S09, status: pending, rationale: "missing: settlement reference for cash-settled base-fee futures and delivery-verification mechanism for preconfirmations"}
+- {id: S10, status: pending, rationale: "missing: how GWEI on BNB Smart Chain (GWEI-09) is issued or bridged from the Ethereum ERC-20, and what share of supply sits there"}
+
+# --- K Tokenomics
+- {id: K01, score: 1, confidence: medium, evidence: [GWEI-04, GWEI-06, GWEI-01, GWEI-14], assessor: "agent:claude", rationale: "GWEI is a governance token (veGWEI); the 5% trading fee accrues to the company, and fee sharing with stakers appears only in exchange marketing, not as a live mechanism."}
+- {id: K09, score: 1, confidence: medium, evidence: [GWEI-05, GWEI-06, GWEI-07], assessor: "agent:claude", rationale: "Allocation changed between announcements (investors 20%→27%, team 25%→22%), no vesting-contract addresses are published, and the buckets behind the 17.5% launch float are not disclosed."}
+- {id: K10, score: 2, confidence: low, evidence: [GWEI-06, GWEI-05, GWEI-10], assessor: "agent:claude", rationale: "Airdrop weighted by historical gas spend with a 30-day auto-stake, but also first-come Binance Alpha giveaways to points holders; no post-claim retention data."}
+
+# --- O On-chain Traction
+- {id: O06, status: pending, rationale: "missing: buyer-side activity data (preconfirmation/futures buyers, funding sources) — no indexer or dashboard data found"}
+- {id: O09, status: pending, rationale: "missing: evidence of third-party products built on ETHGas; validator/node-operator testing (GWEI-16) is supply side"}
+
+# --- M Market Structure
+- {id: M03, status: pending, rationale: "missing: pre-listing 24h volume, ±2% depth and venue split"}
+- {id: M06, score: 2, confidence: high, evidence: [GWEI-07, GWEI-08, GWEI-09, GWEI-11], assessor: "agent:claude", rationale: "Spot on KuCoin, Bitget, MEXC and Binance Alpha (not Binance spot), plus Binance perpetuals; Coinbase would be the first tier-1 spot venue."}
+- {id: M07, status: pending, rationale: "missing: perp OI and funding history; perps at up to 50x opened on Binance eight days after TGE with a 17.5% float (GWEI-11, GWEI-13)"}
+- {id: M09, status: pending, rationale: "missing: DEX pools on Ethereum/BSC and LP ownership"}
+- {id: M10, score: 3, confidence: medium, evidence: [GWEI-02, GWEI-17, GWEI-13], assessor: "agent:claude", rationale: "Gas futures and real-time preconfirmations are an Ethereum-roadmap-adjacent narrative Buterin has raised; ETHGas is the first blockspace futures market, in a niche that is still small."}
+
+# --- B Business Model
+- {id: B02, status: pending, rationale: "missing: any revenue figure; only the 5% fee rate is disclosed (GWEI-01)"}
+- {id: B03, score: 1, confidence: medium, evidence: [GWEI-01, GWEI-14], assessor: "agent:claude", rationale: "No live buyback, burn or distribution; staker benefit from marketplace fees is described only in exchange marketing."}
+- {id: B09, status: pending, rationale: "missing: distribution of blockspace sellers/buyers; commitment providers are unnamed (GWEI-03)"}
+- {id: B10, status: pending, rationale: "missing: revenue and cost base; ~$17M raised (GWEI-01) but burn unknown"}
+
+# --- C Competition & Moat
+- {id: C01, score: 1, confidence: medium, evidence: [GWEI-17, GWEI-02], assessor: "agent:claude", rationale: "Preconfirmation market is nascent: the leading competitor had ~1% of validators opted in and 8,090 preconfs in Aug 2025."}
+- {id: C03, status: pending, rationale: "missing: market-share data for ETHGas vs mev-commit and other preconf/blockspace venues over two periods"}
+- {id: C04, score: 2, confidence: low, evidence: [GWEI-01, GWEI-03], assessor: "agent:claude", rationale: "First-mover blockspace futures venue with claimed validator commitments; no retention test against a competitor yet."}
+- {id: C05, score: 2, confidence: low, evidence: [GWEI-15, GWEI-16], assessor: "agent:claude", rationale: "Module design could be copied; the stickier assets are validator registrations and order-book liquidity."}
+- {id: C06, score: 2, confidence: medium, evidence: [GWEI-15, GWEI-17, GWEI-07], assessor: "agent:claude", rationale: "Broader product set (64-slot forward market, whole blocks, base-fee futures) than per-transaction preconf protocols; competitors could add these."}
+- {id: C07, status: pending, rationale: "missing: peer valuations (FDV vs fees/usage) for preconf and MEV-infrastructure tokens"}
+- {id: C08, status: pending, rationale: "missing: dated source on in-protocol alternatives (ePBS, enshrined preconfirmations) and their timeline"}
+- {id: C09, score: 2, confidence: medium, evidence: [GWEI-03, GWEI-16, GWEI-17], assessor: "agent:claude", rationale: "A Kiln-EthGas cohort shows up in independent mainnet research and Lido operators tested on testnets, but the $800M commitment providers are unnamed."}
+- {id: C10, score: 3, confidence: medium, evidence: [GWEI-13, GWEI-02], assessor: "agent:claude", rationale: "Adds Ethereum-blockspace exposure that Coinbase's books lack, alongside a same-day Coinbase Futures listing; segment still unproven."}
+
+# --- D Community & Distribution
+- {id: D01, status: pending, rationale: "missing: social analytics (engagement rate, follower quality)"}
+- {id: D02, status: pending, rationale: "missing: bot-likelihood / engagement-authenticity data"}
+- {id: D04, status: pending, rationale: "missing: user and holder geography"}
+- {id: D05, score: 1, confidence: medium, evidence: [GWEI-10, GWEI-12, GWEI-18], assessor: "agent:claude", rationale: "Attention was bought through sponsored content, a points quest, Binance Alpha giveaways and a buy-volume trading competition worth 'hundreds of thousands of dollars'; organic interest is not evidenced."}
+- {id: D06, status: pending, rationale: "missing: external developer activity (repos, grants, shipped integrations)"}
+- {id: D08, score: 1, confidence: medium, evidence: [GWEI-06, GWEI-05, GWEI-16, GWEI-01], assessor: "agent:claude", rationale: "Allocation figures changed within eight days without explanation, audit reports promised in Feb 2025 were never published, and the valuation was withheld."}
+- {id: D09, status: pending, rationale: "missing: sentiment data from informed participants"}
+- {id: D10, score: 3, confidence: medium, evidence: [GWEI-01, GWEI-16, GWEI-17], assessor: "agent:claude", rationale: "Polychain-led, Lido node operators (Stakely, Chorus One, A41) engaged in testing, and a Kiln cohort is live on mainnet."}
+
+# --- L Legal & Compliance
+- {id: L01, score: 1, confidence: medium, evidence: [GWEI-04, GWEI-03], assessor: "agent:claude", rationale: "An 'ETHGas Foundation' issues the token, but no jurisdiction or registration is disclosed; the operating team is in Hong Kong."}
+- {id: L02, score: 1, confidence: medium, evidence: [GWEI-01, GWEI-04, GWEI-05], assessor: "agent:claude", rationale: "Token pre-sold to investors via SAFT, governance-only utility, and the team runs the marketplace; 59% of supply sits with insiders and the Foundation."}
+- {id: L04, score: 1, confidence: low, evidence: [GWEI-07, GWEI-01], assessor: "agent:claude", rationale: "Operates a futures market for blockspace (incl. cash-settled base-fee futures) with no licensing position disclosed; whether this is a regulated derivative is untested."}
+- {id: L05, score: 3, confidence: low, evidence: [GWEI-07, GWEI-13, GWEI-01], assessor: "agent:claude", rationale: "No litigation or enforcement in coverage up to listing; court and regulator databases were not searched directly."}
+- {id: L06, score: 4, confidence: medium, evidence: [GWEI-15, GWEI-01], assessor: "agent:claude", rationale: "Blockspace marketplace and ERC-20 with no privacy or obfuscation features."}
+- {id: L10, status: pending, rationale: "missing: terms of service, front-end geofencing and airdrop jurisdiction restrictions"}

@@ -1,0 +1,47 @@
+{
+  "project": "ETHGas (GWEI)",
+  "as_of": "2026-02-24",
+  "sources": [
+    {
+      "id": "GWEI-08",
+      "type": "announcement",
+      "tier": 2,
+      "title": "KuCoin — ETHGas (GWEI) gets listed on KuCoin, World Premiere (20 Jan 2026)",
+      "url": "https://www.kucoin.com/announcement/pk-thgas-gwei-gets-listed-on-kucoin-world-premiere",
+      "retrieved": "2026-10-23",
+      "excerpt": "GWEI/USDT trading from 21 Jan 2026 14:00 UTC after a call auction. Deposits on ETH-ERC20; Etherscan link gives contract 0x2798b1cC5A993085E8A9D46e80499F1B63f42204."
+    },
+    {
+      "id": "GWEI-09",
+      "type": "news",
+      "tier": 2,
+      "title": "MEXC News / PANews — Binance Alpha lists ETHGas (GWEI) (21 Jan 2026)",
+      "url": "https://www.mexc.com/news/524654",
+      "retrieved": "2026-10-23",
+      "excerpt": "Binance Alpha listed GWEI; contract 0x30117e4bc17d7b044194b76a38365c53b72f7d49 on BNB Smart Chain, a second deployment besides the Ethereum ERC-20. How the BSC supply is minted or bridged is not stated."
+    },
+    {
+      "id": "GWEI-15",
+      "type": "forum",
+      "tier": 3,
+      "title": "Lido forum — Introducing ETHGas and Realtime Proposer Commitments (K. Lepsoe, 4 Dec 2024)",
+      "url": "https://research.lido.fi/t/introducing-ethgas-and-realtime-proposer-commitments-to-the-lido-community/9018",
+      "retrieved": "2026-10-23",
+      "excerpt": "Out-of-protocol marketplace: validators register via a Commit-Boost module and sell inclusion/execution preconfirmations and whole blocks, up to 64 slots ahead, on a central limit order book per market. Relays fall back to a conforming block. Non-delivery is a slashable default; minimum 1 ETH collateral via EigenLayer AVS or ETHGas collateral contract. Contract audit expected to finish end-Jan 2025. Live on Holesky; mainnet targeted Q1 2025. Stakely tested with 2,000 Holesky validators."
+    },
+    {
+      "id": "GWEI-16",
+      "type": "forum",
+      "tier": 3,
+      "title": "Lido forum — [PERCH] Request for Node Operators to run and test ETHGas (5 Feb 2025; replies to 1 Dec 2025 used)",
+      "url": "https://research.lido.fi/t/perch-request-for-node-operators-to-run-and-test-ethgas/9484",
+      "retrieved": "2026-10-23",
+      "excerpt": "Lepsoe: smart contracts audited by Sigma Prime; reports to be 'made public shortly' (no report linked). Collateral in ETH/stETH via a collateral contract or EigenLayer; Symbiotic forthcoming. Holesky test since Nov 2024; mainnet 'just over the horizon'. Replies of interest from Blockscape, Stakely, A41, Chorus One, SenseiNode. 1 Dec 2025: Stakely registered 1,000 Lido validators on Hoodi testnet for ETHGas. Posts dated after 24 Feb 2026 exist in the thread and were not used."
+    }
+  ],
+  "metrics": {
+    "audits_reputable_count": {"value": 0.5, "source": "GWEI-16", "note": "Only evidence is the founder's Feb 2025 statement that Sigma Prime audited the contracts, with reports 'to be made public shortly'. No public report, scope or commit found as of 24 Feb 2026, and no audit of the GWEI token contract(s) found. Counted as half: a reputable firm is named but the report cannot be read."},
+    "unreimbursed_exploit_usd": {"value": 0, "source": "GWEI-07", "note": "No exploit or loss event found in any of the Dec 2025–Feb 2026 coverage reviewed (GWEI-01, -02, -07, -13). No incident database (rekt etc.) was reachable. The product was not broadly deployed, so the absence of incidents says little about security."}
+  },
+  "claims": []
+}
