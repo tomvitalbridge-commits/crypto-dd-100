@@ -120,3 +120,22 @@ async function llama(cgId, protosByGecko, chainsByGecko, emissionsSlugByGecko) {
 //  tvl0                  last TVL point on or before listing day
 //  fees_ann0 / rev_ann0  30 days before listing × 365/30 (requires ≥25 data points)
 //  rev_qoq               revenue in the 90 days before listing vs the 90 days before that
+
+// Binance futures-only listings (data/backtest/futures_only.csv)
+//  - USDⓈ-M perpetuals from https://www.binance.com/fapi/v1/exchangeInfo (contractType PERPETUAL,
+//    quote USDT, onboardDate inside the window). The exchangeInfo endpoint lists live and settling
+//    contracts only, so contracts removed entirely before 2026-10-23 are missing (survivorship).
+//  - "Futures-only" = base asset (with any 1000/1000000 prefix stripped) absent from the spot
+//    exchangeInfo on data-api.binance.vision, which also lists halted and delisted spot pairs.
+//  - Prices: daily futures klines (www.binance.com/fapi/v1/klines) from the onboard day; BTC from
+//    BTCUSDT perpetual klines on the same dates. x30 / x90 / xlast as for spot.
+async function futuresOnly() {
+  const fx = await J('https://www.binance.com/fapi/v1/exchangeInfo');
+  const sx = await J('https://data-api.binance.vision/api/v3/exchangeInfo');
+  const spot = new Set(sx.symbols.map(s => s.baseAsset));
+  const norm = b => b.replace(/^(1000000|1000|1M)/, '');
+  return fx.symbols.filter(s => s.contractType === 'PERPETUAL' && s.quoteAsset === 'USDT' &&
+      day(s.onboardDate) >= START && day(s.onboardDate) < END &&
+      !spot.has(s.baseAsset) && !spot.has(norm(s.baseAsset)))
+    .map(s => ({ sym: s.symbol, base: s.baseAsset, date: day(s.onboardDate), status: s.status }));
+}
