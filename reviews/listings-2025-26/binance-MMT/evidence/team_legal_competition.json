@@ -1,0 +1,50 @@
+{
+  "project": "Momentum (MMT)",
+  "as_of": "2025-11-04",
+  "sources": [
+    {
+      "id": "MMT-08",
+      "type": "news",
+      "tier": 3,
+      "title": "Decrypt / Chainwire (sponsored) — Momentum raises strategic round led by OKX Ventures, Coinbase Ventures, Protagonist and DNA Fund (2025-06-05)",
+      "url": "https://decrypt.co/323849/momentum-raises-strategic-round-led-by-okx-ventures-coinbase-ventures-protagonist-and-dna-fund",
+      "retrieved": "2026-10-23",
+      "excerpt": "Strategic round at a $100M valuation (amount undisclosed), led by OKX Ventures with Coinbase Ventures, Gate, MEXC and KuCoin Ventures; prior $10M round led by Varys Capital (Mar 2025). Claims $3B swap volume and $69M TVL per DefiLlama, 420k+ users in two months. Co-founder ChefWEN, MSafe architect and senior engineer on Meta's Libra. Says contracts are 'audited' without naming an auditor. San Francisco dateline."
+    },
+    {
+      "id": "MMT-09",
+      "type": "news",
+      "tier": 2,
+      "title": "The Block — Aptos-based multisig wallet MSafe raises $5 million led by Jump Crypto (2023-01-05)",
+      "url": "https://www.theblock.co/post/199359/aptos-based-multisig-wallet-msafe-raises-5-million-led-by-jump-capital",
+      "retrieved": "2026-10-23",
+      "excerpt": "$5M seed (SAFE plus token warrant) led by Jump Crypto with Superscrypt, Circle Ventures, Coinbase Ventures, Shima. CEO Wendy Fu, formerly a software engineer on Meta's Novi wallet; CTO Jacky Wang, formerly a developer at Harmony. Company founded July 2022."
+    },
+    {
+      "id": "MMT-18",
+      "type": "api",
+      "tier": 2,
+      "title": "Crypto-Fundraising.info — Momentum (MSafe) funding rounds (rounds dated up to Oct 2025 only)",
+      "url": "https://crypto-fundraising.info/projects/msafe/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Jan 2023 seed $5M led by Jump Crypto (Circle, Coinbase Ventures, Redpoint, SV Angel, Spartan…); Mar 2025 strategic $5M led by Varys Capital (Coinbase Ventures, Circle, Jump, Aptos, Amber, Selini, Sui Foundation…); Jun 2025 strategic at $100M valuation led by OKX Ventures; Oct 2025 public sale $4.5M."
+    },
+    {
+      "id": "MMT-22",
+      "type": "news",
+      "tier": 2,
+      "title": "IQ.wiki — Wendy Fu (live wiki page; only pre-Nov-2025 career facts used)",
+      "url": "https://iq.wiki/wiki/wendy-fu",
+      "retrieved": "2026-10-23",
+      "excerpt": "Zhejiang University BEng; AWS EC2 internship 2016; Facebook software engineer from 2017, later senior engineer on Libra; founded Momentum Aug 2022, focused on Sui and Move."
+    }
+  ],
+  "metrics": {
+    "active_enforcement_action": {
+      "value": false,
+      "source": "MMT-04",
+      "note": "No enforcement action, lawsuit or regulator warning against Momentum, RIZE Labs or Wendy Fu found in press searches, and none in the Coinone listing filing. SEC/CFTC/FCA/MAS and Panama registers were NOT queried directly; confirm before committee"
+    }
+  },
+  "claims": []
+}

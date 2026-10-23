@@ -1,0 +1,172 @@
+{
+  "project": "Momentum (MMT)",
+  "as_of": "2025-11-04",
+  "sources": [
+    {
+      "id": "MMT-01",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockmedia — Binance names Momentum (MMT) 56th HODLer Airdrops project (published 2025-11-03 17:26 KST)",
+      "url": "https://www.blockmedia.co.kr/archives/1000007",
+      "retrieved": "2026-10-23",
+      "excerpt": "Relays Binance's 3 Nov 2025 announcement: spot listing 4 Nov 2025 12:00 UTC with Seed Tag, pairs USDT/USDC/BNB/TRY. Total supply 1,000,000,000 MMT; circulating at listing ~204,095,424 (20.41%); HODLer airdrop 7.5M (0.75%); a further 5M MMT for marketing after listing and 1.25M six months later. Inflation to start ~6 months after TGE with the ve(3,3) DEX. Sui contract 0x35169bc93e1fddfcf3a82a9eae726d349689ed59e4b065369af8789fe59f8608::mmt::MMT. No listing fee."
+    },
+    {
+      "id": "MMT-02",
+      "type": "news",
+      "tier": 2,
+      "title": "NFT Plazas — Momentum (MMT) to Binance HODLer Airdrops (published 2025-11-04 03:48 UTC)",
+      "url": "https://nftplazas.com/momentum-mmt-to-binance/",
+      "retrieved": "2026-10-23",
+      "excerpt": "56th HODLer Airdrops project, Seed Tag; 7.5M MMT airdrop; listing 4 Nov 2025 12:00 UTC. Total supply 1B; circulating at listing ~204,095,424 (20.41%), attributed to Binance. Locking MMT gives veMMT for gauge and treasury votes; LPs earn MMT emissions and veMMT holders are to receive 100% of trading fees and bribes."
+    },
+    {
+      "id": "MMT-03",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinCodex — Binance announces Momentum (MMT) airdrop for BNB holders (embeds Binance post of 2025-11-03; article date not shown)",
+      "url": "https://coincodex.com/article/75980/binance-announces-momentum-mmt-airdrop-for-bnb-holders",
+      "retrieved": "2026-10-23",
+      "excerpt": "Per Binance's 3 Nov 2025 post: total supply 1B, supply not capped, inflation from ~6 months after TGE. Allocation: community growth 42.7%, early backers 24.78%, team 18%, ecosystem 13%, public sale 1.5%. Products: Momentum DEX, xSUI liquid staking, MSafe treasury/vesting; planned Wormhole expansion and RWA tokenisation."
+    },
+    {
+      "id": "MMT-04",
+      "type": "doc",
+      "tier": 2,
+      "title": "Coinone Research — MMT digital asset manual (exchange listing disclosure dated 2025-11-04)",
+      "url": "https://research.coinone.co.kr/primer/MMT_digital_asset_manual_B62AECCC1734FE52.pdf",
+      "retrieved": "2026-10-23",
+      "excerpt": "Issuer RIZE Labs Inc (Panama, corporation); key person Wendy Fu (CEO). Total issuance cap and issued supply 1,000,000,000; circulating 204,095,424; locked tokens released on schedule through May 2031. Security incidents in past 3 years: none. Security audits: Asymptotic, MoveBit (no dates, scope or results given). Conflicts of interest: none disclosed. No foundation wallet addresses or holder distribution given."
+    },
+    {
+      "id": "MMT-05",
+      "type": "doc",
+      "tier": 2,
+      "title": "Coinone Research — MMT digital asset info (dated 2025-11-04)",
+      "url": "https://research.coinone.co.kr/primer/MMT_digital_asset_info_AD6841919B99B147.pdf",
+      "retrieved": "2026-10-23",
+      "excerpt": "20.41% of supply unlocked at TGE, of which 11.41% public sale and community. Investors: 0% at TGE, 12-month cliff then 48-month gradual unlock. Team: fully locked 48 months after TGE. veMMT governance (proposals, parameters, emissions). Products: CLMM DEX (Uniswap v3 style), xSUI, MSafe, TGL launchpad, vaults, Momentum X."
+    },
+    {
+      "id": "MMT-13",
+      "type": "doc",
+      "tier": 3,
+      "title": "Momentum docs — Whitepaper (live page; metrics snapshot dated 25 Oct 2025)",
+      "url": "https://docs.mmt.finance/overview/momentum-whitepaper.md",
+      "retrieved": "2026-10-23",
+      "excerpt": "As of 25 Oct 2025: 1.68M+ unique swap users, 1.42M+ LPs, TVL $600M+, cumulative volume $25B+. Total supply 1,000,000,000; TGE circulating 204,095,424. Ecosystem 13% (9% at TGE, 24-month vesting); community growth 42.72%; investors and early supporters 24.78% (0% at TGE, minimum 1-year cliff); public sale 1.5% (100% at TGE); team 18% (4-year cliff). Emissions start 3–6 months after TGE when the DEX moves to ve(3,3). Roadmap: perp DEX and TGL Q1 2026, Momentum X Q2 2026. Live page, may have been edited after the listing date."
+    },
+    {
+      "id": "MMT-14",
+      "type": "doc",
+      "tier": 3,
+      "title": "Momentum docs — MMT Token (live page)",
+      "url": "https://docs.mmt.finance/overview/mmt-token.md",
+      "retrieved": "2026-10-23",
+      "excerpt": "20.41% unlocks at TGE (11.41% public sale and community). Investors 12-month cliff then 48 months; team fully locked 48 months. veMMT from bonding MMT gives governance, rewards and priority access. Disclaimer: MMT is not ownership, an income right or a security interest. Supply, mint control and contract address not stated in text."
+    },
+    {
+      "id": "MMT-15",
+      "type": "api",
+      "tier": 2,
+      "title": "CryptoRank — Momentum Finance token sale page (sale-time values only)",
+      "url": "https://cryptorank.io/ico/momentum-finance",
+      "retrieved": "2026-10-23",
+      "excerpt": "Initial values at sale: market cap $71.43M, FDV $350.00M, circulating 204.09M MMT (implies $0.35/token, the Buidlpad tier-2 price). Round details behind login. Current market data deliberately not read."
+    },
+    {
+      "id": "MMT-16",
+      "type": "news",
+      "tier": 2,
+      "title": "CoinCarp — MMT Binance Wallet Pre-TGE Prime Sale (event 2025-10-31)",
+      "url": "https://www.coincarp.com/events/mmt-finance-new-listing-on-binance-wallet/",
+      "retrieved": "2026-10-23",
+      "excerpt": "Binance Wallet Prime Sale 31 Oct 2025 09:00–11:00 UTC: 15,000,000 MMT (1.5% of supply) at $0.10 equivalent in BNB, $1.5M raise, cap 7 BNB per user, Alpha Points required. Alpha and DEX trading to open 4 Nov 2025 10:00 UTC."
+    },
+    {
+      "id": "MMT-07",
+      "type": "news",
+      "tier": 3,
+      "title": "Decrypt / Chainwire (sponsored) — $MMT Community Offering goes live on Buidlpad (2025-10-10)",
+      "url": "https://decrypt.co/343773/momentum-ignites-the-next-wave-of-defi-on-sui-mmt-community-offering-goes-live-on-buidlpad?amp=1",
+      "retrieved": "2026-10-23",
+      "excerpt": "Target raise $4.5M on Buidlpad: tier 1 (HODL-pool stakers) at $250M FDV, tier 2 (KYC) at $350M FDV; 100% unlocked at TGE. Project claims: >$16B cumulative volume, >$500M TVL, 2M+ traders, $222M liquidity from the HODL campaign, $1.1B daily volume the prior day (self-described #3 DEX globally). Sponsored release."
+    },
+    {
+      "id": "MMT-19",
+      "type": "news",
+      "tier": 2,
+      "title": "HokaNews — Momentum (MMT) token ignites hype ahead of Binance (byline 2025-10-30; low-quality outlet)",
+      "url": "https://www.hokanews.com/2025/10/momentum-mmt-token-ignites-hype-binance.html",
+      "retrieved": "2026-10-23",
+      "excerpt": "TVL reportedly fell from $700M to $327M after the Buidlpad HODL campaign ended (no source given). Team tokens locked 48 months; investors 12-month cliff then 48 months; 20.41% at TGE. $14.5M raised across seed, strategic and public rounds. Prime Sale 31 Oct 2025."
+    }
+  ],
+  "metrics": {
+    "circulating_supply": {
+      "value": 204095424,
+      "source": "MMT-01",
+      "note": "circulating at listing per Binance announcement; same figure in MMT-02 and MMT-04"
+    },
+    "total_supply": {
+      "value": 1000000000,
+      "source": "MMT-01",
+      "note": "genesis supply. Binance says supply is not capped and inflation starts ~6 months after TGE (MMT-03); Coinone's filing calls 1B the issuance cap (MMT-04)"
+    },
+    "fdv_to_mcap": {
+      "value": 4.9,
+      "source": "MMT-01",
+      "note": "price-independent: total supply / circulating at listing = 1,000,000,000 / 204,095,424. Supplied directly because no listing-time price is used (see manifest notes)"
+    },
+    "insider_allocation_pct": {
+      "value": 42.78,
+      "source": "MMT-03",
+      "note": "team 18% + early backers/investors 24.78%"
+    },
+    "team_vesting_months": {
+      "value": 48,
+      "source": "MMT-05",
+      "note": "team fully locked 48 months after TGE; vesting length after the lock is not disclosed, so 48 is a floor"
+    },
+    "unlock_12m_pct_of_circ": {
+      "value": 39.0,
+      "source": "MMT-13",
+      "note": "ESTIMATE. Ecosystem: remaining 4% over 24 months = 20M in 12 months (MMT-13). Community growth: 42.72% - 9.91% at TGE = 328.1M, assumed linear to the May-2031 end of the release schedule (MMT-04), ~66 months = ~59.7M in 12 months. Investor cliff ends at month 12 and is excluded; team locked. (20M + 59.7M) / 204.1M = 39%. The community schedule is not published, so this is an assumption"
+    },
+    "unlock_90d_pct_of_circ": {
+      "value": 9.8,
+      "source": "MMT-13",
+      "note": "ESTIMATE on the same assumptions as the 12-month figure: ecosystem 5M + community ~14.9M = ~19.9M / 204.1M. Excludes 5M marketing tokens already counted in circulating"
+    }
+  },
+  "claims": [
+    {
+      "id": "MMT-C1",
+      "statement": "Whitepaper: TVL $600M+ as of 25 Oct 2025",
+      "metric": "tvl_peak_usd",
+      "claimed_value": 600000000,
+      "source": "MMT-13"
+    },
+    {
+      "id": "MMT-C2",
+      "statement": "Whitepaper: total supply 1,000,000,000 MMT",
+      "metric": "total_supply",
+      "claimed_value": 1000000000,
+      "source": "MMT-13"
+    },
+    {
+      "id": "MMT-C3",
+      "statement": "Whitepaper: TGE circulating supply 204,095,424 MMT",
+      "metric": "circulating_supply",
+      "claimed_value": 204095424,
+      "source": "MMT-13"
+    },
+    {
+      "id": "MMT-C4",
+      "statement": "Buidlpad press release (10 Oct 2025): TVL over $500M",
+      "metric": "tvl_2025_10_10_usd",
+      "claimed_value": 500000000,
+      "source": "MMT-07"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+# Momentum (MMT) — judgment scores from public sources, POINT-IN-TIME as of 2025-11-04
+# (Binance spot listing day). Every score cites evidence ids in evidence/*.json.
+# Where public sources were not enough, the dimension is left `pending` with
+# what is missing. T02, M05 and L07 are human-only and are not filled.
+assessments:
+
+# --- T Team & Governance
+- {id: T01, score: 3, confidence: medium, evidence: [MMT-09, MMT-22, MMT-10, MMT-06], assessor: "agent:claude", rationale: "CEO Wendy Fu (ex-Meta Novi/Libra engineer) shipped MSafe, a Move multisig live on Aptos since Oct 2022 and Sui since May 2023, then a DEX that DefiLlama shows at $290M TVL seven months after launch."}
+- {id: T03, score: 2, confidence: medium, evidence: [MMT-09, MMT-10, MMT-04], assessor: "agent:claude", rationale: "Three named executives (CEO Wendy Fu, CTO Jacky Wang, CSO Vinson Leow); the listing filing names only the CEO; no wider team or succession information found."}
+- {id: T04, score: 2, confidence: medium, evidence: [MMT-09, MMT-22, MMT-10], assessor: "agent:claude", rationale: "In-house technical founders with Libra and Harmony backgrounds who built MSafe; no public research, specs or open contract repositories found."}
+- {id: T05, score: 3, confidence: low, evidence: [MMT-04, MMT-09], assessor: "agent:claude", rationale: "No allegations or enforcement found in press or in the Coinone listing filing; court records, regulator databases and wallet history were not searched."}
+- {id: T07, score: 1, confidence: medium, evidence: [MMT-13, MMT-01, MMT-05], assessor: "agent:claude", rationale: "veMMT governance only starts with the ve(3,3) switch 3–6 months after TGE; at listing the team controls parameters, with no timelock, quorum or dated decentralisation plan published."}
+- {id: T08, status: pending, rationale: "missing: treasury / foundation wallet addresses and holdings; the Coinone filing (MMT-04) lists none and the docs treasury pages could not be read"}
+- {id: T09, score: 3, confidence: medium, evidence: [MMT-09, MMT-18, MMT-08], assessor: "agent:claude", rationale: "Backed by Jump Crypto, Coinbase Ventures, Circle Ventures and Sui Foundation since 2023; the $100M strategic round was led by OKX Ventures alongside Gate, MEXC and KuCoin venture arms — exchange-affiliated investors whose terms are undisclosed."}
+
+# --- P Product & Technology
+- {id: P01, score: 2, confidence: medium, evidence: [MMT-06, MMT-11, MMT-12], assessor: "agent:claude", rationale: "Real swap demand ($8.3M fees Aug–Oct 2025), but since launch trading and LPing earned pre-TGE 'bricks' and veMMT competition rewards, so demand has been incentive-driven."}
+- {id: P02, score: 2, confidence: medium, evidence: [MMT-12, MMT-06, MMT-13], assessor: "agent:claude", rationale: "CLMM DEX live since 31 Mar 2025 (~7 months); the ve(3,3) emissions model the token is built around, the perp DEX and the TGL launchpad are still roadmap items."}
+- {id: P03, score: 2, confidence: medium, evidence: [MMT-05, MMT-12], assessor: "agent:claude", rationale: "Uniswap v3-style concentrated liquidity plus an Aerodrome-inspired ve(3,3) design, implemented in Move on Sui — known designs adapted, not novel research."}
+- {id: P04, score: 2, confidence: low, evidence: [MMT-20, MMT-04], assessor: "agent:claude", rationale: "CLMM is a proven design, but the same class of Sui CLMM math lost Cetus >$220M in May 2025; Momentum reports no incidents, and no stress-test or formal-verification results were found."}
+- {id: P05, score: 2, confidence: low, evidence: [MMT-12, MMT-21], assessor: "agent:claude", rationale: "Depends on Sui alone for execution; pools rely on issuer and bridged assets (AUSD, FDUSD, USDY, BTC wrappers) and planned Wormhole flows. No external price oracle is needed for swaps."}
+- {id: P08, score: 2, confidence: medium, evidence: [MMT-12, MMT-13], assessor: "agent:claude", rationale: "DEX shipped on the announced date, but ve(3,3) — promised at launch in Mar 2025 with 100% emissions to LPs — is deferred to 3–6 months after TGE."}
+- {id: P09, status: pending, rationale: "missing: public source for the MMT token and CLMM Move packages, and confirmation that published bytecode matches it"}
+- {id: P10, score: 2, confidence: low, evidence: [MMT-23, MMT-13], assessor: "agent:claude", rationale: "Docs include a CLMM SDK, contract interface, deployments and admin pages; no threat model or formal spec found. Index read from the live site, so some pages may post-date listing."}
+
+# --- S Security
+- {id: S02, status: pending, rationale: "missing: Asymptotic and MoveBit reports for the DEX (scope, dates, open findings, commit vs deployed package); only firm names are known (MMT-04)"}
+- {id: S05, status: pending, rationale: "missing: holders of the CLMM AdminCap/UpgradeCap and MMT TreasuryCap, and multisig threshold/signers (presumably an MSafe account, unconfirmed)"}
+- {id: S06, score: 1, confidence: medium, evidence: [MMT-03, MMT-01, MMT-04], assessor: "agent:claude", rationale: "Binance states supply is not capped and inflation starts ~6 months after TGE, while the Coinone filing calls 1B a cap; a mint path therefore exists with no disclosed holder, bound or rate."}
+- {id: S08, score: 3, confidence: medium, evidence: [MMT-04, MMT-20], assessor: "agent:claude", rationale: "No security incidents in the past 3 years per the listing filing, and none found in press across MSafe (since 2022) and the DEX; history of the DEX itself is only seven months."}
+- {id: S09, status: pending, rationale: "missing: whether any Momentum vault or integrator reads Momentum pool prices as an oracle, and thin-pool manipulation analysis"}
+- {id: S10, status: pending, rationale: "missing: share of TVL in bridged assets (BTC wrappers, Wormhole assets) vs native Sui assets"}
+
+# --- K Tokenomics
+- {id: K01, score: 2, confidence: medium, evidence: [MMT-02, MMT-06, MMT-13], assessor: "agent:claude", rationale: "veMMT is to receive 100% of fees and bribes, but only after the ve(3,3) switch; at listing protocol revenue goes to the treasury and MMT's utility is governance and access."}
+- {id: K09, score: 1, confidence: medium, evidence: [MMT-13, MMT-04, MMT-03, MMT-05], assessor: "agent:claude", rationale: "Percentages are published, but no vesting-contract addresses; the community-growth vesting schedule (42.72%) is unspecified; filings disagree on whether 1B is a cap."}
+- {id: K10, score: 1, confidence: medium, evidence: [MMT-06, MMT-07, MMT-11, MMT-19], assessor: "agent:claude", rationale: "Points ('bricks') and a $222M Buidlpad HODL campaign drove liquidity; DefiLlama TVL fell from $633M on 25 Oct to $290M on 31 Oct as the campaign ended. No sybil filtering was disclosed."}
+
+# --- O On-chain Traction
+- {id: O06, score: 1, confidence: low, evidence: [MMT-13, MMT-06, MMT-11], assessor: "agent:claude", rationale: "1.42M self-reported LPs against ~$600M peak TVL (~$420 each) with every LP earning points looks farming-shaped; about $290M stayed after the campaign. No funding-cluster analysis was possible."}
+- {id: O09, status: pending, rationale: "missing: evidence of third-party teams building on Momentum pools or SDK (15 named 'collaborations' in MMT-12 are announcements, not observed integrations)"}
+
+# --- M Market Structure
+- {id: M03, status: pending, rationale: "missing: no trading history before 12:00 UTC 4 Nov 2025; re-assess after 7 days of order-book data"}
+- {id: M06, score: 3, confidence: medium, evidence: [MMT-24, MMT-04, MMT-01], assessor: "agent:claude", rationale: "No prior trading venue; Binance, KuCoin and Coinone (a Korean venue that published its own disclosure) all list it the same day, so other tier-1 diligence happened in parallel, not before."}
+- {id: M07, status: pending, rationale: "missing: perp listings, open interest and funding at launch"}
+- {id: M09, status: pending, rationale: "missing: MMT pool ownership on Momentum/Sui DEXs after TGE"}
+- {id: M10, score: 2, confidence: low, evidence: [MMT-21, MMT-07], assessor: "agent:claude", rationale: "A fast-growing Sui DEX ($100M daily volume in July); the '#3 DEX globally' claim is one self-reported day, and the Sui incumbent Cetus remains, so leadership is unproven."}
+
+# --- B Business Model
+- {id: B02, score: 2, confidence: medium, evidence: [MMT-06, MMT-11], assessor: "agent:claude", rationale: "Revenue is the protocol share (~20%) of real swap fees, but it rose with points campaigns: October's $748k came in the HODL-campaign month, against $402k in September."}
+- {id: B03, score: 2, confidence: medium, evidence: [MMT-06, MMT-02, MMT-13], assessor: "agent:claude", rationale: "100% fees-to-veMMT is designed and announced, not live; current revenue goes to the Momentum treasury."}
+- {id: B09, status: pending, rationale: "missing: volume and TVL concentration by wallet or partner (e.g. HODL-campaign whales)"}
+- {id: B10, score: 2, confidence: low, evidence: [MMT-06, MMT-11], assessor: "agent:claude", rationale: "$6.6M annualised treasury revenue on fees that existed alongside points; TVL halved when one campaign ended, and the ve(3,3) switch will add token emissions rather than remove them."}
+
+# --- C Competition & Moat
+- {id: C01, status: pending, rationale: "missing: Sui DEX segment size and growth from an independent aggregator"}
+- {id: C03, status: pending, rationale: "missing: Momentum's Sui DEX volume/TVL share over two quarters"}
+- {id: C04, score: 1, confidence: medium, evidence: [MMT-06, MMT-07, MMT-19], assessor: "agent:claude", rationale: "Liquidity followed incentives: more than half of peak TVL left within six days of the HODL campaign ending, so no retention moat has been shown."}
+- {id: C05, score: 1, confidence: low, evidence: [MMT-05, MMT-12, MMT-06], assessor: "agent:claude", rationale: "Standard CLMM + ve(3,3) design is replicable, and its liquidity left when one incentive ended, so a better-funded incentive programme could pull it."}
+- {id: C06, score: 2, confidence: low, evidence: [MMT-05, MMT-13], assessor: "agent:claude", rationale: "Differs from other Sui DEXs by bundling MSafe treasury, xSUI and a launchpad with ve(3,3) — each copyable, and ve(3,3) not live yet."}
+- {id: C07, status: pending, rationale: "missing: listing-time FDV and peer valuations (Cetus, Bluefin, Aerodrome FDV/fees)"}
+- {id: C08, status: pending, rationale: "missing: evidence on whether Sui-native (DeepBook) or wallet swap features target the same flow"}
+- {id: C09, score: 2, confidence: low, evidence: [MMT-12, MMT-04], assessor: "agent:claude", rationale: "An OKX Wallet xBTC liquidity campaign is live per the listing filing; the 15 partner names in the launch release are announcements without observed flows."}
+- {id: C10, status: pending, rationale: "missing: Binance's existing Sui DeFi coverage and user overlap"}
+
+# --- D Community
+- {id: D05, score: 2, confidence: medium, evidence: [MMT-07, MMT-08, MMT-11], assessor: "agent:claude", rationale: "Disclosed sponsored releases, a UGC campaign tied to the Buidlpad sale, and points programmes drive much of the visible attention."}
+- {id: D10, score: 3, confidence: medium, evidence: [MMT-18, MMT-09, MMT-24], assessor: "agent:claude", rationale: "Sui Foundation, Circle Ventures, Coinbase Ventures and Jump invested; KuCoin and Coinone list it the same day; no integrations by major external protocols verified."}
+- {id: D01, status: pending, rationale: "missing: X/Discord/Telegram audience and engagement data"}
+- {id: D02, status: pending, rationale: "missing: bot-likelihood analysis of social engagement"}
+- {id: D04, status: pending, rationale: "missing: user geography"}
+- {id: D06, status: pending, rationale: "missing: grants, hackathons, external contributors"}
+- {id: D08, status: pending, rationale: "missing: record of incident or delay communications"}
+- {id: D09, status: pending, rationale: "missing: sentiment among informed participants pre-listing"}
+
+# --- L Legal & Compliance
+- {id: L01, score: 2, confidence: medium, evidence: [MMT-04, MMT-08], assessor: "agent:claude", rationale: "Issuer RIZE Labs Inc is a Panama corporation; the team issues releases from San Francisco; no registry extract or address was found."}
+- {id: L02, score: 1, confidence: low, evidence: [MMT-02, MMT-13, MMT-14], assessor: "agent:claude", rationale: "Team-controlled protocol with a promised 100% fee flow to locked-token holders; docs disclaim income rights, but no legal analysis is public."}
+- {id: L04, status: pending, rationale: "missing: Terms of Service and MiCA whitepaper contents (not fetchable); licensing position for Momentum X KYC/RWA plans"}
+- {id: L05, score: 3, confidence: low, evidence: [MMT-04, MMT-09], assessor: "agent:claude", rationale: "No litigation or regulator action found in press or the listing filing; court and regulator databases were not searched."}
+- {id: L06, score: 4, confidence: medium, evidence: [MMT-05, MMT-13], assessor: "agent:claude", rationale: "Public Sui DEX, multisig and liquid staking products; no privacy or obfuscation features."}
+- {id: L10, status: pending, rationale: "missing: front-end geofencing and airdrop/points eligibility restrictions"}

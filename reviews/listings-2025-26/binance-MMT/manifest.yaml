@@ -1,0 +1,36 @@
+# REAL project, PUBLIC sources only, POINT-IN-TIME review.
+# Binance listed MMT spot on 2025-11-04 12:00 UTC (Seed Tag, HODLer Airdrops #56).
+# Only information published on or before 2025-11-04 is used. Sources were
+# retrieved in 2026, but every excerpt is limited to pre-listing content.
+# No `collect:` block on purpose: the collectors pull CURRENT market data,
+# which would leak post-listing outcomes into a blind review.
+project: Momentum (MMT)
+profile: defi          # ve(3,3) CLMM DEX on Sui
+as_of: 2025-11-04
+
+evidence:
+  - evidence/market_tokenomics.json
+  - evidence/protocol_security.json
+  - evidence/team_legal_competition.json
+
+assessments:
+  - assessments/agent.yaml
+
+# Why some metrics are deliberately NOT set. Each becomes a note in the report.
+notes:
+  S06: "mint_authority not established. Binance says supply is not capped and inflation starts ~6 months after TGE (MMT-03, MMT-01), so a mint path exists, but who holds the Sui TreasuryCap / minting module is not disclosed. Sui RPC and explorers were unreachable from the review environment. Ask: TreasuryCap object id and owner, and the code path for future emissions."
+  S03: "contracts_verified not established. Contract 0x35169bc9...::mmt::MMT is known (MMT-01) but source publication / verification of the token and CLMM packages could not be checked."
+  L03: "sanctions_exposure unknown: no wallet screening was possible. Needs the venue's own screening of deployer, treasury and top-holder addresses."
+  K06: "Not set. Last private round was a $100M valuation (MMT-08); public sales were at $0.10 (Binance Prime Sale, MMT-16) and $0.25/$0.35 (Buidlpad, MMT-07). No listing-time traded price is used, so no multiple. At the $0.35 sale price it would be 3.5x."
+  B04: "Not set because no listing-time FDV is used. For reference: at the $350M Buidlpad FDV, FDV / annualised fees = 10.6x; at a $3.5B FDV (a figure floated in pre-listing press, MMT-19) it would be ~106x."
+  M01: "No order book existed before 12:00 UTC on 4 Nov 2025; depth, spread, volume, venue share and volatility are not measurable as of the review date."
+  K03: "No holder distribution published pre-listing; Coinone filing lists none (MMT-04). Needs entity-labelled top-20 on Sui after airdrop distribution."
+  K08: "annual_inflation_pct not set: emission rate for the ve(3,3) phase is not published. Coinone's filing calls 1B the issuance cap (MMT-04) while Binance says supply is not capped (MMT-03) — ask the team to reconcile."
+  O05: "incentivised_tvl_share_pct not set. All LP activity was eligible for 'bricks' points pre-TGE (MMT-11), and TVL fell from $633M (25 Oct) to $290M (31 Oct) after the HODL campaign (MMT-06), but no measurement of the share of current TVL that is incentivised was possible."
+  O01: "No daily-active-address, retention or fee-payer data from an independent indexer; the project's 1.68M swap users / 1.42M LPs (MMT-13) is a self-reported cumulative figure."
+  C02: "Sui DEX category share not established (DefiLlama chain pages could not be fetched); the '#3 DEX globally' line is a one-day self-reported claim (MMT-07)."
+  S04: "upgrade_timelock_hours unknown: who holds the Sui UpgradeCap for the CLMM packages, and any delay, is undisclosed in what could be read."
+  S07: "Docs list a Bug Bounty page (MMT-23) but it could not be fetched; max payout unknown."
+  P06: "No public GitHub org for contracts was found; development activity not measurable."
+  B06: "Treasury holdings and burn not published."
+  D03: "Holder count not measurable pre-TGE."

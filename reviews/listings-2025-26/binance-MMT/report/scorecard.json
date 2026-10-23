@@ -1,0 +1,1506 @@
+{
+  "project": "Momentum (MMT)",
+  "profile": "defi",
+  "as_of": "2025-11-04",
+  "dims": {
+    "T01": {
+      "dim_id": "T01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-09",
+        "MMT-22",
+        "MMT-10",
+        "MMT-06"
+      ],
+      "rationale": "CEO Wendy Fu (ex-Meta Novi/Libra engineer) shipped MSafe, a Move multisig live on Aptos since Oct 2022 and Sui since May 2023, then a DEX that DefiLlama shows at $290M TVL seven months after launch.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T02": {
+      "dim_id": "T02",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "T03": {
+      "dim_id": "T03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-09",
+        "MMT-10",
+        "MMT-04"
+      ],
+      "rationale": "Three named executives (CEO Wendy Fu, CTO Jacky Wang, CSO Vinson Leow); the listing filing names only the CEO; no wider team or succession information found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T04": {
+      "dim_id": "T04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-09",
+        "MMT-22",
+        "MMT-10"
+      ],
+      "rationale": "In-house technical founders with Libra and Harmony backgrounds who built MSafe; no public research, specs or open contract repositories found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T05": {
+      "dim_id": "T05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "MMT-04",
+        "MMT-09"
+      ],
+      "rationale": "No allegations or enforcement found in press or in the Coinone listing filing; court records, regulator databases and wallet history were not searched.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T06": {
+      "dim_id": "T06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-05"
+      ],
+      "rationale": "team_vesting_months = 48  (bands 4:≥48, 3:≥36, 2:≥24, 1:≥12)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "T07": {
+      "dim_id": "T07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-13",
+        "MMT-01",
+        "MMT-05"
+      ],
+      "rationale": "veMMT governance only starts with the ve(3,3) switch 3–6 months after TGE; at listing the team controls parameters, with no timelock, quorum or dated decentralisation plan published.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T08": {
+      "dim_id": "T08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: treasury / foundation wallet addresses and holdings; the Coinone filing (MMT-04) lists none and the docs treasury pages could not be read"
+      ]
+    },
+    "T09": {
+      "dim_id": "T09",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-09",
+        "MMT-18",
+        "MMT-08"
+      ],
+      "rationale": "Backed by Jump Crypto, Coinbase Ventures, Circle Ventures and Sui Foundation since 2023; the $100M strategic round was led by OKX Ventures alongside Gate, MEXC and KuCoin venture arms — exchange-affiliated investors whose terms are undisclosed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "T10": {
+      "dim_id": "T10",
+      "status": "scored",
+      "score": 4,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "contradiction_count = 0  (bands 4:≤0, 3:≤0.5, 2:≤1, 1:≤2)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "P01": {
+      "dim_id": "P01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-06",
+        "MMT-11",
+        "MMT-12"
+      ],
+      "rationale": "Real swap demand ($8.3M fees Aug–Oct 2025), but since launch trading and LPing earned pre-TGE 'bricks' and veMMT competition rewards, so demand has been incentive-driven.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P02": {
+      "dim_id": "P02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-12",
+        "MMT-06",
+        "MMT-13"
+      ],
+      "rationale": "CLMM DEX live since 31 Mar 2025 (~7 months); the ve(3,3) emissions model the token is built around, the perp DEX and the TGL launchpad are still roadmap items.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P03": {
+      "dim_id": "P03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-05",
+        "MMT-12"
+      ],
+      "rationale": "Uniswap v3-style concentrated liquidity plus an Aerodrome-inspired ve(3,3) design, implemented in Move on Sui — known designs adapted, not novel research.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P04": {
+      "dim_id": "P04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MMT-20",
+        "MMT-04"
+      ],
+      "rationale": "CLMM is a proven design, but the same class of Sui CLMM math lost Cetus >$220M in May 2025; Momentum reports no incidents, and no stress-test or formal-verification results were found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P05": {
+      "dim_id": "P05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MMT-12",
+        "MMT-21"
+      ],
+      "rationale": "Depends on Sui alone for execution; pools rely on issuer and bridged assets (AUSD, FDUSD, USDY, BTC wrappers) and planned Wormhole flows. No external price oracle is needed for swaps.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P06": {
+      "dim_id": "P06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_commits_90d' not in evidence pack",
+        "No public GitHub org for contracts was found; development activity not measurable."
+      ]
+    },
+    "P07": {
+      "dim_id": "P07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'github_active_contributors_90d' not in evidence pack"
+      ]
+    },
+    "P08": {
+      "dim_id": "P08",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-12",
+        "MMT-13"
+      ],
+      "rationale": "DEX shipped on the announced date, but ve(3,3) — promised at launch in Mar 2025 with 100% emissions to LPs — is deferred to 3–6 months after TGE.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "P09": {
+      "dim_id": "P09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: public source for the MMT token and CLMM Move packages, and confirmation that published bytecode matches it"
+      ]
+    },
+    "P10": {
+      "dim_id": "P10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MMT-23",
+        "MMT-13"
+      ],
+      "rationale": "Docs include a CLMM SDK, contract interface, deployments and admin pages; no threat model or formal spec found. Index read from the live site, so some pages may post-date listing.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S01": {
+      "dim_id": "S01",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-04"
+      ],
+      "rationale": "audits_reputable_count = 2  (bands 4:≥3, 3:≥2, 2:≥1, 1:≥0.5)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "S02": {
+      "dim_id": "S02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: Asymptotic and MoveBit reports for the DEX (scope, dates, open findings, commit vs deployed package); only firm names are known (MMT-04)"
+      ]
+    },
+    "S03": {
+      "dim_id": "S03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'contracts_verified' not in evidence pack",
+        "contracts_verified not established. Contract 0x35169bc9...::mmt::MMT is known (MMT-01) but source publication / verification of the token and CLMM packages could not be checked."
+      ]
+    },
+    "S04": {
+      "dim_id": "S04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'upgrade_timelock_hours' not in evidence pack",
+        "upgrade_timelock_hours unknown: who holds the Sui UpgradeCap for the CLMM packages, and any delay, is undisclosed in what could be read."
+      ]
+    },
+    "S05": {
+      "dim_id": "S05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: holders of the CLMM AdminCap/UpgradeCap and MMT TreasuryCap, and multisig threshold/signers (presumably an MSafe account, unconfirmed)"
+      ]
+    },
+    "S06": {
+      "dim_id": "S06",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-03",
+        "MMT-01",
+        "MMT-04"
+      ],
+      "rationale": "Binance states supply is not capped and inflation starts ~6 months after TGE, while the Coinone filing calls 1B a cap; a mint path therefore exists with no disclosed holder, bound or rate.",
+      "assessor": "agent:claude",
+      "notes": [
+        "mint_authority not established. Binance says supply is not capped and inflation starts ~6 months after TGE (MMT-03, MMT-01), so a mint path exists, but who holds the Sui TreasuryCap / minting module is not disclosed. Sui RPC and explorers were unreachable from the review environment. Ask: TreasuryCap object id and owner, and the code path for future emissions."
+      ]
+    },
+    "S07": {
+      "dim_id": "S07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'bug_bounty_max_usd' not in evidence pack",
+        "Docs list a Bug Bounty page (MMT-23) but it could not be fetched; max payout unknown."
+      ]
+    },
+    "S08": {
+      "dim_id": "S08",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-04",
+        "MMT-20"
+      ],
+      "rationale": "No security incidents in the past 3 years per the listing filing, and none found in press across MSafe (since 2022) and the DEX; history of the DEX itself is only seven months.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "S09": {
+      "dim_id": "S09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: whether any Momentum vault or integrator reads Momentum pool prices as an oracle, and thin-pool manipulation analysis"
+      ]
+    },
+    "S10": {
+      "dim_id": "S10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: share of TVL in bridged assets (BTC wrappers, Wormhole assets) vs native Sui assets"
+      ]
+    },
+    "K01": {
+      "dim_id": "K01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-02",
+        "MMT-06",
+        "MMT-13"
+      ],
+      "rationale": "veMMT is to receive 100% of fees and bribes, but only after the ve(3,3) switch; at listing protocol revenue goes to the treasury and MMT's utility is governance and access.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K02": {
+      "dim_id": "K02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "high",
+      "evidence": [
+        "HARNESS"
+      ],
+      "rationale": "circulating_supply_pct = 20.4  (bands 4:≥60, 3:≥40, 2:≥25, 1:≥15)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K03": {
+      "dim_id": "K03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top10_holder_pct_ex_contracts' not in evidence pack",
+        "No holder distribution published pre-listing; Coinone filing lists none (MMT-04). Needs entity-labelled top-20 on Sui after airdrop distribution."
+      ]
+    },
+    "K04": {
+      "dim_id": "K04",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MMT-13"
+      ],
+      "rationale": "unlock_12m_pct_of_circ = 39  (bands 4:≤10, 3:≤25, 2:≤50, 1:≤100)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K05": {
+      "dim_id": "K05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-03"
+      ],
+      "rationale": "insider_allocation_pct = 42.78  (bands 4:≤25, 3:≤35, 2:≤45, 1:≤55)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K06": {
+      "dim_id": "K06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'price_to_last_round_multiple' not in evidence pack",
+        "Not set. Last private round was a $100M valuation (MMT-08); public sales were at $0.10 (Binance Prime Sale, MMT-16) and $0.25/$0.35 (Buidlpad, MMT-07). No listing-time traded price is used, so no multiple. At the $0.35 sale price it would be 3.5x."
+      ]
+    },
+    "K07": {
+      "dim_id": "K07",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-01"
+      ],
+      "rationale": "fdv_to_mcap = 4.9  (bands 4:≤1.5, 3:≤2.5, 2:≤4, 1:≤7)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "K08": {
+      "dim_id": "K08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'annual_inflation_pct' not in evidence pack",
+        "annual_inflation_pct not set: emission rate for the ve(3,3) phase is not published. Coinone's filing calls 1B the issuance cap (MMT-04) while Binance says supply is not capped (MMT-03) — ask the team to reconcile."
+      ]
+    },
+    "K09": {
+      "dim_id": "K09",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-13",
+        "MMT-04",
+        "MMT-03",
+        "MMT-05"
+      ],
+      "rationale": "Percentages are published, but no vesting-contract addresses; the community-growth vesting schedule (42.72%) is unspecified; filings disagree on whether 1B is a cap.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "K10": {
+      "dim_id": "K10",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-06",
+        "MMT-07",
+        "MMT-11",
+        "MMT-19"
+      ],
+      "rationale": "Points ('bricks') and a $222M Buidlpad HODL campaign drove liquidity; DefiLlama TVL fell from $633M on 25 Oct to $290M on 31 Oct as the campaign ended. No sybil filtering was disclosed.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O01": {
+      "dim_id": "O01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_30d_avg' not in evidence pack",
+        "No daily-active-address, retention or fee-payer data from an independent indexer; the project's 1.68M swap users / 1.42M LPs (MMT-13) is a self-reported cumulative figure."
+      ]
+    },
+    "O02": {
+      "dim_id": "O02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'daa_90d_change_pct' not in evidence pack"
+      ]
+    },
+    "O03": {
+      "dim_id": "O03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'retention_30d_pct' not in evidence pack"
+      ]
+    },
+    "O04": {
+      "dim_id": "O04",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-06"
+      ],
+      "rationale": "tvl_usd = 289,590,000  (bands 4:≥1e+09, 3:≥2e+08, 2:≥5e+07, 1:≥1e+07)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "O05": {
+      "dim_id": "O05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentivised_tvl_share_pct' not in evidence pack",
+        "incentivised_tvl_share_pct not set. All LP activity was eligible for 'bricks' points pre-TGE (MMT-11), and TVL fell from $633M (25 Oct) to $290M (31 Oct) after the HODL campaign (MMT-06), but no measurement of the share of current TVL that is incentivised was possible."
+      ]
+    },
+    "O06": {
+      "dim_id": "O06",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MMT-13",
+        "MMT-06",
+        "MMT-11"
+      ],
+      "rationale": "1.42M self-reported LPs against ~$600M peak TVL (~$420 each) with every LP earning points looks farming-shaped; about $290M stayed after the campaign. No funding-cluster analysis was possible.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "O07": {
+      "dim_id": "O07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fee_paying_users_30d' not in evidence pack"
+      ]
+    },
+    "O08": {
+      "dim_id": "O08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'live_integrations_count' not in evidence pack"
+      ]
+    },
+    "O09": {
+      "dim_id": "O09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: evidence of third-party teams building on Momentum pools or SDK (15 named 'collaborations' in MMT-12 are announcements, not observed integrations)"
+      ]
+    },
+    "O10": {
+      "dim_id": "O10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'net_inflow_90d_usd' not in evidence pack"
+      ]
+    },
+    "M01": {
+      "dim_id": "M01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'depth_2pct_usd' not in evidence pack",
+        "No order book existed before 12:00 UTC on 4 Nov 2025; depth, spread, volume, venue share and volatility are not measurable as of the review date."
+      ]
+    },
+    "M02": {
+      "dim_id": "M02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'top_venue_volume_share_pct' not in evidence pack"
+      ]
+    },
+    "M03": {
+      "dim_id": "M03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: no trading history before 12:00 UTC 4 Nov 2025; re-assess after 7 days of order-book data"
+      ]
+    },
+    "M04": {
+      "dim_id": "M04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'spread_bps' not in evidence pack"
+      ]
+    },
+    "M05": {
+      "dim_id": "M05",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "M06": {
+      "dim_id": "M06",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-24",
+        "MMT-04",
+        "MMT-01"
+      ],
+      "rationale": "No prior trading venue; Binance, KuCoin and Coinone (a Korean venue that published its own disclosure) all list it the same day, so other tier-1 diligence happened in parallel, not before.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "M07": {
+      "dim_id": "M07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: perp listings, open interest and funding at launch"
+      ]
+    },
+    "M08": {
+      "dim_id": "M08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'realized_vol_30d_pct' not in evidence pack"
+      ]
+    },
+    "M09": {
+      "dim_id": "M09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: MMT pool ownership on Momentum/Sui DEXs after TGE"
+      ]
+    },
+    "M10": {
+      "dim_id": "M10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MMT-21",
+        "MMT-07"
+      ],
+      "rationale": "A fast-growing Sui DEX ($100M daily volume in July); the '#3 DEX globally' claim is one self-reported day, and the Sui incumbent Cetus remains, so leadership is unproven.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B01": {
+      "dim_id": "B01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-06"
+      ],
+      "rationale": "annualized_revenue_usd = 6,594,000  (bands 4:≥5e+07, 3:≥1e+07, 2:≥2e+06, 1:≥250,000)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B02": {
+      "dim_id": "B02",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-06",
+        "MMT-11"
+      ],
+      "rationale": "Revenue is the protocol share (~20%) of real swap fees, but it rose with points campaigns: October's $748k came in the HODL-campaign month, against $402k in September.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B03": {
+      "dim_id": "B03",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-06",
+        "MMT-02",
+        "MMT-13"
+      ],
+      "rationale": "100% fees-to-veMMT is designed and announced, not live; current revenue goes to the Momentum treasury.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "B04": {
+      "dim_id": "B04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'fdv_to_annual_fees' not in evidence pack",
+        "Not set because no listing-time FDV is used. For reference: at the $350M Buidlpad FDV, FDV / annualised fees = 10.6x; at a $3.5B FDV (a figure floated in pre-listing press, MMT-19) it would be ~106x."
+      ]
+    },
+    "B05": {
+      "dim_id": "B05",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'incentives_to_revenue' not in evidence pack"
+      ]
+    },
+    "B06": {
+      "dim_id": "B06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'runway_months' not in evidence pack",
+        "Treasury holdings and burn not published."
+      ]
+    },
+    "B07": {
+      "dim_id": "B07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'treasury_non_native_pct' not in evidence pack"
+      ]
+    },
+    "B08": {
+      "dim_id": "B08",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-06"
+      ],
+      "rationale": "revenue_qoq_growth_pct = 32.5  (bands 4:≥50, 3:≥15, 2:≥0, 1:≥-25)",
+      "assessor": "rule",
+      "notes": []
+    },
+    "B09": {
+      "dim_id": "B09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: volume and TVL concentration by wallet or partner (e.g. HODL-campaign whales)"
+      ]
+    },
+    "B10": {
+      "dim_id": "B10",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MMT-06",
+        "MMT-11"
+      ],
+      "rationale": "$6.6M annualised treasury revenue on fees that existed alongside points; TVL halved when one campaign ended, and the ve(3,3) switch will add token emissions rather than remove them.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C01": {
+      "dim_id": "C01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: Sui DEX segment size and growth from an independent aggregator"
+      ]
+    },
+    "C02": {
+      "dim_id": "C02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'category_share_pct' not in evidence pack",
+        "Sui DEX category share not established (DefiLlama chain pages could not be fetched); the '#3 DEX globally' line is a one-day self-reported claim (MMT-07)."
+      ]
+    },
+    "C03": {
+      "dim_id": "C03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: Momentum's Sui DEX volume/TVL share over two quarters"
+      ]
+    },
+    "C04": {
+      "dim_id": "C04",
+      "status": "scored",
+      "score": 1,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-06",
+        "MMT-07",
+        "MMT-19"
+      ],
+      "rationale": "Liquidity followed incentives: more than half of peak TVL left within six days of the HODL campaign ending, so no retention moat has been shown.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C05": {
+      "dim_id": "C05",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MMT-05",
+        "MMT-12",
+        "MMT-06"
+      ],
+      "rationale": "Standard CLMM + ve(3,3) design is replicable, and its liquidity left when one incentive ended, so a better-funded incentive programme could pull it.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C06": {
+      "dim_id": "C06",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MMT-05",
+        "MMT-13"
+      ],
+      "rationale": "Differs from other Sui DEXs by bundling MSafe treasury, xSUI and a launchpad with ve(3,3) — each copyable, and ve(3,3) not live yet.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C07": {
+      "dim_id": "C07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: listing-time FDV and peer valuations (Cetus, Bluefin, Aerodrome FDV/fees)"
+      ]
+    },
+    "C08": {
+      "dim_id": "C08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: evidence on whether Sui-native (DeepBook) or wallet swap features target the same flow"
+      ]
+    },
+    "C09": {
+      "dim_id": "C09",
+      "status": "scored",
+      "score": 2,
+      "confidence": "low",
+      "evidence": [
+        "MMT-12",
+        "MMT-04"
+      ],
+      "rationale": "An OKX Wallet xBTC liquidity campaign is live per the listing filing; the 15 partner names in the launch release are announcements without observed flows.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "C10": {
+      "dim_id": "C10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: Binance's existing Sui DeFi coverage and user overlap"
+      ]
+    },
+    "D01": {
+      "dim_id": "D01",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: X/Discord/Telegram audience and engagement data"
+      ]
+    },
+    "D02": {
+      "dim_id": "D02",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: bot-likelihood analysis of social engagement"
+      ]
+    },
+    "D03": {
+      "dim_id": "D03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'holders_count' not in evidence pack",
+        "Holder count not measurable pre-TGE."
+      ]
+    },
+    "D04": {
+      "dim_id": "D04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: user geography"
+      ]
+    },
+    "D05": {
+      "dim_id": "D05",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-07",
+        "MMT-08",
+        "MMT-11"
+      ],
+      "rationale": "Disclosed sponsored releases, a UGC campaign tied to the Buidlpad sale, and points programmes drive much of the visible attention.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "D06": {
+      "dim_id": "D06",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: grants, hackathons, external contributors"
+      ]
+    },
+    "D07": {
+      "dim_id": "D07",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'governance_participation_pct' not in evidence pack"
+      ]
+    },
+    "D08": {
+      "dim_id": "D08",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: record of incident or delay communications"
+      ]
+    },
+    "D09": {
+      "dim_id": "D09",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: sentiment among informed participants pre-listing"
+      ]
+    },
+    "D10": {
+      "dim_id": "D10",
+      "status": "scored",
+      "score": 3,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-18",
+        "MMT-09",
+        "MMT-24"
+      ],
+      "rationale": "Sui Foundation, Circle Ventures, Coinbase Ventures and Jump invested; KuCoin and Coinone list it the same day; no integrations by major external protocols verified.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L01": {
+      "dim_id": "L01",
+      "status": "scored",
+      "score": 2,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-04",
+        "MMT-08"
+      ],
+      "rationale": "Issuer RIZE Labs Inc is a Panama corporation; the team issues releases from San Francisco; no registry extract or address was found.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L02": {
+      "dim_id": "L02",
+      "status": "scored",
+      "score": 1,
+      "confidence": "low",
+      "evidence": [
+        "MMT-02",
+        "MMT-13",
+        "MMT-14"
+      ],
+      "rationale": "Team-controlled protocol with a promised 100% fee flow to locked-token holders; docs disclaim income rights, but no legal analysis is public.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L03": {
+      "dim_id": "L03",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "metric 'sanctions_exposure' not in evidence pack",
+        "sanctions_exposure unknown: no wallet screening was possible. Needs the venue's own screening of deployer, treasury and top-holder addresses."
+      ]
+    },
+    "L04": {
+      "dim_id": "L04",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: Terms of Service and MiCA whitepaper contents (not fetchable); licensing position for Momentum X KYC/RWA plans"
+      ]
+    },
+    "L05": {
+      "dim_id": "L05",
+      "status": "scored",
+      "score": 3,
+      "confidence": "low",
+      "evidence": [
+        "MMT-04",
+        "MMT-09"
+      ],
+      "rationale": "No litigation or regulator action found in press or the listing filing; court and regulator databases were not searched.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L06": {
+      "dim_id": "L06",
+      "status": "scored",
+      "score": 4,
+      "confidence": "medium",
+      "evidence": [
+        "MMT-05",
+        "MMT-13"
+      ],
+      "rationale": "Public Sui DEX, multisig and liquid staking products; no privacy or obfuscation features.",
+      "assessor": "agent:claude",
+      "notes": []
+    },
+    "L07": {
+      "dim_id": "L07",
+      "status": "pending_human",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "requires private channel"
+      ]
+    },
+    "L08": {
+      "dim_id": "L08",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'defi'"
+      ]
+    },
+    "L09": {
+      "dim_id": "L09",
+      "status": "na",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "",
+      "notes": [
+        "not applicable to profile 'defi'"
+      ]
+    },
+    "L10": {
+      "dim_id": "L10",
+      "status": "unscored",
+      "score": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "",
+      "assessor": "agent",
+      "notes": [
+        "missing: front-end geofencing and airdrop/points eligibility restrictions"
+      ]
+    }
+  },
+  "pillars": {
+    "T": {
+      "pillar": "T",
+      "name": "Team & Governance",
+      "weight": 12,
+      "score": 2.8421052631578947,
+      "coverage": 0.7916666666666666,
+      "sufficient": true,
+      "scored": 8,
+      "applicable": 10
+    },
+    "P": {
+      "pillar": "P",
+      "name": "Product & Technology",
+      "weight": 10,
+      "score": 2.0,
+      "coverage": 0.7894736842105263,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "S": {
+      "pillar": "S",
+      "name": "Security & Smart Contracts",
+      "weight": 14,
+      "score": 2.3333333333333335,
+      "coverage": 0.36,
+      "sufficient": false,
+      "scored": 3,
+      "applicable": 10
+    },
+    "K": {
+      "pillar": "K",
+      "name": "Tokenomics & Supply",
+      "weight": 14,
+      "score": 1.5714285714285714,
+      "coverage": 0.6666666666666666,
+      "sufficient": true,
+      "scored": 7,
+      "applicable": 10
+    },
+    "O": {
+      "pillar": "O",
+      "name": "On-chain Traction",
+      "weight": 10,
+      "score": 1.8,
+      "coverage": 0.29411764705882354,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "M": {
+      "pillar": "M",
+      "name": "Market Structure & Liquidity",
+      "weight": 8,
+      "score": 2.5,
+      "coverage": 0.11764705882352941,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "B": {
+      "pillar": "B",
+      "name": "Business Model & Fundamentals",
+      "weight": 10,
+      "score": 2.1,
+      "coverage": 0.5555555555555556,
+      "sufficient": false,
+      "scored": 5,
+      "applicable": 10
+    },
+    "C": {
+      "pillar": "C",
+      "name": "Competition & Moat",
+      "weight": 8,
+      "score": 1.375,
+      "coverage": 0.4444444444444444,
+      "sufficient": false,
+      "scored": 4,
+      "applicable": 10
+    },
+    "D": {
+      "pillar": "D",
+      "name": "Community & Distribution",
+      "weight": 5,
+      "score": 2.3333333333333335,
+      "coverage": 0.23076923076923078,
+      "sufficient": false,
+      "scored": 2,
+      "applicable": 10
+    },
+    "L": {
+      "pillar": "L",
+      "name": "Legal, Compliance & Jurisdiction",
+      "weight": 9,
+      "score": 2.2222222222222223,
+      "coverage": 0.5625,
+      "sufficient": false,
+      "scored": 4,
+      "applicable": 8
+    }
+  },
+  "gates": [
+    {
+      "id": "RF01",
+      "severity": "critical",
+      "title": "Unrestricted mint controlled by a single key",
+      "why": "Supply can be inflated at will; every other number in the report is conditional on one person's restraint.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF02",
+      "severity": "critical",
+      "title": "Sanctions / illicit-finance exposure",
+      "why": "Listing would create direct regulatory liability for the venue.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF03",
+      "severity": "critical",
+      "title": "Core contracts not source-verified",
+      "why": "Nobody outside the team can see what users are interacting with.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF04",
+      "severity": "critical",
+      "title": "Unremediated exploit with user losses",
+      "why": "Users are owed money; listing would expose new users to the same counterparty.",
+      "status": "clear"
+    },
+    {
+      "id": "RF05",
+      "severity": "critical",
+      "title": "Active enforcement action against the project or founders",
+      "why": "Outcome could force delisting or freeze assets after listing.",
+      "status": "clear"
+    },
+    {
+      "id": "RF06",
+      "severity": "major",
+      "title": "Upgradeable contracts with no meaningful timelock",
+      "why": "Logic can change under users with no time to exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF07",
+      "severity": "major",
+      "title": "Extreme holder concentration",
+      "why": "A handful of wallets can set the price; order books will not absorb their exit.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF08",
+      "severity": "major",
+      "title": "Unlock cliff within 90 days",
+      "why": "More than a quarter of circulating supply unlocks shortly after a listing window.",
+      "status": "clear"
+    },
+    {
+      "id": "RF09",
+      "severity": "major",
+      "title": "No independent audit",
+      "why": "Code holding user funds has never been reviewed by a third party.",
+      "status": "clear"
+    },
+    {
+      "id": "RF10",
+      "severity": "major",
+      "title": "Material misrepresentation",
+      "why": "Two or more project claims contradicted by observed data — the reviewer cannot rely on anything self-reported.",
+      "status": "clear"
+    },
+    {
+      "id": "RF11",
+      "severity": "major",
+      "title": "Security pillar failing",
+      "why": "Average security score below 1.5/4 — structural rather than one-off weakness.",
+      "status": "clear"
+    },
+    {
+      "id": "RF12",
+      "severity": "major",
+      "title": "Anonymous team with centralised admin powers",
+      "why": "Unaccountable people holding privileged keys.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF13",
+      "severity": "major",
+      "title": "Undisclosed market-maker terms",
+      "why": "Token loans and call options are where post-listing dumps are engineered.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF14",
+      "severity": "minor",
+      "title": "Insider-heavy allocation",
+      "why": "Team and investors hold more than half of supply.",
+      "status": "clear"
+    },
+    {
+      "id": "RF15",
+      "severity": "minor",
+      "title": "Mercenary TVL",
+      "why": "Most deposits are paid to be there and will leave when incentives stop.",
+      "status": "unchecked"
+    },
+    {
+      "id": "RF16",
+      "severity": "minor",
+      "title": "Volume implausible versus depth",
+      "why": "Daily volume more than 100x the ±2% depth is a common wash-trading signature.",
+      "status": "unchecked"
+    }
+  ],
+  "contradictions": [],
+  "point_score": 52.6,
+  "score_low": 15.4,
+  "score_high": 87.1,
+  "coverage": 0.51,
+  "grade": "C",
+  "verdict": "INSUFFICIENT_DATA",
+  "verdict_reasons": [
+    "evidence coverage 51% below the 70% needed for a verdict"
+  ]
+}

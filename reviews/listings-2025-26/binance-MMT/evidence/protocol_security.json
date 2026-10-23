@@ -1,0 +1,129 @@
+{
+  "project": "Momentum (MMT)",
+  "as_of": "2025-11-04",
+  "sources": [
+    {
+      "id": "MMT-06",
+      "type": "api",
+      "tier": 2,
+      "title": "DefiLlama — Momentum protocol page (TVL, fees, revenue, methodology); only data dated on or before 2025-11-04 used",
+      "url": "https://defillama.com/protocol/momentum",
+      "retrieved": "2026-10-23",
+      "excerpt": "Category Dexs / ve(3,3), chain Sui, audits flagged 'yes' with no firm named, no fork parent listed. Month-end TVL 2025: Apr $38.77M, May $64.09M, Jun $112.27M, Jul $155.52M, Aug $154.97M, Sep $277.47M, Oct 31 $289.59M; peak $633.44M on 25 Oct 2025. Fees / revenue by month: May $1.80M/$358k, Jun $1.64M/$326k, Jul $2.81M/$560k, Aug $2.50M/$498k, Sep $2.02M/$402k, Oct $3.75M/$748k. Revenue = each pool's protocol-fee share of swap fees, sent to the Momentum treasury. Funding events: $5M pre-seed Jan 2023, $5M seed Mar 2025, strategic May 2025, $4.5M public sale Oct 2025. Post-cutoff values deliberately excluded."
+    },
+    {
+      "id": "MMT-10",
+      "type": "research",
+      "tier": 3,
+      "title": "DeWhales Capital (an investor) — Momentum Explained (2025-05-02)",
+      "url": "https://dewhales.substack.com/p/momentum-explained-a-defi-protocol",
+      "retrieved": "2026-10-23",
+      "excerpt": "MSafe multisig live on Aptos mainnet Oct 2022 and Sui mainnet May 2023; rebranded Momentum Finance Feb 2025; DEX live on Sui Mar 2025. MSafe Aptos version audited by OtterSec and Zellic (completed Nov 2022), Sui version by OtterSec and MoveBit. Team: ChefWEN CEO/founder, Jacky (YanXiang) Wang CTO, Vinson Leow CSO. Written by an investor in the project."
+    },
+    {
+      "id": "MMT-11",
+      "type": "news",
+      "tier": 2,
+      "title": "TechFlow (via Decrypt) — Momentum DEX one month after launch (2025-04-30)",
+      "url": "https://techflowpost.com/en-US/article/25368",
+      "retrieved": "2026-10-23",
+      "excerpt": "Momentum Building Program: users earn 'bricks' for trading, referrals and providing liquidity, convertible toward future MMT, votes and fee share; LFG phase +20% bricks; WAGMI trading competition. Claims >$1B volume and >200k users in the first month. Founder ChefWEN described as a founding engineer of Meta's Libra."
+    },
+    {
+      "id": "MMT-12",
+      "type": "news",
+      "tier": 3,
+      "title": "GlobeNewswire (issuer release) — Momentum launches new DEX on Sui with major trading competition (2025-03-31)",
+      "url": "https://www.globenewswire.com/news-release/2025/03/31/3052527/0/en/momentum-launches-new-dex-on-sui-with-major-trading-competition.html",
+      "retrieved": "2026-10-23",
+      "excerpt": "ve(3,3) DEX 'inspired by Aerodrome' live at app.mmt.finance on 31 Mar 2025; 12-week WAGMI competition paying veMMT ahead of TGE; LFG liquidity phase targeting $50M TVL. Voters to get 100% of fees and bribes, LPs 100% of emissions. $10M raise led by Varys Capital; backers include Coinbase Ventures, Circle Ventures, Sui Foundation, Jump, Amber, Selini. Lists 15 ecosystem 'collaborations' (Cetus, Bluefin, Suilend, Navi, Scallop, Ondo, First Digital, Agora…). No audit mentioned."
+    },
+    {
+      "id": "MMT-20",
+      "type": "news",
+      "tier": 2,
+      "title": "Blockworks — Sui shares details on $220M Cetus exploit (late May 2025)",
+      "url": "https://blockworks.co/news/sui-cetus-exploit-dex-security",
+      "retrieved": "2026-10-23",
+      "excerpt": "Cetus, the incumbent Sui CLMM DEX, lost >$220M to a bug in its CLMM math library (attacker added huge liquidity for 1 unit of input); ~$162M frozen as of 26 May. Sui committed $10M to security including audits. Momentum not mentioned."
+    },
+    {
+      "id": "MMT-21",
+      "type": "news",
+      "tier": 2,
+      "title": "The Defiant — Sui DEX Momentum teases expansion plans after hitting $100M daily volume (2025-07-28)",
+      "url": "https://thedefiant.io/news/defi/sui-dex-momentum-teases-expansion-plans-after-hitting-usd100-million-in-daily-volume",
+      "retrieved": "2026-10-23",
+      "excerpt": "Momentum reached $100M daily volume and surpassed $150M TVL; plans to bring EVM and Solana projects to Sui via Wormhole."
+    },
+    {
+      "id": "MMT-23",
+      "type": "doc",
+      "tier": 3,
+      "title": "Momentum docs — llms.txt index (live)",
+      "url": "https://docs.mmt.finance/llms.txt",
+      "retrieved": "2026-10-23",
+      "excerpt": "Docs index includes CLMM SDK, CLMM smart contracts (deployments, contract interface, events, 'Admin and Operations'), xSUI auditing, Terms of Service, MiCA whitepaper, 'Audit Report' and 'Bug Bounty' pages. The audit, bug-bounty, admin and legal pages could not be fetched for this review. Live index; pages may post-date the listing."
+    },
+    {
+      "id": "MMT-24",
+      "type": "news",
+      "tier": 2,
+      "title": "KuCoin — Momentum (MMT) gets listed on KuCoin World Premiere (2025-11-03)",
+      "url": "https://www.kucoin.com/announcement/fr-momentum-mmt-gets-listed-on-kucoin-world-premiere",
+      "retrieved": "2026-10-23",
+      "excerpt": "MMT/USDT: deposits open immediately on Sui; call auction 11:00–12:00 UTC and trading 12:00 UTC on 4 Nov 2025; withdrawals 5 Nov. Links the token contract 0x35169bc9…::mmt::MMT on SuiVision."
+    }
+  ],
+  "metrics": {
+    "tvl_usd": {
+      "value": 289590000,
+      "source": "MMT-06",
+      "note": "31 Oct 2025, the last month-end before listing. Peak was $633.44M on 25 Oct during the Buidlpad HODL campaign"
+    },
+    "tvl_peak_usd": {
+      "value": 633440000,
+      "source": "MMT-06",
+      "note": "25 Oct 2025 all-time high; supplied only to check the whitepaper's 25 Oct TVL claim"
+    },
+    "tvl_2025_05_31_usd": {
+      "value": 64090000,
+      "source": "MMT-06",
+      "note": "31 May 2025 month-end; supplied only to check the 5 Jun 2025 TVL claim"
+    },
+    "annualized_fees_usd": {
+      "value": 33080000,
+      "source": "MMT-06",
+      "note": "Aug+Sep+Oct 2025 swap fees ($2.50M + $2.02M + $3.75M) x 4"
+    },
+    "annualized_revenue_usd": {
+      "value": 6594000,
+      "source": "MMT-06",
+      "note": "Aug+Sep+Oct 2025 protocol revenue ($498.1k + $402.4k + $748.1k) x 4; revenue = protocol fee share sent to the treasury, not paid to token holders yet"
+    },
+    "revenue_qoq_growth_pct": {
+      "value": 32.5,
+      "source": "MMT-06",
+      "note": "Aug–Oct 2025 revenue $1.649M vs May–Jul $1.244M. October includes the HODL-campaign peak"
+    },
+    "audits_reputable_count": {
+      "value": 2,
+      "source": "MMT-04",
+      "note": "Asymptotic and MoveBit named in Coinone's listing filing; reports not read (docs audit page could not be fetched), so scope, dates and commit coverage are unverified. MSafe (not the DEX) was audited by OtterSec, Zellic and MoveBit (MMT-10)"
+    },
+    "unreimbursed_exploit_usd": {
+      "value": 0,
+      "source": "MMT-04",
+      "note": "Coinone filing: no security incidents in the past 3 years. No Momentum exploit found in news searches; the May 2025 Sui CLMM exploit was Cetus (MMT-20)"
+    }
+  },
+  "claims": [
+    {
+      "id": "MMT-C5",
+      "statement": "Strategic-round release (5 Jun 2025): TVL $69M per DefiLlama",
+      "metric": "tvl_2025_05_31_usd",
+      "claimed_value": 69000000,
+      "source": "MMT-08"
+    }
+  ]
+}
