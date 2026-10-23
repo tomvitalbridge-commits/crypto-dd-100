@@ -68,6 +68,47 @@ def save(fig, path: Path, tight: bool = False) -> None:
     print(f"wrote {path}")
 
 
+# ---------------------------------------------------------------- 0 · framework map
+def framework_map(out: Path) -> None:
+    """The 100 dimensions as a 10x10 grid, coloured by who is allowed to score them."""
+    import yaml
+    raw = yaml.safe_load(Path("framework/dimensions.yaml").read_text())
+    pillars = raw["pillars"]
+    dims = raw["dimensions"]
+    method_col = {"rule": BLUE, "agent": "#eb6834", "human": "#1baf7a"}
+    method_lab = {"rule": "Computed from data", "agent": "Judged, must cite evidence", "human": "Human only (private channel)"}
+    fig = plt.figure(figsize=(14, 7.8), facecolor="white")
+    fig.text(0.02, 0.955, "The DD-100 framework: 10 pillars × 10 dimensions", fontsize=16, weight="bold", color=INK)
+    n = {m: sum(1 for d in dims if d["method"] == m) for m in method_col}
+    fig.text(0.02, 0.918, f"{n['rule']} computed from data  ·  {n['agent']} judged with cited evidence  ·  "
+             f"{n['human']} human-only  ·  dot = weight inside the pillar (1–3)", fontsize=10, color=INK2)
+    left, top, cw, chh, gx, gy = 0.205, 0.875, 0.0765, 0.068, 0.0028, 0.008
+    for r, (pk, pname) in enumerate(pillars.items()):
+        y = top - (r + 1) * (chh + gy)
+        fig.text(left - 0.008, y + chh / 2, f"{pk}  {pname}", ha="right", va="center", fontsize=9.2, color=INK,
+                 weight="semibold")
+        row = [d for d in dims if d["id"].startswith(pk)]
+        for c, d in enumerate(row):
+            x = left + c * (cw + gx)
+            colr = method_col[d["method"]]
+            card(fig, x, y, cw, chh, fc=colr, ec="none", r=0.004)
+            lines = textwrap.wrap(d["name"], 20)
+            if len(lines) > 2:
+                lines = [lines[0], (" ".join(lines[1:]))[:18].rstrip(" &(/") + "…"]
+            name = "\n".join(lines)
+            fig.text(x + 0.005, y + chh - 0.012, d["id"], fontsize=6.6, color="white", weight="bold", va="top")
+            fig.text(x + 0.005, y + 0.008, name, fontsize=6.1, color="white", va="bottom", linespacing=1.15)
+            for k in range(d["weight"]):
+                fig.patches.append(plt.Circle((x + cw - 0.008 - k * 0.0065, y + chh - 0.015), 0.0022,
+                                              transform=fig.transFigure, fc="white", ec="none"))
+    lx = left
+    for m in ("rule", "agent", "human"):
+        fig.patches.append(Rectangle((lx, 0.03), 0.012, 0.02, transform=fig.transFigure, fc=method_col[m], ec="none"))
+        fig.text(lx + 0.018, 0.033, method_lab[m], fontsize=9.5, color=INK2)
+        lx += 0.22
+    save(fig, out)
+
+
 # ---------------------------------------------------------------- 1 · verdict card
 def verdict_card(sc, metrics, facts, out: Path) -> None:
     fig = plt.figure(figsize=(11, 4.4), facecolor="white")
@@ -264,6 +305,7 @@ def main() -> None:
         (date(2026, 9, 24), "Binance lists spot\nwith Seed Tag", "binance"),
         (date(2026, 10, 23), "DD-100: conditional\n(public data)", "dd"),
     ]
+    framework_map(out / "framework-map.png")
     verdict_card(sc, metrics, facts, out / "hyperliquid-verdict.png")
     pillar_chart(sc, out / "hyperliquid-pillars.png")
     gate_board(sc, out / "hyperliquid-gates.png")

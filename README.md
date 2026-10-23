@@ -8,74 +8,7 @@ pipeline. A Claude **skill** does the research and makes cited judgments; a
 deterministic **harness** verifies every judgment against its evidence,
 computes the score, applies red-flag gates and writes the committee memo.
 
-![Hyperliquid listing review: conditional listing](docs/img/hyperliquid-verdict.png)
-
-## Real case: Hyperliquid (HYPE)
-
-Binance listed HYPE spot on 24 Sep 2026 with a **Seed Tag**, its conditional
-tier. DD-100 used only 61 public sources and reached the same answer: list,
-but only once specific checks are closed.
-
-![Timeline: Binance's decisions vs the DD-100 read](docs/img/hyperliquid-timeline.png)
-
-**The business is strong and the control is weak.** The project earns $907M in
-annualised fees, spends nothing on usage incentives, and sends all revenue to
-holders. But Foundation validators hold about 49% of stake, the L1 is closed
-source with no public audit, and it holds no licence anywhere.
-
-![Pillar scores](docs/img/hyperliquid-pillars.png)
-
-**No red flag fired that blocks a listing.** Five checks remain open because
-the data isn't public. An exchange can close them internally, for example by
-running sanctions screening and labelling top holders.
-
-![Red-flag checks](docs/img/hyperliquid-gates.png)
-
-**The verification layer changed the answer.** On the first run, a major red
-flag fired because a source had been misread. An independent fact-check went
-back to the contract code and overturned it, and the verdict moved from
-watchlist to conditional. The write-up, one-page memo and full 100-dimension
-report are in **[examples/hyperliquid](examples/hyperliquid)**.
-
-> Two **fictional** projects, Halcyon and Moonvault, ship alongside the real
-> case. They exist to exercise every path through the harness: one clean
-> conditional, and one hard reject.
-
----
-
-## Why this exists
-
-Most bad listings aren't caused by missing information. They come from five
-recurring failures, and each one has a mechanism here:
-
-| Failure | What DD-100 does |
-|---|---|
-| A fatal flaw gets averaged away by strong scores elsewhere | **16 red-flag gates** run after scoring. Critical → REJECT whatever the score. Major → grade capped at C. |
-| The project's own numbers end up in the memo as facts | Project **claims are stored separately** and cross-checked against independent sources. Contradictions are counted and can fire a gate. |
-| "73.4/100" hides how much was guessed | Every result carries **evidence coverage and a score range**; unscored and low-confidence dimensions widen it. |
-| Two analysts, two standards | One framework, fixed anchors, sector profiles — the same 100 questions every time. |
-| Fluent AI output nobody can trace | **No citation, no score.** Judgments citing missing evidence are rejected, high confidence on thin evidence is downgraded, and agents can't fill human-only checks. |
-
-### The gate demo
-
-Take Halcyon (grade B, 77.7) and change one on-chain fact — the token's mint
-authority — from `renounced` to `eoa`:
-
-```
-Halcyon Finance (HLCN)  ·  🔴 REJECT  ·  grade B  ·  77.7/100 (range 61–90)  ·  coverage 97%
-  🚩 RF01 [critical] Unrestricted mint controlled by a single key — fired
-```
-
-The average barely notices. The verdict does. That asymmetry is the point.
-
-### The rejection example
-
-[`examples/moonvault`](examples/moonvault) is a consumer token with an owner
-mint, instant upgrades, 62% top-10 concentration, a 41% unlock cliff in 90
-days and a deck claiming 8× its observed daily users. It also shows the
-validator at work: an agent tried to score the human-only KYC dimension, and
-another score cited a source that doesn't exist — both rejected and listed in
-the report.
+**Contents:** [Framework](#the-framework) · [Red flags](#red-flags-that-dont-average-out) · [How it works](#how-it-works-skill--harness) · [Case study: Hyperliquid](#case-study-hyperliquid-hype) · [Quick start](#quick-start)
 
 ---
 
@@ -83,6 +16,8 @@ the report.
 
 10 pillars × 10 dimensions, each scored 0–4. Full list with anchors and
 thresholds: **[docs/FRAMEWORK.md](docs/FRAMEWORK.md)**.
+
+![The 100 dimensions, coloured by who may score them](docs/img/framework-map.png)
 
 | Pillar | What it asks | Examples |
 |---|---|---|
@@ -109,7 +44,45 @@ an L1 puts 14% on Product & Technology.
 
 ---
 
-## Skill + harness
+## Red flags that don't average out
+
+Most bad listings aren't caused by missing information. They come from five
+recurring failures, and each one has a mechanism here:
+
+| Failure | What DD-100 does |
+|---|---|
+| A fatal flaw gets averaged away by strong scores elsewhere | **16 red-flag gates** run after scoring. Critical → REJECT whatever the score. Major → grade capped at C. |
+| The project's own numbers end up in the memo as facts | Project **claims are stored separately** and cross-checked against independent sources. Contradictions are counted and can fire a gate. |
+| "73.4/100" hides how much was guessed | Every result carries **evidence coverage and a score range**; unscored and low-confidence dimensions widen it. |
+| Two analysts, two standards | One framework, fixed anchors, sector profiles — the same 100 questions every time. |
+| Fluent AI output nobody can trace | **No citation, no score.** Judgments citing missing evidence are rejected, high confidence on thin evidence is downgraded, and agents can't fill human-only checks. |
+
+### The gate demo
+
+Two **fictional** test projects ship with the repo to exercise every path
+through the harness. Take the first one, Halcyon, which scores grade B at
+77.7. Change one on-chain fact, the token's mint authority, from `renounced`
+to `eoa`:
+
+```
+Halcyon Finance (HLCN)  ·  🔴 REJECT  ·  grade B  ·  77.7/100 (range 61–90)  ·  coverage 97%
+  🚩 RF01 [critical] Unrestricted mint controlled by a single key — fired
+```
+
+The average barely notices. The verdict does. That asymmetry is the point.
+
+### The rejection example
+
+The second fictional project, [`examples/moonvault`](examples/moonvault), is a consumer token with an owner
+mint, instant upgrades, 62% top-10 concentration, a 41% unlock cliff in 90
+days and a deck claiming 8× its observed daily users. It also shows the
+validator at work: an agent tried to score the human-only KYC dimension, and
+another score cited a source that doesn't exist — both rejected and listed in
+the report.
+
+---
+
+## How it works: skill + harness
 
 ```mermaid
 flowchart LR
@@ -150,16 +123,48 @@ analyst's work.
 
 ---
 
+## Case study: Hyperliquid (HYPE)
+
+To test the framework on a real decision, we reviewed a token Binance had
+just listed. Binance listed HYPE spot on 24 Sep 2026 with a **Seed Tag**, its
+conditional tier. Working only from 61 public sources, DD-100 reached the same
+answer: list, but only once specific checks are closed.
+
+![Hyperliquid listing review: conditional listing](docs/img/hyperliquid-verdict.png)
+
+![Timeline: Binance's decisions vs the DD-100 read](docs/img/hyperliquid-timeline.png)
+
+**The business is strong and the control is weak.** The project earns $907M in
+annualised fees, spends nothing on usage incentives, and sends all revenue to
+holders. But Foundation validators hold about 49% of stake, the L1 is closed
+source with no public audit, and it holds no licence anywhere.
+
+![Pillar scores](docs/img/hyperliquid-pillars.png)
+
+**No red flag fired that blocks a listing.** Five checks remain open because
+the data isn't public. An exchange can close them internally, for example by
+running sanctions screening and labelling top holders.
+
+![Red-flag checks](docs/img/hyperliquid-gates.png)
+
+**The verification layer changed the answer.** On the first run, a major red
+flag fired because a source had been misread. An independent fact-check went
+back to the contract code and overturned it, and the verdict moved from
+watchlist to conditional. The write-up, one-page memo and full 100-dimension
+report are in **[examples/hyperliquid](examples/hyperliquid)**.
+
+---
+
 ## Quick start
 
 ```bash
-git clone <this repo> && cd crypto-dd-100
+git clone https://github.com/tomvitalbridge-commits/crypto-dd-100 && cd crypto-dd-100
 pip install -e ".[dev]"
 
 dd100 validate                                  # framework integrity
-dd100 run examples/halcyon/manifest.yaml        # CONDITIONAL, grade B
-dd100 run examples/moonvault/manifest.yaml      # REJECT, RF01 critical
-dd100 run examples/hyperliquid/manifest.yaml    # real project: CONDITIONAL, grade B
+dd100 run examples/hyperliquid/manifest.yaml    # real project: CONDITIONAL
+dd100 run examples/halcyon/manifest.yaml        # fictional: CONDITIONAL
+dd100 run examples/moonvault/manifest.yaml      # fictional: REJECT, RF01 critical
 pytest -q                                       # 31 tests
 ```
 
