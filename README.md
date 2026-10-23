@@ -177,6 +177,17 @@ following 90 days.
   is the case for a full review, and it is an honest limit of screening on
   public data alone.
 
+**Then ten full reviews, as of listing day.** Ten tokens from the sample
+(MMT, KAIO, MEGA, FOGO, LIGHTER, ZAMA, AERO, DRV, KITE, GWEI) got a full
+100-dimension review using only information published before they listed.
+The full score did not predict 90-day price either (ρ −0.13, n=10). The four
+worst performers were all marked down on float, unlocks or incentive-driven
+usage, but so were the two best (KITE and GWEI, both graded D). A listing
+framework measures risk and quality, not short-term price; the reviews are
+in [`reviews/listings-2025-26/`](reviews/listings-2025-26/).
+
+![Ten full reviews: score vs 90-day return](docs/img/backtest-full-reviews.png)
+
 Full method, caveats (look-ahead in supply data, sample size, market regime)
 and reproduction steps: **[docs/BACKTEST.md](docs/BACKTEST.md)**.
 

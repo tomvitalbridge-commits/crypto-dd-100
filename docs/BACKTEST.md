@@ -125,10 +125,101 @@ sparsely covered metrics.
 - **Correlation, not a trading strategy.** Returns are close-to-close on
   daily candles, before fees and slippage.
 
+## Full reviews (n=10)
+
+The screening layer fills about 2 dimensions on listing day. The obvious
+objection is "of course it doesn't predict, it barely looked". So ten tokens
+from the sample got a **full DD-100 review as of their listing day**: the
+same Skill and harness used for Hyperliquid, with research limited to what
+was published before that date. The reviewer was not told how the token
+performed. Each review is in
+[`reviews/listings-2025-26/`](../reviews/listings-2025-26/).
+
+The ten were picked to cover both exchanges and the full outcome range, from
+the worst performers to the best, with a mix of DeFi, L1/L2 and
+infrastructure tokens.
+
+![Ten full reviews: score vs 90-day return](img/backtest-full-reviews.png)
+
+| Token | Listed | Score (range) | Grade | Coverage | Gates fired | 90d vs BTC | To 23 Oct 2026 |
+|---|---|---|---|---:|---|---:|---:|
+| MMT | Binance 2025-11-04 | 52.6 (15–87) | C | 51% | – | -92% | -93% |
+| KAIO | Coinbase 2026-05-06 | 43.9 (14–86) | D | 47% | – | -88% | -85% |
+| MEGA | Binance 2026-04-30 | 55.9 (21–85) | C | 56% | – | -74% | -75% |
+| FOGO | Binance 2026-01-15 | 48.1 (18–82) | D | 54% | RF09,RF14 | -51% | -90% |
+| LIGHTER | Coinbase 2026-01-15 | 62.3 (28–85) | C | 61% | RF06 | -29% | +115% |
+| ZAMA | Binance 2026-02-02 | 61.8 (23–88) | C | 50% | – | -20% | +104% |
+| AERO | Binance 2026-07-17 | 67.8 (33–89) | B | 65% | – | +55% | +31% |
+| DRV | Coinbase 2026-05-28 | 60.3 (26–86) | C | 62% | – | +93% | +332% |
+| KITE | Binance 2025-11-03 | 43.2 (9–85) | D | 39% | – | +148% | +102% |
+| GWEI | Coinbase 2026-02-24 | 40.4 (11–83) | D | 46% | RF09,RF11,RF14 | +179% | -50% |
+
+**Result: the full score did not predict 90-day price.** Rank correlation
+with 90-day return vs BTC was **ρ −0.13 (p=0.73)**. Against the return to
+23 Oct 2026 it was ρ +0.45 (p=0.19). Neither is significant at n=10.
+
+What the reviews did get right:
+
+- **The four worst performers were all marked down on supply and
+  incentive risks.** MMT: a mint path with no disclosed cap, 20% float, and
+  more than half of peak TVL gone within six days of a points campaign
+  ending. KAIO: 6.8% float, with 12-month unlocks equal to 85% of
+  circulating supply. MEGA: float not published (only "under 10%"), and a
+  launch KPI that was easy to farm. FOGO: no audit of its own client (RF09)
+  and 62% of supply with insiders (RF14). None scored above C.
+- **Coverage was the binding constraint, not the score.** Every review ended
+  `INSUFFICIENT_DATA` (coverage 39–65%). Sanctions screening (RF02) could not
+  be checked for any of them from public sources, and mint authority (RF01)
+  stayed unchecked for half. A listing desk would close these through the
+  project; a public-data reviewer cannot.
+
+What they got wrong:
+
+- **KITE and GWEI scored D and were the two best performers** (+148% and
+  +179% vs BTC at 90 days). They carried the same kind of risk as
+  MMT and KAIO: KITE listed at 18% float with no mainnet and an undisclosed
+  pause key; GWEI at 17.5% float, 59% insiders, 12-month unlocks of 73% and
+  no full audit (RF09, RF11, RF14 fired). The reviews saw the risk but not
+  which way it would break.
+
+**How to read this.** A listing framework measures whether a token is safe
+and well built enough for a venue to put in front of users. It is not a
+price model, and these results say so plainly: quality and 90-day price
+were unrelated in this sample, and the first 90 days of a new listing are
+dominated by float, unlocks and market regime. That is consistent with the
+screening result, where float carried the only reliable signal. The useful
+output of a full review is the list of open gates and the questions for the
+team, not the number.
+
+### Leakage and limits
+
+Point-in-time research from today is never fully blind. What was checked:
+
+- Every source in every evidence pack carries a publication date, and the
+  harness reports the `as_of` date. After the reviews, an independent agent
+  re-checked 24 load-bearing claims across the ten packs for accuracy and
+  for sources dated after `as_of`.
+- Where the reviewer saw later information while searching, it is disclosed
+  in that review's notes: MEGA (post-listing price fall seen in search
+  results, not used), DRV (an October all-time high seen, not used), MMT
+  (post-listing TVL data seen, excluded), FOGO (a later headline seen, not
+  used), KITE (a later contract migration seen, not used), AERO (Q3 figures
+  seen, excluded).
+- Search snippets that mention later events can still shape judgment in ways
+  a reviewer cannot fully separate. This is a real limitation of retroactive
+  reviews; the clean test is to review new listings before the outcome
+  exists.
+- Block explorers were not reachable from the research environment, so
+  several on-chain checks (holder concentration, admin keys) are unscored
+  rather than verified.
+- n=10 has very little statistical power. A correlation of ±0.6 would be
+  needed for significance.
+
 ## Reproduce
 
 ```bash
 python scripts/backtest.py data/backtest/features.csv   # scores, summary.json, charts
+python scripts/full_reviews.py                           # full-review table and chart
 ```
 
 - `data/backtest/features.csv`: one row per listing event, every input metric.
